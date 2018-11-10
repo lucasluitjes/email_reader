@@ -1,5 +1,24 @@
+Received: from Customer-MUA (mua.mxes.net [10.0.0.1])
+  (using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+  (No client certificate requested)
+  by smtp.mxes.net (Postfix) with ESMTPSA id 3E5E7275FC
+  for <reply@Ht2anPFxVVRjetK2ESeQtA.mail2webhook.com>; Sat, 10 Nov 2018 09:20:18 -0500 (EST)
+From: Lucas Luitjes <lucas@luitjes.it>
+Subject: Redis Speeds Towards a Multi-Model Future
+To: reply@Ht2anPFxVVRjetK2ESeQtA.mail2webhook.com
+Message-ID: <a262f67d-e245-38f6-a791-ce84c47d591f@luitjes.it>
+Date: Sat, 10 Nov 2018 15:20:16 +0100
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101
+ Thunderbird/60.2.1
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="------------A4F71840FFF898F342379A35"
+Content-Language: en-US
+X-Sent-To: <cmVwbHlASHQyYW5QRnhWVlJqZXRLMkVTZVF0QS5tYWlsMndlYmhvb2suY29t>
+X-Sender: mindrules.net
+
 This is a multi-part message in MIME format.
---------------69955A84AD0C117492FEB548
+--------------A4F71840FFF898F342379A35
 Content-Type: text/plain; charset=utf-8; format=flowed
 Content-Transfer-Encoding: quoted-printable
 
@@ -151,7 +170,7 @@ LS,=20
 United Kingdom
 
 
---------------69955A84AD0C117492FEB548
+--------------A4F71840FFF898F342379A35
 Content-Type: text/html; charset=utf-8
 Content-Transfer-Encoding: quoted-printable
 
@@ -201,64 +220,71 @@ uto; text-decoration: none; max-width: 100%;
 }
 </style>
   </head>
-  <body style=3D"height: 100%; margin: 0px; padding: 0px; width: 100%;
-    text-rendering: optimizelegibility; font-feature-settings:
-    &quot;kern&quot;; font-family: -apple-system, BlinkMacSystemFont,
-    Helvetica, sans-serif; font-size: 15px; line-height: 1.55em;"
-    text=3D"#000000" bgcolor=3D"#FFFFFF">
-    <div id=3D"preview" class=3D"noarchive" style=3D"display: none;
+  <body style=3D"height: 100%; margin: 0px; padding: 0px; width:
+    100%;&#xA; text-rendering: optimizelegibility;
+    font-feature-settings:&#xA; &quot;kern&quot;; font-family:
+    -apple-system, BlinkMacSystemFont,&#xA; Helvetica, sans-serif;
+    font-size: 15px; line-height: 1.55em;" text=3D"#000000"
+    bgcolor=3D"#FFFFFF">
+    <div id=3D"preview" class=3D"noarchive" style=3D"display: none;&#xA;
       color:&#xA; #666;">This week's database news</div>
     <!--[if (gte mso 9)|(IE)]>
 <table cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#f=
 fffff" width=3D"600"><tr><td valign=3D"top" style=3D"width: 600px;" bgcol=
 or=3D"#ffffff"><![endif]-->
-    <table id=3D"main" style=3D"table-layout: fixed; padding: 0px;&#xA;
-      font-family:&#xA;
-      -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;
-      font-size:&#xA; 15px; line-height: 1.55em; mso-table-lspace:
-      0pt;&#xA; mso-table-rspace: 0pt; border-collapse: collapse;
+    <table id=3D"main" style=3D"table-layout: fixed; padding: 0px;&#xA;&#=
+xA;
+      font-family:&#xA;&#xA;
+      -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#xA;
+      font-size:&#xA; 15px; line-height: 1.55em; mso-table-lspace:&#xA;
+      0pt;&#xA; mso-table-rspace: 0pt; border-collapse: collapse;&#xA;
       max-width:&#xA; 600px; height: 100% !important;" width=3D"100%"
       cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center">
       <tbody>
         <tr>
-          <td style=3D"font-family:&#xA;
-            -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#xA;
-            font-size: 15px; line-height: 1.55em; mso-table-lspace:
+          <td style=3D"font-family:&#xA;&#xA;
+            -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#xA;&#=
+xA;
+            font-size: 15px; line-height: 1.55em; mso-table-lspace:&#xA;
             0pt;&#xA; mso-table-rspace: 0pt; border-collapse: collapse;">
             <div id=3D"content">
               <!-- left/right splitbar -->
-              <table style=3D"mso-table-lspace: 0pt;
+              <table style=3D"mso-table-lspace: 0pt;&#xA;
                 mso-table-rspace:&#xA; 0pt; border-collapse: collapse;"
                 width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
                 <tbody>
                   <tr>
-                    <td style=3D"padding-left: 4px; font-family:&#xA;
-                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse;" width=3D"50%"
-                      align=3D"left">
-                      <p style=3D"font-size: 12px; color: #999999;&#xA;
-                        text-transform: uppercase; line-height:
-                        1.0em;&#xA; font-family:&#xA;
+                    <td style=3D"padding-left: 4px; font-family:&#xA;&#xA=
+;
+-apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse;"
+                      width=3D"50%" align=3D"left">
+                      <p style=3D"font-size: 12px; color:
+                        #999999;&#xA;&#xA; text-transform: uppercase;
+                        line-height:&#xA; 1.0em;&#xA;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
+erif;&#xA;&#xA;
                         margin-top: 0.8em; margin-bottom: 0.8em;">#224 =E2=
 =80=94
                         October 5, 2018</p>
                     </td>
-                    <td style=3D"padding-right: 4px; font-family:&#xA;
+                    <td style=3D"padding-right: 4px;
+                      font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse;"
+                      width=3D"50%" align=3D"right">
+                      <p style=3D"font-size: 12px;
+                        text-transform:&#xA;&#xA; uppercase;
+                        line-height: 1.0em;
+font-family:&#xA;&#xA;-apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
 if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse;" width=3D"50%"
-                      align=3D"right">
-                      <p style=3D"font-size: 12px; text-transform:&#xA;
-                        uppercase; line-height: 1.0em; font-family:&#xA;
--apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#xA; margin-top:
-                        0.8em; margin-bottom: 0.8em;"><a
+                        margin-top:&#xA; 0.8em; margin-bottom: 0.8em;"><a
                           href=3D"https://dbweekly.com/issues/224"
                           style=3D"text-decoration: none; color: #478dda;=
 "
@@ -269,24 +295,25 @@ if;&#xA;
                 </tbody>
               </table>
               <!-- masthead -->
-              <table style=3D"background-color: #478dda; text-align:&#xA;
-                center; color: #ffffff; mso-table-lspace: 0pt;&#xA;
-                mso-table-rspace: 0pt; border-collapse: collapse;"
-                class=3D"el-masthead" width=3D"100%" cellspacing=3D"0"
-                cellpadding=3D"0">
+              <table style=3D"background-color: #478dda;
+                text-align:&#xA;&#xA; center; color: #ffffff;
+                mso-table-lspace: 0pt;&#xA;&#xA; mso-table-rspace: 0pt;
+                border-collapse: collapse;" class=3D"el-masthead"
+                width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0 12px;">
-                      <p style=3D"font-size: 1.8em; font-weight: 600;&#xA=
-;
-                        line-height: 1.0em; font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0 12px;">
+                      <p style=3D"font-size: 1.8em; font-weight:
+                        600;&#xA;&#xA; line-height: 1.0em;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
+erif;&#xA;&#xA;
                         margin-top: 0.8em; margin-bottom: 0.8em;">Databas=
 e
                         Weekly</p>
@@ -294,58 +321,61 @@ e
                   </tr>
                 </tbody>
               </table>
-              <table style=3D"mso-table-lspace: 0pt;
+              <table style=3D"mso-table-lspace: 0pt;&#xA;
                 mso-table-rspace:&#xA; 0pt; border-collapse: collapse;"
                 width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse;"> <a
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse;"> <a
                         href=3D"https://dbweekly.com/link/53784/85a4c1edb=
 c"
                         style=3D"text-decoration: none; color: #478dda;"
                         moz-do-not-send=3D"true"><img
 src=3D"https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60=
 /qbayp1wbwxvvwafv13yw.jpg"
-                          alt=3D"" style=3D"width: 100%;&#xA;
-                          -ms-interpolation-mode: bicubic; outline:&#xA;
-                          none; height: auto; text-decoration:
-                          none;&#xA; max-width: 100%; border: 0 none;"
-                          moz-do-not-send=3D"true" width=3D"640"></a> </t=
-d>
+                          alt=3D"" style=3D"width: 100%;&#xA;&#xA;
+                          -ms-interpolation-mode: bicubic;
+                          outline:&#xA;&#xA; none; height: auto;
+                          text-decoration:&#xA; none;&#xA; max-width:
+                          100%; border: 0 none;" moz-do-not-send=3D"true"
+                          width=3D"640"></a> </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53784/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53784/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">A Brief
                             History of High Availability</a></span> =E2=80=
 =94 A
@@ -354,43 +384,47 @@ erif;&#xA;
                         what =E2=80=98high availability=E2=80=99 means an=
 d looks like in
                         real terms.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Sean Loiselle </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53785/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53785/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">Redis
                             Speeds Towards a Multi-Model Future</a></span=
 >
@@ -400,62 +434,63 @@ value
                         especially if Redis Labs gets its way. Here=E2=80=
 =99s an
                         update on where Redis is at right now.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Datanami </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;"> <a
-                        target=3D"_blank"
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;"> <a target=3D"_blank"
                         href=3D"https://dbweekly.com/link/53786/85a4c1edb=
 c"
-                        style=3D"text-decoration: none; color:
-                        #478dda;&#xA; border-bottom-width: 1px
-                        !important;&#xA; border-bottom-color: #ddd
-                        !important;&#xA; border-bottom-style: solid
+                        style=3D"text-decoration: none; color:&#xA;
+                        #478dda;&#xA; border-bottom-width: 1px&#xA;
+                        !important;&#xA; border-bottom-color: #ddd&#xA;
+                        !important;&#xA; border-bottom-style: solid&#xA;
                         !important;" moz-do-not-send=3D"true"><img
                           src=3D"https://copm.s3.amazonaws.com/801a3712.p=
 ng"
-                          style=3D"padding-top: 12px; border: 0 none;&#xA=
-;
-                          padding-left: 12px;
-                          -ms-interpolation-mode:&#xA; bicubic; outline:
-                          none; height: auto;&#xA; text-decoration:
-                          none; max-width: 100%;" alt=3D"" class=3D"som"
-                          moz-do-not-send=3D"true" width=3D"98" height=3D=
-"55"
-                          align=3D"right"></a>
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+                          style=3D"padding-top: 12px; border: 0
+                          none;&#xA;&#xA; padding-left: 12px;&#xA;
+                          -ms-interpolation-mode:&#xA; bicubic;
+                          outline:&#xA; none; height: auto;&#xA;
+                          text-decoration:&#xA; none; max-width: 100%;"
+                          alt=3D"" class=3D"som" moz-do-not-send=3D"true"
+                          width=3D"98" height=3D"55" align=3D"right"></a>
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53786/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53786/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">Actiona=
 ble
                             Insights into Your Path to Production</a></sp=
@@ -466,157 +501,170 @@ an>
                         cycle time? Use GoCD with its analytics plugin
                         to improve your software delivery with
                         actionable metrics. Sign up for a trial.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">GoCD <span
-                          style=3D"text-transform: uppercase; padding:
-                          1px&#xA; 4px; border: 1px solid #eeb;
-                          margin-left: 4px;&#xA; font-size: 0.9em;
-                          border-radius: 2px;&#xA; background-color:
-                          #ffc; color: #997&#xA; !important;"
-                          class=3D"tag-sponsor">sponsor</span></p>
+                          style=3D"text-transform: uppercase;
+                          padding:&#xA; 1px&#xA; 4px; border: 1px solid
+                          #eeb;&#xA; margin-left: 4px;&#xA; font-size:
+                          0.9em;&#xA; border-radius: 2px;&#xA;
+                          background-color:&#xA; #ffc; color: #997&#xA;
+                          !important;" class=3D"tag-sponsor">sponsor</spa=
+n></p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53787/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53787/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">Oracle
                             Releases Autonomous NoSQL Database Cloud
                             Service</a></span> =E2=80=94 <a
                           href=3D"https://dbweekly.com/link/53788/85a4c1e=
 dbc"
-                          style=3D"text-decoration: none; color:
-                          #478dda;&#xA; border-bottom-width: 1px
-                          !important;&#xA; border-bottom-color: #ddd
-                          !important;&#xA; border-bottom-style: solid
-                          !important;" moz-do-not-send=3D"true">This vide=
-o</a>
-                        explains the basic idea. Essentially it=E2=80=99s=
- a
-                        scalable, fully managed DynamoDB-esque database
-                        that supports JSON, table and key-value
-                        datatypes, with flexible transaction guarantees.<=
-/p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                          style=3D"text-decoration: none; color:&#xA;
+                          #478dda;&#xA; border-bottom-width: 1px&#xA;
+                          !important;&#xA; border-bottom-color:
+                          #ddd&#xA; !important;&#xA;
+                          border-bottom-style: solid&#xA; !important;"
+                          moz-do-not-send=3D"true">This video</a> explain=
+s
+                        the basic idea. Essentially it=E2=80=99s a scalab=
+le,
+                        fully managed DynamoDB-esque database that
+                        supports JSON, table and key-value datatypes,
+                        with flexible transaction guarantees.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Oracle </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53789/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53789/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">SQL as
                             an API Language?</a></span> =E2=80=94 Within =
 a write
                         up about his <a
                           href=3D"https://dbweekly.com/link/53790/85a4c1e=
 dbc"
-                          style=3D"text-decoration: none; color:
-                          #478dda;&#xA; border-bottom-width: 1px
-                          !important;&#xA; border-bottom-color: #ddd
-                          !important;&#xA; border-bottom-style: solid
-                          !important;" moz-do-not-send=3D"true">Datasette=
-</a>
-                        project (a tool to create JSON APIs for SQLite
+                          style=3D"text-decoration: none; color:&#xA;
+                          #478dda;&#xA; border-bottom-width: 1px&#xA;
+                          !important;&#xA; border-bottom-color:
+                          #ddd&#xA; !important;&#xA;
+                          border-bottom-style: solid&#xA; !important;"
+                          moz-do-not-send=3D"true">Datasette</a> project
+                        (a tool to create JSON APIs for SQLite
                         databases) Simon reflected on GraphQL=E2=80=99s a=
 bility
                         to query data and how SQL could essentially be
                         used for the same thing.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Simon Willison </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53791/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53791/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">RediSQL=
 :
                             Bringing SQL to Redis</a></span> =E2=80=94 A =
@@ -625,43 +673,47 @@ Redis
                         instance. There=E2=80=99s an open source version,=
  plus a
                         pro version with more features.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Team Dhrubok </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53792/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53792/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">Tuning
                             Amazon RDS for MySQL with Performance
                             Insights</a></span> =E2=80=94 Amazon RDS Perf=
@@ -669,44 +721,48 @@ ormance
                         Insights brings a tuning interface to Amazon RDS
                         to help you discover and investigate performance
                         issues.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Jeremiah Wilton and
                         Szymon Komendera (AWS) </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53793/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53793/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">Sequenc=
 e
                             Caching: Oracle vs. Postgres</a></span> =E2=80=
@@ -714,43 +770,47 @@ e
                         Sequence caching is when a database
                         pre-generates sequence values in advance making
                         them quicker to provide when needed.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Don Seiler </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53794/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53794/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">Why The
                             European Space Agency Uses Postgres</a></span=
 >
@@ -759,129 +819,141 @@ ion and
                         time-series and geospatial data and how it all
                         comes together in the ESA=E2=80=99s use case for
                         Postgres and TimescaleDB.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Andrew Staller </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53795/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53795/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">pgCente=
 r:
                             Stress Free Postgres Stats</a></span> =E2=80=94=
  An
                         open-source CLI admin tool for working with
                         Postgres activity statistics.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Alexey Lesovsky </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53796/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53796/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">Awesome
                             MongoDB: A Curated Set of MongoDB Resources</=
 a></span>
                         =E2=80=94 Over 100 curated links to MongoDB tutor=
 ials,
                         libraries, articles, etc.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Guillaume Gelin </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53797/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53797/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">Cluster=
 Control
                             - Get Three Months Free with an Annual
@@ -890,49 +962,54 @@ se
                         management system you=E2=80=99ll need to take con=
 trol of
                         your open source database infrastructure.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Severalnines <span
-                          style=3D"text-transform: uppercase; padding:
-                          1px&#xA; 4px; border: 1px solid #eeb;
-                          margin-left: 4px;&#xA; font-size: 0.9em;
-                          border-radius: 2px;&#xA; background-color:
-                          #ffc; color: #997&#xA; !important;"
-                          class=3D"tag-sponsor">sponsor</span></p>
+                          style=3D"text-transform: uppercase;
+                          padding:&#xA; 1px&#xA; 4px; border: 1px solid
+                          #eeb;&#xA; margin-left: 4px;&#xA; font-size:
+                          0.9em;&#xA; border-radius: 2px;&#xA;
+                          background-color:&#xA; #ffc; color: #997&#xA;
+                          !important;" class=3D"tag-sponsor">sponsor</spa=
+n></p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53798/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53798/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">PL/R: R
                             Procedural Language Support for Postgres</a><=
 /span>
@@ -942,117 +1019,127 @@ using
                         <a
                           href=3D"https://dbweekly.com/link/53799/85a4c1e=
 dbc"
-                          style=3D"text-decoration: none; color:
-                          #478dda;&#xA; border-bottom-width: 1px
-                          !important;&#xA; border-bottom-color: #ddd
-                          !important;&#xA; border-bottom-style: solid
-                          !important;" moz-do-not-send=3D"true">new
-                          version</a> has just been released which
-                        introduces Postgres 11 support.</p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                          style=3D"text-decoration: none; color:&#xA;
+                          #478dda;&#xA; border-bottom-width: 1px&#xA;
+                          !important;&#xA; border-bottom-color:
+                          #ddd&#xA; !important;&#xA;
+                          border-bottom-style: solid&#xA; !important;"
+                          moz-do-not-send=3D"true">new version</a> has
+                        just been released which introduces Postgres 11
+                        support.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Joseph E. Conway </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53800/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53800/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">Introdu=
 cing
                             HaloDB, A Fast, Embedded Key-Value Storage
                             Engine Written in Java</a></span></p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Yahoo Engineering </p=
 >
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table class=3D"el-item item " style=3D"mso-table-lspace:
-                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+              <table class=3D"el-item item " style=3D"mso-table-lspace:&#=
+xA;
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:&#xA;
                 collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
 "0">
                 <tbody>
                   <tr>
-                    <td style=3D"font-family:&#xA;
+                    <td style=3D"font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse; padding: 0px 15px;">
-                      <p class=3D"desc" style=3D"font-family:&#xA;
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse; padding:
+                      0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 15px; line-height: 1.55em;
-                        color:&#xA; #5a5a5a; margin-top: 0.8em;
-                        margin-bottom: 0;"><span style=3D"font-weight:
-                          600; font-size: 1.1em;&#xA; color: #000;"
-                          class=3D"mainlink"><a
-                            href=3D"https://dbweekly.com/link/53801/85a4c=
-1edbc"
-                            style=3D"text-decoration: none; color:&#xA;
-                            #478dda; border-bottom-width: 1px&#xA;
-                            !important; border-bottom-color: #ddd&#xA;
-                            !important; border-bottom-style: solid&#xA;
+erif;&#xA;&#xA;
+                        font-size: 15px; line-height: 1.55em;&#xA;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;&#xA;
+                        margin-bottom: 0;"><span
+                          style=3D"font-weight:&#xA; 600; font-size:
+                          1.1em;&#xA; color: #000;" class=3D"mainlink"><a
+href=3D"https://dbweekly.com/link/53801/85a4c1edbc"
+                            style=3D"text-decoration: none;
+                            color:&#xA;&#xA; #478dda;
+                            border-bottom-width: 1px&#xA;&#xA;
+                            !important; border-bottom-color:
+                            #ddd&#xA;&#xA; !important;
+                            border-bottom-style: solid&#xA;&#xA;
                             !important;" moz-do-not-send=3D"true">tic-tac=
 -toe.sql:
                             Tic Tac Toe Implemented in SQL</a></span></p>
-                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
-                        font-family:&#xA;
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;&#xA=
+;
+                        font-family:&#xA;&#xA;
                         -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
-erif;&#xA;
-                        font-size: 12px; line-height: 1.55em;&#xA;
-                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+erif;&#xA;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;&#xA;
                         text-transform: uppercase;">Dvir Volk </p>
                     </td>
                   </tr>
                 </tbody>
               </table>
-              <table style=3D"mso-table-lspace: 0pt;
+              <table style=3D"mso-table-lspace: 0pt;&#xA;
                 mso-table-rspace:&#xA; 0pt; border-collapse: collapse;"
                 width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
                 <tbody>
                   <tr>
-                    <td style=3D"height: 16px; font-family:&#xA;
+                    <td style=3D"height: 16px; font-family:&#xA;&#xA;
                       -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
-if;&#xA;
-                      font-size: 15px; line-height: 1.55em;&#xA;
-                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
-                      border-collapse: collapse;"><br>
+if;&#xA;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace:
+                      0pt;&#xA;&#xA; border-collapse: collapse;"><br>
                     </td>
                   </tr>
                 </tbody>
@@ -1064,32 +1151,34 @@ if;&#xA;
     </table>
     <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
     <div id=3D"footer" class=3D"noarchive">
-      <table style=3D"border-top-width: 1px; border-top-color:
-        #dddddd;&#xA; border-top-style: solid; mso-table-lspace:
+      <table style=3D"border-top-width: 1px; border-top-color:&#xA;
+        #dddddd;&#xA; border-top-style: solid; mso-table-lspace:&#xA;
         0pt;&#xA; mso-table-rspace: 0pt; border-collapse: collapse;"
         width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
         <tbody>
           <tr>
-            <td style=3D"text-align: center; padding: 20px 15px;&#xA;
-              font-family:&#xA;
-              -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#xA;
-              font-size: 15px; line-height: 1.55em;
-              mso-table-lspace:&#xA; 0pt; mso-table-rspace: 0pt;
+            <td style=3D"text-align: center; padding: 20px 15px;&#xA;&#xA=
+;
+              font-family:&#xA;&#xA;
+              -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#xA;=
+&#xA;
+              font-size: 15px; line-height: 1.55em;&#xA;
+              mso-table-lspace:&#xA; 0pt; mso-table-rspace: 0pt;&#xA;
               border-collapse: collapse;">
-              <p style=3D"font-size: 12px; line-height: 1.5em;&#xA;
-                font-family:&#xA;
+              <p style=3D"font-size: 12px; line-height: 1.5em;&#xA;&#xA;
+                font-family:&#xA;&#xA;
                 -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#x=
-A;
+A;&#xA;
                 margin-top: 0.8em; margin-bottom: 0.8em;">A <strong
                   style=3D"font-weight: 600;"><a
                     href=3D"https://cooperpress.com/"
                     style=3D"text-decoration: none; color: #478dda;"
                     moz-do-not-send=3D"true">Cooperpress</a></strong>
                 publication.</p>
-              <p style=3D"font-size: 0.9em; font-family:&#xA;
+              <p style=3D"font-size: 0.9em; font-family:&#xA;&#xA;
                 -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#x=
-A;
-                line-height: 1.55em; margin-top: 0.8em;
+A;&#xA;
+                line-height: 1.55em; margin-top: 0.8em;&#xA;
                 margin-bottom:&#xA; 0.8em;"><span class=3D"nomob"><a
                     href=3D"https://dbweekly.com/edit_subscription/85a4c1=
 edbc"
@@ -1101,10 +1190,10 @@ edbc"
                   style=3D"text-decoration: underline; color: #478dda;"
                   moz-do-not-send=3D"true">Stop getting this newsletter</=
 a></p>
-              <p style=3D"font-size: 12px; font-family:&#xA;
+              <p style=3D"font-size: 12px; font-family:&#xA;&#xA;
                 -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#x=
-A;
-                line-height: 1.55em; margin-top: 0.8em;
+A;&#xA;
+                line-height: 1.55em; margin-top: 0.8em;&#xA;
                 margin-bottom:&#xA; 0.8em;">=C2=A9 Cooper Press Ltd =C2=B7
                 Fairfield Enterprise Centre, Louth, LN11 0LS, United
                 Kingdom</p>
@@ -1118,4 +1207,4 @@ A;
   </body>
 </html>
 
---------------69955A84AD0C117492FEB548--
+--------------A4F71840FFF898F342379A35--
