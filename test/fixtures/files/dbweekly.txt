@@ -1,0 +1,1121 @@
+This is a multi-part message in MIME format.
+--------------69955A84AD0C117492FEB548
+Content-Type: text/plain; charset=utf-8; format=flowed
+Content-Transfer-Encoding: quoted-printable
+
+This week's database news
+
+#224 =E2=80=94 October 5, 2018
+
+=09
+
+Read on the Web <https://dbweekly.com/issues/224>
+
+Database Weekly
+
+<https://dbweekly.com/link/53784/85a4c1edbc>
+
+A Brief History of High Availability=20
+<https://dbweekly.com/link/53784/85a4c1edbc> =E2=80=94 A high level look =
+at how=20
+distributed databases have historically handled partial failures and=20
+what =E2=80=98high availability=E2=80=99 means and looks like in real ter=
+ms.
+
+Sean Loiselle
+
+Redis Speeds Towards a Multi-Model Future=20
+<https://dbweekly.com/link/53785/85a4c1edbc> =E2=80=94 Redis is best know=
+n as a=20
+very fast key-value store, but there=E2=80=99s more to it than that espec=
+ially=20
+if Redis Labs gets its way. Here=E2=80=99s an update on where Redis is at=
+ right now.
+
+Datanami
+
+<https://dbweekly.com/link/53786/85a4c1edbc>
+
+Actionable Insights into Your Path to Production=20
+<https://dbweekly.com/link/53786/85a4c1edbc> =E2=80=94 Want to deliver fa=
+ster?=20
+Want to recover from failures more quickly? Want to improve your cycle=20
+time? Use GoCD with its analytics plugin to improve your software=20
+delivery with actionable metrics. Sign up for a trial.
+
+GoCD sponsor
+
+Oracle Releases Autonomous NoSQL Database Cloud Service=20
+<https://dbweekly.com/link/53787/85a4c1edbc> =E2=80=94 This video=20
+<https://dbweekly.com/link/53788/85a4c1edbc> explains the basic idea.=20
+Essentially it=E2=80=99s a scalable, fully managed DynamoDB-esque databas=
+e that=20
+supports JSON, table and key-value datatypes, with flexible transaction=20
+guarantees.
+
+Oracle
+
+SQL as an API Language? <https://dbweekly.com/link/53789/85a4c1edbc> =E2=80=
+=94=20
+Within a write up about his Datasette=20
+<https://dbweekly.com/link/53790/85a4c1edbc> project (a tool to create=20
+JSON APIs for SQLite databases) Simon reflected on GraphQL=E2=80=99s abil=
+ity to=20
+query data and how SQL could essentially be used for the same thing.
+
+Simon Willison
+
+RediSQL: Bringing SQL to Redis=20
+<https://dbweekly.com/link/53791/85a4c1edbc> =E2=80=94 A Redis module emb=
+eds an=20
+SQLite database into your Redis instance. There=E2=80=99s an open source=20
+version, plus a pro version with more features.
+
+Team Dhrubok
+
+Tuning Amazon RDS for MySQL with Performance Insights=20
+<https://dbweekly.com/link/53792/85a4c1edbc> =E2=80=94 Amazon RDS Perform=
+ance=20
+Insights brings a tuning interface to Amazon RDS to help you discover=20
+and investigate performance issues.
+
+Jeremiah Wilton and Szymon Komendera (AWS)
+
+Sequence Caching: Oracle vs. Postgres=20
+<https://dbweekly.com/link/53793/85a4c1edbc> =E2=80=94 Sequence caching i=
+s when=20
+a database pre-generates sequence values in advance making them quicker=20
+to provide when needed.
+
+Don Seiler
+
+Why The European Space Agency Uses Postgres=20
+<https://dbweekly.com/link/53794/85a4c1edbc> =E2=80=94 A look into the wo=
+rld of=20
+space exploration and time-series and geospatial data and how it all=20
+comes together in the ESA=E2=80=99s use case for Postgres and TimescaleDB=
+..
+
+Andrew Staller
+
+pgCenter: Stress Free Postgres Stats=20
+<https://dbweekly.com/link/53795/85a4c1edbc> =E2=80=94 An open-source CLI=
+ admin=20
+tool for working with Postgres activity statistics.
+
+Alexey Lesovsky
+
+Awesome MongoDB: A Curated Set of MongoDB Resources=20
+<https://dbweekly.com/link/53796/85a4c1edbc> =E2=80=94 Over 100 curated l=
+inks to=20
+MongoDB tutorials, libraries, articles, etc.
+
+Guillaume Gelin
+
+ClusterControl - Get Three Months Free with an Annual Contract=20
+<https://dbweekly.com/link/53797/85a4c1edbc> =E2=80=94 The only database=20
+management system you=E2=80=99ll need to take control of your open source=
+=20
+database infrastructure.
+
+Severalnines sponsor
+
+PL/R: R Procedural Language Support for Postgres=20
+<https://dbweekly.com/link/53798/85a4c1edbc> =E2=80=94 PL/R lets you writ=
+e=20
+Postgres functions using R, the popular statistical computing language.=20
+A new version <https://dbweekly.com/link/53799/85a4c1edbc> has just been=20
+released which introduces Postgres 11 support.
+
+Joseph E. Conway
+
+Introducing HaloDB, A Fast, Embedded Key-Value Storage Engine Written in=20
+Java <https://dbweekly.com/link/53800/85a4c1edbc>
+
+Yahoo Engineering
+
+tic-tac-toe.sql: Tic Tac Toe Implemented in SQL=20
+<https://dbweekly.com/link/53801/85a4c1edbc>
+
+Dvir Volk
+
+
+A *Cooperpress <https://cooperpress.com/>* publication.
+
+Change your email address=20
+<https://dbweekly.com/edit_subscription/85a4c1edbc> or Stop getting this=20
+newsletter <https://dbweekly.com/leave/85a4c1edbc>
+
+=C2=A9 Cooper Press Ltd =C2=B7 Fairfield Enterprise Centre, Louth, LN11 0=
+LS,=20
+United Kingdom
+
+
+--------------69955A84AD0C117492FEB548
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF=
+-8">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <meta name=3D"format-detection" content=3D"date=3Dno">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+    <style>body {
+margin: 0; padding: 0; height: 100%; width: 100%; background-color: white=
+; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-render=
+ing: optimizeLegibility; font-feature-settings: "kern" 1;
+}
+body {
+font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-=
+size: 15px; line-height: 1.55em;
+}
+img {
+-ms-interpolation-mode: bicubic; border: 0 none; outline: none; height: a=
+uto; text-decoration: none; max-width: 100%;
+}
+@media screen and (max-width: 600px) {
+  table[id=3D"main"] {
+    max-width: 600px !important; width: 100% !important; min-width: 100% =
+!important;
+  }
+  .nomob {
+    display: none !important;
+  }
+  .onlymob {
+    display: inline-block !important;
+  }
+  .rightifmob {
+    text-align: right !important;
+  }
+  .som {
+    max-width: 33% !important;
+  }
+  div.footer p {
+    text-align: left !important;
+  }
+  div.footer td {
+    text-align: left !important;
+  }
+}
+</style>
+  </head>
+  <body style=3D"height: 100%; margin: 0px; padding: 0px; width: 100%;
+    text-rendering: optimizelegibility; font-feature-settings:
+    &quot;kern&quot;; font-family: -apple-system, BlinkMacSystemFont,
+    Helvetica, sans-serif; font-size: 15px; line-height: 1.55em;"
+    text=3D"#000000" bgcolor=3D"#FFFFFF">
+    <div id=3D"preview" class=3D"noarchive" style=3D"display: none;
+      color:&#xA; #666;">This week's database news</div>
+    <!--[if (gte mso 9)|(IE)]>
+<table cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#f=
+fffff" width=3D"600"><tr><td valign=3D"top" style=3D"width: 600px;" bgcol=
+or=3D"#ffffff"><![endif]-->
+    <table id=3D"main" style=3D"table-layout: fixed; padding: 0px;&#xA;
+      font-family:&#xA;
+      -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;
+      font-size:&#xA; 15px; line-height: 1.55em; mso-table-lspace:
+      0pt;&#xA; mso-table-rspace: 0pt; border-collapse: collapse;
+      max-width:&#xA; 600px; height: 100% !important;" width=3D"100%"
+      cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center">
+      <tbody>
+        <tr>
+          <td style=3D"font-family:&#xA;
+            -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#xA;
+            font-size: 15px; line-height: 1.55em; mso-table-lspace:
+            0pt;&#xA; mso-table-rspace: 0pt; border-collapse: collapse;">
+            <div id=3D"content">
+              <!-- left/right splitbar -->
+              <table style=3D"mso-table-lspace: 0pt;
+                mso-table-rspace:&#xA; 0pt; border-collapse: collapse;"
+                width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"padding-left: 4px; font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse;" width=3D"50%"
+                      align=3D"left">
+                      <p style=3D"font-size: 12px; color: #999999;&#xA;
+                        text-transform: uppercase; line-height:
+                        1.0em;&#xA; font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        margin-top: 0.8em; margin-bottom: 0.8em;">#224 =E2=
+=80=94
+                        October 5, 2018</p>
+                    </td>
+                    <td style=3D"padding-right: 4px; font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse;" width=3D"50%"
+                      align=3D"right">
+                      <p style=3D"font-size: 12px; text-transform:&#xA;
+                        uppercase; line-height: 1.0em; font-family:&#xA;
+-apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#xA; margin-top:
+                        0.8em; margin-bottom: 0.8em;"><a
+                          href=3D"https://dbweekly.com/issues/224"
+                          style=3D"text-decoration: none; color: #478dda;=
+"
+                          moz-do-not-send=3D"true">Read on the Web</a></p=
+>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- masthead -->
+              <table style=3D"background-color: #478dda; text-align:&#xA;
+                center; color: #ffffff; mso-table-lspace: 0pt;&#xA;
+                mso-table-rspace: 0pt; border-collapse: collapse;"
+                class=3D"el-masthead" width=3D"100%" cellspacing=3D"0"
+                cellpadding=3D"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0 12px;">
+                      <p style=3D"font-size: 1.8em; font-weight: 600;&#xA=
+;
+                        line-height: 1.0em; font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        margin-top: 0.8em; margin-bottom: 0.8em;">Databas=
+e
+                        Weekly</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style=3D"mso-table-lspace: 0pt;
+                mso-table-rspace:&#xA; 0pt; border-collapse: collapse;"
+                width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse;"> <a
+                        href=3D"https://dbweekly.com/link/53784/85a4c1edb=
+c"
+                        style=3D"text-decoration: none; color: #478dda;"
+                        moz-do-not-send=3D"true"><img
+src=3D"https://res.cloudinary.com/cpress/image/upload/w_1280,e_sharpen:60=
+/qbayp1wbwxvvwafv13yw.jpg"
+                          alt=3D"" style=3D"width: 100%;&#xA;
+                          -ms-interpolation-mode: bicubic; outline:&#xA;
+                          none; height: auto; text-decoration:
+                          none;&#xA; max-width: 100%; border: 0 none;"
+                          moz-do-not-send=3D"true" width=3D"640"></a> </t=
+d>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53784/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">A Brief
+                            History of High Availability</a></span> =E2=80=
+=94 A
+                        high level look at how distributed databases
+                        have historically handled partial failures and
+                        what =E2=80=98high availability=E2=80=99 means an=
+d looks like in
+                        real terms.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Sean Loiselle </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53785/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">Redis
+                            Speeds Towards a Multi-Model Future</a></span=
+>
+                        =E2=80=94 Redis is best known as a very fast key-=
+value
+                        store, but there=E2=80=99s more to it than that
+                        especially if Redis Labs gets its way. Here=E2=80=
+=99s an
+                        update on where Redis is at right now.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Datanami </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;"> <a
+                        target=3D"_blank"
+                        href=3D"https://dbweekly.com/link/53786/85a4c1edb=
+c"
+                        style=3D"text-decoration: none; color:
+                        #478dda;&#xA; border-bottom-width: 1px
+                        !important;&#xA; border-bottom-color: #ddd
+                        !important;&#xA; border-bottom-style: solid
+                        !important;" moz-do-not-send=3D"true"><img
+                          src=3D"https://copm.s3.amazonaws.com/801a3712.p=
+ng"
+                          style=3D"padding-top: 12px; border: 0 none;&#xA=
+;
+                          padding-left: 12px;
+                          -ms-interpolation-mode:&#xA; bicubic; outline:
+                          none; height: auto;&#xA; text-decoration:
+                          none; max-width: 100%;" alt=3D"" class=3D"som"
+                          moz-do-not-send=3D"true" width=3D"98" height=3D=
+"55"
+                          align=3D"right"></a>
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53786/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">Actiona=
+ble
+                            Insights into Your Path to Production</a></sp=
+an>
+                        =E2=80=94 Want to deliver faster? Want to recover=
+ from
+                        failures more quickly? Want to improve your
+                        cycle time? Use GoCD with its analytics plugin
+                        to improve your software delivery with
+                        actionable metrics. Sign up for a trial.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">GoCD <span
+                          style=3D"text-transform: uppercase; padding:
+                          1px&#xA; 4px; border: 1px solid #eeb;
+                          margin-left: 4px;&#xA; font-size: 0.9em;
+                          border-radius: 2px;&#xA; background-color:
+                          #ffc; color: #997&#xA; !important;"
+                          class=3D"tag-sponsor">sponsor</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53787/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">Oracle
+                            Releases Autonomous NoSQL Database Cloud
+                            Service</a></span> =E2=80=94 <a
+                          href=3D"https://dbweekly.com/link/53788/85a4c1e=
+dbc"
+                          style=3D"text-decoration: none; color:
+                          #478dda;&#xA; border-bottom-width: 1px
+                          !important;&#xA; border-bottom-color: #ddd
+                          !important;&#xA; border-bottom-style: solid
+                          !important;" moz-do-not-send=3D"true">This vide=
+o</a>
+                        explains the basic idea. Essentially it=E2=80=99s=
+ a
+                        scalable, fully managed DynamoDB-esque database
+                        that supports JSON, table and key-value
+                        datatypes, with flexible transaction guarantees.<=
+/p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Oracle </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53789/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">SQL as
+                            an API Language?</a></span> =E2=80=94 Within =
+a write
+                        up about his <a
+                          href=3D"https://dbweekly.com/link/53790/85a4c1e=
+dbc"
+                          style=3D"text-decoration: none; color:
+                          #478dda;&#xA; border-bottom-width: 1px
+                          !important;&#xA; border-bottom-color: #ddd
+                          !important;&#xA; border-bottom-style: solid
+                          !important;" moz-do-not-send=3D"true">Datasette=
+</a>
+                        project (a tool to create JSON APIs for SQLite
+                        databases) Simon reflected on GraphQL=E2=80=99s a=
+bility
+                        to query data and how SQL could essentially be
+                        used for the same thing.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Simon Willison </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53791/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">RediSQL=
+:
+                            Bringing SQL to Redis</a></span> =E2=80=94 A =
+Redis
+                        module embeds an SQLite database into your Redis
+                        instance. There=E2=80=99s an open source version,=
+ plus a
+                        pro version with more features.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Team Dhrubok </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53792/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">Tuning
+                            Amazon RDS for MySQL with Performance
+                            Insights</a></span> =E2=80=94 Amazon RDS Perf=
+ormance
+                        Insights brings a tuning interface to Amazon RDS
+                        to help you discover and investigate performance
+                        issues.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Jeremiah Wilton and
+                        Szymon Komendera (AWS) </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53793/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">Sequenc=
+e
+                            Caching: Oracle vs. Postgres</a></span> =E2=80=
+=94
+                        Sequence caching is when a database
+                        pre-generates sequence values in advance making
+                        them quicker to provide when needed.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Don Seiler </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53794/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">Why The
+                            European Space Agency Uses Postgres</a></span=
+>
+                        =E2=80=94 A look into the world of space explorat=
+ion and
+                        time-series and geospatial data and how it all
+                        comes together in the ESA=E2=80=99s use case for
+                        Postgres and TimescaleDB.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Andrew Staller </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53795/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">pgCente=
+r:
+                            Stress Free Postgres Stats</a></span> =E2=80=94=
+ An
+                        open-source CLI admin tool for working with
+                        Postgres activity statistics.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Alexey Lesovsky </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53796/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">Awesome
+                            MongoDB: A Curated Set of MongoDB Resources</=
+a></span>
+                        =E2=80=94 Over 100 curated links to MongoDB tutor=
+ials,
+                        libraries, articles, etc.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Guillaume Gelin </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53797/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">Cluster=
+Control
+                            - Get Three Months Free with an Annual
+                            Contract</a></span> =E2=80=94 The only databa=
+se
+                        management system you=E2=80=99ll need to take con=
+trol of
+                        your open source database infrastructure.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Severalnines <span
+                          style=3D"text-transform: uppercase; padding:
+                          1px&#xA; 4px; border: 1px solid #eeb;
+                          margin-left: 4px;&#xA; font-size: 0.9em;
+                          border-radius: 2px;&#xA; background-color:
+                          #ffc; color: #997&#xA; !important;"
+                          class=3D"tag-sponsor">sponsor</span></p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53798/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">PL/R: R
+                            Procedural Language Support for Postgres</a><=
+/span>
+                        =E2=80=94 PL/R lets you write Postgres functions =
+using
+                        R, the popular statistical computing language. A
+                        <a
+                          href=3D"https://dbweekly.com/link/53799/85a4c1e=
+dbc"
+                          style=3D"text-decoration: none; color:
+                          #478dda;&#xA; border-bottom-width: 1px
+                          !important;&#xA; border-bottom-color: #ddd
+                          !important;&#xA; border-bottom-style: solid
+                          !important;" moz-do-not-send=3D"true">new
+                          version</a> has just been released which
+                        introduces Postgres 11 support.</p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Joseph E. Conway </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53800/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">Introdu=
+cing
+                            HaloDB, A Fast, Embedded Key-Value Storage
+                            Engine Written in Java</a></span></p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Yahoo Engineering </p=
+>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class=3D"el-item item " style=3D"mso-table-lspace:
+                0pt;&#xA; mso-table-rspace: 0pt; border-collapse:
+                collapse;" width=3D"100%" cellspacing=3D"0" cellpadding=3D=
+"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse; padding: 0px 15px;">
+                      <p class=3D"desc" style=3D"font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 15px; line-height: 1.55em;
+                        color:&#xA; #5a5a5a; margin-top: 0.8em;
+                        margin-bottom: 0;"><span style=3D"font-weight:
+                          600; font-size: 1.1em;&#xA; color: #000;"
+                          class=3D"mainlink"><a
+                            href=3D"https://dbweekly.com/link/53801/85a4c=
+1edbc"
+                            style=3D"text-decoration: none; color:&#xA;
+                            #478dda; border-bottom-width: 1px&#xA;
+                            !important; border-bottom-color: #ddd&#xA;
+                            !important; border-bottom-style: solid&#xA;
+                            !important;" moz-do-not-send=3D"true">tic-tac=
+-toe.sql:
+                            Tic Tac Toe Implemented in SQL</a></span></p>
+                      <p class=3D"name" style=3D"color: #5a5a5a;&#xA;
+                        font-family:&#xA;
+                        -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif;&#xA;
+                        font-size: 12px; line-height: 1.55em;&#xA;
+                        margin-top: 2px; margin-bottom: 0.8em;&#xA;
+                        text-transform: uppercase;">Dvir Volk </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style=3D"mso-table-lspace: 0pt;
+                mso-table-rspace:&#xA; 0pt; border-collapse: collapse;"
+                width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+                <tbody>
+                  <tr>
+                    <td style=3D"height: 16px; font-family:&#xA;
+                      -apple-system,BlinkMacSystemFont,Helvetica,sans-ser=
+if;&#xA;
+                      font-size: 15px; line-height: 1.55em;&#xA;
+                      mso-table-lspace: 0pt; mso-table-rspace: 0pt;&#xA;
+                      border-collapse: collapse;"><br>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+    <div id=3D"footer" class=3D"noarchive">
+      <table style=3D"border-top-width: 1px; border-top-color:
+        #dddddd;&#xA; border-top-style: solid; mso-table-lspace:
+        0pt;&#xA; mso-table-rspace: 0pt; border-collapse: collapse;"
+        width=3D"100%" cellspacing=3D"0" cellpadding=3D"0">
+        <tbody>
+          <tr>
+            <td style=3D"text-align: center; padding: 20px 15px;&#xA;
+              font-family:&#xA;
+              -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#xA;
+              font-size: 15px; line-height: 1.55em;
+              mso-table-lspace:&#xA; 0pt; mso-table-rspace: 0pt;
+              border-collapse: collapse;">
+              <p style=3D"font-size: 12px; line-height: 1.5em;&#xA;
+                font-family:&#xA;
+                -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#x=
+A;
+                margin-top: 0.8em; margin-bottom: 0.8em;">A <strong
+                  style=3D"font-weight: 600;"><a
+                    href=3D"https://cooperpress.com/"
+                    style=3D"text-decoration: none; color: #478dda;"
+                    moz-do-not-send=3D"true">Cooperpress</a></strong>
+                publication.</p>
+              <p style=3D"font-size: 0.9em; font-family:&#xA;
+                -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#x=
+A;
+                line-height: 1.55em; margin-top: 0.8em;
+                margin-bottom:&#xA; 0.8em;"><span class=3D"nomob"><a
+                    href=3D"https://dbweekly.com/edit_subscription/85a4c1=
+edbc"
+                    style=3D"text-decoration: underline; color: #478dda;"
+                    moz-do-not-send=3D"true">Change your email address</a=
+>
+                  or </span><a
+                  href=3D"https://dbweekly.com/leave/85a4c1edbc"
+                  style=3D"text-decoration: underline; color: #478dda;"
+                  moz-do-not-send=3D"true">Stop getting this newsletter</=
+a></p>
+              <p style=3D"font-size: 12px; font-family:&#xA;
+                -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;&#x=
+A;
+                line-height: 1.55em; margin-top: 0.8em;
+                margin-bottom:&#xA; 0.8em;">=C2=A9 Cooper Press Ltd =C2=B7
+                Fairfield Enterprise Centre, Louth, LN11 0LS, United
+                Kingdom</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <img src=3D"https://dbweekly.com/open/224/85a4c1edbc"
+      moz-do-not-send=3D"true" width=3D"1" height=3D"1">
+  </body>
+</html>
+
+--------------69955A84AD0C117492FEB548--
