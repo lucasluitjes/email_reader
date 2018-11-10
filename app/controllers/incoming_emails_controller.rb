@@ -8,7 +8,7 @@ class IncomingEmailsController < ApplicationController
     Email.create(
       sender: mail.from,
       subject: mail.subject,
-      body: mail.body
+      body: params[:message]
       )
 
     render text: "OK"
