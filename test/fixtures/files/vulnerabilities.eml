@@ -1,0 +1,196 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Tue, 15 Jan 2019 08:16:34 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <ubuntu-security-announce-bounces@lists.ubuntu.com>
+Received: from 205.237.194.29
+	by m8.mxes.net (bayesd) with LMTP id 1547558194-38183-9
+	for <lucas_mindrules.net@ms8.mxes.net>; Tue, 15 Jan 2019 08:16:34 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-05.mxes.net (Postfix) with ESMTP id 5C98527888
+	for <lucas@luitjes.it>; Tue, 15 Jan 2019 08:16:34 -0500 (EST)
+Received: from huckleberry.canonical.com (huckleberry.canonical.com [91.189.94.19])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mxin.mxes.net (Postfix) with ESMTPS id 967712783C
+	for <lucas@luitjes.it>; Tue, 15 Jan 2019 08:16:33 -0500 (EST)
+Authentication-Results: mxin.mxes.net; dkim=none
+Received: from localhost ([127.0.0.1] helo=huckleberry.canonical.com)
+	by huckleberry.canonical.com with esmtp (Exim 4.86_2)
+	(envelope-from <ubuntu-security-announce-bounces@lists.ubuntu.com>)
+	id 1gjOUO-0001eV-FA; Tue, 15 Jan 2019 13:10:44 +0000
+Received: from youngberry.canonical.com ([91.189.89.112])
+ by huckleberry.canonical.com with esmtps (TLS1.0:DHE_RSA_AES_128_CBC_SHA1:128)
+ (Exim 4.86_2) (envelope-from <leo.barbosa@canonical.com>)
+ id 1gjOSS-0001VV-8L
+ for ubuntu-security-announce@lists.ubuntu.com; Tue, 15 Jan 2019 13:08:44 +0000
+Received: from [177.89.9.179] (helo=[192.168.0.28])
+ by youngberry.canonical.com with esmtpsa (TLS1.0:RSA_AES_128_CBC_SHA1:16)
+ (Exim 4.76) (envelope-from <leo.barbosa@canonical.com>)
+ id 1gjOSR-0007Pk-KX
+ for ubuntu-security-announce@lists.ubuntu.com; Tue, 15 Jan 2019 13:08:44 +0000
+Message-ID: <1547557715.24029.2.camel@canonical.com>
+Subject: [USN-3858-1] HAProxy vulnerabilities
+From: "Leonidas S. Barbosa" <leo.barbosa@canonical.com>
+To: ubuntu-security-announce@lists.ubuntu.com
+Date: Tue, 15 Jan 2019 10:08:35 -0300
+X-Mailer: Evolution 3.18.5.2-0ubuntu3.2 
+Mime-Version: 1.0
+X-Mailman-Approved-At: Tue, 15 Jan 2019 13:10:41 +0000
+X-BeenThere: ubuntu-security-announce@lists.ubuntu.com
+X-Mailman-Version: 2.1.20
+Precedence: list
+List-Id: Ubuntu Security Announcements
+ <ubuntu-security-announce.lists.ubuntu.com>
+List-Unsubscribe: <https://lists.ubuntu.com/mailman/options/ubuntu-security-announce>, 
+ <mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=unsubscribe>
+List-Archive: <https://lists.ubuntu.com/archives/ubuntu-security-announce>
+List-Post: <mailto:ubuntu-security-announce@lists.ubuntu.com>
+List-Help: <mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=help>
+List-Subscribe: <https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce>, 
+ <mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=subscribe>
+Reply-To: ubuntu-users@lists.ubuntu.com, Ubuntu Security <security@ubuntu.com>
+Content-Type: multipart/mixed; boundary="===============7595894066914275047=="
+Errors-To: ubuntu-security-announce-bounces@lists.ubuntu.com
+Sender: "ubuntu-security-announce"
+ <ubuntu-security-announce-bounces@lists.ubuntu.com>
+X-Virus-Scanned: ClamAV
+X-Spam-Sys-BayesResult: No, 0.000673
+X-Spam-Scanner: 1547558193-90172-11
+X-Spam-Report: Content analysis details:
+   0.0 BAYESSCORE             0.492641
+  -1.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at http://www.dnswl.org/, high trust
+     [91.189.94.19 listed in dnswl.mxes.net]
+   0.0 DMARC_POLICY           Accept on policy failure
+  -2.5 SYSTEM_BAYES           No 0.000673
+   0.0 T_DMARC_ACCEPT         Sender says accept all mail
+   0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail domains are different
+   0.4 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 0
+X-Spam-SI: 0
+X-Originating-IP: 91.189.94.19
+X-Reputation-Delta: 0.4
+X-Envelope-To: <lucas@luitjes.it>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-3.1 threshold=6.0,13.0 
+X-Spam-BayesResult: Unsure, 0.492641
+X-Spam-Score: -3.1
+X-Spam-Scoring: 0,0
+
+
+--===============7595894066914275047==
+Content-Type: multipart/signed; micalg="pgp-sha256";
+	protocol="application/pgp-signature"; boundary="=-NcrHMikA1bkXyMEOl70Y"
+
+
+--=-NcrHMikA1bkXyMEOl70Y
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Ubuntu Security Notice USN-3858-1
+January 15, 2019
+
+haproxy vulnerabilities
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 18.10
+- Ubuntu 18.04 LTS
+- Ubuntu 16.04 LTS
+
+Summary:
+
+Several security issues were fixed in HAProxy.
+
+Software Description:
+- haproxy: fast and reliable load balancing reverse proxy
+
+Details:
+
+It was discovered that HAProxy incorrectly handled certain requests.
+An attacker could possibly use this to expose sensitive information.
+(CVE-2018-20102)
+
+It was discovered that HAProxy incorrectly handled certain requests.
+A attacker could possibly use this issue to cause a denial of service.
+This issue only affected Ubuntu 18.04 LTS and Ubuntu 18.10.
+(CVE-2018-20103, CVE-2018-20615)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 18.10:
+=C2=A0 haproxy=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A01.8.13-2ubuntu0.1
+
+Ubuntu 18.04 LTS:
+=C2=A0 haproxy=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A01.8.8-1ubuntu0.3
+
+Ubuntu 16.04 LTS:
+=C2=A0 haproxy=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=
+=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=A0=C2=
+=A0=C2=A0=C2=A01.6.3-1ubuntu0.2
+
+In general, a standard system update will make all the necessary
+changes.
+
+References:
+=C2=A0 https://usn.ubuntu.com/usn/usn-3858-1
+=C2=A0 CVE-2018-20102, CVE-2018-20103, CVE-2018-20615
+
+Package Information:
+=C2=A0 https://launchpad.net/ubuntu/+source/haproxy/1.8.13-2ubuntu0.1
+=C2=A0 https://launchpad.net/ubuntu/+source/haproxy/1.8.8-1ubuntu0.3
+=C2=A0 https://launchpad.net/ubuntu/+source/haproxy/1.6.3-1ubuntu0.2
+--=-NcrHMikA1bkXyMEOl70Y
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: This is a digitally signed message part
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v2
+
+iQIcBAABCAAGBQJcPdtUAAoJEEW851uECx9puKEP/jJ47T2cDFiUYAPao+lb+Zex
++tsOeCjpd/qpEmboRCD4kQ3eAcYrTZlE20JcLU7n9Jc7eAdMisqPazDGlKNYARpR
+E+JCsWY+awWwjDKefKCd3sJ0569zc6VqKtYK2Ft/CnjzhFv3O890UxzIjyUeZ+5v
+lZspHTyERc1keFj0Hk1tDasciRlbK8O980RrHDv5qkEe4L2RbxBUyCfLnbAfKcCF
+8YAJXOmrMBQTAYKnPhJEPy3TAcusZA4ohxeJqZolWxZkOXdNymOYz0nKYcKW0n+p
+arjM25cpAW/uad9/2y8h3qtqSD4dDubBjnPHtWZoxfXCNYKJAKn+Zb7OvAQCB5MO
+fE1ErQnDo/QMNwnX8Xv0kBUifzol6MppT85SQEJtOj762QSfS4XZ/jQ6SJBbTR9f
+YG8l0pS6tFyCTtPRgJbaAh4/rtc+FEssI7lPcskMqD90K8490IyWmCS723eAUbdu
+oaJGsPw9aG3lQr18J+Ts4DIta8q4Wppd1MncJKG3YlGxGNrR1DKyNbq1k4p9iCGA
+Fv88WcRERJAyA/GxPigy+32i2v8hIxhPt1jogSf1wK0PY/xD5epx0vGnWEDtTAsA
+u5cAdnhFpT4CBLEQO02q7RHvZGjcTnUCR4WKgGfxMjAkNPEKvBWz4bD7ldscf6gx
+u+27SlQ/s8xk0zq3WFOQ
+=7dkC
+-----END PGP SIGNATURE-----
+
+--=-NcrHMikA1bkXyMEOl70Y--
+
+
+
+--===============7595894066914275047==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: inline
+
+LS0gCnVidW50dS1zZWN1cml0eS1hbm5vdW5jZSBtYWlsaW5nIGxpc3QKdWJ1bnR1LXNlY3VyaXR5
+LWFubm91bmNlQGxpc3RzLnVidW50dS5jb20KTW9kaWZ5IHNldHRpbmdzIG9yIHVuc3Vic2NyaWJl
+IGF0OiBodHRwczovL2xpc3RzLnVidW50dS5jb20vbWFpbG1hbi9saXN0aW5mby91YnVudHUtc2Vj
+dXJpdHktYW5ub3VuY2UK
+
+--===============7595894066914275047==--
+
+
