@@ -25,7 +25,6 @@ class EmailTest < ActiveSupport::TestCase
     email = Email.new(body: File.read("test/fixtures/files/breaking_smart.eml"))
     url = email.breaking_smart_link
     assert_equal ["View this email in your browser", "https://mailchi.mp/ribbonfarm/good-afternoon-internet-im-listening?e=4c5a41c2ff"], url
-    assert_equal 1, url.size
   end
 
   test "grab text from elixir weekly" do
@@ -37,6 +36,27 @@ class EmailTest < ActiveSupport::TestCase
   test "grab text from hacker newsletter" do
     email = Email.new(body: File.read("test/fixtures/files/Hacker\ Newsletter\ \#434.eml"))
     urls = email.hacker_newsletter_links
+    assert_equal ["Algorithms, by Jeff Erickson",
+ "https://hackernewsletter.us1.list-manage.com/track/click?u=faa8eb4ef3a111cef92c4f3d4&id=56ee376af8&e=16cfb65b5e"] , urls[1]
+  end
+
+  test "grab text from ruby weekly" do
+    email = Email.new(body: File.read("test/fixtures/files/ruby_weekly.eml"))
+    urls = email.ruby_weekly_links
+    assert_equal ["Ruby 2.6 Released",
+  "As is traditional, the latest major release of Ruby came out on Christmas Day. The much awaited 2.6 includes an initial implementation of a JIT compiler (which needs to be enabled manually), the then alias for yield_self, RubyVM::AbstractSyntaxTree, endless ranges, and a lot more (see next item).",
+  "https://rubyweekly.com/link/57534/d218cfa36e"], urls[0]
+    assert_equal 27, urls.size
+  end
+
+  test "grab text from sre weekly" do
+    email = Email.new(body: File.read("test/fixtures/files/SRE\ Weekly\ Issue\ \#154.eml"))
+    urls = email.sre_weekly_links
+  end
+
+  test "grab text from vulnerabilities newsletter" do
+    email = Email.new(body: File.read("test/fixtures/files/vulnerabilities.eml"))
+    urls = email.vulnerabilities_links
   end
 
   test "grab text from blendle" do
