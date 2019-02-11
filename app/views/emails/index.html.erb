@@ -2,7 +2,21 @@
 
 <h1>Emails</h1>
 
-<table>
+<% @emails.each do |email| %>
+  <p>
+    <%= email.created_at %>: 
+    <%= email.subject %>
+      
+  </p>
+  <ul>
+    <% email.links.each do |link| %>
+      <li> 
+        <a href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+<!-- <table>
   <thead>
     <tr>
       <th>Sender</th>
@@ -19,7 +33,6 @@
         <td><%= email.sender %></td>
         <td><%= email.read %></td>
         <td><%= email.subject %></td>
-        <td><%= email.body %></td>
         <td><%= link_to 'Show', email %></td>
         <td><%= link_to 'Edit', edit_email_path(email) %></td>
         <td><%= link_to 'Destroy', email, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -30,4 +43,4 @@
 
 <br>
 
-<%= link_to 'New Email', new_email_path %>
+<%= link_to 'New Email', new_email_path %> -->

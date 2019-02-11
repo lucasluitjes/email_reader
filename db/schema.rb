@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181107160045) do
+ActiveRecord::Schema.define(version: 20190211155815) do
 
   create_table "emails", force: :cascade do |t|
     t.string "sender"
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(version: 20181107160045) do
     t.string "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "links", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "url"
+    t.boolean "read"
+    t.integer "email_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email_id"], name: "index_links_on_email_id"
   end
 
 end

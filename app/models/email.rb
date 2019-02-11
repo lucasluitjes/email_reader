@@ -1,4 +1,29 @@
+require 'mail'
+
 class Email < ApplicationRecord
+  has_many :links
+  Symbols = {
+      "jsw@peterc.org" => :java_weekly,
+      "vgr@ribbonfarm.com" => :breaking_smart,
+      "newsletter@elixirweekly.net" => :elixir_weekly,
+      "kale@hackernewsletter.com" => :hacker_newsletter,
+      "rw@peterc.org" => :ruby_weekly,
+      "lex@sreweekly.com" => :sre_weekly,
+      "leo.barbosa@canonical.com" => :vulnerabilities,
+      "nieuwsbrief@m.blendle.com" => :blendle
+    }
+
+  def create_links!
+    send(:"#{email_list_type}_links").each do |title, description, url|
+      Link.create(title: title, description: description, url: url, read: false, email: self)
+    end
+  end
+
+  def email_list_type
+    mail = Mail.new(body)
+    sender = mail.from.first
+    symbol = Symbols[sender]
+  end
 
   def db_weekly_links
     html_string = Mail.new(body).html_part.decoded
@@ -33,10 +58,9 @@ class Email < ApplicationRecord
     # also uniq doesn't work because some link names have a space at the start
     urls = urls.select { |link| link[2] != "" }
     urls = urls.uniq
-    # require 'pry'; binding.pry
   end
 
-  def breaking_smart_link
+  def breaking_smart_links
     html_string = Mail.new(body).html_part.decoded
     doc = Nokogiri::HTML.parse(html_string)
     url_elements = doc.search("a")
@@ -86,15 +110,15 @@ class Email < ApplicationRecord
       url =~ /^https:\/\/rubyweekly.com\/link\//
     end
     urls = url_elements.map do |n|
+      title = n.text.gsub(/\s+/," ")
+      description = n.parent.parent.text
+      description.slice!(title)
       [
-        n.parent.parent.text.gsub(/\s+/," "),
+        title,
+        description,
         n.attributes["href"].value
       ]
     end
-    urls = urls.map { |link| [link[0].split(" \u2014 "), link[1]].flatten }
-    # Some links show up twice in the result
-    # require 'pry'; binding.pry
-    # urls
   end
 
   def sre_weekly_links
@@ -120,7 +144,6 @@ class Email < ApplicationRecord
       url = n.attributes["href"].value
     end
     url_elements
-    # require 'pry'; binding.pry
   end
 
   def blendle_links
@@ -134,6 +157,7 @@ class Email < ApplicationRecord
         /^https:\/\/javascriptweekly.com\/link\S*/.match(n.attributes["href"].value).to_s
       ]
     end
+    urls
   end
 end
 

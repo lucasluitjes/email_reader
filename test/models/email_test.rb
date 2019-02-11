@@ -7,6 +7,27 @@ class EmailTest < ActiveSupport::TestCase
   #   assert true
   # end
 
+  test "it parses the email list type" do 
+    # email = Email.new(body: File.read("test/fixtures/files/dbweekly.txt"))
+    # assert_equal :db_weekly, email.email_list_type
+    email_list_type = Email.new(body: File.read("test/fixtures/files/java_weekly.eml")).email_list_type
+    assert_equal :java_weekly, email_list_type
+    email_list_type = Email.new(body: File.read("test/fixtures/files/breaking_smart.eml")).email_list_type
+    assert_equal :breaking_smart, email_list_type
+    email_list_type = Email.new(body: File.read("test/fixtures/files/elixir_weekly.eml")).email_list_type
+    assert_equal :elixir_weekly, email_list_type
+    email_list_type = Email.new(body: File.read("test/fixtures/files/Hacker\ Newsletter\ \#434.eml")).email_list_type
+    assert_equal :hacker_newsletter, email_list_type
+    email_list_type = Email.new(body: File.read("test/fixtures/files/ruby_weekly.eml")).email_list_type
+    assert_equal :ruby_weekly, email_list_type
+    email_list_type = Email.new(body: File.read("test/fixtures/files/SRE\ Weekly\ Issue\ \#154.eml")).email_list_type
+    assert_equal :sre_weekly, email_list_type
+    email_list_type = Email.new(body: File.read("test/fixtures/files/vulnerabilities.eml")).email_list_type
+    assert_equal :vulnerabilities, email_list_type
+    email_list_type = Email.new(body: File.read("test/fixtures/files/blendle.eml")).email_list_type
+    assert_equal :blendle, email_list_type
+  end
+
   test "grab text from db_weekly" do
   	email = Email.new(body: File.read("test/fixtures/files/dbweekly.txt"))
     urls = email.db_weekly_links
@@ -23,7 +44,7 @@ class EmailTest < ActiveSupport::TestCase
   end
   test "grab text from breaking smart" do
     email = Email.new(body: File.read("test/fixtures/files/breaking_smart.eml"))
-    url = email.breaking_smart_link
+    url = email.breaking_smart_links
     assert_equal ["View this email in your browser", "https://mailchi.mp/ribbonfarm/good-afternoon-internet-im-listening?e=4c5a41c2ff"], url
   end
 
@@ -44,7 +65,7 @@ class EmailTest < ActiveSupport::TestCase
     email = Email.new(body: File.read("test/fixtures/files/ruby_weekly.eml"))
     urls = email.ruby_weekly_links
     assert_equal ["Ruby 2.6 Released",
-  "As is traditional, the latest major release of Ruby came out on Christmas Day. The much awaited 2.6 includes an initial implementation of a JIT compiler (which needs to be enabled manually), the then alias for yield_self, RubyVM::AbstractSyntaxTree, endless ranges, and a lot more (see next item).",
+  " — As is traditional, the latest major release of Ruby came out on Christmas Day. The much awaited 2.6 includes an initial implementation of a JIT compiler (which needs to be enabled manually), the then alias for yield_self, RubyVM::AbstractSyntaxTree, endless ranges, and a lot more (see next item).",
   "https://rubyweekly.com/link/57534/d218cfa36e"], urls[0]
     assert_equal 27, urls.size
   end
