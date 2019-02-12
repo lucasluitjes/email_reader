@@ -1,0 +1,2692 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Fri, 01 Feb 2019 21:55:54 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounce-mc.us1_1401357.3153429-lucas=luitjes.it@mail248.atl271.mcdlv.net>
+Received: from 205.237.194.28
+	by m8.mxes.net (bayesd) with LMTP id 1549076154-99668-5
+	for <lucas_mindrules.net@ms8.mxes.net>; Fri,  1 Feb 2019 21:55:54 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-06.mxes.net (Postfix) with ESMTP id CB0D6275AF
+	for <lucas@luitjes.it>; Fri,  1 Feb 2019 21:55:54 -0500 (EST)
+Received: from mail248.atl271.mcdlv.net (mail248.atl271.mcdlv.net [198.2.142.248])
+	by mxin.mxes.net (Postfix) with ESMTP id 42C422758D
+	for <lucas@luitjes.it>; Fri,  1 Feb 2019 21:55:50 -0500 (EST)
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=mailchimpapp.net header.i=vgr=3Dribbonfarm.com@mailchimpapp.net header.b=gXUkNpRy
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=mailchimpapp.net;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+ Content-Type:MIME-Version; i=vgr=3D3Dribbonfarm.com@mailchimpapp.net;
+ bh=KGu2X8UY1mb8k4tG+Jjnx/700t4MCNSljHQl+PoXLlw=;
+ b=gXUkNpRyUvO+iigMArOdXUf4hicu9kU503PDCzD/y4QyaEJjdVWSEbHZ20hAGlFOTpBM0Z6WUbvY
+   RwdVQySudIM/K105VlQYk0Djt/m9Wu6XM/CLNogzm9UKWisecVf3IV7ZInLlHY6IUCeaRsfnJW56
+   V+27SQkOn2wGo/UJEu0=
+Received: from (127.0.0.1) by mail248.atl271.mcdlv.net id hak3bc2ddl4o for <lucas@luitjes.it>; Sat, 2 Feb 2019 02:55:42 +0000 (envelope-from <bounce-mc.us1_1401357.3153429-lucas=luitjes.it@mail248.atl271.mcdlv.net>)
+Subject: =?utf-8?Q?The=20Breaking=20Smart=20AMA=2C=20Part=202?=
+From: =?utf-8?Q?Breaking=20Smart?= <vgr@ribbonfarm.com>
+Reply-To: =?utf-8?Q?Breaking=20Smart?= <vgr@ribbonfarm.com>
+To: <lucas@luitjes.it>
+Date: Sat, 2 Feb 2019 02:55:42 +0000
+Message-ID: <78cbbb7f2882629a5157fa593.4c5a41c2ff.20190202025520.1459f6d72a.e403cb41@mail248.atl271.mcdlv.net>
+X-Mailer: MailChimp Mailer - **CID1459f6d72a4c5a41c2ff**
+X-Campaign: mailchimp78cbbb7f2882629a5157fa593.1459f6d72a
+X-campaignid: mailchimp78cbbb7f2882629a5157fa593.1459f6d72a
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=78cbbb7f2882629a5157fa593&id=1459f6d72a&e=4c5a41c2ff
+X-MC-User: 78cbbb7f2882629a5157fa593
+Feedback-ID: 1401357:1401357.3153429:us1:mc
+List-ID: 78cbbb7f2882629a5157fa593mc list <78cbbb7f2882629a5157fa593.1195217.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <https://breakingsmart.us1.list-manage.com/unsubscribe?u=78cbbb7f2882629a5157fa593&id=6b80b6e8da&e=4c5a41c2ff&c=1459f6d72a>, <mailto:unsubscribe-mc.us1_78cbbb7f2882629a5157fa593.1459f6d72a-4c5a41c2ff@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1279818555"
+MIME-Version: 1.0
+X-Spam-Sys-BayesResult: Yes, 0.945672
+X-Spam-Report: 1549076150-31277-1  Content analysis details:
+ -10.0 BAYESSCORE             0.000000
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [198.2.142.248 listed in dnswl.mxes.net]
+   0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   1.2 SYSTEM_BAYES           Yes 0.945672
+   0.0 HTML_MESSAGE           HTML included in message
+   0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail domains are different
+   0.2 SPF_MECH_2             Permissive SPF record ?all
+   0.0 DKIMWL_WL_MED          DKIMwl.org - Whitelisted Medium sender
+  -0.8 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 0
+X-Spam-SI: 1
+X-Originating-IP: 198.2.142.248
+X-Reputation-Delta: -0.8
+X-Envelope-To: <lucas@luitjes.it>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-9.3 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.000000
+X-Spam-Score: -9.3
+X-Spam-Scoring: 0,0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1279818555
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+Finishing up the AMA from the prompt 3 weeks ago.
+
+Whew=2C that was exhausting=2C but I finally worked through the backlog of=
+ AMAs. I have a few straggler questions to respond to=2C but those seemed=
+ either repetitive in relation to the ones I'm sharing here=2C or not of b=
+road interest. I'll respond in person to the remaining ones in a day or tw=
+o.
+
+Anyhow=2C thanks everybody for playing. This was partly a load-testing exp=
+eriment to figure out the volume of Q&A I could handle=2C and I'm definite=
+ly not going to be doing this too often. Tackling 70+ questions in 2 sitti=
+ngs is quite the workout.
+
+In other news=2C we just hit 100 sign-ups for the Breaking Smart Season 1=
+ Workshop (https://ribbonfarm.teachable.com/p/breaking-smart-season-1/) in=
+ the first week. Thank you all. I just uploaded the second session lecture=
+ videos.
+
+For those of you still intending to sign up=2C last week's code EARLYBIRD=
+ will work till midnight (US Pacific) tonight and get you 50% off. If you=
+ miss the deadline=2C well=2C you'll have to use the code NOTSOEARLYBIRD a=
+nd settle for 25% off. This will work till midnight next Friday (Feb 8). T=
+hen it will ratchet down further.
+
+Now for the AMAs. And one TMS (Tell Me Something).
+View this email in your browser (https://mailchi.mp/ribbonfarm/the-breakin=
+g-smart-ama-part-2?e=3D4c5a41c2ff)
+
+Finishing up the 2019 bout of Frasiering
+
+http://www.facebook.com/sharer/sharer.php?u=3Dhttps%3A%2F%2Fmailchi.mp%2Fr=
+ibbonfarm%2Fthe-breaking-smart-ama-part-2 Share (http://www.facebook.com/s=
+harer/sharer.php?u=3Dhttps%3A%2F%2Fmailchi.mp%2Fribbonfarm%2Fthe-breaking-=
+smart-ama-part-2)
+http://twitter.com/intent/tweet?text=3DThe+Breaking+Smart+AMA%2C+Part+2: h=
+ttps%3A%2F%2Fmailchi.mp%2Fribbonfarm%2Fthe-breaking-smart-ama-part-2 Tweet=
+ (http://twitter.com/intent/tweet?text=3DThe+Breaking+Smart+AMA%2C+Part+2:=
+ https%3A%2F%2Fmailchi.mp%2Fribbonfarm%2Fthe-breaking-smart-ama-part-2)
+http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629a5157fa593&id=
+=3D1459f6d72a&e=3D4c5a41c2ff Forward (http://us1.forward-to-friend.com/forwa=
+rd?u=3D78cbbb7f2882629a5157fa593&id=3D1459f6d72a&e=3D4c5a41c2ff)
+http://www.linkedin.com/shareArticle?url=3Dhttps%3A%2F%2Fmailchi.mp%2Fribb=
+onfarm%2Fthe-breaking-smart-ama-part-2&mini=3Dtrue&title=3DThe+Breaking+Sm=
+art+AMA%2C+Part+2 Share (http://www.linkedin.com/shareArticle?url=3Dhttps%=
+3A%2F%2Fmailchi.mp%2Fribbonfarm%2Fthe-breaking-smart-ama-part-2&mini=3Dtru=
+e&title=3DThe+Breaking+Smart+AMA%2C+Part+2)
+
+In a non hierarchical=2C matrix oriented world=2C how should groups (teams=
+=2C companies=2C countries) make a conscious decision to stop "kicking the=
+ can down the road" and proactively start to tackle a particular problem.=
+  What are the signs and indicators that should tell a team to take action=
+? -- Tom Broderick
+
+I have never seen "groups" effectively solve a problem like this. It's a d=
+isguised form of a tragedy of the commons. The only way out is for an indi=
+vidual with enough political capital to make some "benevolent dictator" mo=
+ves to break the gridlock. No amount of fiddling with structural aspects w=
+ill solve the problem. When terms like "matrix management" and "cross-func=
+tional" become embedded in a stalemate conversation=2C it is no longer som=
+ething that can be solved at a group level. An individual has to make some=
+ unilateral hard calls and then burn political capital to get others to fo=
+llow their lead. Only individuals can precipitate the kinds of crisis that=
+ can break the stalemates that teams and groups can get themselves into. A=
+nd vice-versa (though you didn't ask about that).
+
+If someone gives you a decent amount of capital ($1Billion+) where only st=
+ring would be to build resilience of the human condition / Global Social C=
+omputer in the Cloud against being bricked by a mass flippage of bozobits.=
+ What kind of team would you assemble and what would you build? -- Varun A=
+dibhatla
+
+I think this sort of thing is what people like the Kochs=2C Mercers=2C Sor=
+os think they are doing. I think it's dangerous to define and pursue chall=
+enges at this scale with bounding boxes defined by financial capital and "=
+assembling people" into world-changing missionary tribes. Money is for the=
+ complex but more narrowly bounded problems of the sort that the Gates fou=
+ndation for example tries to solve. If you're aiming for something as broa=
+d and ambitious as "build resilience of the human condition"=2C money is t=
+he wrong starting point. Historically it has played a role in increasing r=
+esilience (basic research funding for say healthcare or food security). Bu=
+t for what you're talking about=2C I think "people assembled with money" i=
+s a part of the problem rather than the solution.
+
+What=E2=80=99s the optimistic case for how software can eat climate impact=
+ and help win the war to decarbonize in time? -- Patrick Atwater
+
+I think that ship has sailed. We are not going to "decarbonize in time." W=
+e're going to gradually normalize climate change=2C one bit of weirdness a=
+t a time. I think software will play a huge role in eventually decarbonizi=
+ng and helping complete the energy transition (both directly=2C by enablin=
+g clean energy etc=2C and indirectly by substituting low-energy behaviors=
+ like video-conferencing for energy-intensive ones like travel) but it won=
+'t be "in time."  I think it is time to pivot to asking how software can h=
+elp as many people as possible weather the unavoidable impacts. Mass migra=
+tion is a big one. An example of the kind of idea I'd like to see pursued=
+ is this "Internet of Migrants" idea I did a twitter thread (https://twitt=
+er.com/vgr/status/1058051052975546368)  about.
+
+Have you read any Tom McCarthy (https://www.theguardian.com/books/2015/mar=
+/07/tom-mccarthy-death-writing-james-joyce-working-google) ? Repetition=2C=
+ buffering=2C and being human in a software eaten world. -- Passepartout
+
+No=2C thanks for the recommendation!
+
+You've written in the past about the rise of cities. As larger state gover=
+nments lose leverage=2C cities will break off and innovate. I'm the bigges=
+t business podcaster in Pittsburgh (https://www.goingdeepwithaaron.com/pit=
+tsburgh.html) =2C PA. Am I unwise to try and "break out" of that box? Or s=
+hould I double down on my geographic edge? -- Aaron Watson
+
+Nice=2C congrats on your podcast success. I think the "city state future"=
+ hasn't been properly harmonized with the "digital future." It's like ther=
+e are these 2 huge trends towards devolving geographic power to cities=2C=
+ and diffusing digital power via strong zeitgeist currents and vortices on=
+ massive global platforms. These are like the quantum mechanics and genera=
+l relativity of sociology in our times. And just as physicists haven't fig=
+ured out how to really put the two together in a grand unified theory=2C n=
+one of us has managed to put together the city-state future and the digita=
+l future in a compelling unified vision. I mean=2C the novels of Neal Step=
+henson are fun to read and all=2C but when you get right down to it=2C nob=
+ody knows how these two trends will interact.
+
+I think the best strategy for somebody with a foot in both worlds=2C as a=
+ city-focused podcaster like you would be=2C is to pay attention to both w=
+orlds independently and not try to force a false synthesis. Where somethin=
+g makes sense both as a bet on Pittsburgh and a bet on digital futures=2C=
+ it's easy. When the two are in conflict=2C I don't think you can expect t=
+o find general grand-unified theory answers. Maybe Pittsburgh becomes the=
+ 2nd biggest city in the world for some weird new global online business s=
+ector like fidget spinners. Should you bet on that development in a Pittsb=
+urgh-first way or a fidget-spinners first way (which might mean focusing o=
+n city #1)? There won't be one right answer. You'll have to take it case b=
+y case.
+
+Any good tips on how to make relationships with interesting people? I'm li=
+ving in a new city and in need of mentors and friends with interesting phi=
+losophies of work and life to learn from. Not just smart people with simil=
+ar interests--interesting people. -- Drew Schorno
+
+I am the worst person to ask this question when it comes to meatspace=2C s=
+ince I've managed to live in half a dozen cities with an unbroken record o=
+f being spectacularly bad at this. If you're talking online=2C however=2C=
+ I'm a blackbelt at that. My answer for the online version is to simply pr=
+oduce and publish interesting things yourself. Interesting attracts intere=
+sting. Maybe you can focus it to be more relevant to the city you're in=2C=
+ but I have no idea how to do that. My own style of producing stuff doesn'=
+t seem to stay within any such nice boundaries.
+
+Your Brain-Bicycle-(Rider-Fit) article resonates with me! I'm stuck in an=
+ uphill ride wobbling along (the bicycle that I've chosen may not be suita=
+ble for me) how do I get competent in negotiating and structuring deals? -=
+- Weiyi Yang
+
+I'm blanking on where I wrote about that metaphor=2C but am happy to take=
+ credit for it :) I assume you're doing the obvious things relating to you=
+r challenge=2C like finding books and classes on negotiations and deal-mak=
+ing. So let's go beyond that a bit.
+
+When it comes to loose touch-and-feel type skills like negotiating and str=
+ucturing deals where you're trying to add some hard structure to squishy s=
+tuff=2C I've found that the only way to really learn is to watch a more se=
+asoned expert do it live=2C and pick up on their tricks. It's a form of cl=
+ose observation. What conversational tactics do they use? How do they brea=
+k out of predictable objections? Do they use specific phrases? And of cour=
+se you have to get good at studying the "hard" side -- parsing deals and c=
+ontracts=2C learning to read legalese well enough to not let lawyers bulls=
+hit you=2C etc. There's plenty of literature and training available on thi=
+s subject. Paradoxically=2C the more complex it gets -- huge billion dolla=
+r M&As for example -- the easier it is in some ways=2C because the sheer s=
+ize and risk of the activity forces a lot of professionalism=2C well-defin=
+ed role boundaries=2C formal protocols=2C and emergence of best practices.=
+ It can be harder to negotiate and structure a
+deal about play time with a 5-year-old.
+
+How do you know when your "bicycle" doesn't fit? When you sense that your=
+ natural "literacy" in reading what more experienced people are doing is l=
+acking=2C like there's whole levels of the conversation you're missing or=
+ misreading=2C and can't predict outcomes. It seems like black magic. Norm=
+ally=2C any non-technical skilled practice should slowly become legible to=
+ an intelligent observer with the right aptitude=2C with time. But if it d=
+oesn't=2C you may not have aptitude for it.
+
+Are you consulting for any projects that involve crypto/blockchain/Bitcoin=
+? Do you have insight into which parts of the cryptosphere are cargo cults=
+?  -- Stefan King
+
+I've done a small amount of consulting on crypto projects where there are=
+ aspects that don't have much to do specifically with crypto itself=2C but=
+ am by no means particularly well-versed in how the sector is shaping up.=
+ I have no particularly good instincts for picking the winners and sniffin=
+g out the cargo cults. I'm not particularly bad at it either. In general=
+=2C I don't trust myself to do the required thinking here myself. Instead=
+=2C I rely on good friends who know a lot more than me at both the technic=
+al and business levels.
+
+Have you ever played a JRPG? If so=2C which one=2C and what did you think=
+ of it? -- Ellen Kaye-Cheveldayoff
+
+No=2C I'm afraid I don't even know what a JRPG is. I had to look it up (ht=
+tps://en.wikipedia.org/wiki/List_of_best-selling_Japanese_role-playing_gam=
+e_franchises) :)
+
+What was the most significant piece of advice you received early on in you=
+r career? Did it have a "eureka" like effect or were its benefits realized=
+ over time? For context=2C I am a recent college graduate working full tim=
+e at a nonprofit where I interned in college=2C but am dissatisfied and tr=
+ying to plot out my next move. -- Anonymous
+
+I'm bad at asking for=2C and taking=2C advice in general. I'm much better=
+ at dishing it out confidently :) I did recently write a post about my PhD=
+ advisor who recently passed away=2C and the things I learned from him (ht=
+tps://www.ribbonfarm.com/2019/01/10/remembering-pierre-kabamba/) . No eure=
+ka effects=2C however. I don't trust advice that causes that kind of sudde=
+n red-pill effect. I prefer deceptively simple-sounding advice that takes=
+ years to sink in.
+
+How do you think you would've handled the modern dating app culture=2C had=
+ you been dating today? -- Nicolas Lawler
+
+Probably horrifyingly badly. I have no idea how young singles manage to na=
+vigate that world.
+
+What=E2=80=99s your personal recommendation on blogs & books for self deve=
+lopment on financial literacy? -- Seun Awoyele
+
+I don't think I've consciously worked on "self-development" in like 15 yea=
+rs. David Allen's Getting Things Done was the last significant bit of self=
+-development literature I internalized=2C and that was 2002-04. I don't tr=
+ust the idea of "developing" yourself=2C especially past 30. Before 30=2C=
+ it kinda doesn't matter what self-development ideas you consume. Pick wha=
+t resonates with you=2C internalize what feels right=2C trust your gut. It=
+'s not as important as it seems at the time.
+
+I trust the idea of least-effort paths and enlightened mediocrity much mor=
+e. I think it's a mistake to "optimize" the self. The older I get=2C the m=
+ore wisdom I see in letting life happen to you=2C with your self evolving=
+ in a more natural way=2C as a result of actually dealing with the specifi=
+c challenges you face. Your life does not have to be a development project=
+=2E It's not a developing country or an iPhone with versions. Instead of try=
+ing to "develop" my "self"=2C I try to navigate situations in hopefully im=
+aginative ways. Solve your problems=2C not your "life."
+
+All my financial literacy is second-hand and not worth either bragging abo=
+ut or turning into advice for others. Ultimately=2C finance does not inter=
+est me. I try not to be too dumb about it=2C but it's not a game I feel li=
+ke getting more literate at.
+
+Hume's problem of induction=2C Godel's incompleteness theorems=2C the free=
+-will/determinism paradoxes=2C the lack of explanations for emergence - Do=
+ they all point to the same thing? (that consciousness is expressed throug=
+h brains but not created by them and that our current language systems don=
+'t know how to fully study it). -- Zat Rana
+
+Kinda cute how you snuck in a presumptive consensus explanandum there=2C b=
+egging your own question to some extent :) I don't know if they all point=
+ to the same thing=2C but language systems certainly seem like an inadequa=
+te tool for studying any of these imponderables or their "pointing" propen=
+sities. I don't know that "study" is even the right verb to apply=2C since=
+ these things you're gesturing at precede epistemology. Similarly "pointin=
+g" assumes a relationship of reference between two distinct things=2C whic=
+h is assuming a lot at this level of philosophy. To study or point is to "=
+do" something. Some would argue that our relationship to these things is a=
+ matter of being rather than doing. There are mystics around who are confi=
+dent that their private experiences qualify as truer ways of being with th=
+ese things than "studying" them per se.
+
+To cut to the chase=2C I used to have beliefs and positions about these th=
+ings. Now=2C mostly I don't=2C since I find that holding positions doesn't=
+ actually change anything for me in relation to these imponderables.
+
+How do I become a member of the cryptobourgeoisie? -- Steven Miller
+
+Buy some crypto=2C HODL and pray. You've got as good a chance as anyone el=
+se. The only way to make it more than a passive casino bet for yourself is=
+ to learn the technology and get involved in building the stuff.
+
+How do you decide how much money you need? Also=2C how do you know how muc=
+h you must get paid? -- Tejesh
+
+I've managed to get through nearly 45 years of life without ever asking ei=
+ther of these questions=2C so my answer is=2C you don't need to decide or=
+ know. I've never liked asking finance questions in the abstract. If there=
+ are concrete numbers I need to think about=2C they generally fall out of=
+ other considerations like rent or retirement savings or stuff I want and=
+ have to pay for=2C like sandwiches or a car. I like the saying "money is=
+ a problem to be solved." I take it to mean that in the process of decidin=
+g what to do in other parts of life=2C inevitably money comes up as a vari=
+able in the mix=2C and you need it to do certain things. "Solve" the money=
+ problem one instance at a time. Unless you're in finance or want to get r=
+ich for the sake of getting rich=2C money is not something that's producti=
+ve to think about front-and-center for most people. If you want to take on=
+ money more directly=2C you should be in finance.
+
+If the purpose driving the last era was growth=2C would you agree that the=
+ most beneficial purpose for our next (and current) era is health or balan=
+ce=2C or do you believe it is something else? And what do you believe is r=
+equired to shift society to this new purpose? -- Katie Levine
+
+I don't believe in such collective "purpose" conversations because that's=
+ never been how the world has worked. And I certainly don't believe in try=
+ing to "shift" society. Thar be toxic ideological tarpits. The "purpose" o=
+f an era is something that's evident with hindsight with tasteful historic=
+al perspective. And it's always something of a fiction imposed on the emer=
+gent motivational patterns of billions of people acting at various levels=
+ of coordination. Right now=2C in 2019=2C each of us will do what we think=
+ best at whatever scale of coordinated agency we act at=2C and we'll know=
+ what it all means when we are unfrozen from our cryostasis chambers in 22=
+34 and the history orientation guide tells us what the 21st century was al=
+l about.
+
+How many 2x2 matrices do you make before you stumble across one that is in=
+sightful? Or - do you have insight=2C then see if you convert it to a 2x2?=
+ -- Todd Nief
+
+It's the latter 99% of the time. And generally=2C it's not an explicit att=
+empt to convert an insight into a 2x2=2C but the insight itself striking m=
+y awareness in a half-done 2x2 form that I then have to tweak to get it ri=
+ght. I suspect this is how it is for most people. Making random 2x2s in se=
+arch of an insightful one doesn't seem like a workable process to me.
+
+I am attempting to catch up on breakingsmart and ribbonfarm=2C do you have=
+ a "best of"=2C most popular=2C or preferred reading order? -- Peter Willi=
+ams
+
+There's a New Reader page (https://www.ribbonfarm.com/for-new-readers/) fo=
+r ribbonfarm=2C but for Breaking Smart=2C besides the Season 1 essays=2C t=
+here's no curation of the newsletter contents. I should probably get on th=
+at.
+
+Been thinking about Cal Newport=E2=80=99s idea of =E2=80=98career success=
+ comes from having rare and valuable skills=E2=80=99 recently. (a) What ar=
+e your thoughts on this idea? (b) What skills will be rare and valuable in=
+ the future? -- Daniel Thomasan
+
+It's certainly one way to have career success. It's not the only way. Ther=
+e's Scott Adams' idea of having two relatively not-rare skills that are ra=
+re in combination for example (in his case=2C drawing skill and a sense of=
+ humor). And then there are non-skill-based approaches to thinking about c=
+areer success. And then there's thinking about life in terms other than "c=
+areer success." In general=2C I'm not exactly the greatest fan of Cal Newp=
+ort's advice=2C tbf. It sort of works for people on strongly credentialist=
+ life paths=2C but is of limited value outside such paths. I wrote a newsl=
+etter issue riffing off of (my skepticism of) his thinking a while back: S=
+emicolon-Shaped People.  (https://mailchi.mp/ribbonfarm/semicolon-shaped-p=
+eople?e=3D6dbfe3b926)
+
+I've been thinking about this bit from "The Key to Act Two (https://www.ri=
+bbonfarm.com/2018/03/29/the-key-to-act-two/) ":
+
+"Then there is a bit of an intermission of about 2 years=2C which for most=
+ people is a very confusing=2C unscripted time=2C like an inter-airport tr=
+ansfer in a strange foreign city with sketchy-looking shuttle buses that y=
+ou are reluctant to get on=2C and long queues at the bathroom."
+
+Question: What specific advice would you have for someone in this intermis=
+sion who is pretty thoroughly traumatized but not sure if she's learned en=
+ough from it=2C more made the right connections=2C to become a key? -- Ano=
+nymous
+
+I think the best thing to do if you really are in this stage (and it's eas=
+y to mistake a bout of depression for an Act I to Act 2 transitional inter=
+mission)=2C is to lower your standards=2C embrace enlightened mediocrity=
+=2C and focus on living well rather than "learning." Don't close your mind=
+ to learning=2C and accept the challenges and new experiences that life wi=
+ll continue to throw at you=2C but "learning" and "preparing" for life is=
+ no longer task #1. Task #1 is actually just surviving with grace and livi=
+ng life. Stop trying to win=2C work on continuing the game. Sometimes that=
+'s one day at a time=2C sometimes it's one year at a time. The life-long l=
+earning=2C hustling=2C stress-driving pressure we get from society is some=
+what necessary (at a cost) in Act 1=2C but if you let it keep riding you i=
+nto Act 2=2C it's mostly masochism. There's a point past which it makes mo=
+re sense (and better mental health) to inhabit the life you've built for y=
+ourself as gracefully as you can=2C rather than trying
+to keep raging and storming to extract more from the universe.
+
+One thought I've found useful for this lately is: you don't need permissio=
+n to exist.
+
+Why don't people think big enough? Where do your large scale thoughts expr=
+essed in your writing come from? As an ambitious thinker=2C how can I bett=
+er express my big ideas and get started building them when I find it diffi=
+cult to see the small=2C more actionable beginner stuff? -- Elijah Claude
+
+Hmm. I don't agree that people don't think big enough or that it's a parti=
+cularly good thing to try and do. You should think about interesting thing=
+s=2C with enough imagination and courage to let a thought take you as far=
+ as it wants to take you. Some thoughts want to take on huge galloping rid=
+es across the universe=2C other thoughts want to take you 3 steps to pay a=
+ttention to one small thing. I think it is important to not get attached t=
+o the scale of thoughts or actions. One trick to do this is to imagine tho=
+ughts and actions as having all the agency=2C and you having none. The tho=
+ught decides how it wants to be thought. The action decides how it wants t=
+o be performed. Your job is to get out of the way and let the thought or a=
+ction "use" you as its instrument. Be the medium=2C not the message or the=
+ agent.
+
+Ambition is not bad per se=2C but it can exhaust itself. It is like runnin=
+g on fossil fuels of the psyche. It can also work into a box it cannot wor=
+k itself out of. In a way=2C ambition itself is one of the thoughts/action=
+ patterns that can possess you=2C and in my experience=2C not one that tak=
+es you on particularly interesting rides. Things we often describe as "amb=
+itious" from an outside perspective are often the result of being possesse=
+d by thoughts and actions that feel necessary and natural rather than "amb=
+itious" to the people who serve as their mediums. The thoughts and actions=
+ I find myself most fascinated by (both my own and those of others) are th=
+ose that are the result of the human ego stepping out of the way and letti=
+ng the thoughts and actions flow on their own. I suppose I'm a Taoist or s=
+omething.
+
+Do you use randomness for any of your processes (e.g. dice=2C decks of car=
+ds=2C or anything else)? What about contrarian thinking? Oh also=2C I beli=
+eve you visited Boyd=E2=80=99s papers at Quantico. What did you think? Whi=
+ch papers and books did you read? -- Chris Butler
+
+No. Life is plenty random enough for me=2C and contrarian thinking for its=
+ own sake seems kinda dumb to me. Think interesting thoughts=2C and someti=
+mes they are contrarian=2C other times they are not.
+
+I didn't spend much time at the archives. We were there for like half an h=
+our as I recall. I browsed several papers on Network-Centric Warfare (NCW)=
+ with Boyd's critical annotations in the margins. As I mentioned in an old=
+ newsletter (https://us1.campaign-archive.com/?u=3D78cbbb7f2882629a5157fa5=
+93&id=3D6018c6315f) =2C one thing I took away was the idea that he didn't=
+ like tight synchronization.
+
+How would you innovate public restrooms? Improving cleanliness metric -- A=
+nonymous
+
+It's actually among the most important problems in the world. I have Rose=
+ George's book The Big Necessity (https://amzn.to/2WzB5pA) =2C on my to-re=
+ad pile. No clever thoughts besides the assessment that it's a very import=
+ant problem.
+
+TMS from Matt Maier
+
+I co-founded the humanist church https://beinghumanchurch.com (https://bei=
+nghumanchurch.com/)
+All of the meaning and community=2C none of the supernatural.
+My co-founder Andrew does regular sermons on how to be better https://www.=
+facebook.com/beinghumanchurch/
+Feel free to forward this newsletter on email and share it via the social=
+ media buttons below. You can check out the archives here (http://breaking=
+smart.com/season-1-newsletter-archive/) . First-timers can subscribe to th=
+e newsletter here (http://breakingsmart.us1.list-manage1.com/subscribe?u=
+=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da) . More about me at venkatesh=
+rao.com
+Check out the 20 Breaking Smart Season 1 (http://breakingsmart.com/season-=
+1/)  essays for the deeper context behind this newsletter. You can follow=
+ me on Twitter @vgr (http://twitter.com/vgr)
+http://www.facebook.com/sharer/sharer.php?u=3Dhttps%3A%2F%2Fmailchi.mp%2Fr=
+ibbonfarm%2Fthe-breaking-smart-ama-part-2 Share (http://www.facebook.com/s=
+harer/sharer.php?u=3Dhttps%3A%2F%2Fmailchi.mp%2Fribbonfarm%2Fthe-breaking-=
+smart-ama-part-2)
+http://twitter.com/intent/tweet?text=3DThe+Breaking+Smart+AMA%2C+Part+2: h=
+ttps%3A%2F%2Fmailchi.mp%2Fribbonfarm%2Fthe-breaking-smart-ama-part-2 Tweet=
+ (http://twitter.com/intent/tweet?text=3DThe+Breaking+Smart+AMA%2C+Part+2:=
+ https%3A%2F%2Fmailchi.mp%2Fribbonfarm%2Fthe-breaking-smart-ama-part-2)
+http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629a5157fa593&id=
+=3D1459f6d72a&e=3D4c5a41c2ff Forward (http://us1.forward-to-friend.com/forwa=
+rd?u=3D78cbbb7f2882629a5157fa593&id=3D1459f6d72a&e=3D4c5a41c2ff)
+http://www.linkedin.com/shareArticle?url=3Dhttps%3A%2F%2Fmailchi.mp%2Fribb=
+onfarm%2Fthe-breaking-smart-ama-part-2&mini=3Dtrue&title=3DThe+Breaking+Sm=
+art+AMA%2C+Part+2 Share (http://www.linkedin.com/shareArticle?url=3Dhttps%=
+3A%2F%2Fmailchi.mp%2Fribbonfarm%2Fthe-breaking-smart-ama-part-2&mini=3Dtru=
+e&title=3DThe+Breaking+Smart+AMA%2C+Part+2)
+Copyright =C2=A9 2019 Ribbonfarm Consulting=2C LLC=2C All rights reserved.
+ You are receiving this email because you signed up at breakingsmart.com f=
+or our newsletter.
+
+Our mailing address is:
+Ribbonfarm Consulting=2C LLC
+3131 Western Ave
+Suite 310
+Seattle=2C WA 98121
+USA
+unsubscribe from this list (https://breakingsmart.us1.list-manage.com/unsu=
+bscribe?u=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da&e=3D4c5a41c2ff&c=3D145=
+9f6d72a)     update subscription preferences (https://breakingsmart.us1.li=
+st-manage.com/profile?u=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da&e=3D=
+4c5a41c2ff)
+ Email Marketing Powered by Mailchimp
+http://www.mailchimp.com/monkey-rewards/?utm_source=3Dfreemium_newsletter&=
+utm_medium=3Demail&utm_campaign=3Dmonkey_rewards&aid=3D78cbbb7f2882629a515=
+7fa593&afl=3D1
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+--_----------=_MCPart_1279818555
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.or=
+g/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+    <head><meta name=3D"twitter:image:src" content=3D"https://gallery.mail=
+chimp.com/78cbbb7f2882629a5157fa593/images/ff7595bc-9826-4095-8b16-2c6ac3a=
+d4d83.jpg"><meta name=3D"twitter:description" content=3D"Finishing up the=
+ Frasiering session for 2019"><meta name=3D"twitter:title" content=3D"The=
+ Breaking Smart AMA -- Part 2"><meta name=3D"twitter:card" content=3D"summ=
+ary_large_image"><meta property=3D"og:type" content=3D"article"><meta prop=
+erty=3D"og:description" content=3D"Finishing up the Frasiering session for=
+ 2019"><meta property=3D"og:image" content=3D"https://gallery.mailchimp.co=
+m/78cbbb7f2882629a5157fa593/images/ff7595bc-9826-4095-8b16-2c6ac3ad4d83.jp=
+g"><meta property=3D"og:title" content=3D"The Breaking Smart AMA -- Part 2=
+"><meta property=3D"og:url" content=3D"http://eepurl.com/gf4UmH">
+        <!-- NAME: 1 COLUMN -->
+        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D=
+UTF-8">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial=
+-scale=3D1.0">
+        <title>The Breaking Smart AMA=2C Part 2</title>
+
+    <style type=3D"text/css">
+=09=09body=2C#bodyTable=2C#bodyCell{
+=09=09=09height:100% !important;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09=09width:100% !important;
+=09=09}
+=09=09table{
+=09=09=09border-collapse:collapse;
+=09=09}
+=09=09img=2Ca img{
+=09=09=09border:0;
+=09=09=09outline:none;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09h1=2Ch2=2Ch3=2Ch4=2Ch5=2Ch6{
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09}
+=09=09p{
+=09=09=09margin:1em 0;
+=09=09=09padding:0;
+=09=09}
+=09=09a{
+=09=09=09word-wrap:break-word;
+=09=09}
+=09=09.mcnPreviewText{
+=09=09=09display:none !important;
+=09=09}
+=09=09.ReadMsgBody{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass=2C.ExternalClass p=2C.ExternalClass span=2C.ExternalC=
+lass font=2C.ExternalClass td=2C.ExternalClass div{
+=09=09=09line-height:100%;
+=09=09}
+=09=09table=2Ctd{
+=09=09=09mso-table-lspace:0pt;
+=09=09=09mso-table-rspace:0pt;
+=09=09}
+=09=09#outlook a{
+=09=09=09padding:0;
+=09=09}
+=09=09img{
+=09=09=09-ms-interpolation-mode:bicubic;
+=09=09}
+=09=09body=2Ctable=2Ctd=2Cp=2Ca=2Cli=2Cblockquote{
+=09=09=09-ms-text-size-adjust:100%;
+=09=09=09-webkit-text-size-adjust:100%;
+=09=09}
+=09=09#templatePreheader=2C#templateHeader=2C#templateBody=2C#templateFoot=
+er{
+=09=09=09min-width:100%;
+=09=09}
+=09=09#bodyCell{
+=09=09=09padding:20px;
+=09=09}
+=09=09.mcnImage=2C.mcnRetinaImage{
+=09=09=09vertical-align:bottom;
+=09=09}
+=09=09.mcnTextContent img{
+=09=09=09height:auto !important;
+=09=09}
+=09=09body=2C#bodyTable{
+=09=09=09background-color:#F2F2F2;
+=09=09}
+=09=09#bodyCell{
+=09=09=09border-top:0;
+=09=09}
+=09=09#templateContainer{
+=09=09=09border:0;
+=09=09}
+=09=09h1{
+=09=09=09color:#606060 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:40px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-1px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h2{
+=09=09=09color:#404040 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:26px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-.75px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h3{
+=09=09=09color:#606060 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:18px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-.5px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h4{
+=09=09=09color:#808080 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:16px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:normal;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09#templatePreheader{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.preheaderContainer .mcnTextContent=2C.preheaderContainer .mcnTextCo=
+ntent p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:11px;
+=09=09=09line-height:125%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.preheaderContainer .mcnTextContent a{
+=09=09=09color:#606060;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateHeader{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.headerContainer .mcnTextContent=2C.headerContainer .mcnTextContent=
+ p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:15px;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.headerContainer .mcnTextContent a{
+=09=09=09color:#6DC6DD;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateBody{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.bodyContainer .mcnTextContent=2C.bodyContainer .mcnTextContent p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:15px;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.bodyContainer .mcnTextContent a{
+=09=09=09color:#6DC6DD;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateFooter{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.footerContainer .mcnTextContent=2C.footerContainer .mcnTextContent=
+ p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:11px;
+=09=09=09line-height:125%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.footerContainer .mcnTextContent a{
+=09=09=09color:#606060;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09@media only screen and (max-width: 480px){
+=09=09body=2Ctable=2Ctd=2Cp=2Ca=2Cli=2Cblockquote{
+=09=09=09-webkit-text-size-adjust:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body{
+=09=09=09width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnRetinaImage{
+=09=09=09max-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[id=3DbodyCell]{
+=09=09=09padding:10px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnTextContentContainer]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnBoxedTextContentContainer{
+=09=09=09max-width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3Dmcpreview-image-uploader]{
+=09=09=09width:100% !important;
+=09=09=09display:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09img[class=3DmcnImage]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnImageGroupContentContainer]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageGroupContent]{
+=09=09=09padding:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageGroupBlockInner]{
+=09=09=09padding-bottom:0 !important;
+=09=09=09padding-top:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09tbody[class=3DmcnImageGroupBlockOuter]{
+=09=09=09padding-bottom:9px !important;
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionTopContent]=2Ctable[class=3DmcnCaptionBott=
+omContent]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionLeftTextContentContainer]=2Ctable[class=3D=
+mcnCaptionRightTextContentContainer]=2Ctable[class=3DmcnCaptionLeftImageC=
+ontentContainer]=2Ctable[class=3DmcnCaptionRightImageContentContainer]=2C=
+table[class=3DmcnImageCardLeftTextContentContainer]=2Ctable[class=3DmcnI=
+mageCardRightTextContentContainer]=2C.mcnImageCardLeftImageContentContaine=
+r=2C.mcnImageCardRightImageContentContainer{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardLeftImageContent]=2Ctd[class=3DmcnImageCard=
+RightImageContent]{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardBottomImageContent]{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardTopImageContent]{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardLeftImageContent]=2Ctd[class=3DmcnImageCard=
+RightImageContent]{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardBottomImageContent]{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardTopImageContent]{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionLeftContentOuter] td[class=3DmcnTextConten=
+t]=2Ctable[class=3DmcnCaptionRightContentOuter] td[class=3DmcnTextConten=
+t]{
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnCaptionBlockInner] table[class=3DmcnCaptionTopConten=
+t]:last-child td[class=3DmcnTextContent]=2C.mcnImageCardTopImageContent=
+=2C.mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnBoxedTextContentColumn]{
+=09=09=09padding-left:18px !important;
+=09=09=09padding-right:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnTextContent]{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[id=3DtemplateContainer]=2Ctable[id=3DtemplatePreheader]=2Cta=
+ble[id=3DtemplateHeader]=2Ctable[id=3DtemplateBody]=2Ctable[id=3Dtempla=
+teFooter]{
+=09=09=09max-width:600px !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h1{
+=09=09=09font-size:24px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h2{
+=09=09=09font-size:20px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h3{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h4{
+=09=09=09font-size:16px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnBoxedTextContentContainer] td[class=3DmcnTextCont=
+ent]=2Ctd[class=3DmcnBoxedTextContentContainer] td[class=3DmcnTextConten=
+t] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[id=3DtemplatePreheader]{
+=09=09=09display:block !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DpreheaderContainer] td[class=3DmcnTextContent]=2Ctd[cl=
+ass=3DpreheaderContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:115% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DheaderContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DheaderContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DbodyContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DbodyContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DfooterContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DfooterContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:115% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DfooterContainer] a[class=3DutilityLink]{
+=09=09=09display:block !important;
+=09=09}
+
+}</style></head>
+    <body leftmargin=3D"0" marginwidth=3D"0" topmargin=3D"0" marginheight=
+=3D"0" offset=3D"0" style=3D"margin: 0;padding: 0;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;background-color: #F2F2F2;height: 100% !=
+important;width: 100% !important;"><div itemscope=3D"" itemtype=3D"http://=
+schema.org/EmailMessage"><div itemprop=3D"publisher" itemscope=3D"" itemty=
+pe=3D"http://schema.org/Organization"><meta itemprop=3D"name" content=3D"R=
+ibbonfarm Consulting=2C LLC"><link itemprop=3D"url" content=3D"http://brea=
+kingsmart.com"></div><div itemprop=3D"about" itemscope=3D"" itemtype=3D"ht=
+tp://schema.org/Offer"><link itemprop=3D"image" href=3D"https://gallery.ma=
+ilchimp.com/78cbbb7f2882629a5157fa593/images/ff7595bc-9826-4095-8b16-2c6ac=
+3ad4d83.jpg"></div></div>
+        <!--
+-->
+        <!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=
+=3D"display:none; font-size:0px; line-height:0px; max-height:0px; max-widt=
+h:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">Finis=
+hing up the AMA from the prompt 3 weeks ago.</span><!--<![endif]-->
+        <!--
+-->
+        <center>
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border=
+-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-s=
+ize-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;backg=
+round-color: #F2F2F2;height: 100% !important;width: 100% !important;">
+                <tr>
+                    <td align=3D"center" valign=3D"top" id=3D"bodyCell" st=
+yle=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;margin: 0;padding: 20px;border-top: 0;h=
+eight: 100% !important;width: 100% !important;">
+                        <!-- BEGIN TEMPLATE // -->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"600" id=3D"templateContainer" style=3D"border-collapse: co=
+llapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;border: 0;">
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN PREHEADER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templatePreheader" style=3D"border-=
+collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-=
+color: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"pr=
+eheaderContainer" style=3D"padding-top: 9px;mso-table-lspace: 0pt;mso-tabl=
+e-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">=
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" cla=
+ss=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso=
+-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding: 0px 18px 9px;font-size: 14px;mso-table-lspace: 0pt;mso-table-=
+rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;colo=
+r: #606060;font-family: Helvetica;line-height: 125%;text-align: left;">
+
+                            Whew=2C that was exhausting=2C but I finally w=
+orked through the backlog of AMAs. I have a few straggler questions to res=
+pond to=2C but those seemed either repetitive in relation to the ones I'm=
+ sharing here=2C or not of broad interest. I'll respond in person to the r=
+emaining ones in a day or two.<br>
+<br>
+Anyhow=2C thanks everybody for playing. This was partly a load-testing exp=
+eriment to figure out the volume of Q&amp;A I could handle=2C and I'm defi=
+nitely not going to be doing this too often. Tackling 70+ questions in 2 s=
+ittings is quite the workout.<br>
+<br>
+In other news=2C we just hit 100 sign-ups for the <a href=3D"https://break=
+ingsmart.us1.list-manage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=
+=3Dd8fa621a67&e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wrap: break=
+-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #60=
+6060;font-weight: normal;text-decoration: underline;">Breaking Smart Seaso=
+n 1 Workshop</a> in the first week. Thank you all. I just uploaded the sec=
+ond session lecture videos.<br>
+<br>
+For those of you still intending to sign up=2C last week's code <strong>EA=
+RLYBIRD</strong> will work till midnight (US Pacific) tonight and get you=
+ 50% off. If you miss the deadline=2C well=2C you'll have to use the code=
+ <strong>NOTSOEARLYBIRD</strong> and settle for 25% off. This will work ti=
+ll midnight next Friday (Feb 8). Then it will ratchet down further.<br>
+<br>
+Now for the AMAs. And one TMS (Tell Me Something).
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"390" style=3D"width:390px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 390px;border-collapse: collapse;mso-table=
+-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text=
+-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 11px;line-height: 125%;text-align: left;">
+
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"210" style=3D"width:210px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 210px;border-collapse: collapse;mso-table=
+-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text=
+-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 11px;line-height: 125%;text-align: left;">
+
+                            <a href=3D"https://mailchi.mp/ribbonfarm/the-b=
+reaking-smart-ama-part-2?e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wra=
+p: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;co=
+lor: #606060;font-weight: normal;text-decoration: underline;">View this em=
+ail in your browser</a>
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END PREHEADER -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN HEADER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateHeader" style=3D"border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-col=
+or: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"he=
+aderContainer" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-te=
+xt-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnTextBlock"=
+ style=3D"min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;=
+mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 15px;line-height: 150%;text-align: left;">
+
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END HEADER -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN BODY // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateBody" style=3D"border-colla=
+pse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-ad=
+just: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-color=
+: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"bo=
+dyContainer" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnImageCardBloc=
+k" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspa=
+ce: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnImageCardBlockOuter">
+        <tr>
+            <td class=3D"mcnImageCardBlockInner" valign=3D"top" style=3D"p=
+adding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px=
+;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;">
+
+<table align=3D"right" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"mcnImageCardBottomContent" width=3D"100%" style=3D"background-color=
+: #EBEBEB;border: 1px solid #999999;border-collapse: collapse;mso-table-ls=
+pace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;">
+    <tbody><tr>
+        <td class=3D"mcnImageCardBottomImageContent" align=3D"left" valign=
+=3D"top" style=3D"padding-top: 18px;padding-right: 18px;padding-bottom: 0;=
+padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+
+
+            <img alt=3D"" src=3D"https://gallery.mailchimp.com/78cbbb7f288=
+2629a5157fa593/images/ff7595bc-9826-4095-8b16-2c6ac3ad4d83.jpg" width=3D"5=
+26" style=3D"max-width: 610px;border: 0;outline: none;text-decoration: non=
+e;-ms-interpolation-mode: bicubic;vertical-align: bottom;" class=3D"mcnIma=
+ge">
+
+
+        </td>
+    </tr>
+    <tr>
+        <td class=3D"mcnTextContent" valign=3D"top" style=3D"padding-top:=
+ 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;li=
+ne-height: 150%;text-align: left;" width=3D"528">
+            Finishing up the 2019 bout of Frasiering
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnShareBlock" style=3D"min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnShareBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;" class=3D"mcnShareBlockInner">
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" class=3D"mcnShareContentContainer" style=3D"min-width: 10=
+0%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody><tr>
+        <td align=3D"left" style=3D"padding-top: 0;padding-left: 9px;paddi=
+ng-bottom: 0;padding-right: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+            <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;background-color: #FAFAFA=
+;border: 1px solid #EEEEEE;border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust=
+: 100%;" class=3D"mcnShareContent">
+                <tbody><tr>
+                    <td align=3D"left" valign=3D"top" class=3D"mcnShareCon=
+tentItemContainer" style=3D"padding-top: 9px;padding-right: 9px;padding-le=
+ft: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;">
+                        <table align=3D"left" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+                            <tbody><tr>
+                                <td align=3D"left" valign=3D"top" style=3D=
+"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;">
+                                    <!--[if mso]>
+                                    <table align=3D"left" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                    <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D8f077744b5&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-facebook-48.png" style=3D"display: block;border: 0;outlin=
+e: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"=
+24" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D60563a3b6b&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Share</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D55fd90c83e&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-twitter-48.png" style=3D"display: block;border: 0;outline=
+: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"2=
+4" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D7001ae896b&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Tweet</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629=
+a5157fa593&id=3D1459f6d72a&e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-w=
+rap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><img src=3D"https://cdn-images.mailchimp.com/icons/social-block-v2/color=
+-forwardtofriend-48.png" style=3D"display: block;border: 0;outline: none;t=
+ext-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"24" width=
+=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629=
+a5157fa593&id=3D1459f6d72a&e=3D4c5a41c2ff" target=3D"" style=3D"color: #5050=
+50;font-family: Arial;font-size: 12px;font-weight: normal;line-height: 100=
+%;text-align: center;text-decoration: none;word-wrap: break-word;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;">Forward</a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 0;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cla=
+ss=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3Db296c7b14b&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-linkedin-48.png" style=3D"display: block;border: 0;outlin=
+e: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"=
+24" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D21cc658626&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Share</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                    <!--[if mso]>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+                </td>
+            </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 15px;line-height: 150%;text-align: left;">
+
+                            <p style=3D"margin: 1em 0;padding: 0;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-famil=
+y: Helvetica;font-size: 15px;line-height: 150%;text-align: left;"><em>In a=
+ non hierarchical=2C matrix oriented world=2C how should groups (teams=2C=
+ companies=2C countries) make a conscious decision to stop "kicking the ca=
+n down the road" and proactively start to tackle a particular problem.&nbs=
+p; What are the signs and indicators that should tell a team to take actio=
+n? -- Tom Broderick</em><br>
+<br>
+I have never seen "groups" effectively solve a problem like this. It's a d=
+isguised form of a tragedy of the commons. The only way out is for an indi=
+vidual with enough political capital to make some "benevolent dictator" mo=
+ves to break the gridlock. No amount of fiddling with structural aspects w=
+ill solve the problem. When terms like "matrix management" and "cross-func=
+tional" become embedded in a stalemate conversation=2C it is no longer som=
+ething that can be solved at a group level. An individual has to make some=
+ unilateral hard calls and then burn political capital to get others to fo=
+llow their lead. Only individuals can precipitate the kinds of crisis that=
+ can break the stalemates that teams and groups can get themselves into. A=
+nd vice-versa (though you didn't ask about that).<br>
+<br>
+<em>If someone gives you a decent amount of capital ($1Billion+) where onl=
+y string would be to build resilience of the human condition / Global Soci=
+al Computer in the Cloud against being bricked by a mass flippage of bozob=
+its. What kind of team would you assemble and what would you build? -- Var=
+un Adibhatla</em><br>
+<br>
+I think this sort of thing is what people like the Kochs=2C Mercers=2C Sor=
+os think they are doing. I think it's dangerous to define and pursue chall=
+enges at this scale with bounding boxes defined by financial capital and "=
+assembling people" into world-changing missionary tribes. Money is for the=
+ complex but more narrowly bounded problems of the sort that the Gates fou=
+ndation for example tries to solve. If you're aiming for something as broa=
+d and ambitious as "build resilience of the human condition"=2C money is t=
+he wrong starting point. Historically it has played a role in increasing r=
+esilience (basic research funding for say healthcare or food security). Bu=
+t for what you're talking about=2C I think "people assembled with money" i=
+s a part of the problem rather than the solution.<br>
+<br>
+<em>What=E2=80=99s the optimistic case for how software can eat climate im=
+pact and help win the war to decarbonize in time? -- Patrick Atwater</em><=
+br>
+<br>
+I think that ship has sailed. We are not going to "decarbonize in time." W=
+e're going to gradually normalize climate change=2C one bit of weirdness a=
+t a time. I think software will play a huge role in eventually decarbonizi=
+ng and helping complete the energy transition (both directly=2C by enablin=
+g clean energy etc=2C and indirectly by substituting low-energy behaviors=
+ like video-conferencing for energy-intensive ones like travel) but it won=
+'t be "in time."&nbsp; I think it is time to pivot to asking how software=
+ can help as many people as possible weather the unavoidable impacts. Mass=
+ migration is a big one. An example of the kind of idea I'd like to see pu=
+rsued is this "Internet of Migrants" idea I did <a href=3D"https://breakin=
+gsmart.us1.list-manage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=3D=
+d89426e643&e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wrap: break-wo=
+rd;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6D=
+D;font-weight: normal;text-decoration: underline;">a twitter thread</a>&nb=
+sp;about.<br>
+<br>
+<em>Have you read any <a href=3D"https://breakingsmart.us1.list-manage.com=
+/track/click?u=3D78cbbb7f2882629a5157fa593&id=3D87d44179c3&e=3D4c5a41c2ff=
+" target=3D"_blank" style=3D"word-wrap: break-word;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text=
+-decoration: underline;">Tom McCarthy</a>? Repetition=2C buffering=2C and=
+ being human in a software eaten world. -- Passepartout</em><br>
+<br>
+No=2C thanks for the recommendation!<br>
+<br>
+<em>You've written in the past about the rise of cities. As larger state g=
+overnments lose leverage=2C cities will break off and innovate. I'm the <a=
+ href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78cbbb7=
+f2882629a5157fa593&id=3D0eb78f1cde&e=3D4c5a41c2ff" target=3D"_blank" styl=
+e=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;"=
+>biggest business podcaster in Pittsburgh</a>=2C PA. Am I unwise to try an=
+d "break out" of that box? Or should I double down on my geographic edge?=
+ -- Aaron Watson</em><br>
+<br>
+Nice=2C congrats on your podcast success. I think the "city state future"=
+ hasn't been properly harmonized with the "digital future." It's like ther=
+e are these 2 huge trends towards devolving geographic power to cities=2C=
+ and diffusing digital power via strong zeitgeist currents and vortices on=
+ massive global platforms. These are like the quantum mechanics and genera=
+l relativity of sociology in our times. And just as physicists haven't fig=
+ured out how to really put the two together in a grand unified theory=2C n=
+one of us has managed to put together the city-state future and the digita=
+l future in a compelling unified vision. I mean=2C the novels of Neal Step=
+henson are fun to read and all=2C but when you get right down to it=2C nob=
+ody knows how these two trends will interact.<br>
+<br>
+I think the best strategy for somebody with a foot in both worlds=2C as a=
+ city-focused podcaster like you would be=2C is to pay attention to both w=
+orlds independently and not try to force a false synthesis. Where somethin=
+g makes sense both as a bet on Pittsburgh and a bet on digital futures=2C=
+ it's easy. When the two are in conflict=2C I don't think you can expect t=
+o find general grand-unified theory answers. Maybe Pittsburgh becomes the=
+ 2nd biggest city in the world for some weird new global online business s=
+ector like fidget spinners. Should you bet on that development in a Pittsb=
+urgh-first way or a fidget-spinners first way (which might mean focusing o=
+n city #1)? There won't be one right answer. You'll have to take it case b=
+y case.&nbsp;<br>
+<br>
+<em>Any good tips on how to make relationships with interesting people? I'=
+m living in a new city and in need of mentors and friends with interesting=
+ philosophies of work and life to learn from. Not just smart people with s=
+imilar interests--interesting people. -- Drew Schorno</em><br>
+<br>
+I am the worst person to ask this question when it comes to meatspace=2C s=
+ince I've managed to live in half a dozen cities with an unbroken record o=
+f being spectacularly bad at this. If you're talking online=2C however=2C=
+ I'm a blackbelt at that. My answer for the online version is to simply pr=
+oduce and publish interesting things yourself. Interesting attracts intere=
+sting. Maybe you can focus it to be more relevant to the city you're in=2C=
+ but I have no idea how to do that. My own style of producing stuff doesn'=
+t seem to stay within any such nice boundaries.&nbsp;<br>
+<br>
+<em>Your Brain-Bicycle-(Rider-Fit) article resonates with me! I'm stuck in=
+ an uphill ride wobbling along (the bicycle that I've chosen may not be su=
+itable for me) how do I get competent in negotiating and structuring deals=
+? -- Weiyi Yang</em><br>
+<br>
+I'm blanking on where I wrote about that metaphor=2C but am happy to take=
+ credit for it :) I assume you're doing the obvious things relating to you=
+r challenge=2C like finding books and classes on negotiations and deal-mak=
+ing. So let's go beyond that a bit.<br>
+<br>
+When it comes to loose touch-and-feel type skills like negotiating and str=
+ucturing deals where you're trying to add some hard structure to squishy s=
+tuff=2C I've found that the only way to really learn is to watch a more se=
+asoned expert do it live=2C and pick up on their tricks. It's a form of cl=
+ose observation. What conversational tactics do they use? How do they brea=
+k out of predictable objections? Do they use specific phrases? And of cour=
+se you have to get good at studying the "hard" side -- parsing deals and c=
+ontracts=2C learning to read legalese well enough to not let lawyers bulls=
+hit you=2C etc. There's plenty of literature and training available on thi=
+s subject. Paradoxically=2C the more complex it gets -- huge billion dolla=
+r M&amp;As for example -- the easier it is in some ways=2C because the she=
+er size and risk of the activity forces a lot of professionalism=2C well-d=
+efined role boundaries=2C formal protocols=2C&nbsp;and emergence of best p=
+ractices. It can be harder to negotiate and structure a deal about play ti=
+me with a 5-year-old.<br>
+<br>
+How do you know when your "bicycle" doesn't fit? When you sense that your=
+ natural "literacy" in reading what more experienced people are doing is l=
+acking=2C like there's whole levels of the conversation you're missing or=
+ misreading=2C and can't predict outcomes. It seems like black magic. Norm=
+ally=2C any non-technical skilled practice should slowly become legible to=
+ an intelligent observer with the right aptitude=2C&nbsp;with time. But if=
+ it doesn't=2C you may not have aptitude for it.&nbsp;<br>
+<br>
+<em>Are you consulting for any projects that involve crypto/blockchain/Bit=
+coin? Do you have insight into which parts of the cryptosphere are cargo c=
+ults?&nbsp; -- Stefan King</em><br>
+<br>
+I've done a small amount of consulting on crypto projects where there are=
+ aspects that don't have much to do specifically with crypto itself=2C but=
+ am by no means particularly well-versed in how the sector is shaping up.=
+ I have no particularly good instincts for picking the winners and sniffin=
+g out the cargo cults. I'm not particularly bad at it either. In general=
+=2C I don't trust myself to do the required thinking here myself. Instead=
+=2C I rely on good friends who know a lot more than me at both the technic=
+al and business levels.&nbsp;<br>
+<br>
+<em>Have you ever played a JRPG? If so=2C which one=2C and what did you th=
+ink of it? -- Ellen Kaye-Cheveldayoff</em><br>
+<br>
+No=2C I'm afraid I don't even know what a JRPG is. I had to <a href=3D"htt=
+ps://breakingsmart.us1.list-manage.com/track/click?u=3D78cbbb7f2882629a515=
+7fa593&id=3D90428fddfc&e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wr=
+ap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;c=
+olor: #6DC6DD;font-weight: normal;text-decoration: underline;">look it up<=
+/a> :)<br>
+<br>
+<em>What was the most significant piece of advice you received early on in=
+ your career? Did it have a "eureka" like effect or were its benefits real=
+ized over time? For context=2C I am a recent college graduate working full=
+ time at a nonprofit where I interned in college=2C but am dissatisfied an=
+d trying to plot out my next move. -- Anonymous</em><br>
+<br>
+I'm bad at asking for=2C and taking=2C advice in general. I'm much better=
+ at dishing it out confidently :) I did recently write a <a href=3D"https:=
+//breakingsmart.us1.list-manage.com/track/click?u=3D78cbbb7f2882629a5157fa=
+593&id=3D9fd32c7d91&e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wrap:=
+ break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;colo=
+r: #6DC6DD;font-weight: normal;text-decoration: underline;">post about my=
+ PhD advisor who recently passed away=2C and the things I learned from him=
+</a>. No eureka effects=2C however. I don't trust advice that causes that=
+ kind of sudden red-pill effect. I prefer deceptively simple-sounding advi=
+ce that takes years to sink in.&nbsp;<br>
+<br>
+<em>How do you think you would've handled the modern dating app culture=2C=
+ had you been dating today? -- Nicolas Lawler</em><br>
+<br>
+Probably horrifyingly badly. I have no idea how young singles manage to na=
+vigate that world.<br>
+<br>
+<em>What=E2=80=99s your personal recommendation on blogs &amp; books for s=
+elf development on financial literacy? --&nbsp;Seun Awoyele</em><br>
+<br>
+I don't think I've consciously worked on "self-development" in like 15 yea=
+rs. David Allen's <em>Getting Things Done</em> was the last significant bi=
+t of self-development literature I internalized=2C and that was 2002-04.&n=
+bsp;I don't trust the idea of "developing" yourself=2C especially past 30.=
+ Before 30=2C it kinda doesn't matter what self-development ideas you cons=
+ume. Pick what resonates with you=2C internalize what feels right=2C trust=
+ your gut. It's not as important as it seems at the time.<br>
+<br>
+I trust the idea of least-effort paths and enlightened mediocrity much mor=
+e. I think it's a mistake to "optimize" the self. The older I get=2C the m=
+ore wisdom I see in letting life happen to you=2C with your self evolving=
+ in a more natural way=2C as a result of actually dealing with the specifi=
+c challenges you face. Your life does not have to be a development project=
+=2E It's not a developing country or an iPhone with versions. Instead of try=
+ing to "develop" my "self"=2C I try to navigate situations in hopefully im=
+aginative ways.&nbsp;Solve your problems=2C not your "life."<br>
+<br>
+All my financial literacy is second-hand and not worth either bragging abo=
+ut or turning into advice for others. Ultimately=2C finance does not inter=
+est me. I try not to be too dumb about it=2C but it's not a game I feel li=
+ke getting more literate at.<br>
+<br>
+<em>Hume's problem of induction=2C Godel's incompleteness theorems=2C the=
+ free-will/determinism paradoxes=2C the lack of explanations&nbsp;for emer=
+gence - Do they all point to the same thing? (that consciousness is expres=
+sed through brains but not created by them and that our current language s=
+ystems don't know how to fully study it). -- Zat Rana</em><br>
+<br>
+Kinda cute how you snuck in a presumptive consensus explanandum there=2C b=
+egging your own question to some extent&nbsp;:) I don't know if they all p=
+oint to the same thing=2C but language systems certainly seem like an inad=
+equate tool for studying any of these imponderables or their "pointing" pr=
+opensities. I don't know that "study" is even the right verb to apply=2C s=
+ince these things you're gesturing at precede epistemology. Similarly "poi=
+nting" assumes a relationship of reference between two distinct things=2C=
+ which is assuming a lot at this level of philosophy. To study or point is=
+ to "do" something. Some would argue that our relationship to these things=
+ is a matter of being rather than doing. There are mystics around who are=
+ confident that their private experiences qualify as truer&nbsp;ways of be=
+ing with these things than "studying" them per se.<br>
+<br>
+To cut to the chase=2C I used to have beliefs and positions about these th=
+ings. Now=2C mostly I don't=2C since I find that holding positions doesn't=
+ actually change anything for me in relation to these imponderables.&nbsp;=
+<br>
+<br>
+<em>How do I become a member of the cryptobourgeoisie? -- Steven Miller</e=
+m><br>
+<br>
+Buy some crypto=2C HODL and pray. You've got as good a chance as anyone el=
+se. The only way to make it more than a passive casino bet for yourself is=
+ to learn the technology and get involved in building the stuff.&nbsp;<br>
+<br>
+<em>How do you decide how much money you need?&nbsp;Also=2C how do you kno=
+w how much you must get paid? -- Tejesh</em><br>
+<br>
+I've managed to get through nearly 45 years of life without ever asking ei=
+ther of these questions=2C so my answer is=2C you don't <em>need</em> to d=
+ecide or know. I've never liked asking finance questions in the abstract.=
+ If there are concrete numbers I need to think about=2C they generally fal=
+l out of other considerations like rent or retirement savings or stuff I w=
+ant and have to pay for=2C like sandwiches or a car. I like the saying "mo=
+ney is a problem to be solved." I take it to mean that in the process of d=
+eciding what to do in other parts of life=2C inevitably money comes up as=
+ a variable in the mix=2C and you need it to do certain things. "Solve" th=
+e money problem one instance at a time. Unless you're in finance or want t=
+o get rich for the sake of getting rich=2C money is not something that's p=
+roductive to think about front-and-center for most people. If you want to=
+ take on money more directly=2C you should be in finance.&nbsp;<br>
+<br>
+<em>If the purpose driving the last era was growth=2C would you agree that=
+ the most beneficial purpose for our next (and current) era is health or b=
+alance=2C or do you believe it is something else? And what do you believe=
+ is required to shift society to this new purpose? -- Katie Levine</em><br=
+>
+<br>
+I don't believe in such collective "purpose" conversations because that's=
+ never been how the world has worked. And I certainly don't believe in try=
+ing to "shift" society. Thar be toxic ideological tarpits. The "purpose" o=
+f an era is something that's evident with hindsight with tasteful historic=
+al perspective. And it's always something of a fiction imposed on the emer=
+gent motivational patterns of billions of people acting at various levels=
+ of coordination. Right now=2C in 2019=2C each of us will do what we think=
+ best at whatever scale of coordinated agency&nbsp;we act at=2C and we'll=
+ know what it all means when we are unfrozen from our cryostasis chambers=
+ in 2234 and the history orientation guide tells us what the 21st century=
+ was all about.</p>
+
+<p style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px=
+;line-height: 150%;text-align: left;"><em>How many 2x2 matrices do you mak=
+e before you stumble across one that is insightful? Or - do you have insig=
+ht=2C then see if you convert it to a 2x2? -- Todd Nief</em><br>
+<br>
+It's the latter&nbsp;99% of the time. And generally=2C it's not an explici=
+t attempt to convert an insight into a 2x2=2C but the insight itself strik=
+ing my awareness in a half-done 2x2 form that I then have to tweak to get=
+ it right. I suspect this is how it is for most people. Making random 2x2s=
+ in search of an insightful one doesn't seem like a workable process to me=
+=2E<br>
+<br>
+<em>I am attempting to catch up on breakingsmart and ribbonfarm=2C do you=
+ have a "best of"=2C most popular=2C or preferred reading order? -- Peter=
+ Williams</em><br>
+<br>
+There's a <a href=3D"https://breakingsmart.us1.list-manage.com/track/click=
+?u=3D78cbbb7f2882629a5157fa593&id=3D615a4ce8d8&e=3D4c5a41c2ff" target=3D"=
+_blank" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-=
+text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration:=
+ underline;">New Reader page</a> for ribbonfarm=2C but for Breaking Smart=
+=2C besides the Season 1 essays=2C there's no curation of the newsletter c=
+ontents. I should probably get on that.&nbsp;<br>
+<br>
+<em>Been thinking about Cal Newport=E2=80=99s idea of =E2=80=98career succ=
+ess comes from having rare and valuable skills=E2=80=99 recently. (a) What=
+ are your thoughts on this idea? (b) What skills will be rare and valuable=
+ in the future? -- Daniel Thomasan</em><br>
+<br>
+It's certainly one way to have career success. It's not the only way. Ther=
+e's Scott Adams' idea of having two relatively not-rare skills that are ra=
+re in combination for example (in his case=2C drawing skill and a sense of=
+ humor). And then there are non-skill-based approaches to thinking about c=
+areer success. And then there's thinking about life in terms other than "c=
+areer success." In general=2C I'm not exactly the greatest fan of Cal Newp=
+ort's advice=2C tbf. It sort of works for people on strongly credentialist=
+ life paths=2C but is of limited value outside such paths. I wrote a newsl=
+etter issue riffing off of (my skepticism of) his thinking a while back: <=
+a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78cbbb=
+7f2882629a5157fa593&id=3Dd66bd200d2&e=3D4c5a41c2ff" target=3D"_blank" sty=
+le=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-a=
+djust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;=
+">Semicolon-Shaped People.&nbsp;</a></p>
+
+<p style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px=
+;line-height: 150%;text-align: left;"><em>I've been thinking about this bi=
+t from "<a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=
+=3D78cbbb7f2882629a5157fa593&id=3D5cc7573e7b&e=3D4c5a41c2ff" target=3D"_b=
+lank" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: u=
+nderline;">The Key to Act Two</a>":<br>
+<br>
+"Then there is a bit of an intermission of about 2 years=2C which for most=
+ people is a very confusing=2C unscripted time=2C like an inter-airport tr=
+ansfer in a strange foreign city with sketchy-looking shuttle buses that y=
+ou are reluctant to get on=2C and long queues at the bathroom."<br>
+<br>
+Question: What specific advice would you have for someone in this intermis=
+sion who is pretty thoroughly traumatized but not sure if she's learned en=
+ough from it=2C more made the right connections=2C to become a key? -- Ano=
+nymous</em><br>
+<br>
+I think the best thing to do if you really are in this stage (and it's eas=
+y to mistake a bout of depression for an Act I to Act 2 transitional inter=
+mission)=2C is to lower your standards=2C embrace enlightened mediocrity=
+=2C and focus on living well rather than "learning." Don't close your mind=
+ to learning=2C and accept the challenges and new experiences that life wi=
+ll continue to throw at you=2C but "learning" and "preparing" for life is=
+ no longer task #1. Task #1 is actually just surviving with grace and livi=
+ng life. Stop trying to win=2C&nbsp;work on continuing the game. Sometimes=
+ that's one day at a time=2C sometimes it's one year at a time.&nbsp;The&n=
+bsp;life-long learning=2C hustling=2C stress-driving pressure we get from=
+ society is somewhat necessary (at a cost) in Act 1=2C but if you let it k=
+eep riding you into Act 2=2C it's mostly masochism. There's a point past w=
+hich it makes more sense (and better mental health) to inhabit the life yo=
+u've built for yourself as gracefully as you can=2C rather than trying to=
+ keep raging and storming to extract more from the universe.<br>
+<br>
+One thought I've found useful for this lately is: you don't need permissio=
+n to exist.<br>
+<br>
+<em>Why don't people think big enough? Where do your large scale thoughts=
+ expressed in your writing come from? As an ambitious thinker=2C how can I=
+ better express my big ideas and get started building them when I find it=
+ difficult to see the small=2C more actionable beginner stuff? -- Elijah C=
+laude</em><br>
+<br>
+Hmm. I don't agree that people don't think big enough or that it's a parti=
+cularly good thing to try and do. You should think about interesting thing=
+s=2C with enough imagination and courage to let a thought take you as far=
+ as it wants to take you. Some thoughts want to take on huge galloping rid=
+es across the universe=2C other thoughts want to take you 3 steps to pay a=
+ttention to one small thing. I think it is important to not get attached t=
+o the scale of thoughts or actions. One trick to do this is to imagine tho=
+ughts and actions as having all the agency=2C and you having none. The tho=
+ught decides how it wants to be thought. The action decides how it wants t=
+o be performed. Your job is to get out of the way and let the thought or a=
+ction "use" you as its instrument. Be the medium=2C not the message or the=
+ agent.<br>
+<br>
+Ambition is not bad per se=2C but it can exhaust itself. It is like runnin=
+g on fossil fuels of the psyche. It can also work into a box it cannot wor=
+k itself out of. In a way=2C ambition itself is one of the thoughts/action=
+ patterns that can possess you=2C and in my experience=2C not one that tak=
+es you on particularly interesting rides. Things we often describe as "amb=
+itious" from an outside perspective are often the result of being possesse=
+d by thoughts and actions that feel necessary and natural rather than "amb=
+itious" to the people who serve as their mediums. The thoughts and actions=
+ I find myself most fascinated by (both my own and those of others) are th=
+ose that are the result of&nbsp;the human ego stepping out of the way and=
+ letting the thoughts and actions flow on their own. I suppose I'm a Taois=
+t or something.&nbsp;</p>
+
+<p style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px=
+;line-height: 150%;text-align: left;"><em>Do you use randomness for any of=
+ your processes (e.g. dice=2C decks of cards=2C or anything else)? What ab=
+out contrarian thinking? Oh also=2C I believe you visited Boyd=E2=80=99s p=
+apers at Quantico. What did you think? Which papers and books did you read=
+? -- Chris Butler</em><br>
+<br>
+No. Life is plenty random enough for me=2C and contrarian thinking for its=
+ own sake seems kinda dumb to me. Think interesting thoughts=2C and someti=
+mes they are contrarian=2C other times they are not.<br>
+<br>
+I didn't spend much time at the archives. We were there for like half an h=
+our as I recall. I browsed several papers on Network-Centric Warfare (NCW)=
+ with Boyd's critical annotations in the margins. As&nbsp;I mentioned in <=
+a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78cbbb=
+7f2882629a5157fa593&id=3D70a9fcfe3f&e=3D4c5a41c2ff" target=3D"_blank" sty=
+le=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-a=
+djust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;=
+">an old newsletter</a>=2C one thing I took away was the idea that he didn=
+'t like tight synchronization.&nbsp;</p>
+
+<p style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px=
+;line-height: 150%;text-align: left;"><em>How would you innovate public re=
+strooms? Improving cleanliness metric -- Anonymous</em><br>
+<br>
+It's actually among the most important problems in the world. I have Rose=
+ George's book <a href=3D"https://breakingsmart.us1.list-manage.com/track/=
+click?u=3D78cbbb7f2882629a5157fa593&id=3Ddf85be0a74&e=3D4c5a41c2ff" targe=
+t=3D"_blank" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-we=
+bkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decora=
+tion: underline;"><em>The Big Necessity</em></a>=2C on my to-read pile. No=
+ clever thoughts besides the assessment that it's a very important problem=
+=2E<br>
+<br>
+<strong>TMS from Matt Maier</strong></p>
+
+<p style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px=
+;line-height: 150%;text-align: left;">I co-founded the humanist church&nbs=
+p;<a data-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://beingh=
+umanchurch.com&amp;source=3Dgmail&amp;ust=3D1549147647106000&amp;usg=3DAFQ=
+jCNEPdZ_vcXTfVK4OfUSjDfUsSAv7vA" href=3D"https://breakingsmart.us1.list-ma=
+nage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=3D5d70c9a03d&e=3D=
+4c5a41c2ff" target=3D"_blank" style=3D"word-wrap: break-word;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: nor=
+mal;text-decoration: underline;">https://beinghumanchurch.com</a><br>
+All of the meaning and community=2C none of the supernatural.<br>
+My co-founder Andrew does regular sermons on how to be better&nbsp;<a data=
+-saferedirecturl=3D"https://www.google.com/url?q=3Dhttps://www.facebook.co=
+m/beinghumanchurch/&amp;source=3Dgmail&amp;ust=3D1549147647106000&amp;usg=
+=3DAFQjCNEAnWq5Ko133-DVB9ru3GGW-Vs-Vw" href=3D"https://breakingsmart.us1.l=
+ist-manage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=3Df3e3d91985&e=
+=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wrap: break-word;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weigh=
+t: normal;text-decoration: underline;">https://www.facebook.com/beinghuman=
+church/</a></p>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 15px;line-height: 150%;text-align: left;">
+
+                            <em style=3D"color: #606060;font-family: helve=
+tica;font-size: 15px;line-height: 20.8px;">Feel free to forward this newsl=
+etter on email and share it via the social media buttons below. You can ch=
+eck out <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=
+=3D78cbbb7f2882629a5157fa593&id=3Dfbe5447c27&e=3D4c5a41c2ff" style=3D"wor=
+d-wrap: break-word;color: #6DC6DD;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;font-weight: normal;text-decoration: underline;" target=
+=3D"_blank">the archives here</a>. First-timers can&nbsp;<a href=3D"https:=
+//breakingsmart.us1.list-manage.com/track/click?u=3D78cbbb7f2882629a5157fa=
+593&id=3Daf74c43dfc&e=3D4c5a41c2ff" style=3D"word-wrap: break-word;color:=
+ #6DC6DD;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-we=
+ight: normal;text-decoration: underline;" target=3D"_blank">subscribe to t=
+he newsletter here</a>. More about me at <a href=3D"https://breakingsmart.=
+us1.list-manage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=3D101cf14=
+ef4&e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wrap: break-word;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-=
+weight: normal;text-decoration: underline;">venkateshrao.com</a></em><br s=
+tyle=3D"color: #606060;font-family: Helvetica;font-size: 15px;line-height:=
+ 22.5px;">
+<br style=3D"color: #606060;font-family: Helvetica;font-size: 15px;line-he=
+ight: 22.5px;">
+<em style=3D"color: #606060;font-family: helvetica;font-size: 15px;line-he=
+ight: 22.5px;">Check out the 20&nbsp;<a href=3D"https://breakingsmart.us1.=
+list-manage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=3D07e92b6a65&=
+e=3D4c5a41c2ff" style=3D"word-wrap: break-word;color: #6DC6DD;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;text-de=
+coration: underline;" target=3D"_blank">Breaking Smart Season 1</a>&nbsp;e=
+ssays for the deeper context behind this newsletter. You can follow me on=
+ Twitter&nbsp;<a href=3D"https://breakingsmart.us1.list-manage.com/track/c=
+lick?u=3D78cbbb7f2882629a5157fa593&id=3Daee068b1c5&e=3D4c5a41c2ff" style=
+=3D"word-wrap: break-word;color: #6DC6DD;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;font-weight: normal;text-decoration: underline;"=
+ target=3D"_blank">@vgr</a></em>
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnShareBlock" style=3D"min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnShareBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;" class=3D"mcnShareBlockInner">
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" class=3D"mcnShareContentContainer" style=3D"min-width: 10=
+0%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody><tr>
+        <td align=3D"left" style=3D"padding-top: 0;padding-left: 9px;paddi=
+ng-bottom: 0;padding-right: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+            <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;background-color: #FAFAFA=
+;border: 1px solid #EEEEEE;border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust=
+: 100%;" class=3D"mcnShareContent">
+                <tbody><tr>
+                    <td align=3D"left" valign=3D"top" class=3D"mcnShareCon=
+tentItemContainer" style=3D"padding-top: 9px;padding-right: 9px;padding-le=
+ft: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;">
+                        <table align=3D"left" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+                            <tbody><tr>
+                                <td align=3D"left" valign=3D"top" style=3D=
+"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;">
+                                    <!--[if mso]>
+                                    <table align=3D"left" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                    <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D9a7b8d3fb4&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-facebook-48.png" style=3D"display: block;border: 0;outlin=
+e: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"=
+24" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D026efcea7c&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Share</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3Dff1af8e122&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-twitter-48.png" style=3D"display: block;border: 0;outline=
+: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"2=
+4" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3Db894bee071&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Tweet</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629=
+a5157fa593&id=3D1459f6d72a&e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-w=
+rap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><img src=3D"https://cdn-images.mailchimp.com/icons/social-block-v2/color=
+-forwardtofriend-48.png" style=3D"display: block;border: 0;outline: none;t=
+ext-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"24" width=
+=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629=
+a5157fa593&id=3D1459f6d72a&e=3D4c5a41c2ff" target=3D"" style=3D"color: #5050=
+50;font-family: Arial;font-size: 12px;font-weight: normal;line-height: 100=
+%;text-align: center;text-decoration: none;word-wrap: break-word;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;">Forward</a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 0;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cla=
+ss=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D89e8598587&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-linkedin-48.png" style=3D"display: block;border: 0;outlin=
+e: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"=
+24" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D687460b0ce&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Share</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                    <!--[if mso]>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+                </td>
+            </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 15px;line-height: 150%;text-align: left;">
+
+                            <em>Copyright =C2=A9 2019 Ribbonfarm Consultin=
+g=2C LLC=2C All rights reserved.</em><br>
+ You are receiving this email because you signed up at breakingsmart.com f=
+or our newsletter.<br>
+<br>
+<strong>Our mailing address is:</strong><br>
+<div class=3D"vcard"><span class=3D"org fn">Ribbonfarm Consulting=2C LLC</=
+span><div class=3D"adr"><div class=3D"street-address">3131 Western Ave</di=
+v><div class=3D"extended-address">Suite 310</div><span class=3D"locality">=
+Seattle</span>=2C <span class=3D"region">WA</span>  <span class=3D"postal-=
+code">98121</span></div><br><a href=3D"https://breakingsmart.us1.list-mana=
+ge.com/vcard?u=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da" class=3D"hcard=
+-download">Add us to your address book</a></div>
+<br>
+<br>
+<a class=3D"utilityLink" href=3D"https://breakingsmart.us1.list-manage.com=
+/unsubscribe?u=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da&e=3D4c5a41c2ff&c=
+=3D1459f6d72a" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-deco=
+ration: underline;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp; <a cl=
+ass=3D"utilityLink" href=3D"https://breakingsmart.us1.list-manage.com/prof=
+ile?u=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da&e=3D4c5a41c2ff" style=3D"w=
+ord-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;">upda=
+te subscription preferences</a>&nbsp;<br>
+<br>
+ <a href=3D"http://www.mailchimp.com/monkey-rewards/?utm_source=3Dfreemium=
+_newsletter&utm_medium=3Demail&utm_campaign=3Dmonkey_rewards&aid=3D78cbbb7=
+f2882629a5157fa593&afl=3D1"><img src=3D"https://gallery.mailchimp.com/0894=
+43193dd93823f3fed78b4/images/banner1.gif" border=3D"0" alt=3D"Email Market=
+ing Powered by Mailchimp" title=3D"Mailchimp Email Marketing"></a>
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END BODY -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN FOOTER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateFooter" style=3D"border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-col=
+or: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"fo=
+oterContainer" style=3D"padding-bottom: 9px;mso-table-lspace: 0pt;mso-tabl=
+e-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">=
+</td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END FOOTER -->
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    <img src=3D"https://breakingsmart.us1.list-manage.com/track/open.php?u=
+=3D78cbbb7f2882629a5157fa593&id=3D1459f6d72a&e=3D4c5a41c2ff" height=3D"1"=
+ width=3D"1"></body>
+</html>
+--_----------=_MCPart_1279818555--

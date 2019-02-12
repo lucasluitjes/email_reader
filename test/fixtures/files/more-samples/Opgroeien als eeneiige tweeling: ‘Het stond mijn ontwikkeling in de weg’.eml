@@ -1,0 +1,1664 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Thu, 24 Jan 2019 12:38:51 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <0102016880f13fba-ae358d7b-349a-4ea7-a5a3-9626838fab42-000000@eu-west-1.amazonses.com>
+Received: from 205.237.194.28
+	by m8.mxes.net (bayesd) with LMTP id 1548351531-44887-2
+	for <lucas_mindrules.net@ms8.mxes.net>; Thu, 24 Jan 2019 12:38:51 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-06.mxes.net (Postfix) with ESMTP id 0E1AF27600
+	for <lucas@mindrules.net>; Thu, 24 Jan 2019 12:38:51 -0500 (EST)
+Received: from a2-32.smtp-out.eu-west-1.amazonses.com (a2-32.smtp-out.eu-west-1.amazonses.com [54.240.2.32])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mxin.mxes.net (Postfix) with ESMTPS id 7140B275E8
+	for <lucas@mindrules.net>; Thu, 24 Jan 2019 12:38:48 -0500 (EST)
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=m.blendle.com header.i=@m.blendle.com header.b=ofAAGqaP;
+	dkim=pass (1024-bit key) header.d=amazonses.com header.i=@amazonses.com header.b=XG6Oa3/v
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=kyqy4d6jhdqnf37bzigjl2t3dmfnsoyi; d=m.blendle.com; t=1548351520;
+	h=Content-Type:Date:From:List-Unsubscribe:Mime-Version:Reply-To:Subject:To:Message-ID;
+	bh=UsVqc7dHzWxbTg3v1cqnl4EWhbYn02AlE9DcQXPwCGo=;
+	b=ofAAGqaP5ICLNY0/shk+VXtXJmt294GKGt4nEr111peORcs0iXJFNenua8uADYAC
+	iem0nMGiLlqESFFP1vJK1nmtr224g+Ivx7cfafC+4t/JM1pKpfI/DsV5Bbfy8c0ITxo
+	a0wgUBQpXTpfNJRtOAG1FXrka2EbeXu166osD4Gw=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=uku4taia5b5tsbglxyj6zym32efj7xqv; d=amazonses.com; t=1548351520;
+	h=Content-Type:Date:From:List-Unsubscribe:Mime-Version:Reply-To:Subject:To:Message-ID:Feedback-ID;
+	bh=UsVqc7dHzWxbTg3v1cqnl4EWhbYn02AlE9DcQXPwCGo=;
+	b=XG6Oa3/vf/c+KJ3BU2nh3xQscINK76LFEIKUoIVu1YDy9Ha3kn8VrMsDI8FbdLSs
+	dU2PgnZSKpjoKRx6bobQtFBBnCvW5kFPwUGVIe5Zx+gOCVFSv8qX55cCRM1+16HAMG8
+	37I1bqRvQEyBywk6XzPNhcsyrQhIkHL0gTeVQClU=
+Content-Type: multipart/alternative; boundary="e6cbf5655d5dcda73307d8e8b6fe1b8dfd4d74e20ff704c2d5fbe8d161b2"
+Date: Thu, 24 Jan 2019 17:38:40 +0000
+From: "Blendle Bladenoverzicht" <nieuwsbrief@m.blendle.com>
+List-Unsubscribe: https://ws.blendle.com/unsubscribe/magazine_digest/fd7387f7-d1e7-4b03-a820-398708b806f5/7ab65be2b58c682adb3d7c327410f4742f118e2c6d5bd41e3bf58cbee597105f?utm_campaign=NL-magazine-20190124&utm_content=test_log_vs_null_item_provider_followed_by_user-default_converged_20180202&utm_medium=newsletter-magazine&utm_source=blendle-editorial
+Mime-Version: 1.0
+Original-Message-Id: <NL-magazine-20190124-fd7387f7-d1e7-4b03-a820-398708b806f5@blendle.com>
+Reply-To: noreply-nl@blendle.com
+Subject: =?utf-8?q?Opgroeien_als_eeneiige_tweeling:_=E2=80=98Het_stond_mijn_ontwik?= =?utf-8?q?keling_in_de_weg=E2=80=99?=
+To: "Lucas" <lucas@mindrules.net>
+Message-ID: <0102016880f13fba-ae358d7b-349a-4ea7-a5a3-9626838fab42-000000@eu-west-1.amazonses.com>
+X-SES-Outgoing: 2019.01.24-54.240.2.32
+Feedback-ID: 1.eu-west-1.Fyqlnd0lBznqO3nY/C62yGmkZKCQxIoPktwwPOOhIzY=:AmazonSES
+X-Virus-Scanned: ClamAV
+X-Spam-Sys-BayesResult: Yes, 0.508124
+X-Spam-Scanner: 1548351529-3081-4
+X-Spam-Report: Content analysis details:
+ -10.0 BAYESSCORE             0.000001
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [54.240.2.32 listed in dnswl.mxes.net]
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   1.0 DKIMWL_BULKMAILER_LOW  ASKDNS: DKIMwl.org - Low scoring bulkmailer
+     [amazonses.com.lookup.dkimwl.org A:127.0.2.1]
+   0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or Formatted Colors in HTML
+   0.0 DMARC_POLICY           Accept on policy failure
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   1.2 SYSTEM_BAYES           Yes 0.508124
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 DKIM_VALID_EF          Message has a valid DKIM or DK signature from envelope-from domain
+   0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail domains are different
+   0.0 T_DMARC_ACCEPT         Sender says accept all mail
+   0.0 DMARC_PASS             From: domain publishes a DMARC policy and the DKIM or SPF alignment test passes
+   0.0 HTML_MESSAGE           HTML included in message
+  -0.6 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 1
+X-Spam-SI: 2
+X-Originating-IP: 54.240.2.32
+X-Dmarc-Status: Pass
+X-Reputation-Delta: -0.6
+X-Envelope-To: <lucas@mindrules.net>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-8.3 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.000001
+X-Spam-Score: -8.3
+X-Spam-Scoring: 0,0
+
+--e6cbf5655d5dcda73307d8e8b6fe1b8dfd4d74e20ff704c2d5fbe8d161b2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+Goedemiddag Lucas,
+
+Zoals elke donderdag hebben we de twaalf allerbeste stukken uit de tijdschr=
+iften van deze week weer op een rijtje gezet. Als extraatje, boven op je da=
+gelijkse (persoonlijke) selectie. Veel leesplezier!
+
+- - -
+
+=C2=BB [360 Magazine] De hoofdredacteur van Die Zeit boort Der Spiegel subt=
+iel de grond in wegens diens aanpak rond de liegende journalist Claas Relot=
+ius
+https://blendle.com/item/bnl-360-20190124-d36d6c5ed5f
+Twee journalisten van Der Spiegel interviewen Die Zeit-hoofdredacteur Giova=
+nni di Lorenzo: =E2=80=98U hebt de neiging feiten zo aantrekkelijk mogelijk=
+ te dramatiseren.=E2=80=99
+- - -
+
+=C2=BB [Humo] Een kinderorthopedist over zijn vak: =E2=80=98Het is iedere k=
+eer een topwedstrijd die je moet winnen=E2=80=99
+https://blendle.com/item/bnl-humo-20190122-b35db89d1c0
+Frank Plasschaert: =E2=80=98Je focust op het probleem, of dat nu bij een ki=
+nd van =C3=A9=C3=A9n dag oud of een van 17 jaar oud is. Het is altijd ieman=
+ds kind.=E2=80=99
+- - -
+
+=C2=BB [Knack] Een interview met de 17-jarige klimaatspijbelaar Anuna en ha=
+ar moeder. =E2=80=98Het activisme zit al generaties lang in onze familie=E2=
+=80=99
+https://blendle.com/item/bnl-knack-20190123-1c2b2784f8c
+Anuna krijgt vooral **kritiek van oudere mannen**. Maar, zoals haar moeder =
+zegt: =E2=80=98Misschien moeten die oudere generaties er nog aan wennen dat=
+ in deze eeuw vrouwen het woord durven te nemen.=E2=80=99
+- - -
+
+=C2=BB [Panorama] Hoe de =E2=80=98Spaanse Escobar=E2=80=99, via een Nederla=
+ndse connectie, in de val liep
+https://blendle.com/item/bnl-panorama-20190123-280a5bf7762
+Via de Rotterdamse haven zou een **partij coca=C3=AFne** worden binnengetro=
+kken. Maar dat liep helemaal mis.
+- - -
+
+=C2=BB [VARAgids] Romano van der Dussen zat bijna dertien jaar onschuldig v=
+ast in Spanje. Deze documentairemaakster volgde hem na zijn vrijlating
+https://blendle.com/item/bnl-varagids-20190122-e23f6db0529
+**Elena Lindemans** wilde een zo eerlijk mogelijk beeld van Romano neerzett=
+en. En dat is dus niet het beeld van de puur onschuldige jongeman.
+- - -
+
+=C2=BB [Elsevier Weekblad] Zes burgemeesters van Nederlandse steden vertell=
+en over hun deradicaliseringsbeleid
+https://blendle.com/item/bnl-elsevier-20190124-7163b9333c5
+=E2=80=98Je kunt als overheid niet in twee jaar repareren wat je dertig jaa=
+r hebt vergeten.=E2=80=99
+- - -
+
+=C2=BB [VIVA] Jekaterina woont net een maand met man en peuter op Sint Maar=
+ten, als orkaan Irma losbarst. =E2=80=98Het was de hel, echt de hel=E2=80=
+=99
+https://blendle.com/item/bnl-viva-20190122-6eca446815b
+Terwijl ze met haar dochter schuilt in de badkamer, maakt ze **een afscheid=
+sfilmpje** voor haar familie. En dan beginnen delen van het huis in te stor=
+ten.
+- - -
+
+=C2=BB [New Scientist] Volgens voedingshoogleraar Jaap Seidell gaan we met =
+alleen wat voorlichting niet gezonder eten. W=C3=A9l met marketingtrucs
+https://blendle.com/item/bnl-newscientist-20190124-b827883951f
+Hij is bezig met een **supermarktexperiment** waarbij vermeld wordt hoeveel=
+ andere mensen kopen. =E2=80=98Als mensen lezen dat iedereen vier stuks van=
+ iets koopt, zijn ze eerder geneigd er ook vier te nemen in plaats van mind=
+er.=E2=80=99
+- - -
+
+=C2=BB [Voetbal International] Feyenoord bleeft opnieuw een matig seizoen. =
+Aan directeur Jan de Jong om het roer om te gooien
+https://blendle.com/item/bnl-voetbalinternational-20190123-9ad34ad50fc
+*Voetbal International* spreekt van vier hoofdpijndossiers: de trainer, de =
+technisch directeur, de opleiding en de toekomst.
+- - -
+
+=C2=BB [VPRO Gids] Kruiswoord, scrypto, diagram: deze mannen maken puzzels.=
+ =E2=80=98De puzzelaar wil uitgedaagd, maar ook bevestigd worden=E2=80=99
+https://blendle.com/item/bnl-vprogids-20190122-32b3c18e9d6
+De puzzels van **Studio Steenhuis** ben je vast al weleens tegengekomen. Op=
+richter **Jelmer Steenhuis** en puzzelmaker **Maarten Gaillard** over mooie=
+ woorden, oplichten en wetsuitlegging. =E2=80=98Met andijvie kun je niets.=
+=E2=80=99
+- - -
+
+=C2=BB [EOS Wetenschap] Blendle-klassieker: Zo slecht kunnen vitaminepillen=
+ zijn voor je gezondheid
+https://blendle.com/item/bnl-eos056-20180101-93ffb835d43
+Een handje multivitaminen om de dag mee te beginnen: baat het niet dan scha=
+adt het niet. Toch? Het bewijs stapelt zich op dat de meeste vitaminepillen=
+ nutteloos en zelfs schadelijk zijn.
+- - -
+
+=C2=BB [Psychologie Magazine] Opgroeien als eeneiige tweeling: =E2=80=98Het=
+ stond mijn ontwikkeling in de weg=E2=80=99
+https://blendle.com/item/bnl-psychologie-20190124-1aabe932056
+Waar houdt de een op en begint de ander? Voor eeneiige tweelingen is die vr=
+aag niet zo makkelijk te beantwoorden. =E2=80=98Het besef dat wij twee indi=
+viduen waren, kwam behoorlijk binnen.=E2=80=99
+- - -
+
+Een fijne avond!
+
+Thijs, Laurens, Anna &amp; Bram
+
+**P.S.** Hey boekenwurm, iedere zondagmiddag versturen we de **Blendle Boek=
+enbrief**, een nieuwsbrief met de beste artikelen over boeken. Ook ontvange=
+n? [Meld je hier aan](https://www.getrevue.co/profile/blendleboekenbrief) =
+=F0=9F=93=9A
+
+- - -
+=C2=A9 2019 Blendle
+Catharijnesingel 52
+3511 GC Utrecht
+Nederland
+--e6cbf5655d5dcda73307d8e8b6fe1b8dfd4d74e20ff704c2d5fbe8d161b2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml"
+ xmlns:v=3D"urn:schemas-microsoft-com:vml"
+ xmlns:o=3D"urn:schemas-microsoft-com:office:office" style=3D"-moz-osx-font=
+-smoothing: grayscale; -webkit-font-smoothing: antialiased; height: 100% !i=
+mportant; margin: 0; padding: 0; width: 100% !important">
+<head>
+ <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPe=
+rInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+ <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8" /=
+>
+ <meta name=3D"viewport" content=3D"width=3Ddevice-width" />
+ <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge" />
+ <title>Blendle</title>
+ <style>
+ a {text-decoration: none;}
+ </style>
+ <!--[if mso]>
+ <style>
+ * {
+ font-family: Helvetica, Arial, sans-serif;
+ }
+ </style>
+ <![endif]-->
+ <!--[if !mso]><!-->
+ <link href=3D"https://fonts.googleapis.com/css?family=3DPoppins:700" rel=
+=3D"stylesheet">
+ <!--<![endif]-->
+</head>
+<body width=3D"100%" bgcolor=3D"#ffffff" style=3D"-moz-osx-font-smoothing: =
+grayscale; -webkit-font-smoothing: antialiased; color: #333332; font-family=
+: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; heigh=
+t: 100% !important; line-height: 24px; margin: 0; padding: 0; text-align: l=
+eft; width: 100% !important">
+<style type=3D"text/css">
+ body {
+ margin: 0 !important; padding: 0 !important; height: 100% !important; widt=
+h: 100% !important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoo=
+thing: grayscale;
+ }
+ body {
+ color: #333332; font-family: Helvetica, Arial, sans-serif; font-weight: no=
+rmal; text-align: left;
+ }
+ body {
+ font-size: 14px; line-height: 24px;
+ }
+ .ExternalClass {
+ width: 100%;
+ }
+ img {
+ -ms-interpolation-mode: bicubic;
+ }
+ @media only screen and (max-width: 600px) {
+ body {
+ font-size: 13px !important; line-height: 21px !important;
+ }
+ p {
+ font-size: 13px !important; line-height: 21px !important;
+ }
+ .branded-container {
+ padding: 0 0 5px !important;
+ }
+ p.branded-text {
+ font-size: 12px !important; line-height: 15px !important;
+ }
+ .yours-container {
+ padding: 0 0 5px !important;
+ }
+ .yours-intro {
+ padding-left: 15px !important;
+ }
+ h4 {
+ font-size: 15px !important;
+ }
+ .yours-paragraph {
+ font-size: 12px !important; line-height: 19px !important; margin-bottom: 1=
+8px !important;
+ }
+ h2 {
+ font-size: 22px !important; line-height: 26px !important;
+ }
+ .subtitle {
+ font-size: 13px !important;
+ }
+ h3 {
+ font-size: 17px !important; line-height: 21px !important;
+ }
+ .mobile-h2-lineheight{
+ line-height: 23px !important;
+ }
+ }
+ @media screen and (max-width: 480px) {
+ .center-on-narrow {
+ text-align: center !important; display: block !important; margin-left: aut=
+o !important; margin-right: auto !important; float: none !important;
+ }
+ table.center-on-narrow {
+ display: inline-block !important;
+ }
+ }
+ .fade-on-hover{
+ webkit-transition: opacity 0.3s ease;
+ -moz-transition: opacity 0.3s ease;
+ -ms-transition: opacity 0.3s ease;
+ -o-transition: opacity 0.3s ease;
+ transition: opacity 0.3s ease;
+ }
+ .fade-on-hover:hover{
+ opacity:0.8;
+ }
+</style>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" height=3D"100%" wid=
+th=3D"100%" bgcolor=3D"#ffffff" style=3D"border-collapse: collapse !importa=
+nt; border-spacing: 0 !important; margin: 0 auto; mso-table-lspace: 0pt !im=
+portant; mso-table-rspace: 0pt !important; table-layout: fixed !important">=
+<tr><td valign=3D"top" style=3D"-ms-text-size-adjust: 100%; -webkit-text-si=
+ze-adjust: 100%; color: #333332; font-family: Helvetica, Arial, sans-serif;=
+ font-size: 14px; font-weight: normal; line-height: 24px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; text-align: left" align=
+=3D"left">
+ <div style=3D"max-width: 550px">
+ <!--[if (gte mso 9)|(IE)]>
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"550" alig=
+n=3D"left">
+ <tr>
+ <td>
+ <![endif]-->
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" w=
+idth=3D"100%" style=3D"border-collapse: collapse !important; border-spacing=
+: 0 !important; margin: 0 auto; max-width: 550px; mso-table-lspace: 0pt !im=
+portant; mso-table-rspace: 0pt !important; table-layout: fixed !important">
+=20
+ <tr>
+ <td class=3D"container container-no-bottom" style=3D"mso-table-lspace: 0pt=
+ !important; mso-table-rspace: 0pt !important; padding: 15px 15px 0; text-a=
+lign: left" align=3D"left">
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jph5yd2z=
+lzjjyfuq2jgzew26brlezem6tcjblhazchobwgg6kjonew2nlimjlvk2kpnffe2zcxjzugg6kkh=
+ethiplgmq3tgobxmy3s2zbrmu3s2ndcgazs2yjygiyc2mzzha3taodchaydmzrvez2xi3k7mnqw=
+24dbnftw4pkojqww2ylhmf5gs3tffuzdamjzgaytenbgov2g2x3dn5xhizlooq6xizltorpwy33=
+hl53hgx3oovwgyx3jorsw2x3qojxxm2lemvzf6ztpnrwg653fmrpwe6k7ovzwk4rnmrswmylvnr=
+2f6y3pnz3gk4thmvsf6mrqge4damrqgithk5dnl5wwkzdjovwt23tfo5zwyzluorsxellnmftwc=
+6tjnzssm5lunvpxg33vojrwkplcnrsw4zdmmuwwkzdjorxxe2lbnq" target=3D"_blank" bo=
+rder=3D"0"><img style=3D"border:none" width=3D"99" height=3D"28" src=3D"htt=
+ps://static.blendle.nl/email-assets/blendle-logo-2016.png"></a>
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+=20
+
+=20
+
+ <tr>
+ <td class=3D"container container-no-bottom" style=3D"mso-table-lspace: 0pt=
+ !important; mso-table-rspace: 0pt !important; padding: 15px 15px 0; text-a=
+lign: left" align=3D"left">
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"intro" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size=
+-adjust: 100%; line-height: 24px; mso-table-lspace: 0pt !important; mso-tab=
+le-rspace: 0pt !important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">Goedemiddag Lucas,</p>
+
+<p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-w=
+eight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text-=
+align: left" align=3D"left">Zoals elke donderdag hebben we de twaalf allerb=
+este stukken uit de tijdschriften van deze week weer op een rijtje gezet. A=
+ls extraatje, boven op je dagelijkse (persoonlijke) selectie. Veel leesplez=
+ier!</p>
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ <tr>
+ <td class=3D"container" style=3D"mso-table-lspace: 0pt !important; mso-tab=
+le-rspace: 0pt !important; padding: 15px; text-align: left" align=3D"left">
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td style=3D"mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impo=
+rtant; text-align: left" align=3D"left">
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo-first" style=3D"line-height: 24px; mso-table-l=
+space: 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0;=
+ padding-top: 5px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/360/logo.png" alt=3D"360 Mag=
+azine" style=3D"-ms-interpolation-mode: bicubic" height=3D"16"/>
+ </td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyljtgyyc2mrqge4tam=
+jsgqwwimzwmq3ggnlfmq2wmp3qhvsxsstqljbusnsjnv4dcwjsiz5gescwobseo4dmmn4us42jn=
+u2wqysxkvuu62kkjvsfottimn4uuojgoq6wmzbxgm4dozrxfvsdczjxfu2gembtfvqtqmrqfuzt=
+sobxga4geobqgztdkjtvorwv6y3bnvygc2lhny6u4tbnnvqwoyl2nfxgkljsgaytsmbrgi2cm5l=
+unvpwg33oorsw45b5orsxg5c7nrxwox3wonpw45lmnrpws5dfnvpxa4tpozuwizlsl5tg63dmn5=
+3wkzc7mj4v65ltmvzc2zdfmzqxk3dul5rw63twmvzgozlel4zdamjygazdamrgov2g2x3nmvsgs=
+5lnhvxgk53tnrsxi5dfoiww2ylhmf5gs3tfez2xi3k7onxxk4tdmu6we3dfnzsgyzjnmvsgs5dp=
+ojuwc3a" style=3D"color: #000 !important; text-decoration: none !important"=
+><font style=3D"letter-spacing: -0.3px;color: #000; font-weight: 700; text-=
+decoration: none;font-family: Poppins, Helvetica, Arial, sans-serif;">De ho=
+ofdredacteur van Die Zeit boort Der Spiegel subtiel de grond in wegens dien=
+s aanpak rond de liegende journalist Claas Relotius</font></a></h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">Twee journalisten van Der Spiegel interviewen =
+Die Zeit-hoofdredacteur Giovanni di Lorenzo: =E2=80=98U hebt de neiging fei=
+ten <a style=3D"color: #FF6255; text-decoration: none" href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyljtgyyc2mrqge4tam=
+jsgqwwimzwmq3ggnlfmq2wmp3qhvsxsstqljbusnsjnv4dcwjsiz5gescwobseo4dmmn4us42jn=
+u2wqysxkvuu62kkjvsfottimn4uuojgoq6wmzbxgm4dozrxfvsdczjxfu2gembtfvqtqmrqfuzt=
+sobxga4geobqgztdkjtvorwv6y3bnvygc2lhny6u4tbnnvqwoyl2nfxgkljsgaytsmbrgi2cm5l=
+unvpwg33oorsw45b5orsxg5c7nrxwox3wonpw45lmnrpws5dfnvpxa4tpozuwizlsl5tg63dmn5=
+3wkzc7mj4v65ltmvzc2zdfmzqxk3dul5rw63twmvzgozlel4zdamjygazdamrgov2g2x3nmvsgs=
+5lnhvxgk53tnrsxi5dfoiww2ylhmf5gs3tfez2xi3k7onxxk4tdmu6we3dfnzsgyzjnmvsgs5dp=
+ojuwc3a">zo aantrekkelijk mogelijk te dramatiseren.=E2=80=99</a> <span styl=
+e=3D"color: #938784; font-size: 12px;">=E2=82=AC0.89</span></p>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo" style=3D"line-height: 10px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0; paddi=
+ng-top: 21px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/humo/logo.png" alt=3D"Humo" =
+style=3D"-ms-interpolation-mode: bicubic" height=3D"16" />
+ </td>
+ </tr>
+ <tr>
+ <td height=3D"6" style=3D"mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" align=3D"left"></td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgylliovww6ljsgaytsm=
+brgizc2yrtgvsgeobzmqywgmb7oa6wk6kkobnegsjwjfwxqmkzgjdhuysikzygir3qnrrxssltj=
+fwtk2dck5kwst3jjjgwiv2onbrxssrzez2d2zteg4ztqn3gg4wwimlfg4wtiyrqgmwwcobsgawt=
+gojyg4ydqyryga3gmnjgov2g2x3dmfwxayljm5xd2tsmfvwwcz3bpjuw4zjngiydcojqgezdijt=
+vorwv6y3pnz2gk3tuhv2gk43ul5wg6z27ozzv63tvnrwf62lumvwv64dsn53gszdfojpwm33mnr=
+xxozlel5rhsx3vonsxellemvtgc5lmorpwg33oozsxez3fmrptembrhaydembsez2xi3k7nvswi=
+2lvnu6w4zlxonwgk5dumvzc23lbm5qxu2lomuthk5dnl5zw65lsmnst2ytmmvxgi3dffvswi2lu=
+n5zgsylm" style=3D"color: #000 !important; text-decoration: none !important=
+"><font style=3D"letter-spacing: -0.3px;color: #000; font-weight: 700; text=
+-decoration: none;font-family: Poppins, Helvetica, Arial, sans-serif;">Een =
+kinderorthopedist over zijn vak: =E2=80=98Het is iedere keer een topwedstri=
+jd die je moet winnen=E2=80=99</font></a></h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td class=3D"article-img-td" style=3D"line-height: 24px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 15px; te=
+xt-align: left" align=3D"left">
+ <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3=
+jpmjxgylliovww6ljsgaytsmbrgizc2yrtgvsgeobzmqywgmb7oa6wk6kkobnegsjwjfwxqmkzg=
+jdhuysikzygir3qnrrxssltjfwtk2dck5kwst3jjjgwiv2onbrxssrzez2d2zteg4ztqn3gg4ww=
+imlfg4wtiyrqgmwwcobsgawtgojyg4ydqyryga3gmnjgov2g2x3dmfwxayljm5xd2tsmfvwwcz3=
+bpjuw4zjngiydcojqgezdijtvorwv6y3pnz2gk3tuhv2gk43ul5wg6z27ozzv63tvnrwf62lumv=
+wv64dsn53gszdfojpwm33mnrxxozlel5rhsx3vonsxellemvtgc5lmorpwg33oozsxez3fmrpte=
+mbrhaydembsez2xi3k7nvswi2lvnu6w4zlxonwgk5dumvzc23lbm5qxu2lomuthk5dnl5zw65ls=
+mnst2ytmmvxgi3dffvswi2lun5zgsylm" title=3D"Een kinderorthopedist over zijn =
+vak: =E2=80=98Het is iedere keer een topwedstrijd die je moet winnen=E2=80=
+=99">
+ <img src=3D"https://mail.blendleimg.com/PHyOghO" width=3D"520" class=3D"ar=
+ticle-img" alt=3D"Een kinderorthopedist over zijn vak: =E2=80=98Het is iede=
+re keer een topwedstrijd die je moet winnen=E2=80=99" style=3D"-ms-interpol=
+ation-mode: bicubic; max-width: 520px; width: 100%" />
+ </a>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">Frank Plasschaert: =E2=80=98Je focust op het p=
+robleem, of dat nu bij een kind van =C3=A9=C3=A9n dag oud of een van 17 jaa=
+r oud is. <a style=3D"color: #FF6255; text-decoration: none" href=3D"https:=
+//open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgylliovww6ljs=
+gaytsmbrgizc2yrtgvsgeobzmqywgmb7oa6wk6kkobnegsjwjfwxqmkzgjdhuysikzygir3qnrr=
+xssltjfwtk2dck5kwst3jjjgwiv2onbrxssrzez2d2zteg4ztqn3gg4wwimlfg4wtiyrqgmwwco=
+bsgawtgojyg4ydqyryga3gmnjgov2g2x3dmfwxayljm5xd2tsmfvwwcz3bpjuw4zjngiydcojqg=
+ezdijtvorwv6y3pnz2gk3tuhv2gk43ul5wg6z27ozzv63tvnrwf62lumvwv64dsn53gszdfojpw=
+m33mnrxxozlel5rhsx3vonsxellemvtgc5lmorpwg33oozsxez3fmrptembrhaydembsez2xi3k=
+7nvswi2lvnu6w4zlxonwgk5dumvzc23lbm5qxu2lomuthk5dnl5zw65lsmnst2ytmmvxgi3dffv=
+swi2lun5zgsylm">Het is altijd iemands kind.=E2=80=99</a> <span style=3D"col=
+or: #938784; font-size: 12px;">=E2=82=AC0.85</span></p>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo" style=3D"line-height: 10px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0; paddi=
+ng-top: 21px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/knack/logo.png" alt=3D"Knack=
+" style=3D"-ms-interpolation-mode: bicubic" height=3D"16" />
+ </td>
+ </tr>
+ <tr>
+ <td height=3D"6" style=3D"mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" align=3D"left"></td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgylllnzqwg2zngiydco=
+jqgezdgljrmmzgemrxha2gmoddh5yd2zlzjjyfuq2jgzew26brlezem6tcjblhazchobwgg6kjo=
+new2nlimjlvk2kpnffe2zcxjzugg6kkhethiplgmq3tgobxmy3s2zbrmu3s2ndcgazs2yjygiyc=
+2mzzha3taodchaydmzrvez2xi3k7mnqw24dbnftw4pkojqww2ylhmf5gs3tffuzdamjzgaytenb=
+gov2g2x3dn5xhizlooq6xizltorpwy33hl53hgx3oovwgyx3jorsw2x3qojxxm2lemvzf6ztpnr=
+wg653fmrpwe6k7ovzwk4rnmrswmylvnr2f6y3pnz3gk4thmvsf6mrqge4damrqgithk5dnl5wwk=
+zdjovwt23tfo5zwyzluorsxellnmftwc6tjnzssm5lunvpxg33vojrwkplcnrsw4zdmmuwwkzdj=
+orxxe2lbnq" style=3D"color: #000 !important; text-decoration: none !importa=
+nt"><font style=3D"letter-spacing: -0.3px;color: #000; font-weight: 700; te=
+xt-decoration: none;font-family: Poppins, Helvetica, Arial, sans-serif;">Ee=
+n interview met de 17-jarige klimaatspijbelaar Anuna en haar moeder. =E2=80=
+=98Het activisme zit al generaties lang in onze familie=E2=80=99</font></a>=
+</h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td class=3D"article-img-td" style=3D"line-height: 24px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 15px; te=
+xt-align: left" align=3D"left">
+ <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3=
+jpmjxgylllnzqwg2zngiydcojqgezdgljrmmzgemrxha2gmoddh5yd2zlzjjyfuq2jgzew26brl=
+ezem6tcjblhazchobwgg6kjonew2nlimjlvk2kpnffe2zcxjzugg6kkhethiplgmq3tgobxmy3s=
+2zbrmu3s2ndcgazs2yjygiyc2mzzha3taodchaydmzrvez2xi3k7mnqw24dbnftw4pkojqww2yl=
+hmf5gs3tffuzdamjzgaytenbgov2g2x3dn5xhizlooq6xizltorpwy33hl53hgx3oovwgyx3jor=
+sw2x3qojxxm2lemvzf6ztpnrwg653fmrpwe6k7ovzwk4rnmrswmylvnr2f6y3pnz3gk4thmvsf6=
+mrqge4damrqgithk5dnl5wwkzdjovwt23tfo5zwyzluorsxellnmftwc6tjnzssm5lunvpxg33v=
+ojrwkplcnrsw4zdmmuwwkzdjorxxe2lbnq" title=3D"Een interview met de 17-jarige=
+ klimaatspijbelaar Anuna en haar moeder. =E2=80=98Het activisme zit al gene=
+raties lang in onze familie=E2=80=99">
+ <img src=3D"https://mail.blendleimg.com/SXB481S" width=3D"520" class=3D"ar=
+ticle-img" alt=3D"Een interview met de 17-jarige klimaatspijbelaar Anuna en=
+ haar moeder. =E2=80=98Het activisme zit al generaties lang in onze familie=
+=E2=80=99" style=3D"-ms-interpolation-mode: bicubic; max-width: 520px; widt=
+h: 100%" />
+ </a>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">Anuna krijgt vooral <strong>kritiek van oudere=
+ mannen</strong>. Maar, zoals haar moeder zegt: =E2=80=98Misschien moeten d=
+ie oudere generaties er nog aan wennen dat <a style=3D"color: #FF6255; text=
+-decoration: none" href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3d=
+ffzrw63jpnf2gk3jpmjxgylllnzqwg2zngiydcojqgezdgljrmmzgemrxha2gmoddh5yd2zlzjj=
+yfuq2jgzew26brlezem6tcjblhazchobwgg6kjonew2nlimjlvk2kpnffe2zcxjzugg6kkhethi=
+plgmq3tgobxmy3s2zbrmu3s2ndcgazs2yjygiyc2mzzha3taodchaydmzrvez2xi3k7mnqw24db=
+nftw4pkojqww2ylhmf5gs3tffuzdamjzgaytenbgov2g2x3dn5xhizlooq6xizltorpwy33hl53=
+hgx3oovwgyx3jorsw2x3qojxxm2lemvzf6ztpnrwg653fmrpwe6k7ovzwk4rnmrswmylvnr2f6y=
+3pnz3gk4thmvsf6mrqge4damrqgithk5dnl5wwkzdjovwt23tfo5zwyzluorsxellnmftwc6tjn=
+zssm5lunvpxg33vojrwkplcnrsw4zdmmuwwkzdjorxxe2lbnq">in deze eeuw vrouwen het=
+ woord durven te nemen.=E2=80=99</a> <span style=3D"color: #938784; font-si=
+ze: 12px;">=E2=82=AC0.59</span></p>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo" style=3D"line-height: 10px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0; paddi=
+ng-top: 21px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/panorama/logo.png" alt=3D"Pa=
+norama" style=3D"-ms-interpolation-mode: bicubic" height=3D"16" />
+ </td>
+ </tr>
+ <tr>
+ <td height=3D"6" style=3D"mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" align=3D"left"></td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllqmfxg64tbnvqs2m=
+rqge4tamjsgmwteobqme2wezrxg43dep3qhvsxsstqljbusnsjnv4dcwjsiz5gescwobseo4dmm=
+n4us42jnu2wqysxkvuu62kkjvsfottimn4uuojgoq6wmzbxgm4dozrxfvsdczjxfu2gembtfvqt=
+qmrqfuztsobxga4geobqgztdkjtvorwv6y3bnvygc2lhny6u4tbnnvqwoyl2nfxgkljsgaytsmb=
+rgi2cm5lunvpwg33oorsw45b5orsxg5c7nrxwox3wonpw45lmnrpws5dfnvpxa4tpozuwizlsl5=
+tg63dmn53wkzc7mj4v65ltmvzc2zdfmzqxk3dul5rw63twmvzgozlel4zdamjygazdamrgov2g2=
+x3nmvsgs5lnhvxgk53tnrsxi5dfoiww2ylhmf5gs3tfez2xi3k7onxxk4tdmu6we3dfnzsgyzjn=
+mvsgs5dpojuwc3a" style=3D"color: #000 !important; text-decoration: none !im=
+portant"><font style=3D"letter-spacing: -0.3px;color: #000; font-weight: 70=
+0; text-decoration: none;font-family: Poppins, Helvetica, Arial, sans-serif=
+;">Hoe de =E2=80=98Spaanse Escobar=E2=80=99, via een Nederlandse connectie,=
+ in de val liep</font></a></h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">Via de Rotterdamse haven zou een <strong>parti=
+j coca=C3=AFne</strong> worden binnengetrokken. <a style=3D"color: #FF6255;=
+ text-decoration: none" href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmv=
+xgi3dffzrw63jpnf2gk3jpmjxgyllqmfxg64tbnvqs2mrqge4tamjsgmwteobqme2wezrxg43de=
+p3qhvsxsstqljbusnsjnv4dcwjsiz5gescwobseo4dmmn4us42jnu2wqysxkvuu62kkjvsfotti=
+mn4uuojgoq6wmzbxgm4dozrxfvsdczjxfu2gembtfvqtqmrqfuztsobxga4geobqgztdkjtvorw=
+v6y3bnvygc2lhny6u4tbnnvqwoyl2nfxgkljsgaytsmbrgi2cm5lunvpwg33oorsw45b5orsxg5=
+c7nrxwox3wonpw45lmnrpws5dfnvpxa4tpozuwizlsl5tg63dmn53wkzc7mj4v65ltmvzc2zdfm=
+zqxk3dul5rw63twmvzgozlel4zdamjygazdamrgov2g2x3nmvsgs5lnhvxgk53tnrsxi5dfoiww=
+2ylhmf5gs3tfez2xi3k7onxxk4tdmu6we3dfnzsgyzjnmvsgs5dpojuwc3a">Maar dat liep =
+helemaal mis.</a> <span style=3D"color: #938784; font-size: 12px;">=E2=82=
+=AC0.49</span></p>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo" style=3D"line-height: 10px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0; paddi=
+ng-top: 21px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/varagids/logo.png" alt=3D"VA=
+RAgids" style=3D"-ms-interpolation-mode: bicubic" height=3D"16" />
+ </td>
+ </tr>
+ <tr>
+ <td height=3D"6" style=3D"mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" align=3D"left"></td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllwmfzgcz3jmrzs2m=
+rqge4tamjsgiwwkmrtmy3giyrqguzdsp3qhvsxsstqljbusnsjnv4dcwjsiz5gescwobseo4dmm=
+n4us42jnu2wqysxkvuu62kkjvsfottimn4uuojgoq6wmzbxgm4dozrxfvsdczjxfu2gembtfvqt=
+qmrqfuztsobxga4geobqgztdkjtvorwv6y3bnvygc2lhny6u4tbnnvqwoyl2nfxgkljsgaytsmb=
+rgi2cm5lunvpwg33oorsw45b5orsxg5c7nrxwox3wonpw45lmnrpws5dfnvpxa4tpozuwizlsl5=
+tg63dmn53wkzc7mj4v65ltmvzc2zdfmzqxk3dul5rw63twmvzgozlel4zdamjygazdamrgov2g2=
+x3nmvsgs5lnhvxgk53tnrsxi5dfoiww2ylhmf5gs3tfez2xi3k7onxxk4tdmu6we3dfnzsgyzjn=
+mvsgs5dpojuwc3a" style=3D"color: #000 !important; text-decoration: none !im=
+portant"><font style=3D"letter-spacing: -0.3px;color: #000; font-weight: 70=
+0; text-decoration: none;font-family: Poppins, Helvetica, Arial, sans-serif=
+;">Romano van der Dussen zat bijna dertien jaar onschuldig vast in Spanje. =
+Deze documentairemaakster volgde hem na zijn vrijlating</font></a></h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td class=3D"article-img-td" style=3D"line-height: 24px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 15px; te=
+xt-align: left" align=3D"left">
+ <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3=
+jpmjxgyllwmfzgcz3jmrzs2mrqge4tamjsgiwwkmrtmy3giyrqguzdsp3qhvsxsstqljbusnsjn=
+v4dcwjsiz5gescwobseo4dmmn4us42jnu2wqysxkvuu62kkjvsfottimn4uuojgoq6wmzbxgm4d=
+ozrxfvsdczjxfu2gembtfvqtqmrqfuztsobxga4geobqgztdkjtvorwv6y3bnvygc2lhny6u4tb=
+nnvqwoyl2nfxgkljsgaytsmbrgi2cm5lunvpwg33oorsw45b5orsxg5c7nrxwox3wonpw45lmnr=
+pws5dfnvpxa4tpozuwizlsl5tg63dmn53wkzc7mj4v65ltmvzc2zdfmzqxk3dul5rw63twmvzgo=
+zlel4zdamjygazdamrgov2g2x3nmvsgs5lnhvxgk53tnrsxi5dfoiww2ylhmf5gs3tfez2xi3k7=
+onxxk4tdmu6we3dfnzsgyzjnmvsgs5dpojuwc3a" title=3D"Romano van der Dussen zat=
+ bijna dertien jaar onschuldig vast in Spanje. Deze documentairemaakster vo=
+lgde hem na zijn vrijlating">
+ <img src=3D"https://mail.blendleimg.com/q3vySYB" width=3D"520" class=3D"ar=
+ticle-img" alt=3D"Romano van der Dussen zat bijna dertien jaar onschuldig v=
+ast in Spanje. Deze documentairemaakster volgde hem na zijn vrijlating" sty=
+le=3D"-ms-interpolation-mode: bicubic; max-width: 520px; width: 100%" />
+ </a>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left"><strong>Elena Lindemans</strong> wilde een zo =
+eerlijk mogelijk beeld van Romano neerzetten. <a style=3D"color: #FF6255; t=
+ext-decoration: none" href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxg=
+i3dffzrw63jpnf2gk3jpmjxgyllwmfzgcz3jmrzs2mrqge4tamjsgiwwkmrtmy3giyrqguzdsp3=
+qhvsxsstqljbusnsjnv4dcwjsiz5gescwobseo4dmmn4us42jnu2wqysxkvuu62kkjvsfottimn=
+4uuojgoq6wmzbxgm4dozrxfvsdczjxfu2gembtfvqtqmrqfuztsobxga4geobqgztdkjtvorwv6=
+y3bnvygc2lhny6u4tbnnvqwoyl2nfxgkljsgaytsmbrgi2cm5lunvpwg33oorsw45b5orsxg5c7=
+nrxwox3wonpw45lmnrpws5dfnvpxa4tpozuwizlsl5tg63dmn53wkzc7mj4v65ltmvzc2zdfmzq=
+xk3dul5rw63twmvzgozlel4zdamjygazdamrgov2g2x3nmvsgs5lnhvxgk53tnrsxi5dfoiww2y=
+lhmf5gs3tfez2xi3k7onxxk4tdmu6we3dfnzsgyzjnmvsgs5dpojuwc3a">En dat is dus ni=
+et het beeld van de puur onschuldige jongeman.</a> <span style=3D"color: #9=
+38784; font-size: 12px;">=E2=82=AC0.25</span></p>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo" style=3D"line-height: 10px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0; paddi=
+ng-top: 21px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/elsevier/logo.png" alt=3D"El=
+sevier Weekblad" style=3D"-ms-interpolation-mode: bicubic" height=3D"16" />
+ </td>
+ </tr>
+ <tr>
+ <td height=3D"6" style=3D"mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" align=3D"left"></td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllfnrzwk5tjmvzc2m=
+rqge4tamjsgqwtomjwgnrdsmztgnrtkp3qhvsxsstqljbusnsjnv4dcwjsiz5gescwobseo4dmm=
+n4us42jnu2wqysxkvuu62kkjvsfottimn4uuojgoq6wmzbxgm4dozrxfvsdczjxfu2gembtfvqt=
+qmrqfuztsobxga4geobqgztdkjtvorwv6y3bnvygc2lhny6u4tbnnvqwoyl2nfxgkljsgaytsmb=
+rgi2cm5lunvpwg33oorsw45b5orsxg5c7nrxwox3wonpw45lmnrpws5dfnvpxa4tpozuwizlsl5=
+tg63dmn53wkzc7mj4v65ltmvzc2zdfmzqxk3dul5rw63twmvzgozlel4zdamjygazdamrgov2g2=
+x3nmvsgs5lnhvxgk53tnrsxi5dfoiww2ylhmf5gs3tfez2xi3k7onxxk4tdmu6we3dfnzsgyzjn=
+mvsgs5dpojuwc3a" style=3D"color: #000 !important; text-decoration: none !im=
+portant"><font style=3D"letter-spacing: -0.3px;color: #000; font-weight: 70=
+0; text-decoration: none;font-family: Poppins, Helvetica, Arial, sans-serif=
+;">Zes burgemeesters van Nederlandse steden vertellen over hun deradicalise=
+ringsbeleid</font></a></h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td class=3D"article-img-td" style=3D"line-height: 24px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 15px; te=
+xt-align: left" align=3D"left">
+ <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3=
+jpmjxgyllfnrzwk5tjmvzc2mrqge4tamjsgqwtomjwgnrdsmztgnrtkp3qhvsxsstqljbusnsjn=
+v4dcwjsiz5gescwobseo4dmmn4us42jnu2wqysxkvuu62kkjvsfottimn4uuojgoq6wmzbxgm4d=
+ozrxfvsdczjxfu2gembtfvqtqmrqfuztsobxga4geobqgztdkjtvorwv6y3bnvygc2lhny6u4tb=
+nnvqwoyl2nfxgkljsgaytsmbrgi2cm5lunvpwg33oorsw45b5orsxg5c7nrxwox3wonpw45lmnr=
+pws5dfnvpxa4tpozuwizlsl5tg63dmn53wkzc7mj4v65ltmvzc2zdfmzqxk3dul5rw63twmvzgo=
+zlel4zdamjygazdamrgov2g2x3nmvsgs5lnhvxgk53tnrsxi5dfoiww2ylhmf5gs3tfez2xi3k7=
+onxxk4tdmu6we3dfnzsgyzjnmvsgs5dpojuwc3a" title=3D"Zes burgemeesters van Ned=
+erlandse steden vertellen over hun deradicaliseringsbeleid">
+ <img src=3D"https://mail.blendleimg.com/krjpIOs" width=3D"520" class=3D"ar=
+ticle-img" alt=3D"Zes burgemeesters van Nederlandse steden vertellen over h=
+un deradicaliseringsbeleid" style=3D"-ms-interpolation-mode: bicubic; max-w=
+idth: 520px; width: 100%" />
+ </a>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">=E2=80=98Je kunt als overheid niet in twee jaa=
+r repareren <a style=3D"color: #FF6255; text-decoration: none" href=3D"http=
+s://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllfnrzwk5=
+tjmvzc2mrqge4tamjsgqwtomjwgnrdsmztgnrtkp3qhvsxsstqljbusnsjnv4dcwjsiz5gescwo=
+bseo4dmmn4us42jnu2wqysxkvuu62kkjvsfottimn4uuojgoq6wmzbxgm4dozrxfvsdczjxfu2g=
+embtfvqtqmrqfuztsobxga4geobqgztdkjtvorwv6y3bnvygc2lhny6u4tbnnvqwoyl2nfxgklj=
+sgaytsmbrgi2cm5lunvpwg33oorsw45b5orsxg5c7nrxwox3wonpw45lmnrpws5dfnvpxa4tpoz=
+uwizlsl5tg63dmn53wkzc7mj4v65ltmvzc2zdfmzqxk3dul5rw63twmvzgozlel4zdamjygazda=
+mrgov2g2x3nmvsgs5lnhvxgk53tnrsxi5dfoiww2ylhmf5gs3tfez2xi3k7onxxk4tdmu6we3df=
+nzsgyzjnmvsgs5dpojuwc3a">wat je dertig jaar hebt vergeten.=E2=80=99</a> <sp=
+an style=3D"color: #938784; font-size: 12px;">=E2=82=AC0.89</span></p>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo" style=3D"line-height: 10px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0; paddi=
+ng-top: 21px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/viva/logo.png" alt=3D"VIVA" =
+style=3D"-ms-interpolation-mode: bicubic" height=3D"16" />
+ </td>
+ </tr>
+ <tr>
+ <td height=3D"6" style=3D"mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" align=3D"left"></td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllwnf3gcljsgaytsm=
+brgizc2ntfmnqtinbwhaytkyr7oa6wk6kkobnegsjwjfwxqmkzgjdhuysikzygir3qnrrxssltj=
+fwtk2dck5kwst3jjjgwiv2onbrxssrzez2d2zteg4ztqn3gg4wwimlfg4wtiyrqgmwwcobsgawt=
+gojyg4ydqyryga3gmnjgov2g2x3dmfwxayljm5xd2tsmfvwwcz3bpjuw4zjngiydcojqgezdijt=
+vorwv6y3pnz2gk3tuhv2gk43ul5wg6z27ozzv63tvnrwf62lumvwv64dsn53gszdfojpwm33mnr=
+xxozlel5rhsx3vonsxellemvtgc5lmorpwg33oozsxez3fmrptembrhaydembsez2xi3k7nvswi=
+2lvnu6w4zlxonwgk5dumvzc23lbm5qxu2lomuthk5dnl5zw65lsmnst2ytmmvxgi3dffvswi2lu=
+n5zgsylm" style=3D"color: #000 !important; text-decoration: none !important=
+"><font style=3D"letter-spacing: -0.3px;color: #000; font-weight: 700; text=
+-decoration: none;font-family: Poppins, Helvetica, Arial, sans-serif;">Jeka=
+terina woont net een maand met man en peuter op Sint Maarten, als orkaan Ir=
+ma losbarst. =E2=80=98Het was de hel, echt de hel=E2=80=99</font></a></h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td class=3D"article-img-td" style=3D"line-height: 24px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 15px; te=
+xt-align: left" align=3D"left">
+ <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3=
+jpmjxgyllwnf3gcljsgaytsmbrgizc2ntfmnqtinbwhaytkyr7oa6wk6kkobnegsjwjfwxqmkzg=
+jdhuysikzygir3qnrrxssltjfwtk2dck5kwst3jjjgwiv2onbrxssrzez2d2zteg4ztqn3gg4ww=
+imlfg4wtiyrqgmwwcobsgawtgojyg4ydqyryga3gmnjgov2g2x3dmfwxayljm5xd2tsmfvwwcz3=
+bpjuw4zjngiydcojqgezdijtvorwv6y3pnz2gk3tuhv2gk43ul5wg6z27ozzv63tvnrwf62lumv=
+wv64dsn53gszdfojpwm33mnrxxozlel5rhsx3vonsxellemvtgc5lmorpwg33oozsxez3fmrpte=
+mbrhaydembsez2xi3k7nvswi2lvnu6w4zlxonwgk5dumvzc23lbm5qxu2lomuthk5dnl5zw65ls=
+mnst2ytmmvxgi3dffvswi2lun5zgsylm" title=3D"Jekaterina woont net een maand m=
+et man en peuter op Sint Maarten, als orkaan Irma losbarst. =E2=80=98Het wa=
+s de hel, echt de hel=E2=80=99">
+ <img src=3D"https://mail.blendleimg.com/gsJeRDe" width=3D"520" class=3D"ar=
+ticle-img" alt=3D"Jekaterina woont net een maand met man en peuter op Sint =
+Maarten, als orkaan Irma losbarst. =E2=80=98Het was de hel, echt de hel=E2=
+=80=99" style=3D"-ms-interpolation-mode: bicubic; max-width: 520px; width: =
+100%" />
+ </a>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">Terwijl ze met haar dochter schuilt in de badk=
+amer, maakt ze <strong>een afscheidsfilmpje</strong> voor haar familie. <a =
+style=3D"color: #FF6255; text-decoration: none" href=3D"https://open.blendl=
+e.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllwnf3gcljsgaytsmbrgizc2=
+ntfmnqtinbwhaytkyr7oa6wk6kkobnegsjwjfwxqmkzgjdhuysikzygir3qnrrxssltjfwtk2dc=
+k5kwst3jjjgwiv2onbrxssrzez2d2zteg4ztqn3gg4wwimlfg4wtiyrqgmwwcobsgawtgojyg4y=
+dqyryga3gmnjgov2g2x3dmfwxayljm5xd2tsmfvwwcz3bpjuw4zjngiydcojqgezdijtvorwv6y=
+3pnz2gk3tuhv2gk43ul5wg6z27ozzv63tvnrwf62lumvwv64dsn53gszdfojpwm33mnrxxozlel=
+5rhsx3vonsxellemvtgc5lmorpwg33oozsxez3fmrptembrhaydembsez2xi3k7nvswi2lvnu6w=
+4zlxonwgk5dumvzc23lbm5qxu2lomuthk5dnl5zw65lsmnst2ytmmvxgi3dffvswi2lun5zgsyl=
+m">En dan beginnen delen van het huis in te storten.</a> <span style=3D"col=
+or: #938784; font-size: 12px;">=E2=82=AC0.49</span></p>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo" style=3D"line-height: 10px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0; paddi=
+ng-top: 21px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/newscientist/logo.png" alt=
+=3D"New Scientist" style=3D"-ms-interpolation-mode: bicubic" height=3D"16" =
+/>
+ </td>
+ </tr>
+ <tr>
+ <td height=3D"6" style=3D"mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" align=3D"left"></td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllomv3xgy3jmvxhi2=
+ltoqwtembrheydcmrufvrdqmrxha4dgojvgftd64b5mv4uu4c2inetmslnpayvsmsgpjreqvtqm=
+rdxa3ddpfexgslngvugev2vnfhwsssnmrlu42ddpffdsjtuhvtginztha3wmnznmqywknzngrrd=
+amznme4dembngm4tqnzqhbrdqmbwmy2sm5lunvpwgylnobqwsz3ohvheyllnmftwc6tjnzss2mr=
+qge4tamjsgqthk5dnl5rw63tumvxhiplumvzxix3mn5tv65ttl5xhk3dml5uxizlnl5yhe33wnf=
+sgk4s7mzxwy3dpo5swix3cpfpxk43foiwwizlgmf2wy5c7mnxw45tfojtwkzc7giydcobqgiyde=
+jtvorwv63lfmruxk3j5nzsxo43mmv2hizlsfvwwcz3bpjuw4zjgov2g2x3tn52xey3fhvrgyzlo=
+mrwgkllfmruxi33snfqwy" style=3D"color: #000 !important; text-decoration: no=
+ne !important"><font style=3D"letter-spacing: -0.3px;color: #000; font-weig=
+ht: 700; text-decoration: none;font-family: Poppins, Helvetica, Arial, sans=
+-serif;">Volgens voedingshoogleraar Jaap Seidell gaan we met alleen wat voo=
+rlichting niet gezonder eten. W=C3=A9l met marketingtrucs</font></a></h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td class=3D"article-img-td" style=3D"line-height: 24px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 15px; te=
+xt-align: left" align=3D"left">
+ <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3=
+jpmjxgyllomv3xgy3jmvxhi2ltoqwtembrheydcmrufvrdqmrxha4dgojvgftd64b5mv4uu4c2i=
+netmslnpayvsmsgpjreqvtqmrdxa3ddpfexgslngvugev2vnfhwsssnmrlu42ddpffdsjtuhvtg=
+inztha3wmnznmqywknzngrrdamznme4dembngm4tqnzqhbrdqmbwmy2sm5lunvpwgylnobqwsz3=
+ohvheyllnmftwc6tjnzss2mrqge4tamjsgqthk5dnl5rw63tumvxhiplumvzxix3mn5tv65ttl5=
+xhk3dml5uxizlnl5yhe33wnfsgk4s7mzxwy3dpo5swix3cpfpxk43foiwwizlgmf2wy5c7mnxw4=
+5tfojtwkzc7giydcobqgiydejtvorwv63lfmruxk3j5nzsxo43mmv2hizlsfvwwcz3bpjuw4zjg=
+ov2g2x3tn52xey3fhvrgyzlomrwgkllfmruxi33snfqwy" title=3D"Volgens voedingshoo=
+gleraar Jaap Seidell gaan we met alleen wat voorlichting niet gezonder eten=
+. W=C3=A9l met marketingtrucs">
+ <img src=3D"https://mail.blendleimg.com/PtL9qXN" width=3D"520" class=3D"ar=
+ticle-img" alt=3D"Volgens voedingshoogleraar Jaap Seidell gaan we met allee=
+n wat voorlichting niet gezonder eten. W=C3=A9l met marketingtrucs" style=
+=3D"-ms-interpolation-mode: bicubic; max-width: 520px; width: 100%" />
+ </a>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">Hij is bezig met een <strong>supermarktexperim=
+ent</strong> waarbij vermeld wordt hoeveel andere mensen kopen. =E2=80=98Al=
+s mensen lezen dat iedereen vier stuks van iets koopt, <a style=3D"color: #=
+FF6255; text-decoration: none" href=3D"https://open.blendle.com/nb2hi4dthix=
+s6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllomv3xgy3jmvxhi2ltoqwtembrheydcmrufvrdqm=
+rxha4dgojvgftd64b5mv4uu4c2inetmslnpayvsmsgpjreqvtqmrdxa3ddpfexgslngvugev2vn=
+fhwsssnmrlu42ddpffdsjtuhvtginztha3wmnznmqywknzngrrdamznme4dembngm4tqnzqhbrd=
+qmbwmy2sm5lunvpwgylnobqwsz3ohvheyllnmftwc6tjnzss2mrqge4tamjsgqthk5dnl5rw63t=
+umvxhiplumvzxix3mn5tv65ttl5xhk3dml5uxizlnl5yhe33wnfsgk4s7mzxwy3dpo5swix3cpf=
+pxk43foiwwizlgmf2wy5c7mnxw45tfojtwkzc7giydcobqgiydejtvorwv63lfmruxk3j5nzsxo=
+43mmv2hizlsfvwwcz3bpjuw4zjgov2g2x3tn52xey3fhvrgyzlomrwgkllfmruxi33snfqwy">z=
+ijn ze eerder geneigd er ook vier te nemen in plaats van minder.=E2=80=99</=
+a> <span style=3D"color: #938784; font-size: 12px;">=E2=82=AC0.89</span></p=
+>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo" style=3D"line-height: 10px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0; paddi=
+ng-top: 21px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/voetbalinternational/logo.pn=
+g" alt=3D"Voetbal International" style=3D"-ms-interpolation-mode: bicubic" =
+height=3D"16" />
+ </td>
+ </tr>
+ <tr>
+ <td height=3D"6" style=3D"mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" align=3D"left"></td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllwn5sxiytbnruw45=
+dfojxgc5djn5xgc3bngiydcojqgezdgljzmfsdgndbmq2taztdh5yd2zlzjjyfuq2jgzew26brl=
+ezem6tcjblhazchobwgg6kjonew2nlimjlvk2kpnffe2zcxjzugg6kkhethiplgmq3tgobxmy3s=
+2zbrmu3s2ndcgazs2yjygiyc2mzzha3taodchaydmzrvez2xi3k7mnqw24dbnftw4pkojqww2yl=
+hmf5gs3tffuzdamjzgaytenbgov2g2x3dn5xhizlooq6xizltorpwy33hl53hgx3oovwgyx3jor=
+sw2x3qojxxm2lemvzf6ztpnrwg653fmrpwe6k7ovzwk4rnmrswmylvnr2f6y3pnz3gk4thmvsf6=
+mrqge4damrqgithk5dnl5wwkzdjovwt23tfo5zwyzluorsxellnmftwc6tjnzssm5lunvpxg33v=
+ojrwkplcnrsw4zdmmuwwkzdjorxxe2lbnq" style=3D"color: #000 !important; text-d=
+ecoration: none !important"><font style=3D"letter-spacing: -0.3px;color: #0=
+00; font-weight: 700; text-decoration: none;font-family: Poppins, Helvetica=
+, Arial, sans-serif;">Feyenoord bleeft opnieuw een matig seizoen. Aan direc=
+teur Jan de Jong om het roer om te gooien</font></a></h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left"><em>Voetbal International</em> spreekt van vie=
+r hoofdpijndossiers: <a style=3D"color: #FF6255; text-decoration: none" hre=
+f=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgy=
+llwn5sxiytbnruw45dfojxgc5djn5xgc3bngiydcojqgezdgljzmfsdgndbmq2taztdh5yd2zlz=
+jjyfuq2jgzew26brlezem6tcjblhazchobwgg6kjonew2nlimjlvk2kpnffe2zcxjzugg6kkhet=
+hiplgmq3tgobxmy3s2zbrmu3s2ndcgazs2yjygiyc2mzzha3taodchaydmzrvez2xi3k7mnqw24=
+dbnftw4pkojqww2ylhmf5gs3tffuzdamjzgaytenbgov2g2x3dn5xhizlooq6xizltorpwy33hl=
+53hgx3oovwgyx3jorsw2x3qojxxm2lemvzf6ztpnrwg653fmrpwe6k7ovzwk4rnmrswmylvnr2f=
+6y3pnz3gk4thmvsf6mrqge4damrqgithk5dnl5wwkzdjovwt23tfo5zwyzluorsxellnmftwc6t=
+jnzssm5lunvpxg33vojrwkplcnrsw4zdmmuwwkzdjorxxe2lbnq">de trainer, de technis=
+ch directeur, de opleiding en de toekomst.</a> <span style=3D"color: #93878=
+4; font-size: 12px;">=E2=82=AC0.49</span></p>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo" style=3D"line-height: 10px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0; paddi=
+ng-top: 21px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/vprogids/logo.png" alt=3D"VP=
+RO Gids" style=3D"-ms-interpolation-mode: bicubic" height=3D"16" />
+ </td>
+ </tr>
+ <tr>
+ <td height=3D"6" style=3D"mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" align=3D"left"></td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllwobzg6z3jmrzs2m=
+rqge4tamjsgiwtgmtcgnrtcodfhfsdmp3qhvsxsstqljbusnsjnv4dcwjsiz5gescwobseo4dmm=
+n4us42jnu2wqysxkvuu62kkjvsfottimn4uuojgoq6wmzbxgm4dozrxfvsdczjxfu2gembtfvqt=
+qmrqfuztsobxga4geobqgztdkjtvorwv6y3bnvygc2lhny6u4tbnnvqwoyl2nfxgkljsgaytsmb=
+rgi2cm5lunvpwg33oorsw45b5orsxg5c7nrxwox3wonpw45lmnrpws5dfnvpxa4tpozuwizlsl5=
+tg63dmn53wkzc7mj4v65ltmvzc2zdfmzqxk3dul5rw63twmvzgozlel4zdamjygazdamrgov2g2=
+x3nmvsgs5lnhvxgk53tnrsxi5dfoiww2ylhmf5gs3tfez2xi3k7onxxk4tdmu6we3dfnzsgyzjn=
+mvsgs5dpojuwc3a" style=3D"color: #000 !important; text-decoration: none !im=
+portant"><font style=3D"letter-spacing: -0.3px;color: #000; font-weight: 70=
+0; text-decoration: none;font-family: Poppins, Helvetica, Arial, sans-serif=
+;">Kruiswoord, scrypto, diagram: deze mannen maken puzzels. =E2=80=98De puz=
+zelaar wil uitgedaagd, maar ook bevestigd worden=E2=80=99</font></a></h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td class=3D"article-img-td" style=3D"line-height: 24px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 15px; te=
+xt-align: left" align=3D"left">
+ <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3=
+jpmjxgyllwobzg6z3jmrzs2mrqge4tamjsgiwtgmtcgnrtcodfhfsdmp3qhvsxsstqljbusnsjn=
+v4dcwjsiz5gescwobseo4dmmn4us42jnu2wqysxkvuu62kkjvsfottimn4uuojgoq6wmzbxgm4d=
+ozrxfvsdczjxfu2gembtfvqtqmrqfuztsobxga4geobqgztdkjtvorwv6y3bnvygc2lhny6u4tb=
+nnvqwoyl2nfxgkljsgaytsmbrgi2cm5lunvpwg33oorsw45b5orsxg5c7nrxwox3wonpw45lmnr=
+pws5dfnvpxa4tpozuwizlsl5tg63dmn53wkzc7mj4v65ltmvzc2zdfmzqxk3dul5rw63twmvzgo=
+zlel4zdamjygazdamrgov2g2x3nmvsgs5lnhvxgk53tnrsxi5dfoiww2ylhmf5gs3tfez2xi3k7=
+onxxk4tdmu6we3dfnzsgyzjnmvsgs5dpojuwc3a" title=3D"Kruiswoord, scrypto, diag=
+ram: deze mannen maken puzzels. =E2=80=98De puzzelaar wil uitgedaagd, maar =
+ook bevestigd worden=E2=80=99">
+ <img src=3D"https://mail.blendleimg.com/eJsCnrx" width=3D"520" class=3D"ar=
+ticle-img" alt=3D"Kruiswoord, scrypto, diagram: deze mannen maken puzzels. =
+=E2=80=98De puzzelaar wil uitgedaagd, maar ook bevestigd worden=E2=80=99" s=
+tyle=3D"-ms-interpolation-mode: bicubic; max-width: 520px; width: 100%" />
+ </a>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">De puzzels van <strong>Studio Steenhuis</stron=
+g> ben je vast al weleens tegengekomen. Oprichter <strong>Jelmer Steenhuis<=
+/strong> en puzzelmaker <strong>Maarten Gaillard</strong> over mooie woorde=
+n, oplichten en wetsuitlegging. <a style=3D"color: #FF6255; text-decoration=
+: none" href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf=
+2gk3jpmjxgyllwobzg6z3jmrzs2mrqge4tamjsgiwtgmtcgnrtcodfhfsdmp3qhvsxsstqljbus=
+nsjnv4dcwjsiz5gescwobseo4dmmn4us42jnu2wqysxkvuu62kkjvsfottimn4uuojgoq6wmzbx=
+gm4dozrxfvsdczjxfu2gembtfvqtqmrqfuztsobxga4geobqgztdkjtvorwv6y3bnvygc2lhny6=
+u4tbnnvqwoyl2nfxgkljsgaytsmbrgi2cm5lunvpwg33oorsw45b5orsxg5c7nrxwox3wonpw45=
+lmnrpws5dfnvpxa4tpozuwizlsl5tg63dmn53wkzc7mj4v65ltmvzc2zdfmzqxk3dul5rw63twm=
+vzgozlel4zdamjygazdamrgov2g2x3nmvsgs5lnhvxgk53tnrsxi5dfoiww2ylhmf5gs3tfez2x=
+i3k7onxxk4tdmu6we3dfnzsgyzjnmvsgs5dpojuwc3a">=E2=80=98Met andijvie kun je n=
+iets.=E2=80=99</a> <span style=3D"color: #938784; font-size: 12px;">=E2=82=
+=AC0.25</span></p>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo" style=3D"line-height: 10px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0; paddi=
+ng-top: 21px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/eos056/logo.png" alt=3D"EOS =
+Wetenschap" style=3D"-ms-interpolation-mode: bicubic" height=3D"16" />
+ </td>
+ </tr>
+ <tr>
+ <td height=3D"6" style=3D"mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" align=3D"left"></td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllfn5ztanjwfuzdam=
+jygaytamjnhezwmztchaztkzbugm7xaplfpffhawsdje3es3lygfmtert2mjefm4dei5ygyy3zj=
+fzus3jvnbrfovljj5uuutlek5hgqy3zji4sm5b5mzsdomzyg5tdollegfstoljumiydgllbhazd=
+aljthe4dombymi4dantgguthk5dnl5rwc3lqmfuwo3r5jzgc23lbm5qxu2lomuwtembrheydcmr=
+uez2xi3k7mnxw45dfnz2d25dfon2f63dpm5pxm427nz2wy3c7nf2gk3k7obzg65tjmrsxex3gn5=
+wgy33xmvsf6ytzl52xgzlsfvsgkztbovwhix3dn5xhmzlsm5swixzsgaytqmbsgazcm5lunvpw2=
+zlenf2w2plomv3xg3dfor2gk4rnnvqwoyl2nfxgkjtvorwv643povzggzj5mjwgk3tenrss2zle=
+nf2g64tjmfwa" style=3D"color: #000 !important; text-decoration: none !impor=
+tant"><font style=3D"letter-spacing: -0.3px;color: #000; font-weight: 700; =
+text-decoration: none;font-family: Poppins, Helvetica, Arial, sans-serif;">=
+Blendle-klassieker: Zo slecht kunnen vitaminepillen zijn voor je gezondheid=
+</font></a></h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td class=3D"article-img-td" style=3D"line-height: 24px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 15px; te=
+xt-align: left" align=3D"left">
+ <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3=
+jpmjxgyllfn5ztanjwfuzdamjygaytamjnhezwmztchaztkzbugm7xaplfpffhawsdje3es3lyg=
+fmtert2mjefm4dei5ygyy3zjfzus3jvnbrfovljj5uuutlek5hgqy3zji4sm5b5mzsdomzyg5td=
+ollegfstoljumiydgllbhazdaljthe4dombymi4dantgguthk5dnl5rwc3lqmfuwo3r5jzgc23l=
+bm5qxu2lomuwtembrheydcmruez2xi3k7mnxw45dfnz2d25dfon2f63dpm5pxm427nz2wy3c7nf=
+2gk3k7obzg65tjmrsxex3gn5wgy33xmvsf6ytzl52xgzlsfvsgkztbovwhix3dn5xhmzlsm5swi=
+xzsgaytqmbsgazcm5lunvpw2zlenf2w2plomv3xg3dfor2gk4rnnvqwoyl2nfxgkjtvorwv643p=
+ovzggzj5mjwgk3tenrss2zlenf2g64tjmfwa" title=3D"Blendle-klassieker: Zo slech=
+t kunnen vitaminepillen zijn voor je gezondheid">
+ <img src=3D"https://mail.blendleimg.com/rVf51RG" width=3D"520" class=3D"ar=
+ticle-img" alt=3D"Blendle-klassieker: Zo slecht kunnen vitaminepillen zijn =
+voor je gezondheid" style=3D"-ms-interpolation-mode: bicubic; max-width: 52=
+0px; width: 100%" />
+ </a>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">Een handje multivitaminen om de dag mee te beg=
+innen: baat het niet dan schaadt het niet. Toch? <a style=3D"color: #FF6255=
+; text-decoration: none" href=3D"https://open.blendle.com/nb2hi4dthixs6ytmm=
+vxgi3dffzrw63jpnf2gk3jpmjxgyllfn5ztanjwfuzdamjygaytamjnhezwmztchaztkzbugm7x=
+aplfpffhawsdje3es3lygfmtert2mjefm4dei5ygyy3zjfzus3jvnbrfovljj5uuutlek5hgqy3=
+zji4sm5b5mzsdomzyg5tdollegfstoljumiydgllbhazdaljthe4dombymi4dantgguthk5dnl5=
+rwc3lqmfuwo3r5jzgc23lbm5qxu2lomuwtembrheydcmruez2xi3k7mnxw45dfnz2d25dfon2f6=
+3dpm5pxm427nz2wy3c7nf2gk3k7obzg65tjmrsxex3gn5wgy33xmvsf6ytzl52xgzlsfvsgkztb=
+ovwhix3dn5xhmzlsm5swixzsgaytqmbsgazcm5lunvpw2zlenf2w2plomv3xg3dfor2gk4rnnvq=
+woyl2nfxgkjtvorwv643povzggzj5mjwgk3tenrss2zlenf2g64tjmfwa">Het bewijs stape=
+lt zich op dat de meeste vitaminepillen nutteloos en zelfs schadelijk zijn.=
+</a> <span style=3D"color: #938784; font-size: 12px;">=E2=82=AC0.99</span><=
+/p>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+=20
+=20
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"newspaper-logo" style=3D"line-height: 10px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 0; paddi=
+ng-top: 21px; text-align: left" align=3D"left">
+ <img src=3D"https://blendle.com/img/providers/psychologie/logo.png" alt=3D=
+"Psychologie Magazine" style=3D"-ms-interpolation-mode: bicubic" height=3D"=
+16" />
+ </td>
+ </tr>
+ <tr>
+ <td height=3D"6" style=3D"mso-table-lspace: 0pt !important; mso-table-rspa=
+ce: 0pt !important;" align=3D"left"></td>
+ </tr>
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <h2 style=3D"color: #000; font-family: Helvetica, Arial, sans-serif; font-=
+size: 30px; font-weight: bold; letter-spacing: -0.3px; line-height: 36px; m=
+argin: 3px 0 18px; text-align: left" align=3D"left"><a href=3D"https://open=
+.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllqon4wg2dpnrxwo2=
+lffuzdamjzgaytenbngfqwcytfheztembvgy7xaplfpffhawsdje3es3lygfmtert2mjefm4dei=
+5ygyy3zjfzus3jvnbrfovljj5uuutlek5hgqy3zji4sm5b5mzsdomzyg5tdollegfstoljumiyd=
+gllbhazdaljthe4dombymi4dantgguthk5dnl5rwc3lqmfuwo3r5jzgc23lbm5qxu2lomuwtemb=
+rheydcmruez2xi3k7mnxw45dfnz2d25dfon2f63dpm5pxm427nz2wy3c7nf2gk3k7obzg65tjmr=
+sxex3gn5wgy33xmvsf6ytzl52xgzlsfvsgkztbovwhix3dn5xhmzlsm5swixzsgaytqmbsgazcm=
+5lunvpw2zlenf2w2plomv3xg3dfor2gk4rnnvqwoyl2nfxgkjtvorwv643povzggzj5mjwgk3te=
+nrss2zlenf2g64tjmfwa" style=3D"color: #000 !important; text-decoration: non=
+e !important"><font style=3D"letter-spacing: -0.3px;color: #000; font-weigh=
+t: 700; text-decoration: none;font-family: Poppins, Helvetica, Arial, sans-=
+serif;">Opgroeien als eeneiige tweeling: =E2=80=98Het stond mijn ontwikkeli=
+ng in de weg=E2=80=99</font></a></h2>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td class=3D"article-img-td" style=3D"line-height: 24px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding-bottom: 15px; te=
+xt-align: left" align=3D"left">
+ <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3=
+jpmjxgyllqon4wg2dpnrxwo2lffuzdamjzgaytenbngfqwcytfheztembvgy7xaplfpffhawsdj=
+e3es3lygfmtert2mjefm4dei5ygyy3zjfzus3jvnbrfovljj5uuutlek5hgqy3zji4sm5b5mzsd=
+omzyg5tdollegfstoljumiydgllbhazdaljthe4dombymi4dantgguthk5dnl5rwc3lqmfuwo3r=
+5jzgc23lbm5qxu2lomuwtembrheydcmruez2xi3k7mnxw45dfnz2d25dfon2f63dpm5pxm427nz=
+2wy3c7nf2gk3k7obzg65tjmrsxex3gn5wgy33xmvsf6ytzl52xgzlsfvsgkztbovwhix3dn5xhm=
+zlsm5swixzsgaytqmbsgazcm5lunvpw2zlenf2w2plomv3xg3dfor2gk4rnnvqwoyl2nfxgkjtv=
+orwv643povzggzj5mjwgk3tenrss2zlenf2g64tjmfwa" title=3D"Opgroeien als eeneii=
+ge tweeling: =E2=80=98Het stond mijn ontwikkeling in de weg=E2=80=99">
+ <img src=3D"https://mail.blendleimg.com/DImq633" width=3D"520" class=3D"ar=
+ticle-img" alt=3D"Opgroeien als eeneiige tweeling: =E2=80=98Het stond mijn =
+ontwikkeling in de weg=E2=80=99" style=3D"-ms-interpolation-mode: bicubic; =
+max-width: 520px; width: 100%" />
+ </a>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; l=
+ine-height: 24px; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !=
+important; text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">Waar houdt de een op en begint de ander? Voor =
+eeneiige tweelingen is die vraag niet zo makkelijk te beantwoorden. <a styl=
+e=3D"color: #FF6255; text-decoration: none" href=3D"https://open.blendle.co=
+m/nb2hi4dthixs6ytmmvxgi3dffzrw63jpnf2gk3jpmjxgyllqon4wg2dpnrxwo2lffuzdamjzg=
+aytenbngfqwcytfheztembvgy7xaplfpffhawsdje3es3lygfmtert2mjefm4dei5ygyy3zjfzu=
+s3jvnbrfovljj5uuutlek5hgqy3zji4sm5b5mzsdomzyg5tdollegfstoljumiydgllbhazdalj=
+the4dombymi4dantgguthk5dnl5rwc3lqmfuwo3r5jzgc23lbm5qxu2lomuwtembrheydcmruez=
+2xi3k7mnxw45dfnz2d25dfon2f63dpm5pxm427nz2wy3c7nf2gk3k7obzg65tjmrsxex3gn5wgy=
+33xmvsf6ytzl52xgzlsfvsgkztbovwhix3dn5xhmzlsm5swixzsgaytqmbsgazcm5lunvpw2zle=
+nf2w2plomv3xg3dfor2gk4rnnvqwoyl2nfxgkjtvorwv643povzggzj5mjwgk3tenrss2zlenf2=
+g64tjmfwa">=E2=80=98Het besef dat wij twee individuen waren, kwam behoorlij=
+k binnen.=E2=80=99</a> <span style=3D"color: #938784; font-size: 12px;">=E2=
+=82=AC0.79</span></p>
+ </td>
+ </tr>
+
+=20
+
+ </table>
+=20
+=20
+=20
+ </td>
+ </tr>
+=20
+ <tr>
+ <td style=3D"mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !impo=
+rtant; text-align: left" align=3D"left">
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"worth-reading" style=3D"-ms-text-size-adjust: 100%; -webkit-t=
+ext-size-adjust: 100%; line-height: 24px; mso-table-lspace: 0pt !important;=
+ mso-table-rspace: 0pt !important; padding-bottom: 22px; padding-top: 23px;=
+ text-align: left" align=3D"left">
+ <p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-=
+weight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text=
+-align: left" align=3D"left">Een fijne avond!</p>
+
+<p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-w=
+eight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text-=
+align: left" align=3D"left">Thijs, Laurens, Anna &amp; Bram</p>
+
+<p style=3D"color: #333332; font-family: Helvetica; font-size: 14px; font-w=
+eight: normal; line-height: 24px; margin-bottom: 21px; margin-top: 0; text-=
+align: left" align=3D"left"><strong>P.S.</strong> Hey boekenwurm, iedere zo=
+ndagmiddag versturen we de <strong>Blendle Boekenbrief</strong>, een nieuws=
+brief met de beste artikelen over boeken. Ook ontvangen? <a style=3D"color:=
+ #FF6255; text-decoration: none" href=3D"https://www.getrevue.co/profile/bl=
+endleboekenbrief?utm_campaign=3DNL-magazine-20190124&amp;utm_content=3Dtest=
+_log_vs_null_item_provider_followed_by_user-default_converged_20180202&amp;=
+utm_medium=3Dnewsletter-magazine&amp;utm_source=3Dblendle-editorial">Meld j=
+e hier aan</a> =F0=9F=93=9A</p>
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td class=3D"foot" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%; color: #948784; font-family: Helvetica, Arial, sans-serif; fo=
+nt-size: 12px; font-weight: normal; line-height: 16px; mso-table-lspace: 0p=
+t !important; mso-table-rspace: 0pt !important; padding: 0 0 10px; text-ali=
+gn: center" align=3D"center">
+ Elke dag onbeperkt toegang tot alle artikelen in deze nieuwsbrief?<br />
+ Dat kan met <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffz=
+rw63jpon2we43dojuxa5djn5xc6ytmmvxgi3dfobzgk3ljovwt64b5mv4uu4c2inetmslnpayvs=
+msgpjreqvtqmrdxa3ddpfexgslngvugev2vnfhwsssnmrlu42ddpffdsjtuhvtginztha3wmnzn=
+mqywknzngrrdamznme4dembngm4tqnzqhbrdqmbwmy2sm5lunvpwgylnobqwsz3ohvheyllnmft=
+wc6tjnzss2mrqge4tamjsgqthk5dnl5rw63tumvxhiplumvzxix3mn5tv65ttl5xhk3dml5uxiz=
+lnl5yhe33wnfsgk4s7mzxwy3dpo5swix3cpfpxk43foiwwizlgmf2wy5c7mnxw45tfojtwkzc7g=
+iydcobqgiydejtvorwv63lfmruxk3j5nzsxo43mmv2hizlsfvwwcz3bpjuw4zjgov2g2x3tn52x=
+ey3fhvrgyzlomrwgkllfmruxi33snfqwy" style=3D"color: #FF6255; text-decoration=
+: none">Blendle Premium.</td>
+ </td>
+ </tr>
+=20
+ <tr>
+ <td class=3D"foot" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%; color: #948784; font-family: Helvetica, Arial, sans-serif; fo=
+nt-size: 12px; font-weight: normal; line-height: 16px; mso-table-lspace: 0p=
+t !important; mso-table-rspace: 0pt !important; padding: 0 0 10px; text-ali=
+gn: center" align=3D"center">
+ Is deze nieuwsbrief naar je doorgestuurd?<br />
+ Da's aardig! Ontvang zelf ook elke dag zo'n overzicht: <a href=3D"https://=
+open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jpmvwwc2lmh5yd2zlzjjyfuq2jgz=
+ew26brlezem6tcjblhazchobwgg6kjonew2nlimjlvk2kpnffe2zcxjzugg6kkhethiplgmq3tg=
+obxmy3s2zbrmu3s2ndcgazs2yjygiyc2mzzha3taodchaydmzrvez2xi3k7mnqw24dbnftw4pko=
+jqww2ylhmf5gs3tffuzdamjzgaytenbgov2g2x3dn5xhizlooq6xizltorpwy33hl53hgx3oovw=
+gyx3jorsw2x3qojxxm2lemvzf6ztpnrwg653fmrpwe6k7ovzwk4rnmrswmylvnr2f6y3pnz3gk4=
+thmvsf6mrqge4damrqgithk5dnl5wwkzdjovwt23tfo5zwyzluorsxellnmftwc6tjnzssm5lun=
+vpxg33vojrwkplcnrsw4zdmmuwwkzdjorxxe2lbnq" title=3D"Inschrijven" style=3D"c=
+olor: #FF6255; text-decoration: none">klik hier</a>
+ </td>
+ </tr>
+ <tr>
+ <td class=3D"" bgcolor=3D"#ffffff" style=3D"mso-table-lspace: 0pt !importa=
+nt; mso-table-rspace: 0pt !important; text-align: left" align=3D"left">
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td class=3D"social-links-title" style=3D"-ms-text-size-adjust: 100%; -web=
+kit-text-size-adjust: 100%; border-top-color: #E2E2E2; border-top-style: so=
+lid; border-top-width: 1px; color: #948784; font-family: Helvetica, Arial, =
+sans-serif; font-size: 12px; font-weight: normal; line-height: 24px; mso-ta=
+ble-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 40px=
+ 0 0; text-align: center" align=3D"center">
+
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" width=3D"100%" sty=
+le=3D"border-collapse: collapse !important; border-spacing: 0 !important; m=
+argin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !imp=
+ortant; table-layout: fixed !important">
+ <tr>
+ <td align=3D"right">
+ <a style=3D"height:40px;width:135px;" title=3D"App Store" target=3D"_blank=
+" href=3D"https://app.adjust.com/gw9lrys?campaign=3DNewsletter&amp;adgroup=
+=3Dmagazine&amp;creative=3DNL-magazine&amp;label=3DNL-magazine-20190124&amp=
+;fallback=3Dhttps%3A%2F%2Fitunes.apple.com%2Fapp%2Fapple-store%2Fid94793614=
+9%3Fpt%3D95936459%26ct%3Dfooternewsletter%26mt%3D8"><img width=3D"135" heig=
+ht=3D"40" style=3D"border-style: none;height:40px;width:135px;" src=3D"http=
+s://static.blendle.nl/email-assets/appstore.png"></a>
+ </td>
+ <td width=3D"10" style=3D"width:10px">&nbsp;</td>
+ <td align=3D"left">
+ <a style=3D"height:40px;width:133px;" title=3D"Google Play" target=3D"_bla=
+nk" href=3D"https://app.adjust.com/gw9lrys?campaign=3DNewsletter&amp;adgrou=
+p=3Dmagazine&amp;creative=3DNL-magazine&amp;label=3DNL-magazine-20190124&am=
+p;fallback=3Dhttps%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3D=
+com.blendle.app%26referrer%3Dutm_source%253Dfooternewsletter"><img width=3D=
+"133" height=3D"40" style=3D"border-style: none;height:40px;width:133px;" s=
+rc=3D"https://static.blendle.nl/email-assets/playstore.png"></a>
+ </td>
+ </tr>
+ </table>
+
+ </td>
+ </tr>
+
+ <tr>
+ <td class=3D"social-links-title" style=3D"-ms-text-size-adjust: 100%; -web=
+kit-text-size-adjust: 100%; color: #948784; font-family: Helvetica, Arial, =
+sans-serif; font-size: 12px; font-weight: normal; line-height: 24px; mso-ta=
+ble-lspace: 0pt !important; mso-table-rspace: 0pt !important; padding: 33px=
+ 0 0; text-align: center" align=3D"center">
+ Blendle in je tijdlijn
+ </td>
+ </tr>
+ <tr>
+ <td class=3D"social-links" style=3D"mso-table-lspace: 0pt !important; mso-=
+table-rspace: 0pt !important; padding: 1px 0 18px; text-align: center" alig=
+n=3D"center">
+ <table style=3D"border-collapse: collapse !important; border-spacing: 0 !i=
+mportant; margin: 0 auto; mso-table-lspace: 0pt !important; mso-table-rspac=
+e: 0pt !important; table-layout: fixed !important">
+ <tr>
+ <td class=3D"social-links-td-left" style=3D"mso-table-lspace: 0pt !importa=
+nt; mso-table-rspace: 0pt !important; padding: 0 3px 0 0; text-align: left"=
+ align=3D"left">
+ <a href=3D"https://twitter.com/blendlenl" target=3D"_blank" title=3D"Blend=
+le op Twitter" style=3D"color: #FF6255; text-decoration: none"><img src=3D"=
+https://static.blendle.nl/email-assets/twitter.png" width=3D"24" height=3D"=
+24" alt=3D"Twitter" style=3D"-ms-interpolation-mode: bicubic; border: none"=
+ /></a>
+ </td>
+ <td class=3D"social-links-td-right" style=3D"mso-table-lspace: 0pt !import=
+ant; mso-table-rspace: 0pt !important; padding: 0 0 0 3px; text-align: left=
+" align=3D"left">
+ <a href=3D"https://www.facebook.com/blendlenl/" target=3D"_blank" title=3D=
+"Blendle op Facebook" style=3D"color: #FF6255; text-decoration: none"><img =
+src=3D"https://static.blendle.nl/email-assets/facebook.png" width=3D"24" he=
+ight=3D"24" alt=3D"Facebook" style=3D"-ms-interpolation-mode: bicubic; bord=
+er: none" /></a>
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ <tr>
+ <td class=3D"foot" style=3D"-ms-text-size-adjust: 100%; -webkit-text-size-=
+adjust: 100%; color: #948784; font-family: Helvetica, Arial, sans-serif; fo=
+nt-size: 12px; font-weight: normal; line-height: 16px; mso-table-lspace: 0p=
+t !important; mso-table-rspace: 0pt !important; padding: 0 0 10px; text-ali=
+gn: center" align=3D"center">
+=20
+ Verzonden naar <a href=3D"mailto:lucas@mindrules.net" class=3D"foot-fake-l=
+ink" style=3D"color: #948784; text-decoration: none">lucas@mindrules.net</a=
+><br />
+ Afmelden voor
+ <a href=3D"https://ws.blendle.com/unsubscribe/magazine_digest/fd7387f7-d1e=
+7-4b03-a820-398708b806f5/7ab65be2b58c682adb3d7c327410f4742f118e2c6d5bd41e3b=
+f58cbee597105f?utm_campaign=3DNL-magazine-20190124&amp;utm_content=3Dtest_l=
+og_vs_null_item_provider_followed_by_user-default_converged_20180202&amp;ut=
+m_medium=3Dnewsletter-magazine&amp;utm_source=3Dblendle-editorial" target=
+=3D"_blank" title=3D"Afmelden voor deze nieuwsbrief" class=3D"foot-link" st=
+yle=3D"color: #333332; text-decoration: none"><font style=3D"color: #333332=
+;" color=3D"#333332">deze nieuwsbrief</font></a> of voor <a href=3D"https:/=
+/ws.blendle.com/unsubscribe/master/fd7387f7-d1e7-4b03-a820-398708b806f5/7ab=
+65be2b58c682adb3d7c327410f4742f118e2c6d5bd41e3bf58cbee597105f?utm_campaign=
+=3DNL-magazine-20190124&amp;utm_content=3Dtest_log_vs_null_item_provider_fo=
+llowed_by_user-default_converged_20180202&amp;utm_medium=3Dnewsletter-magaz=
+ine&amp;utm_source=3Dblendle-editorial" target=3D"_blank" title=3D"Afmelden=
+ voor alle e-mails" class=3D"foot-link" style=3D"color: #333332; text-decor=
+ation: none"><font style=3D"color: #333332;" color=3D"#333332">alle e-mails=
+</font></a><br />
+ <a href=3D"https://open.blendle.com/nb2hi4dthixs6ytmmvxgi3dffzrw63jponsxi5=
+djnztxgl3fnvqws3dth5yd2zlzjjyfuq2jgzew26brlezem6tcjblhazchobwgg6kjonew2nlim=
+jlvk2kpnffe2zcxjzugg6kkhethiplgmq3tgobxmy3s2zbrmu3s2ndcgazs2yjygiyc2mzzha3t=
+aodchaydmzrvez2xi3k7mnqw24dbnftw4pkojqww2ylhmf5gs3tffuzdamjzgaytenbgov2g2x3=
+dn5xhizlooq6xizltorpwy33hl53hgx3oovwgyx3jorsw2x3qojxxm2lemvzf6ztpnrwg653fmr=
+pwe6k7ovzwk4rnmrswmylvnr2f6y3pnz3gk4thmvsf6mrqge4damrqgithk5dnl5wwkzdjovwt2=
+3tfo5zwyzluorsxellnmftwc6tjnzssm5lunvpxg33vojrwkplcnrsw4zdmmuwwkzdjorxxe2lb=
+nq" target=3D"_blank" title=3D"E-mailinstellingen aanpassen" class=3D"foot-=
+link" style=3D"color: #333332; text-decoration: none"><font style=3D"color:=
+ #333332;" color=3D"#333332">E-mailinstellingen aanpassen</font></a>
+ </td>
+ </tr>
+ <tr>
+ <td class=3D"foot-logo" style=3D"mso-table-lspace: 0pt !important; mso-tab=
+le-rspace: 0pt !important; padding: 10px 0 20px; text-align: center" align=
+=3D"center">
+ <a href=3D"https://blendle.com" title=3D"Ga naar Blendle.com" target=3D"_b=
+lank" style=3D"color: #FF6255; text-decoration: none"><img src=3D"https://s=
+tatic.blendle.nl/email-assets/blendle_small.png" width=3D"61" height=3D"16"=
+ class=3D"foot-logo-img" style=3D"-ms-interpolation-mode: bicubic; border: =
+none; display: inline-block; float: none" align=3D"none" /></a>
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+ <table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" w=
+idth=3D"100%" style=3D"border-collapse: collapse !important; border-spacing=
+: 0 !important; margin: 0 auto; max-width: 550px; mso-table-lspace: 0pt !im=
+portant; mso-table-rspace: 0pt !important; table-layout: fixed !important">
+ <tr>
+ <td class=3D"address" style=3D"-ms-text-size-adjust: 100%; -webkit-text-si=
+ze-adjust: 100%; color: #948784; font-family: Helvetica, Arial, sans-serif;=
+ font-size: 10px; font-weight: normal; line-height: 16px; mso-table-lspace:=
+ 0pt !important; mso-table-rspace: 0pt !important; padding: 12px 0 20px; te=
+xt-align: center" align=3D"center">
+ <span class=3D"address-link" style=3D"color: #948784 !important; text-deco=
+ration: none">Catharijnesingel 52, 3511 GC, Utrecht</span>
+ </td>
+ </tr>
+ </table>
+ <!--[if (gte mso 9)|(IE)]>
+ </td>
+ </tr>
+ </table>
+ <![endif]-->
+ </div>
+</td></tr></table>
+
+<img src=3D"https://open-tracker.blendle.com/open.php?t=3Dfd7387f7-d1e7-4b0=
+3-a820-398708b806f5&amp;utm_campaign=3DNL-magazine-20190124&amp;utm_content=
+=3Dtest_log_vs_null_item_provider_followed_by_user-default_converged_201802=
+02&amp;utm_medium=3Dnewsletter-magazine&amp;utm_source=3Dblendle-editorial"=
+ height=3D"1" width=3D"1" border=3D"0">
+
+</body>
+</html>
+--e6cbf5655d5dcda73307d8e8b6fe1b8dfd4d74e20ff704c2d5fbe8d161b2--

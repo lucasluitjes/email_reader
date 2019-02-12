@@ -1,0 +1,247 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Thu, 07 Feb 2019 14:02:05 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <ubuntu-security-announce-bounces@lists.ubuntu.com>
+Received: from 205.237.194.29
+	by m8.mxes.net (bayesd) with LMTP id 1549566125-80648-4
+	for <lucas_mindrules.net@ms8.mxes.net>; Thu,  7 Feb 2019 14:02:05 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-05.mxes.net (Postfix) with ESMTP id AFA2527635
+	for <lucas@luitjes.it>; Thu,  7 Feb 2019 14:02:05 -0500 (EST)
+Received: from huckleberry.canonical.com (huckleberry.canonical.com [91.189.94.19])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mxin.mxes.net (Postfix) with ESMTPS id D7E2627608
+	for <lucas@luitjes.it>; Thu,  7 Feb 2019 14:02:04 -0500 (EST)
+Authentication-Results: mxin.mxes.net; dkim=none
+Received: from localhost ([127.0.0.1] helo=huckleberry.canonical.com)
+	by huckleberry.canonical.com with esmtp (Exim 4.86_2)
+	(envelope-from <ubuntu-security-announce-bounces@lists.ubuntu.com>)
+	id 1gror2-0000EK-SB; Thu, 07 Feb 2019 18:56:56 +0000
+Received: from youngberry.canonical.com ([91.189.89.112])
+ by huckleberry.canonical.com with esmtps (TLS1.0:DHE_RSA_AES_128_CBC_SHA1:128)
+ (Exim 4.86_2) (envelope-from <marc.deslauriers@canonical.com>)
+ id 1gronG-0008UX-L1
+ for ubuntu-security-announce@lists.ubuntu.com; Thu, 07 Feb 2019 18:53:02 +0000
+Received: from 1.general.mdeslaur.us.vpn ([10.172.64.68])
+ by youngberry.canonical.com with esmtpsa (TLS1.0:RSA_AES_128_CBC_SHA1:16)
+ (Exim 4.76) (envelope-from <marc.deslauriers@canonical.com>)
+ id 1gronG-0002fZ-Ab
+ for ubuntu-security-announce@lists.ubuntu.com; Thu, 07 Feb 2019 18:53:02 +0000
+From: Marc Deslauriers <marc.deslauriers@canonical.com>
+Subject: [USN-3885-1] OpenSSH vulnerabilities
+To: ubuntu-security-announce@lists.ubuntu.com
+Openpgp: preference=signencrypt
+Autocrypt: addr=marc.deslauriers@canonical.com; prefer-encrypt=mutual; keydata=
+ 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
+ 6fA5+UTqDZmm6A==
+Message-ID: <bc1eff64-92d9-d4cb-51ae-f5f2b029a0fc@canonical.com>
+Date: Thu, 7 Feb 2019 13:52:58 -0500
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101
+ Thunderbird/60.2.1
+MIME-Version: 1.0
+X-Mailman-Approved-At: Thu, 07 Feb 2019 18:56:53 +0000
+X-BeenThere: ubuntu-security-announce@lists.ubuntu.com
+X-Mailman-Version: 2.1.20
+Precedence: list
+List-Id: Ubuntu Security Announcements
+ <ubuntu-security-announce.lists.ubuntu.com>
+List-Unsubscribe: <https://lists.ubuntu.com/mailman/options/ubuntu-security-announce>, 
+ <mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=unsubscribe>
+List-Archive: <https://lists.ubuntu.com/archives/ubuntu-security-announce>
+List-Post: <mailto:ubuntu-security-announce@lists.ubuntu.com>
+List-Help: <mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=help>
+List-Subscribe: <https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce>, 
+ <mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=subscribe>
+Reply-To: ubuntu-users@lists.ubuntu.com, Ubuntu Security <security@ubuntu.com>
+Content-Type: multipart/mixed; boundary="===============4836440110664903865=="
+Errors-To: ubuntu-security-announce-bounces@lists.ubuntu.com
+Sender: "ubuntu-security-announce"
+ <ubuntu-security-announce-bounces@lists.ubuntu.com>
+X-Spam-Sys-BayesResult: No, 0.000204
+X-Spam-Report: 1549566125-62726-1  Content analysis details:
+   0.0 BAYESSCORE             0.479932
+  -1.0 RCVD_IN_DNSWL_HI       RBL: Sender listed at http://www.dnswl.org/, high trust
+     [91.189.94.19 listed in dnswl.mxes.net]
+   0.0 DMARC_POLICY           Accept on policy failure
+  -2.5 SYSTEM_BAYES           No 0.000204
+   0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail domains are different
+   0.0 T_DMARC_ACCEPT         Sender says accept all mail
+   0.0 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 0
+X-Spam-SI: 0
+X-Originating-IP: 91.189.94.19
+X-Reputation-Delta: 0.0
+X-Envelope-To: <lucas@luitjes.it>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-3.5 threshold=6.0,13.0 
+X-Spam-BayesResult: Unsure, 0.479932
+X-Spam-Score: -3.5
+X-Spam-Scoring: 0,0
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--===============4836440110664903865==
+Content-Type: multipart/signed; micalg=pgp-sha512;
+ protocol="application/pgp-signature";
+ boundary="pqLe0HgMCzi3kPiHeSThJ70fIje4TtO7j"
+
+This is an OpenPGP/MIME signed message (RFC 4880 and 3156)
+--pqLe0HgMCzi3kPiHeSThJ70fIje4TtO7j
+Content-Type: multipart/mixed; boundary="oKxX4uH5gnlMBoz8CDtZAfZ73BDWeOZAb";
+ protected-headers="v1"
+From: Marc Deslauriers <marc.deslauriers@canonical.com>
+Reply-To: Ubuntu Security <security@ubuntu.com>
+To: ubuntu-security-announce@lists.ubuntu.com
+Message-ID: <bc1eff64-92d9-d4cb-51ae-f5f2b029a0fc@canonical.com>
+Subject: [USN-3885-1] OpenSSH vulnerabilities
+
+--oKxX4uH5gnlMBoz8CDtZAfZ73BDWeOZAb
+Content-Type: text/plain; charset=utf-8
+Content-Language: en-CA
+Content-Transfer-Encoding: quoted-printable
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Ubuntu Security Notice USN-3885-1
+February 07, 2019
+
+openssh vulnerabilities
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 18.10
+- Ubuntu 18.04 LTS
+- Ubuntu 16.04 LTS
+- Ubuntu 14.04 LTS
+
+Summary:
+
+Several security issues were fixed in OpenSSH.
+
+Software Description:
+- openssh: secure shell (SSH) for secure access to remote machines
+
+Details:
+
+Harry Sintonen discovered multiple issues in the OpenSSH scp utility. If =
+a
+user or automated system were tricked into connecting to an untrusted
+server, a remote attacker could possibly use these issues to write to
+arbitrary files, change directory permissions, and spoof client output.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 18.10:
+  openssh-client                  1:7.7p1-4ubuntu0.2
+
+Ubuntu 18.04 LTS:
+  openssh-client                  1:7.6p1-4ubuntu0.2
+
+Ubuntu 16.04 LTS:
+  openssh-client                  1:7.2p2-4ubuntu2.7
+
+Ubuntu 14.04 LTS:
+  openssh-client                  1:6.6p1-2ubuntu2.12
+
+In general, a standard system update will make all the necessary changes.=
+
+
+References:
+  https://usn.ubuntu.com/usn/usn-3885-1
+  CVE-2018-20685, CVE-2019-6109, CVE-2019-6111
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/openssh/1:7.7p1-4ubuntu0.2
+  https://launchpad.net/ubuntu/+source/openssh/1:7.6p1-4ubuntu0.2
+  https://launchpad.net/ubuntu/+source/openssh/1:7.2p2-4ubuntu2.7
+  https://launchpad.net/ubuntu/+source/openssh/1:6.6p1-2ubuntu2.12
+
+
+--oKxX4uH5gnlMBoz8CDtZAfZ73BDWeOZAb--
+
+--pqLe0HgMCzi3kPiHeSThJ70fIje4TtO7j
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEUMSg3c8x5FLOsZtRZWnYVadEvpMFAlxcfooACgkQZWnYVadE
+vpOYSg//WWo5gERWyKT2F4bZgsnrdY11JLEBSJl0XfI3NotCDVjR07fcJfbXUc41
+pbJNKgKp2h0av5SXl+q0wN1EkNiqM0W7/Q/xyiJkY++03OGP4SIXFxVh9MdB6HTt
+o/bQ+vmdbOglXbubF3mv53F7PVZAAB9K+ThlXfCZTPUbuEehpU/V/0wRHWkceuUk
+raV6Tjv/29OdX/LZoe3uQsfMD/6dDsjkF5Uq85EtpPtm1dFE0Go709lGs6Y3Btp9
+558EdKfFUuZu2s4XlSQoqxHKaq7vTgiP8mEE9M1rQyLiqaBpK26WKrPnchohIALX
+MslULSHZgI9lHAKoBTilO7KFQ/KsKCe2JLlcagpt2rgMFti4W5Q0jRUWUSrzyYOW
+s+x+jKsi1U76P4ZDlK7AkA3eEuRcoXh2Vx/EsqpzQ57VXmXlzv11+Sp3a4eDrWT/
+xkF3DT6vtT5KBnQkxJRHHw5fTQG5fSvhjuDzHoQI2ZjsN7+Ox3HNQPWcKpl+KHLX
+t7Ht9xkw3G+U7ngqbE07qWs3P2TJTyQaCV1DjDtdY3AMnrs9xRy6ZwHbkCeRC0Fm
+M78oen6cf8qYdVI9K2KF6tzF6MJ3Z7wCh67VwG8kUbilDb3mE8k0FBEnw6XISBMA
+jIoBXthMjhLi+LqABjF95vwSGCChoKjdtRlWmNyEX4BYlmILjpQ=
+=arg7
+-----END PGP SIGNATURE-----
+
+--pqLe0HgMCzi3kPiHeSThJ70fIje4TtO7j--
+
+
+--===============4836440110664903865==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: inline
+
+LS0gCnVidW50dS1zZWN1cml0eS1hbm5vdW5jZSBtYWlsaW5nIGxpc3QKdWJ1bnR1LXNlY3VyaXR5
+LWFubm91bmNlQGxpc3RzLnVidW50dS5jb20KTW9kaWZ5IHNldHRpbmdzIG9yIHVuc3Vic2NyaWJl
+IGF0OiBodHRwczovL2xpc3RzLnVidW50dS5jb20vbWFpbG1hbi9saXN0aW5mby91YnVudHUtc2Vj
+dXJpdHktYW5ub3VuY2UK
+
+--===============4836440110664903865==--
+

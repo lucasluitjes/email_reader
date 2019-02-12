@@ -1,0 +1,2405 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Fri, 14 Dec 2018 19:41:58 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounce-mc.us1_1401357.3153381-lucas=luitjes.it@mail88.atl71.mcdlv.net>
+Received: from 205.237.194.28
+	by m8.mxes.net (bayesd) with LMTP id 1544834518-96817-1
+	for <lucas_mindrules.net@ms8.mxes.net>; Fri, 14 Dec 2018 19:41:58 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-06.mxes.net (Postfix) with ESMTP id 1883327609
+	for <lucas@luitjes.it>; Fri, 14 Dec 2018 19:41:58 -0500 (EST)
+Received: from mail88.atl71.mcdlv.net (mail88.atl71.mcdlv.net [198.2.129.88])
+	by mxin.mxes.net (Postfix) with ESMTP id 25515275AF
+	for <lucas@luitjes.it>; Fri, 14 Dec 2018 19:41:54 -0500 (EST)
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=mailchimpapp.net header.i=vgr=3Dribbonfarm.com@mailchimpapp.net header.b=RUHBc5N3
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=mailchimpapp.net;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+ Content-Type:MIME-Version; i=vgr=3D3Dribbonfarm.com@mailchimpapp.net;
+ bh=MYonPsR+0cO0KGDeD77joNGFQC9pwtQgcSAl/FLYe+0=;
+ b=RUHBc5N3g8UE0uxpHD9Wr7g0py9TNAkPsq0bIjjTfkTosPL6DRUbbIMbsIAnPHWZtON2yXxWiVgv
+   plaUuT/KlERNSbW0ntz2ba3ex+suZgjojAaj5ub4tEsApJJYfK4iN0QbFvRP2KobZdHLiYjCmV9R
+   xwpH+zXH+kLAvB3dJ38=
+Received: from (127.0.0.1) by mail88.atl71.mcdlv.net id h2h6t42ddl4e for <lucas@luitjes.it>; Sat, 15 Dec 2018 00:41:46 +0000 (envelope-from <bounce-mc.us1_1401357.3153381-lucas=luitjes.it@mail88.atl71.mcdlv.net>)
+Subject: =?utf-8?Q?Let=27s=20Make=20Things=20Boring?=
+From: =?utf-8?Q?Breaking=20Smart?= <vgr@ribbonfarm.com>
+Reply-To: =?utf-8?Q?Breaking=20Smart?= <vgr@ribbonfarm.com>
+To: <lucas@luitjes.it>
+Date: Sat, 15 Dec 2018 00:41:46 +0000
+Message-ID: <78cbbb7f2882629a5157fa593.4c5a41c2ff.20181215004120.a304e57ae3.9e0f57e5@mail88.atl71.mcdlv.net>
+X-Mailer: MailChimp Mailer - **CIDa304e57ae34c5a41c2ff**
+X-Campaign: mailchimp78cbbb7f2882629a5157fa593.a304e57ae3
+X-campaignid: mailchimp78cbbb7f2882629a5157fa593.a304e57ae3
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=78cbbb7f2882629a5157fa593&id=a304e57ae3&e=4c5a41c2ff
+X-MC-User: 78cbbb7f2882629a5157fa593
+Feedback-ID: 1401357:1401357.3153381:us1:mc
+List-ID: 78cbbb7f2882629a5157fa593mc list <78cbbb7f2882629a5157fa593.1195217.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <https://breakingsmart.us1.list-manage.com/unsubscribe?u=78cbbb7f2882629a5157fa593&id=6b80b6e8da&e=4c5a41c2ff&c=a304e57ae3>, <mailto:unsubscribe-mc.us1_78cbbb7f2882629a5157fa593.a304e57ae3-4c5a41c2ff@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_2004329763"
+MIME-Version: 1.0
+X-Virus-Scanned: ClamAV
+X-Spam-Sys-BayesResult: Yes, 0.506339
+X-Spam-Scanner: 1544834514-34330-1
+X-Spam-Report: Content analysis details:
+ -10.0 BAYESSCORE             0.000000
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [198.2.129.88 listed in dnswl.mxes.net]
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   1.2 SYSTEM_BAYES           Yes 0.506339
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail domains are different
+   0.0 HTML_MESSAGE           HTML included in message
+   0.2 SPF_MECH_2             Permissive SPF record ?all
+  -0.4 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 0
+X-Spam-SI: 1
+X-Originating-IP: 198.2.129.88
+X-Reputation-Delta: -0.4
+X-Envelope-To: <lucas@luitjes.it>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-8.9 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.000000
+X-Spam-Score: -8.9
+X-Spam-Scoring: 0,0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_2004329763
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+Things are too interesting these days=2C and not in a good way. Let's make=
+ things boring.
+
+I talk a lot about interestingness in this newsletter. The idea of pursuin=
+g the direction of maximal interestingness (https://breakingsmart.com/en/s=
+eason-1/rough-consensus-and-maximal-interestingness/) was a key principle=
+ in the Season 1 essays. But it recently struck me that the opposed princi=
+ple -- pursuing the direction of maximal boringness -- is an equally profo=
+und idea. There is no contradiction here. As Niels Bohr said=2C "the oppos=
+ite of every great truth is also a great truth."
+
+As you enter resolution-making season=2C for yourself=2C but especially fo=
+r any organizations whose missions you might have a role in shaping=2C I'd=
+ like to offer up a candidate resolution for you in 2019: Let's make thing=
+s boring.
+
+The opposed principle is more familiar and seems more obviously like a goo=
+d one: Let's make things interesting. We are more commonly in a rut-like s=
+ituation with a need to shake things up. But the two are not necessarily m=
+utually exclusive. You can adopt both resolutions at once: make some thing=
+s more interesting=2C and other things more boring.
+
+Enough has been said about how to make things interesting=2C so let's talk=
+ about how to make things boring=2C where=2C why=2C and especially=2C when=
+: why 2019 is a good year for this particular resolution.
+View this email in your browser (https://mailchi.mp/ribbonfarm/lets-make-t=
+hings-boring?e=3D4c5a41c2ff)
+The Box Factory=2C running gag/motif of "boringness" in The Simpsons (firs=
+t appearance=2C Episode 93=2C 1993)
+http://www.facebook.com/sharer/sharer.php?u=3Dhttps%3A%2F%2Fmailchi.mp%2Fr=
+ibbonfarm%2Flets-make-things-boring Share (http://www.facebook.com/sharer/=
+sharer.php?u=3Dhttps%3A%2F%2Fmailchi.mp%2Fribbonfarm%2Flets-make-things-bo=
+ring)
+http://twitter.com/intent/tweet?text=3DLet%27s+Make+Things+Boring: https%3=
+A%2F%2Fmailchi.mp%2Fribbonfarm%2Flets-make-things-boring Tweet (http://twi=
+tter.com/intent/tweet?text=3DLet%27s+Make+Things+Boring: https%3A%2F%2Fmai=
+lchi.mp%2Fribbonfarm%2Flets-make-things-boring)
+http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629a5157fa593&id=
+=3Da304e57ae3&e=3D4c5a41c2ff Forward (http://us1.forward-to-friend.com/forwa=
+rd?u=3D78cbbb7f2882629a5157fa593&id=3Da304e57ae3&e=3D4c5a41c2ff)
+http://www.linkedin.com/shareArticle?url=3Dhttps%3A%2F%2Fmailchi.mp%2Fribb=
+onfarm%2Flets-make-things-boring&mini=3Dtrue&title=3DLet%27s+Make+Things+B=
+oring Share (http://www.linkedin.com/shareArticle?url=3Dhttps%3A%2F%2Fmail=
+chi.mp%2Fribbonfarm%2Flets-make-things-boring&mini=3Dtrue&title=3DLet%27s+=
+Make+Things+Boring)
+
+1/ I want to evangelize a 2019 resolution=2C especially for organizations:=
+ "let's make things boring".
+
+2/ The guiding principle is the idea=2C "The opposite of every great truth=
+ is also a great truth" -- Niels Bohr.
+
+3/ "You learn most in direction of maximal interestingness" is a great tru=
+th=2C and the driver of innovation. But "You learn most in direction of ma=
+ximal boringness" is also a great truth=2C and the driver of sustainabilit=
+y at scale.
+
+4/ The Axios newsletter today (https://www.axios.com/newsletters/axios-pm-=
+1321ac5a-ed3f-4f0c-b027-d9ebea47033d.html?utm_source=3Dnewsletter&utm_medi=
+um=3Demail&utm_campaign=3Dnewsletter_axiospm&stream=3Dtop)  has this line=
+ about the latest bit of exhausting Trumpery out of Washington=2C DC: "The=
+ bottom line: Norms and precedents are boring. The lack of them is interes=
+ting=2C but almost always at a severe cost."
+
+5/ Arguing for norms might seem a bit conservative=2C reactionary=2C and C=
+hesterton Fencish (https://en.wikipedia.org/wiki/Wikipedia:Chesterton%27s_=
+fence) =2C but it needn't be. Making things boring is (for instance) the b=
+asic challenge of scaling an innovative technology.
+
+6/ Seth Godin once said something like "a technology becomes socially inte=
+resting when it becomes technologically boring." Making an interesting tec=
+hnology boring tends to make engineering reputations.
+
+7/ If you're running a company with engineering and marketing challenges=
+=2C you can't make the marketing interesting until you make the engineerin=
+g boring. And you can't make the engineering interesting again till the ma=
+rketing gets boring enough to drive a firehose of cash.
+
+8/ On the more philosophical end=2C there's that line from A. N. Whitehead=
+=2E "civilization advances by extending the number of important operations w=
+hich we can perform without thinking of them." Making things boring is abo=
+ut locking in progress.
+
+9/ We focus a lot on the abuse/discarding of norms these days=2C with the=
+ lament=2C "this is not normal." You make things interesting by flouting o=
+ld norms. You make things boring by installing new norms.
+
+10/ Cults and alt realities rise to prominence by being interesting=2C but=
+ establish themselves as "normal" for the long term by deliberately becomi=
+ng boring. That's the "institutional" in institutional religion. As I twee=
+ted once=2C "normalcy is merely the majority sect of magical thinking."
+
+11/ If you stop at flouting/breaking old norms=2C you'll vanish like a fla=
+sh flood leaving no trace behind. Old norms will just come creeping back.=
+ Chesterton's fence will rebuild itself.
+
+12/ Why? People lack imagination. In the absence of a new norm=2C they'll=
+ revert to an old norm. That's a good thing. Old norms backstop half-assed=
+ experiments in novelty that fail or are abandoned.
+
+13/ The other half of the equation=2C "normalizing" new things=2C can be t=
+he scary part when the things that people are seeking to normalize seem cr=
+uel=2C unjust=2C or awful in some way. You do not want "be cruel to childr=
+en and animals" to be a new societal "norm."
+
+14/ But we often conflate being in a numb/jaded/exhausted/burnt out state=
+ due to repeated trauma or transgression with "normalizing" things that sh=
+ouldn't be normalized. Numbness is not "normalization."
+
+15/ The joke "the beatings will continue until morale improves" gets at wh=
+y mere repetition of a transgression of an old norm to exhaust the capacit=
+y to respond is (fortunately) not a way to install a new norm. You can't b=
+eat generativity and growth out of people.
+
+16/ A real norm is self-enforcing without much coercive energy. If "beatin=
+g" is needed=2C it's not a norm=2C it's a negatively incentivized behavior=
+=2E A real norm gets installed in our superegos. The incentives are internal=
+=2E The carrots and sticks are inside our heads.
+
+17/ We feel guilt and/or shame at transgressing it even if nobody is watch=
+ing=2C let alone beating us. If we are tempted into transgression=2C we ha=
+ve the decency to at least try and cover it up. That's a good thing=2C eve=
+n though it can seem like condoning hypocrisy.
+
+18/ The presence of hypocrisy around a norm in a society shows it still ha=
+s power. That there are consequences to breaking it. Not just legal ones=
+=2C or shaming by others=2C but internal consequences we inflict on oursel=
+ves=2C via guilt.
+
+19/ The Trump era has numbed us to a lot of things=2C but it hasn't actual=
+ly normalized any awful new behaviors that weren't already normalized. So=
+ far=2C "this is not normal" hasn't been a necessary chant=2C even though=
+ it has been a common one. That's the good news.
+
+20/ There's been a few wannabe ugly-new-norm-normalizers in the Trump crow=
+d (such as Stephen Miller) but they've had low impact at the norms level o=
+utside of regulatory hacks/de-institutionalization efforts. Good things th=
+ey destroy can be rebuilt.
+
+21/ Fortunately for our collective sanity=2C it still isn't "normal" to be=
+ cruel to children. Pussy-grabbing hasn't replaced hand-shaking as a way f=
+or men to greet women socially. Despite all the reactionary moral panic ar=
+ound the #metoo movement=2C men and women haven't actually stopped hooking=
+ up=2C dating=2C or getting married.
+
+22/ To make things boring is to look for areas in need of norms=2C and wor=
+king to install them. In 2019=2C we especially need "make it boring" effor=
+ts in the cultural sphere (though of course=2C by all means pursue it in o=
+ther areas too). Every culture war dumpster fire is an opportunity for an=
+ imaginative effort to install a new norm.
+
+23/ So as you look for opportunities to make things boring in 2019=2C look=
+ at where there are dumpster fires=2C charged emotions=2C flaming conflict=
+s=2C etc. The immediate goal is to put out the fires. The long-term goal i=
+s to make things less flammable. A good norm makes it easier to be good th=
+an evil=2C for your value of "good" and "evil."
+
+24/ Here is a brilliant example (https://twitter.com/MuslimIQ/status/10623=
+81120766033921) of a kindergarten teacher working imaginatively to install=
+ a better norm around consent and bodily autonomy in children. She simply=
+ has the children pick their preferred morning greeting out of 4 options (=
+a hug=2C a high-five=2C a little dance=2C or a handshake) as they enter cl=
+ass. That's an A+.
+
+25/ Contrast this with the unimaginative moral-panic mongering in this cas=
+e of a mom pretending her adult son in the Navy is too scared to date beca=
+use of fear of harassment accusations (https://www.washingtonpost.com/news=
+/morning-mix/wp/2018/10/09/this-is-my-son-navy-vet-horrified-as-moms-tweet=
+-miscasts-him-as-himtoo-poster-boy-and-goes-viral/?noredirect=3Don&utm_ter=
+m=3D.52a2394f5370) (the son later stridently disavowed his mother's claims=
+). That's an F.
+
+26/ There's an obvious playbook to installing good norms and making new be=
+haviors normal=2C boring=2C and most importantly=2C not-shameful. The only=
+ tricky ingredient is imagination. Yes=2C like the kindergarten teacher ab=
+ove=2C you need imagination to make things boring=2C oddly enough.
+
+27/ You can't do it to all behaviors. A pre-normalization reasonableness t=
+est applies. This is a good thing. We humans -- well most of us -- do have=
+ an innate sense of when a behavior we're being encouraged to adopt is cru=
+el=2C unfair=2C or self-serving=2C and if not=2C are able to see it when p=
+ointed out. We're not morons.
+
+28/ Despite all the pearl-clutching moral panic around #metoo for instance=
+=2C nobody I know thinks the theatrical Mike Pence norm of never meeting w=
+ith women 1 on 1 or in private is a good one. It's a sort of injured conse=
+rvative martyrdom virtue signaling via a strawman norm.
+
+29/ It fails the reasonableness test on multiple levels. It's unfair to wo=
+men to be excluded from productive opportunities for 1:1 interaction or pr=
+ivate conversations. It's toxic to embed the belief that all men are poten=
+tial harassers into the environment. And worst of all: it doesn't actually=
+ solve the problem. Sexual harassers will find a way.
+
+30/ It's idiotic to design a norm around worst-case expectations ("corner=
+ cases make bad law" applies to norm design as well). Not surprisingly=2C=
+ the reports of the norm being adopted are mostly emerging from sectors th=
+at already have an awful reputation for sexism=2C like finance.
+
+31/ But assuming you have an idea for a norm that seems reasonable (good t=
+est: run it by a representative set of the people who would actually have=
+ to adopt it)=2C there's a design-and-installation playbook of sorts=2C wi=
+th 8 basic rules. Here they are:
+
+8 Rules for Designing and Installing Norms
+1. Make it unskilled: it should be no extra mental effort to practice the=
+ norm
+2. Make it self-reinforcing: it should be habit forming
+3. Automate it: let machines do the difficult parts where possible
+4. Take heroism/villainy out of it: his is a crucial thing=2C nobody wants=
+ to be a hero or risk being called a villain every day.
+5. Make it visible and imitable: norms don't spread through lecturing=2C t=
+hey spread through imitation. The visibility implies there should be no sh=
+ame to it=2C which "bad" candidate norms will generally fail. Imitability=
+ means seeing it done should be enough to figure out how to do it=2C even=
+ if you're neurotypically disadvantaged when it comes to picking up on soc=
+ial cues.
+6. Make it microkarmic: 1 recycled can =3D 1 whuffie of feeling good about=
+ it even if nobody sees you do it. This simply means mild short-term posit=
+ive reinforcement.
+7. Unbrand it: turn secret handshakes into ordinary ones. You don't get pr=
+emium extra points for recycling soda cans when everybody does. Behaving a=
+ certain way shouldn't mark you as a member of a special club.
+8. Uncode it: the virtue signaling value of a good norm should be zero. No=
+rms aren't and shouldn't be currencies. The behavior should not "signal" t=
+hat you profess/practice an exceptional=2C saintly virtue. It should not b=
+ecome a way for saints to connect in mutual admiration.
+
+32/ If you successfully do these 8 things=2C it will become part of backgr=
+ound social infrastructure that is self-regulating=2C self-socializing etc=
+=2E It will also drain the culture-war energy out of the behavior and any co=
+unter-behaviors. Suck the air out=2C starve the dumpster fire flames.
+
+33/ Remember=2C ultimately=2C "making things boring" is about making it ea=
+sier to be good than bad. That's all a norm really is. A way for civilizat=
+ion to advance by making it less effort to behave in more advanced ways. I=
+t's not an attempt to limit or constrain your behavior. It's a mechanism t=
+o enable more advanced behaviors.
+Sidebar for New Readers
+
+I think I'm overdue for one of my occasional re-introduce-myself sidebars=
+ for the benefit of new readers. Now is a good time=2C since we seem to ha=
+ve had one of our occasional mysterious sudden influxes of new subscribers=
+=2E About 136 new readers added since last week=2C putting us over 5700 now.=
+ So those of you who decide to stick around... welcome aboard. Those of yo=
+u who don't=2C I hereby break up with you first.
+
+You can find the archives here (https://breakingsmart.com/en/season-2/seas=
+on-2-newsletter-archive/) =2C and the link is always at the bottom of ever=
+y mailing. There have been over 90 issues so far=2C and I've forgotten wha=
+t I wrote in half of them=2C so you may find I occasionally repeat or cont=
+radict myself.
+
+As you may or may not know=2C this is a weekly newsletter associated with=
+ the Breaking Smart (https://breakingsmart.com/en/dontpanic/) site=2C wher=
+e I publish in-depth seasonal essay collections on technology and society.=
+ Season 1 (https://breakingsmart.com/en/season-1/) =2C published in 2015=
+=2C was on software eating the world and is available in English=2C French=
+=2C and German. Season 2 will hopefully be out this year.
+
+This weekly newsletter features more off-the-cuff thoughts in tweetstorm=
+=2C short essay=2C or notebook entry form. But it's primarily an excuse fo=
+r me to practice my iPad+Pencil drawing skills=2C so make sure you set you=
+r email to 'display images'.
+
+You can also find my writings on other topics (and lots of other writers)=
+ on the blog I founded and edit=2C ribbonfarm (http://ribbonfarm.com) =2C=
+ and my shitposting on twitter at @vgr (https://twitter.com/vgr) . Stalker=
+y types can find out more about my shady past on my main biography site=2C=
+ venkateshrao.com.
+
+Welcome aboard!
+Feel free to forward this newsletter on email and share it via the social=
+ media buttons below. You can check out the archives here (http://breaking=
+smart.com/season-1-newsletter-archive/) . First-timers can subscribe to th=
+e newsletter here (http://breakingsmart.us1.list-manage1.com/subscribe?u=
+=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da) . More about me at venkatesh=
+rao.com
+Check out the 20 Breaking Smart Season 1 (http://breakingsmart.com/season-=
+1/)  essays for the deeper context behind this newsletter. You can follow=
+ me on Twitter @vgr (http://twitter.com/vgr)
+http://www.facebook.com/sharer/sharer.php?u=3Dhttps%3A%2F%2Fmailchi.mp%2Fr=
+ibbonfarm%2Flets-make-things-boring Share (http://www.facebook.com/sharer/=
+sharer.php?u=3Dhttps%3A%2F%2Fmailchi.mp%2Fribbonfarm%2Flets-make-things-bo=
+ring)
+http://twitter.com/intent/tweet?text=3DLet%27s+Make+Things+Boring: https%3=
+A%2F%2Fmailchi.mp%2Fribbonfarm%2Flets-make-things-boring Tweet (http://twi=
+tter.com/intent/tweet?text=3DLet%27s+Make+Things+Boring: https%3A%2F%2Fmai=
+lchi.mp%2Fribbonfarm%2Flets-make-things-boring)
+http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629a5157fa593&id=
+=3Da304e57ae3&e=3D4c5a41c2ff Forward (http://us1.forward-to-friend.com/forwa=
+rd?u=3D78cbbb7f2882629a5157fa593&id=3Da304e57ae3&e=3D4c5a41c2ff)
+http://www.linkedin.com/shareArticle?url=3Dhttps%3A%2F%2Fmailchi.mp%2Fribb=
+onfarm%2Flets-make-things-boring&mini=3Dtrue&title=3DLet%27s+Make+Things+B=
+oring Share (http://www.linkedin.com/shareArticle?url=3Dhttps%3A%2F%2Fmail=
+chi.mp%2Fribbonfarm%2Flets-make-things-boring&mini=3Dtrue&title=3DLet%27s+=
+Make+Things+Boring)
+Copyright =C2=A9 2018 Ribbonfarm Consulting=2C LLC=2C All rights reserved.
+ You are receiving this email because you signed up at breakingsmart.com f=
+or our newsletter.
+
+Our mailing address is:
+Ribbonfarm Consulting=2C LLC
+3131 Western Ave
+Suite 310
+Seattle=2C WA 98121
+USA
+unsubscribe from this list (https://breakingsmart.us1.list-manage.com/unsu=
+bscribe?u=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da&e=3D4c5a41c2ff&c=3Da30=
+4e57ae3)     update subscription preferences (https://breakingsmart.us1.li=
+st-manage.com/profile?u=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da&e=3D=
+4c5a41c2ff)
+ Email Marketing Powered by Mailchimp
+http://www.mailchimp.com/monkey-rewards/?utm_source=3Dfreemium_newsletter&=
+utm_medium=3Demail&utm_campaign=3Dmonkey_rewards&aid=3D78cbbb7f2882629a515=
+7fa593&afl=3D1
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+--_----------=_MCPart_2004329763
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.or=
+g/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+    <head><meta name=3D"twitter:image:src" content=3D"https://gallery.mail=
+chimp.com/78cbbb7f2882629a5157fa593/images/d665786b-4e4f-49b0-b1dd-7f4a2e0=
+87223.png"><meta name=3D"twitter:description" content=3D"We've been in int=
+eresting times for too long. 2019 will be a good year to adopt the resolut=
+ion to make things more boring. "><meta name=3D"twitter:title" content=3D"=
+Let's Make Things Boring"><meta name=3D"twitter:card" content=3D"summary_l=
+arge_image"><meta property=3D"og:type" content=3D"article"><meta property=
+=3D"og:description" content=3D"We've been in interesting times for too lon=
+g. 2019 will be a good year to adopt the resolution to make things more bo=
+ring. "><meta property=3D"og:image" content=3D"https://gallery.mailchimp.c=
+om/78cbbb7f2882629a5157fa593/images/d665786b-4e4f-49b0-b1dd-7f4a2e087223.p=
+ng"><meta property=3D"og:title" content=3D"Let's Make Things Boring"><meta=
+ property=3D"og:url" content=3D"http://eepurl.com/gbmkwj">
+        <!-- NAME: 1 COLUMN -->
+        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D=
+UTF-8">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial=
+-scale=3D1.0">
+        <title>Let's Make Things Boring</title>
+
+    <style type=3D"text/css">
+=09=09body=2C#bodyTable=2C#bodyCell{
+=09=09=09height:100% !important;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09=09width:100% !important;
+=09=09}
+=09=09table{
+=09=09=09border-collapse:collapse;
+=09=09}
+=09=09img=2Ca img{
+=09=09=09border:0;
+=09=09=09outline:none;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09h1=2Ch2=2Ch3=2Ch4=2Ch5=2Ch6{
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09}
+=09=09p{
+=09=09=09margin:1em 0;
+=09=09=09padding:0;
+=09=09}
+=09=09a{
+=09=09=09word-wrap:break-word;
+=09=09}
+=09=09.mcnPreviewText{
+=09=09=09display:none !important;
+=09=09}
+=09=09.ReadMsgBody{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass=2C.ExternalClass p=2C.ExternalClass span=2C.ExternalC=
+lass font=2C.ExternalClass td=2C.ExternalClass div{
+=09=09=09line-height:100%;
+=09=09}
+=09=09table=2Ctd{
+=09=09=09mso-table-lspace:0pt;
+=09=09=09mso-table-rspace:0pt;
+=09=09}
+=09=09#outlook a{
+=09=09=09padding:0;
+=09=09}
+=09=09img{
+=09=09=09-ms-interpolation-mode:bicubic;
+=09=09}
+=09=09body=2Ctable=2Ctd=2Cp=2Ca=2Cli=2Cblockquote{
+=09=09=09-ms-text-size-adjust:100%;
+=09=09=09-webkit-text-size-adjust:100%;
+=09=09}
+=09=09#templatePreheader=2C#templateHeader=2C#templateBody=2C#templateFoot=
+er{
+=09=09=09min-width:100%;
+=09=09}
+=09=09#bodyCell{
+=09=09=09padding:20px;
+=09=09}
+=09=09.mcnImage=2C.mcnRetinaImage{
+=09=09=09vertical-align:bottom;
+=09=09}
+=09=09.mcnTextContent img{
+=09=09=09height:auto !important;
+=09=09}
+=09=09body=2C#bodyTable{
+=09=09=09background-color:#F2F2F2;
+=09=09}
+=09=09#bodyCell{
+=09=09=09border-top:0;
+=09=09}
+=09=09#templateContainer{
+=09=09=09border:0;
+=09=09}
+=09=09h1{
+=09=09=09color:#606060 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:40px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-1px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h2{
+=09=09=09color:#404040 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:26px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-.75px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h3{
+=09=09=09color:#606060 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:18px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-.5px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h4{
+=09=09=09color:#808080 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:16px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:normal;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09#templatePreheader{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.preheaderContainer .mcnTextContent=2C.preheaderContainer .mcnTextCo=
+ntent p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:11px;
+=09=09=09line-height:125%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.preheaderContainer .mcnTextContent a{
+=09=09=09color:#606060;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateHeader{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.headerContainer .mcnTextContent=2C.headerContainer .mcnTextContent=
+ p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:15px;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.headerContainer .mcnTextContent a{
+=09=09=09color:#6DC6DD;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateBody{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.bodyContainer .mcnTextContent=2C.bodyContainer .mcnTextContent p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:15px;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.bodyContainer .mcnTextContent a{
+=09=09=09color:#6DC6DD;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09#templateFooter{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.footerContainer .mcnTextContent=2C.footerContainer .mcnTextContent=
+ p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:11px;
+=09=09=09line-height:125%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.footerContainer .mcnTextContent a{
+=09=09=09color:#606060;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09@media only screen and (max-width: 480px){
+=09=09body=2Ctable=2Ctd=2Cp=2Ca=2Cli=2Cblockquote{
+=09=09=09-webkit-text-size-adjust:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body{
+=09=09=09width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnRetinaImage{
+=09=09=09max-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[id=3DbodyCell]{
+=09=09=09padding:10px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnTextContentContainer]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09.mcnBoxedTextContentContainer{
+=09=09=09max-width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3Dmcpreview-image-uploader]{
+=09=09=09width:100% !important;
+=09=09=09display:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09img[class=3DmcnImage]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnImageGroupContentContainer]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageGroupContent]{
+=09=09=09padding:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageGroupBlockInner]{
+=09=09=09padding-bottom:0 !important;
+=09=09=09padding-top:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09tbody[class=3DmcnImageGroupBlockOuter]{
+=09=09=09padding-bottom:9px !important;
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionTopContent]=2Ctable[class=3DmcnCaptionBott=
+omContent]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionLeftTextContentContainer]=2Ctable[class=3D=
+mcnCaptionRightTextContentContainer]=2Ctable[class=3DmcnCaptionLeftImageC=
+ontentContainer]=2Ctable[class=3DmcnCaptionRightImageContentContainer]=2C=
+table[class=3DmcnImageCardLeftTextContentContainer]=2Ctable[class=3DmcnI=
+mageCardRightTextContentContainer]=2C.mcnImageCardLeftImageContentContaine=
+r=2C.mcnImageCardRightImageContentContainer{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardLeftImageContent]=2Ctd[class=3DmcnImageCard=
+RightImageContent]{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardBottomImageContent]{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardTopImageContent]{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardLeftImageContent]=2Ctd[class=3DmcnImageCard=
+RightImageContent]{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardBottomImageContent]{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardTopImageContent]{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionLeftContentOuter] td[class=3DmcnTextConten=
+t]=2Ctable[class=3DmcnCaptionRightContentOuter] td[class=3DmcnTextConten=
+t]{
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnCaptionBlockInner] table[class=3DmcnCaptionTopConten=
+t]:last-child td[class=3DmcnTextContent]=2C.mcnImageCardTopImageContent=
+=2C.mcnCaptionBottomContent:last-child .mcnCaptionBottomImageContent{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnBoxedTextContentColumn]{
+=09=09=09padding-left:18px !important;
+=09=09=09padding-right:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnTextContent]{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[id=3DtemplateContainer]=2Ctable[id=3DtemplatePreheader]=2Cta=
+ble[id=3DtemplateHeader]=2Ctable[id=3DtemplateBody]=2Ctable[id=3Dtempla=
+teFooter]{
+=09=09=09max-width:600px !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h1{
+=09=09=09font-size:24px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h2{
+=09=09=09font-size:20px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h3{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h4{
+=09=09=09font-size:16px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnBoxedTextContentContainer] td[class=3DmcnTextCont=
+ent]=2Ctd[class=3DmcnBoxedTextContentContainer] td[class=3DmcnTextConten=
+t] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[id=3DtemplatePreheader]{
+=09=09=09display:block !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DpreheaderContainer] td[class=3DmcnTextContent]=2Ctd[cl=
+ass=3DpreheaderContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:115% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DheaderContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DheaderContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DbodyContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DbodyContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DfooterContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DfooterContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:115% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DfooterContainer] a[class=3DutilityLink]{
+=09=09=09display:block !important;
+=09=09}
+
+}</style></head>
+    <body leftmargin=3D"0" marginwidth=3D"0" topmargin=3D"0" marginheight=
+=3D"0" offset=3D"0" style=3D"margin: 0;padding: 0;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;background-color: #F2F2F2;height: 100% !=
+important;width: 100% !important;"><div itemscope=3D"" itemtype=3D"http://=
+schema.org/EmailMessage"><div itemprop=3D"publisher" itemscope=3D"" itemty=
+pe=3D"http://schema.org/Organization"><meta itemprop=3D"name" content=3D"R=
+ibbonfarm Consulting=2C LLC"><link itemprop=3D"url" content=3D"http://brea=
+kingsmart.com"></div><div itemprop=3D"about" itemscope=3D"" itemtype=3D"ht=
+tp://schema.org/Offer"><link itemprop=3D"image" href=3D"https://gallery.ma=
+ilchimp.com/78cbbb7f2882629a5157fa593/images/d665786b-4e4f-49b0-b1dd-7f4a2=
+e087223.png"></div></div>
+        <!--
+-->
+        <!--[if !gte mso 9]><!----><span class=3D"mcnPreviewText" style=
+=3D"display:none; font-size:0px; line-height:0px; max-height:0px; max-widt=
+h:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">Thing=
+s are too interesting these days=2C and not in a good way. Let's make thin=
+gs boring.</span><!--<![endif]-->
+        <!--
+-->
+        <center>
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border=
+-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-s=
+ize-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;backg=
+round-color: #F2F2F2;height: 100% !important;width: 100% !important;">
+                <tr>
+                    <td align=3D"center" valign=3D"top" id=3D"bodyCell" st=
+yle=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;margin: 0;padding: 20px;border-top: 0;h=
+eight: 100% !important;width: 100% !important;">
+                        <!-- BEGIN TEMPLATE // -->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"600" id=3D"templateContainer" style=3D"border-collapse: co=
+llapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;border: 0;">
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN PREHEADER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templatePreheader" style=3D"border-=
+collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-=
+color: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"pr=
+eheaderContainer" style=3D"padding-top: 9px;mso-table-lspace: 0pt;mso-tabl=
+e-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">=
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" cla=
+ss=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: collapse;mso=
+-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding: 0px 18px 9px;font-size: 14px;mso-table-lspace: 0pt;mso-table-=
+rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;colo=
+r: #606060;font-family: Helvetica;line-height: 125%;text-align: left;">
+
+                            I talk a lot about interestingness in this new=
+sletter. The idea of pursuing the <a href=3D"https://breakingsmart.us1.lis=
+t-manage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=3D89f7bcb45b&e=
+=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wrap: break-word;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-weigh=
+t: normal;text-decoration: underline;">direction of maximal interestingnes=
+s</a> was a key principle in the Season 1 essays. But it recently struck m=
+e that the opposed principle -- pursuing the direction of maximal boringne=
+ss -- is an equally profound idea. There is no contradiction here. As Niel=
+s Bohr said=2C "the opposite of every great truth is also a great truth."<=
+br>
+<br>
+As you enter resolution-making season=2C for yourself=2C but especially fo=
+r any organizations whose missions you might have a role in shaping=2C I'd=
+ like to offer up a candidate resolution for you in 2019: <em>Let's make t=
+hings boring.&nbsp;</em><br>
+<br>
+The opposed principle is more familiar and seems more obviously like a goo=
+d one: <em>Let's make things interesting.</em> We are more commonly in a r=
+ut-like situation with a need to shake things up. But the two are not nece=
+ssarily mutually exclusive. You can adopt both resolutions at once: make s=
+ome things more interesting=2C and other things more boring.<br>
+<br>
+Enough has been said about how to make things interesting=2C so let's talk=
+ about how to make things boring=2C where=2C why=2C and especially=2C <em>=
+when</em>: why 2019 is a good year for this particular resolution.
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"390" style=3D"width:390px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 390px;border-collapse: collapse;mso-table=
+-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text=
+-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 11px;line-height: 125%;text-align: left;">
+
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"210" style=3D"width:210px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 210px;border-collapse: collapse;mso-table=
+-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text=
+-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContentContainer">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-left: 18px;padding-bottom: 9px;padding-right: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 11px;line-height: 125%;text-align: left;">
+
+                            <a href=3D"https://mailchi.mp/ribbonfarm/lets-=
+make-things-boring?e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wrap: bre=
+ak-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #=
+606060;font-weight: normal;text-decoration: underline;">View this email in=
+ your browser</a>
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END PREHEADER -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN HEADER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateHeader" style=3D"border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-col=
+or: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"he=
+aderContainer" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-te=
+xt-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnTextBlock"=
+ style=3D"min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;=
+mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 15px;line-height: 150%;text-align: left;">
+
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END HEADER -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN BODY // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateBody" style=3D"border-colla=
+pse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-ad=
+just: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-color=
+: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"bo=
+dyContainer" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnImageCardBloc=
+k" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspa=
+ce: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnImageCardBlockOuter">
+        <tr>
+            <td class=3D"mcnImageCardBlockInner" valign=3D"top" style=3D"p=
+adding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px=
+;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;">
+
+<table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cla=
+ss=3D"mcnImageCardBottomContent" width=3D"100%" style=3D"background-color:=
+ #EBEBEB;border: 1px solid #999999;border-collapse: collapse;mso-table-lsp=
+ace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-siz=
+e-adjust: 100%;">
+    <tbody><tr>
+        <td class=3D"mcnImageCardBottomImageContent" align=3D"left" valign=
+=3D"top" style=3D"padding-top: 18px;padding-right: 18px;padding-bottom: 0;=
+padding-left: 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+
+
+            <img alt=3D"" src=3D"https://gallery.mailchimp.com/78cbbb7f288=
+2629a5157fa593/images/d665786b-4e4f-49b0-b1dd-7f4a2e087223.png" width=3D"5=
+26" style=3D"max-width: 623px;border: 0;outline: none;text-decoration: non=
+e;-ms-interpolation-mode: bicubic;vertical-align: bottom;" class=3D"mcnIma=
+ge">
+
+
+        </td>
+    </tr>
+    <tr>
+        <td class=3D"mcnTextContent" valign=3D"top" style=3D"padding-top:=
+ 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px;li=
+ne-height: 150%;text-align: left;" width=3D"528">
+            The Box Factory=2C running gag/motif of "boringness" in The Si=
+mpsons (first appearance=2C Episode 93=2C 1993)
+        </td>
+    </tr>
+</tbody></table>
+
+
+
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnShareBlock" style=3D"min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnShareBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;" class=3D"mcnShareBlockInner">
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" class=3D"mcnShareContentContainer" style=3D"min-width: 10=
+0%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody><tr>
+        <td align=3D"left" style=3D"padding-top: 0;padding-left: 9px;paddi=
+ng-bottom: 0;padding-right: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+            <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;background-color: #FAFAFA=
+;border: 1px solid #EEEEEE;border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust=
+: 100%;" class=3D"mcnShareContent">
+                <tbody><tr>
+                    <td align=3D"left" valign=3D"top" class=3D"mcnShareCon=
+tentItemContainer" style=3D"padding-top: 9px;padding-right: 9px;padding-le=
+ft: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;">
+                        <table align=3D"left" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+                            <tbody><tr>
+                                <td align=3D"left" valign=3D"top" style=3D=
+"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;">
+                                    <!--[if mso]>
+                                    <table align=3D"left" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                    <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D538dd47a28&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-facebook-48.png" style=3D"display: block;border: 0;outlin=
+e: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"=
+24" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D91c9066e85&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Share</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D1ec2950426&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-twitter-48.png" style=3D"display: block;border: 0;outline=
+: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"2=
+4" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D7106cd2d61&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Tweet</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629=
+a5157fa593&id=3Da304e57ae3&e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-w=
+rap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><img src=3D"https://cdn-images.mailchimp.com/icons/social-block-v2/color=
+-forwardtofriend-48.png" style=3D"display: block;border: 0;outline: none;t=
+ext-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"24" width=
+=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629=
+a5157fa593&id=3Da304e57ae3&e=3D4c5a41c2ff" target=3D"" style=3D"color: #5050=
+50;font-family: Arial;font-size: 12px;font-weight: normal;line-height: 100=
+%;text-align: center;text-decoration: none;word-wrap: break-word;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;">Forward</a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 0;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cla=
+ss=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D952a1e4b19&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-linkedin-48.png" style=3D"display: block;border: 0;outlin=
+e: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"=
+24" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D882187789f&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Share</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                    <!--[if mso]>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+                </td>
+            </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 15px;line-height: 150%;text-align: left;">
+
+                            <p style=3D"margin: 1em 0;padding: 0;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #606060;font-famil=
+y: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">1/ I wan=
+t to evangelize a 2019 resolution=2C especially for organizations: "let's=
+ make things boring".<br>
+<br>
+2/ The guiding principle is the idea=2C "The opposite of every great truth=
+ is also a great truth" -- Niels Bohr.<br>
+<br>
+3/ "You learn most in direction of maximal interestingness" is a great tru=
+th=2C and the driver of innovation.&nbsp;But "You learn most in direction=
+ of maximal boringness" is <em>also</em> a great truth=2C and the driver o=
+f sustainability at scale.<br>
+<br>
+4/ The <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=
+=3D78cbbb7f2882629a5157fa593&id=3Dd1aabd3b13&e=3D4c5a41c2ff" target=3D"_b=
+lank" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: u=
+nderline;">Axios newsletter today</a>&nbsp;has this line about the latest=
+ bit of exhausting Trumpery out of Washington=2C DC: "The bottom line: Nor=
+ms and precedents are boring. The lack of them is interesting=2C but almos=
+t always at a severe cost."<br>
+<br>
+5/ Arguing for norms might seem a bit conservative=2C reactionary=2C and <=
+a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78cbbb=
+7f2882629a5157fa593&id=3Df7b6afcec1&e=3D4c5a41c2ff" target=3D"_blank" sty=
+le=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-a=
+djust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;=
+">Chesterton Fencish</a>=2C but it needn't be. Making things boring is (fo=
+r instance) the basic challenge of scaling an innovative technology.<br>
+<br>
+6/ Seth Godin once said something like "a technology becomes socially inte=
+resting when it becomes technologically boring." Making an interesting tec=
+hnology boring tends to make engineering reputations.<br>
+<br>
+7/ If you're running a company with engineering and marketing challenges=
+=2C you can't make the marketing interesting until you make the engineerin=
+g boring. And you can't make the engineering interesting again till the ma=
+rketing gets boring enough to drive a firehose of cash.<br>
+<br>
+8/ On the more philosophical end=2C there's that line from A. N. Whitehead=
+=2E "civilization advances by extending the number of important operations w=
+hich we can perform without thinking of them." Making things boring is abo=
+ut <em>locking in progress</em>.<br>
+<br>
+9/ We focus a lot on the abuse/discarding of norms these days=2C with the=
+ lament=2C "this is not normal." You make things interesting by flouting o=
+ld norms. You make things boring by installing new norms.<br>
+<br>
+10/ Cults and alt realities rise to prominence by being interesting=2C but=
+ establish themselves as "normal" for the long term by deliberately becomi=
+ng boring. That's the "institutional" in institutional religion. As I twee=
+ted once=2C "normalcy is merely the majority sect of magical thinking."<br=
+>
+<br>
+11/ If you stop at flouting/breaking old norms=2C you'll vanish like a fla=
+sh flood leaving no trace behind. Old norms will just come creeping back.=
+ Chesterton's fence will rebuild itself.<br>
+<br>
+12/ Why? People lack imagination. In the absence of a new norm=2C they'll=
+ revert to an old norm. That's a good thing. Old norms backstop half-assed=
+ experiments in novelty that fail or are abandoned.&nbsp;<br>
+<br>
+13/&nbsp;The other half of the equation=2C "normalizing" new things=2C can=
+ be&nbsp;the scary part when the things that people are seeking to normali=
+ze seem cruel=2C unjust=2C&nbsp;or awful in some way. You do not want "be=
+ cruel to children and animals" to be a new societal "norm."<br>
+<br>
+14/ But we&nbsp;often conflate&nbsp;being in a numb/jaded/exhausted/burnt=
+ out state due to repeated trauma or transgression with "normalizing" thin=
+gs that shouldn't be normalized. Numbness is not "normalization."<br>
+<br>
+15/ The joke "the beatings will continue until morale improves" gets at wh=
+y mere repetition of a transgression of an old norm to exhaust the capacit=
+y to respond&nbsp;is (fortunately) not a way to install a new norm. You ca=
+n't beat generativity and growth out of people.<br>
+<br>
+16/ A real norm is self-enforcing without much coercive energy. If "beatin=
+g" is needed=2C it's not a norm=2C it's a negatively incentivized&nbsp;beh=
+avior. A real norm gets installed in our superegos. The incentives are int=
+ernal. The carrots and sticks are inside our heads.<br>
+<br>
+17/ We feel guilt and/or shame at transgressing it&nbsp;even if nobody is=
+ watching=2C let alone beating us. If we are tempted into transgression=2C=
+ we have the decency to at least try and cover it up. That's a good thing=
+=2C even though it can seem like condoning hypocrisy.<br>
+<br>
+18/ The presence of hypocrisy around a norm in a society shows it&nbsp;sti=
+ll has power. That there are consequences to breaking it. Not just legal o=
+nes=2C or shaming by others=2C but <em>internal</em> consequences we infli=
+ct on ourselves=2C via guilt.&nbsp;<br>
+<br>
+19/ The Trump era has numbed us to a lot of things=2C but it hasn't actual=
+ly <em>normalized</em> any awful new behaviors that weren't already normal=
+ized. So far=2C "this is not normal" hasn't been a necessary chant=2C even=
+ though it has been a common one. That's the good news.<br>
+<br>
+20/ There's been a few wannabe ugly-new-norm-normalizers in the Trump crow=
+d (such as Stephen Miller) but they've had low impact at the norms level o=
+utside of regulatory hacks/de-institutionalization efforts. Good things th=
+ey destroy can be rebuilt.<br>
+<br>
+21/ Fortunately for our collective sanity=2C it still isn't "normal" to be=
+ cruel to children. Pussy-grabbing hasn't replaced hand-shaking as a way f=
+or men to greet women socially. Despite all the reactionary moral panic ar=
+ound the #metoo movement=2C men and women haven't actually stopped hooking=
+ up=2C dating=2C or getting married.<br>
+<br>
+22/ To make things boring is to look for areas in need of norms=2C and wor=
+king to install them. In 2019=2C we especially need "make it boring" effor=
+ts in the cultural sphere (though of course=2C by all means pursue it in o=
+ther areas too). Every culture war dumpster fire is an opportunity for an=
+ imaginative effort to install a new norm.&nbsp;<br>
+<br>
+23/ So as you look for opportunities to make things boring in 2019=2C look=
+ at where there are dumpster fires=2C charged emotions=2C flaming conflict=
+s=2C etc. The immediate goal is to put out the fires. The long-term goal i=
+s to make things less flammable. <em>A good norm makes it easier to be goo=
+d than evil=2C for your value of "good" and "evil."</em><br>
+<br>
+24/ Here is <a href=3D"https://breakingsmart.us1.list-manage.com/track/cli=
+ck?u=3D78cbbb7f2882629a5157fa593&id=3Da1448c6801&e=3D4c5a41c2ff" target=
+=3D"_blank" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decorat=
+ion: underline;">a brilliant&nbsp;example</a> of a kindergarten teacher wo=
+rking imaginatively to install a better norm around consent and bodily aut=
+onomy in children. She simply has the children pick their preferred mornin=
+g greeting out of 4 options (a hug=2C a high-five=2C a little dance=2C or=
+ a handshake)&nbsp;as they enter class. That's an A+.<br>
+<br>
+25/ Contrast this with the unimaginative moral-panic mongering in this cas=
+e of <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D=
+78cbbb7f2882629a5157fa593&id=3D677859c7f7&e=3D4c5a41c2ff" target=3D"_blan=
+k" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: unde=
+rline;">a mom pretending her adult son in the Navy is too scared to date b=
+ecause of fear of harassment accusations</a> (the son later stridently dis=
+avowed his mother's claims). That's an F.<br>
+<br>
+26/&nbsp;There's an obvious playbook to installing good norms and making n=
+ew&nbsp;behaviors normal=2C boring=2C and most importantly=2C not-shameful=
+=2E The only tricky ingredient is imagination. Yes=2C like the kindergarten=
+ teacher above=2C you need imagination to make things boring=2C oddly enou=
+gh.<br>
+<br>
+27/ You can't do it to all behaviors. A&nbsp;pre-normalization reasonablen=
+ess test applies. This is a good thing. We humans -- well most of us -- do=
+ have an innate sense of when a behavior we're being encouraged to adopt i=
+s cruel=2C unfair=2C or self-serving=2C and if not=2C are able to see it w=
+hen pointed out. We're not morons.<br>
+<br>
+28/ Despite all the pearl-clutching moral panic around #metoo for instance=
+=2C nobody I know thinks the theatrical Mike Pence norm&nbsp;of never meet=
+ing with women 1 on 1 or in private is a good one. It's a sort of injured=
+ conservative martyrdom virtue signaling via a strawman norm.<br>
+<br>
+29/ It fails the reasonableness test on multiple levels. It's unfair to wo=
+men to be excluded from productive opportunities for 1:1 interaction or pr=
+ivate conversations. It's toxic to embed the belief that all men are poten=
+tial harassers into the environment. And worst of all: it doesn't actually=
+ solve the problem. Sexual harassers will find a way.<br>
+<br>
+30/&nbsp;It's idiotic to design a norm around worst-case expectations ("co=
+rner cases make bad law" applies to norm design as well). Not surprisingly=
+=2C the reports of the norm being adopted are mostly emerging from sectors=
+ that already have an awful reputation for sexism=2C like finance.<br>
+<br>
+31/ But assuming you have an idea for a norm that seems reasonable (good t=
+est: run it by a representative set of the people who would actually have=
+ to adopt it)=2C there's a&nbsp;design-and-installation playbook of sorts=
+=2C with 8 basic rules. Here they are:<br>
+<br>
+<strong>8 Rules for Designing and Installing Norms</strong></p>
+
+<ol>
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><u><em>Make it unskilled:</em></u> it should be no extra mental effort t=
+o practice the norm</li>
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><u><em>Make it self-reinforcing</em></u>: it should be habit forming</li=
+>
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><u><em>Automate it</em></u>: let machines do the difficult parts where p=
+ossible</li>
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><u><em>Take heroism/villainy out of it</em></u>: his is a crucial thing=
+=2C nobody wants to be a hero or risk being called a villain every day.</l=
+i>
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><u><em>Make it visible and imitable</em></u>: norms don't spread through=
+ lecturing=2C they spread through imitation. The visibility implies there=
+ should be no shame to it=2C which "bad" candidate norms will generally fa=
+il. Imitability means seeing it done should be enough to figure out how to=
+ do it=2C even if you're neurotypically disadvantaged when it comes to&nbs=
+p;picking up on social cues.</li>
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><u><em>Make it microkarmic</em></u>: 1 recycled can =3D&nbsp;1 whuffie o=
+f feeling good about it even if nobody sees you do it. This simply means m=
+ild short-term positive reinforcement.</li>
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><u><em>Unbrand it</em></u>: turn secret handshakes into ordinary ones. Y=
+ou don't get premium extra points for recycling soda cans when everybody d=
+oes. Behaving a certain way shouldn't mark you as a member of a special cl=
+ub.</li>
+=09<li style=3D"-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><u><em>Uncode it</em></u>: the virtue signaling&nbsp;value of a good nor=
+m should be zero. Norms aren't and shouldn't be currencies. The behavior s=
+hould not "signal" that you profess/practice an exceptional=2C saintly vir=
+tue. It should not become a way for saints to connect in mutual admiration=
+=2E</li>
+</ol>
+
+<p style=3D"margin: 1em 0;padding: 0;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;color: #606060;font-family: Helvetica;font-size: 15px=
+;line-height: 150%;text-align: left;">32/ If you successfully do these 8 t=
+hings=2C it will become part of background social infrastructure that is s=
+elf-regulating=2C self-socializing etc. It will also drain the culture-war=
+ energy out of the behavior and any counter-behaviors. Suck the air out=2C=
+ starve the dumpster fire flames.<br>
+<br>
+33/ Remember=2C ultimately=2C "making things boring" is about making it ea=
+sier to be good than bad. That's all a norm really is. A way for civilizat=
+ion to advance by making it less effort to behave in more advanced ways. I=
+t's not an attempt to limit or constrain your behavior. It's a mechanism t=
+o enable more advanced behaviors.</p>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnBoxedTextBlock" style=3D"min-width: 100%;border-collapse:=
+ collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust=
+: 100%;-webkit-text-size-adjust: 100%;">
+    <!--[if gte mso 9]>
+=09<table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" width=3D"100%">
+=09<![endif]-->
+=09<tbody class=3D"mcnBoxedTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnBoxedTextBlockInner" style=3D"m=
+so-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-web=
+kit-text-size-adjust: 100%;">
+
+=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09<td align=3D"center" valign=3D"top" ">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;" class=3D"mcnBoxedTextContentContainer">
+                    <tbody><tr>
+
+                        <td style=3D"padding-top: 9px;padding-left: 18px;p=
+adding-bottom: 9px;padding-right: 18px;mso-table-lspace: 0pt;mso-table-rsp=
+ace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                            <table border=3D"0" cellspacing=3D"0" class=3D=
+"mcnTextContentContainer" width=3D"100%" style=3D"min-width: 100% !importa=
+nt;background-color: #F7F5C0;border-collapse: collapse;mso-table-lspace: 0=
+pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;">
+                                <tbody><tr>
+                                    <td valign=3D"top" class=3D"mcnTextCon=
+tent" style=3D"padding: 18px;color: #000000;font-family: Helvetica;font-si=
+ze: 14px;font-weight: normal;text-align: left;mso-table-lspace: 0pt;mso-ta=
+ble-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+line-height: 150%;">
+                                        <strong>Sidebar for New Readers</s=
+trong><br>
+<br>
+I think I'm overdue for one of my occasional re-introduce-myself sidebars=
+ for the benefit of new readers. Now is a good time=2C since we seem to ha=
+ve had one of our occasional mysterious sudden influxes of new subscribers=
+=2E About 136 new readers added since last week=2C putting us over 5700 now.=
+ So those of you who decide to stick around... welcome aboard. Those of yo=
+u who don't=2C I hereby break up with you first.<br>
+<br>
+You can <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=
+=3D78cbbb7f2882629a5157fa593&id=3D1572ba189e&e=3D4c5a41c2ff" target=3D"_b=
+lank" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-te=
+xt-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: u=
+nderline;">find the archives here</a>=2C and the link is always at the bot=
+tom of every mailing. There have been over 90 issues so far=2C and I've fo=
+rgotten what I wrote in half of them=2C so you may find I occasionally rep=
+eat or contradict myself.<br>
+<br>
+As you may or may not know=2C this is a weekly newsletter associated with=
+ the <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D=
+78cbbb7f2882629a5157fa593&id=3Daa08e3b0a7&e=3D4c5a41c2ff" target=3D"_blan=
+k" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decoration: unde=
+rline;">Breaking Smart</a> site=2C where I publish in-depth seasonal essay=
+ collections on technology and society. <a href=3D"https://breakingsmart.u=
+s1.list-manage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=3Da0cde403=
+cb&e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wrap: break-word;-ms-t=
+ext-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-w=
+eight: normal;text-decoration: underline;">Season 1</a>=2C published in 20=
+15=2C was on software eating the world and is available in English=2C Fren=
+ch=2C and German. Season 2 will hopefully be out this year.<br>
+<br>
+This weekly newsletter features more off-the-cuff thoughts in tweetstorm=
+=2C short essay=2C or notebook entry form. But it's primarily an excuse fo=
+r me to practice my iPad+Pencil drawing skills=2C so make sure you set you=
+r email to 'display images'.<br>
+<br>
+You can also find my writings on other topics (and lots of other writers)=
+ on the blog I founded and edit=2C <a href=3D"https://breakingsmart.us1.li=
+st-manage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=3D626b36bd1c&e=
+=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wrap: break-word;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weigh=
+t: normal;text-decoration: underline;">ribbonfarm</a>=2C and my shitpostin=
+g on twitter at <a href=3D"https://breakingsmart.us1.list-manage.com/track=
+/click?u=3D78cbbb7f2882629a5157fa593&id=3Da8aeaebcc6&e=3D4c5a41c2ff" targ=
+et=3D"_blank" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-decor=
+ation: underline;">@vgr</a>. Stalkery types can find out more about my sha=
+dy past on my main biography site=2C <a href=3D"https://breakingsmart.us1.=
+list-manage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=3D9c38f8f2b8&=
+e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wrap: break-word;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-weig=
+ht: normal;text-decoration: underline;">venkateshrao.com</a>.<br>
+<br>
+Welcome aboard!
+                                    </td>
+                                </tr>
+                            </tbody></table>
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if gte mso 9]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if gte mso 9]>
+                </tr>
+                </table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 15px;line-height: 150%;text-align: left;">
+
+                            <em style=3D"color: #606060;font-family: helve=
+tica;font-size: 15px;line-height: 20.8px;">Feel free to forward this newsl=
+etter on email and share it via the social media buttons below. You can ch=
+eck out <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=
+=3D78cbbb7f2882629a5157fa593&id=3D9710c4f55c&e=3D4c5a41c2ff" style=3D"wor=
+d-wrap: break-word;color: #6DC6DD;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;font-weight: normal;text-decoration: underline;" target=
+=3D"_blank">the archives here</a>. First-timers can&nbsp;<a href=3D"https:=
+//breakingsmart.us1.list-manage.com/track/click?u=3D78cbbb7f2882629a5157fa=
+593&id=3D516cf9143c&e=3D4c5a41c2ff" style=3D"word-wrap: break-word;color:=
+ #6DC6DD;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;font-we=
+ight: normal;text-decoration: underline;" target=3D"_blank">subscribe to t=
+he newsletter here</a>. More about me at <a href=3D"https://breakingsmart.=
+us1.list-manage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=3D2538bcb=
+1d9&e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-wrap: break-word;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #6DC6DD;font-=
+weight: normal;text-decoration: underline;">venkateshrao.com</a></em><br s=
+tyle=3D"color: #606060;font-family: Helvetica;font-size: 15px;line-height:=
+ 22.5px;">
+<br style=3D"color: #606060;font-family: Helvetica;font-size: 15px;line-he=
+ight: 22.5px;">
+<em style=3D"color: #606060;font-family: helvetica;font-size: 15px;line-he=
+ight: 22.5px;">Check out the 20&nbsp;<a href=3D"https://breakingsmart.us1.=
+list-manage.com/track/click?u=3D78cbbb7f2882629a5157fa593&id=3D358a2ffedb&=
+e=3D4c5a41c2ff" style=3D"word-wrap: break-word;color: #6DC6DD;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;font-weight: normal;text-de=
+coration: underline;" target=3D"_blank">Breaking Smart Season 1</a>&nbsp;e=
+ssays for the deeper context behind this newsletter. You can follow me on=
+ Twitter&nbsp;<a href=3D"https://breakingsmart.us1.list-manage.com/track/c=
+lick?u=3D78cbbb7f2882629a5157fa593&id=3D4cc5334520&e=3D4c5a41c2ff" style=
+=3D"word-wrap: break-word;color: #6DC6DD;-ms-text-size-adjust: 100%;-webki=
+t-text-size-adjust: 100%;font-weight: normal;text-decoration: underline;"=
+ target=3D"_blank">@vgr</a></em>
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnShareBlock" style=3D"min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnShareBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;" class=3D"mcnShareBlockInner">
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" class=3D"mcnShareContentContainer" style=3D"min-width: 10=
+0%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-=
+ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody><tr>
+        <td align=3D"left" style=3D"padding-top: 0;padding-left: 9px;paddi=
+ng-bottom: 0;padding-right: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+            <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"100%" style=3D"min-width: 100%;background-color: #FAFAFA=
+;border: 1px solid #EEEEEE;border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust=
+: 100%;" class=3D"mcnShareContent">
+                <tbody><tr>
+                    <td align=3D"left" valign=3D"top" class=3D"mcnShareCon=
+tentItemContainer" style=3D"padding-top: 9px;padding-right: 9px;padding-le=
+ft: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;">
+                        <table align=3D"left" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" style=3D"border-collapse: collapse;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;">
+                            <tbody><tr>
+                                <td align=3D"left" valign=3D"top" style=3D=
+"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-w=
+ebkit-text-size-adjust: 100%;">
+                                    <!--[if mso]>
+                                    <table align=3D"left" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                    <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3Dbfb0a36f90&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-facebook-48.png" style=3D"display: block;border: 0;outlin=
+e: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"=
+24" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D82a9d46b76&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Share</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3De40fbd5106&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-twitter-48.png" style=3D"display: block;border: 0;outline=
+: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"2=
+4" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D4758316227&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Tweet</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 9px;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" c=
+lass=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629=
+a5157fa593&id=3Da304e57ae3&e=3D4c5a41c2ff" target=3D"_blank" style=3D"word-w=
+rap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+"><img src=3D"https://cdn-images.mailchimp.com/icons/social-block-v2/color=
+-forwardtofriend-48.png" style=3D"display: block;border: 0;outline: none;t=
+ext-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"24" width=
+=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"http://us1.forward-to-friend.com/forward?u=3D78cbbb7f2882629=
+a5157fa593&id=3Da304e57ae3&e=3D4c5a41c2ff" target=3D"" style=3D"color: #5050=
+50;font-family: Arial;font-size: 12px;font-weight: normal;line-height: 100=
+%;text-align: center;text-decoration: none;word-wrap: break-word;-ms-text-=
+size-adjust: 100%;-webkit-text-size-adjust: 100%;">Forward</a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                        <!--[if mso]>
+                                        <td align=3D"center" valign=3D"top=
+">
+                                        <![endif]-->
+                                        <table align=3D"left" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse: collapse;ms=
+o-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webk=
+it-text-size-adjust: 100%;">
+                                            <tbody><tr>
+                                                <td valign=3D"top" style=
+=3D"padding-right: 0;padding-bottom: 9px;mso-table-lspace: 0pt;mso-table-r=
+space: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" cla=
+ss=3D"mcnShareContentItemContainer">
+                                                    <table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"mcnShareContentItem"=
+ style=3D"border-collapse: separate;background-color: #FAFAFA;border: 1px=
+ solid #CCCCCC;border-radius: 5px;mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody><tr>
+                                                            <td align=3D"l=
+eft" valign=3D"middle" style=3D"padding-top: 5px;padding-right: 9px;paddin=
+g-bottom: 5px;padding-left: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0p=
+t;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" st=
+yle=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0=
+pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody=
+><tr>
+                                                                        <t=
+d align=3D"center" valign=3D"middle" width=3D"24" class=3D"mcnShareIconCon=
+tent" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-a=
+djust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3D56bf23583c&e=3D4c5a41c2ff" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;"><img src=3D"https://cdn-images.mailchimp.com/icons/socia=
+l-block-v2/color-linkedin-48.png" style=3D"display: block;border: 0;outlin=
+e: none;text-decoration: none;-ms-interpolation-mode: bicubic;" height=3D"=
+24" width=3D"24" class=3D""></a>
+                                                                        </=
+td>
+                                                                        <t=
+d align=3D"left" valign=3D"middle" class=3D"mcnShareTextContent" style=3D"=
+padding-left: 5px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-siz=
+e-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                         =
+   <a href=3D"https://breakingsmart.us1.list-manage.com/track/click?u=3D78=
+cbbb7f2882629a5157fa593&id=3Dd72c157770&e=3D4c5a41c2ff" target=3D"" style=
+=3D"color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;=
+line-height: 100%;text-align: center;text-decoration: none;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Share</=
+a>
+                                                                        </=
+td>
+                                                                    </tr>
+                                                                </tbody></=
+table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                                </td>
+                                            </tr>
+                                        </tbody></table>
+                                        <!--[if mso]>
+                                        </td>
+                                        <![endif]-->
+
+                                    <!--[if mso]>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+                </td>
+            </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"min-width: 100%;border-collapse: coll=
+apse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"paddin=
+g-top: 9px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjus=
+t: 100%;-webkit-text-size-adjust: 100%;">
+              =09<!--[if mso]>
+=09=09=09=09<table align=3D"left" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" width=3D"100%" style=3D"width:100%;">
+=09=09=09=09<tr>
+=09=09=09=09<![endif]-->
+=09=09=09
+=09=09=09=09<!--[if mso]>
+=09=09=09=09<td valign=3D"top" width=3D"600" style=3D"width:600px;">
+=09=09=09=09<![endif]-->
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" style=3D"max-width: 100%;min-width: 100%;border-collapse: col=
+lapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;" width=3D"100%" class=3D"mcnTextContent=
+Container">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-left: 1=
+8px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font=
+-size: 15px;line-height: 150%;text-align: left;">
+
+                            <em>Copyright =C2=A9 2018 Ribbonfarm Consultin=
+g=2C LLC=2C All rights reserved.</em><br>
+ You are receiving this email because you signed up at breakingsmart.com f=
+or our newsletter.<br>
+<br>
+<strong>Our mailing address is:</strong><br>
+<div class=3D"vcard"><span class=3D"org fn">Ribbonfarm Consulting=2C LLC</=
+span><div class=3D"adr"><div class=3D"street-address">3131 Western Ave</di=
+v><div class=3D"extended-address">Suite 310</div><span class=3D"locality">=
+Seattle</span>=2C <span class=3D"region">WA</span>  <span class=3D"postal-=
+code">98121</span></div><br><a href=3D"https://breakingsmart.us1.list-mana=
+ge.com/vcard?u=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da" class=3D"hcard=
+-download">Add us to your address book</a></div>
+<br>
+<br>
+<a class=3D"utilityLink" href=3D"https://breakingsmart.us1.list-manage.com=
+/unsubscribe?u=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da&e=3D4c5a41c2ff&c=
+=3Da304e57ae3" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-=
+webkit-text-size-adjust: 100%;color: #6DC6DD;font-weight: normal;text-deco=
+ration: underline;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp; <a cl=
+ass=3D"utilityLink" href=3D"https://breakingsmart.us1.list-manage.com/prof=
+ile?u=3D78cbbb7f2882629a5157fa593&id=3D6b80b6e8da&e=3D4c5a41c2ff" style=3D"w=
+ord-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;color: #6DC6DD;font-weight: normal;text-decoration: underline;">upda=
+te subscription preferences</a>&nbsp;<br>
+<br>
+ <a href=3D"http://www.mailchimp.com/monkey-rewards/?utm_source=3Dfreemium=
+_newsletter&utm_medium=3Demail&utm_campaign=3Dmonkey_rewards&aid=3D78cbbb7=
+f2882629a5157fa593&afl=3D1"><img src=3D"https://gallery.mailchimp.com/0894=
+43193dd93823f3fed78b4/images/banner1.gif" border=3D"0" alt=3D"Email Market=
+ing Powered by Mailchimp" title=3D"Mailchimp Email Marketing"></a>
+                        </td>
+                    </tr>
+                </tbody></table>
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</td>
+=09=09=09=09<![endif]-->
+
+=09=09=09=09<!--[if mso]>
+=09=09=09=09</tr>
+=09=09=09=09</table>
+=09=09=09=09<![endif]-->
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END BODY -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN FOOTER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateFooter" style=3D"border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;min-width: 100%;background-col=
+or: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"fo=
+oterContainer" style=3D"padding-bottom: 9px;mso-table-lspace: 0pt;mso-tabl=
+e-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">=
+</td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END FOOTER -->
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    <img src=3D"https://breakingsmart.us1.list-manage.com/track/open.php?u=
+=3D78cbbb7f2882629a5157fa593&id=3Da304e57ae3&e=3D4c5a41c2ff" height=3D"1"=
+ width=3D"1"></body>
+</html>
+--_----------=_MCPart_2004329763--

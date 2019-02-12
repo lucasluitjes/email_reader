@@ -1,0 +1,606 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Fri, 04 Jan 2019 00:04:53 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounce+2892bc.cb4d51-lucas=luitjes.it@elixirweekly.net>
+Received: from 205.237.194.28
+	by m8.mxes.net (bayesd) with LMTP id 1546578293-2050-10
+	for <lucas_mindrules.net@ms8.mxes.net>; Fri,  4 Jan 2019 00:04:53 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-06.mxes.net (Postfix) with ESMTP id 018D127DB3
+	for <lucas@luitjes.it>; Fri,  4 Jan 2019 00:04:52 -0500 (EST)
+Received: from mail-s69.mailgun.info (mail-s69.mailgun.info [184.173.153.197])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mxin.mxes.net (Postfix) with ESMTPS id 5ED8327A5E
+	for <lucas@luitjes.it>; Thu,  3 Jan 2019 23:55:04 -0500 (EST)
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=elixirweekly.net header.i=@elixirweekly.net header.b=eR+vnn8H
+DKIM-Signature: a=rsa-sha256; v=1; c=relaxed/relaxed; d=elixirweekly.net; q=dns/txt;
+ s=k1; t=1546577697; h=Content-Type: Mime-Version: Subject: From: To:
+ Message-Id: Sender: Date;
+ bh=zW0v/fSgizd+MEBA6Y1+Rt+PLQHH4JnDIwjdF8lqjFI=; b=eR+vnn8HJmRb6hmM6N8k7rc5Qz4/AnaWy2AaksH7CwbDBzL77j5oaxMDInOyULbKMjqmhgXg
+ LiMWRXm6Vc+wn/fY29UHgrk7ajoOpenrrVZ4EEVkUUR4TtIh1TnzLB99O5KWCWkbIMyix4PA
+ OvMmJxjfgsVobs/Orbrav6sv8go=
+X-Mailgun-Sending-Ip: 184.173.153.197
+X-Mailgun-Sid: WyIxMzM1NiIsICJsdWNhc0BsdWl0amVzLml0IiwgImNiNGQ1MSJd
+Received: by luna.mailgun.net with HTTP; Fri, 04 Jan 2019 04:54:56 +0000
+Date: Fri, 04 Jan 2019 04:54:56 +0000
+Sender: newsletter@elixirweekly.net
+Message-Id: <20190104045456.1.7D7CC7B04DD74078@elixirweekly.net>
+To: lucas@luitjes.it
+From: ElixirWeekly <newsletter@elixirweekly.net>
+Subject: [ElixirWeekly] Issue #130 - Whistle, a Phoenix LiveView Alternative?
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="699566c764d845bfafabdc894fddb5e2"
+X-Virus-Scanned: ClamAV
+X-Spam-Sys-BayesResult: No, 0.198726
+X-Spam-Scanner: 1546578290-39795-17
+X-Spam-Report: Content analysis details:
+ -10.0 BAYESSCORE             0.000000
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [184.173.153.197 listed in dnswl.mxes.net]
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   0.0 HTML_FONT_LOW_CONTRAST BODY: HTML font color similar or identical to background
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 DMARC_POLICY           Accept on policy failure
+   0.0 DKIM_VALID_EF          Message has a valid DKIM or DK signature from envelope-from domain
+  -1.5 SYSTEM_BAYES           No 0.198726
+   0.0 DMARC_PASS             From: domain publishes a DMARC policy and the DKIM or SPF alignment test passes
+   0.0 HTML_MESSAGE           HTML included in message
+   0.2 SPF_MECH_1             Permissive SPF record ~all
+   0.0 T_DMARC_ACCEPT         Sender says accept all mail
+   0.8 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 1
+X-Spam-SI: 0
+X-Originating-IP: 184.173.153.197
+X-Dmarc-Status: Pass
+X-Reputation-Delta: 0.8
+X-Envelope-To: <lucas@luitjes.it>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-10.4 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.000000
+X-Spam-Score: -10.4
+X-Spam-Scoring: 0,0
+
+--699566c764d845bfafabdc894fddb5e2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+Mime-Version: 1.0
+
+ElixirWeekly - Issue #130
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+
+
+This week in Elixir
+-------------------------
+
+What's New in IntelliJ Elixir 10.1.0
+
+Luke breaks down what's new in IntelliJ Elixir v10.1.0!
+
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3273
+
+
+***
+
+
+Whistle, a Phoenix LiveView Alternative?
+
+Mohamed presents Whistle, an implementation of an Elm(ish) architecture in =
+the server, letting you write interactive web apps entirely in Elixir (simi=
+lar to Phoenix's LiveView).
+
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3258
+
+
+***
+
+
+Idempotent Supervision Tree
+
+Aleksei blogged about a trivial, but often ignored glitch while performing =
+the initialization of GenServers.
+
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3260
+
+
+***
+
+
+Phoenix Templates: Rendering and Layouts
+
+Samuel explains Phoenix Templates against the backdrop of Bob Martin's clas=
+sic "Clean Code".
+
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3274
+
+
+***
+
+
+How to Perform Hot Code Swapping in Elixir
+
+Hot code swapping is replacing or adding components without stopping or shu=
+tting down the system. Here's how it's done.
+
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3261
+
+
+***
+
+
+Ruby on Rails to Elixir: Testing APIs
+
+Magnus wrote about how he tested an external API with Elixir.
+
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3278
+
+
+***
+
+
+
+
+
+
+Even more from around the Elixir community
+-------------------------
+
+Maxim Fedorov - Scaling Erlang Cluster to 10,000 Nodes | Code Mesh LDN 18
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3264
+
+
+Should you Choose Erlang or Elixir for Your Project
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3263
+
+
+Elixir vs. Ruby and Phoenix vs. Rails: What to Choose and Why
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3259
+
+
+Counting Real-Time Trades
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3268
+
+
+A Deeper Dive in Elixir's Plug
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3265
+
+
+Elixir Behaviours for Blockchain Hard Fork Configurations
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3269
+
+
+Writing Your own Absinthe DSL with Macros and Middleware
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3276
+
+
+Some Ways Writing Parameterized Testing with ExUnit
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3267
+
+
+Building a Basic HTTP Server with Elixir and OTP - Part 1
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3277
+
+
+Building a Basic HTTP Server with Elixir and OTP - Part 2
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3275
+
+
+ExVenture Updates for December 2018
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3272
+
+
+Plug in JSON API Readonly Webserver
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3270
+
+
+How to Pattern Match a Function in Elixir
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3271
+
+
+Cloak v1.0.0-alpha.0 released!
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3266
+
+
+Correios CEP v0.3.0 released
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3279
+
+
+Authex v0.3.0 released!
+https://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3262
+
+
+
+
+--
+
+That's it for this round, have a great day!
+@rrrene from ElixirWeekly
+
+If you like this newsletter, please tell the world!
+If you don't, you can easily reply to this mail with your feedback and crit=
+icism.
+If it is really bad, you can always unsubscribe with a single click: https:=
+//elixirweekly.net/unsubscribe?email=3Dlucas%40luitjes.it&token=3D0B9B7B818=
+2B36FCC54DC2CEE7D042E34EE17234D09A22D1FD3B8B770522F9964
+
+--
+
+https://elixirweekly.net
+ElixirWeekly is edited by Ren=C3=A9 F=C3=B6hring, Reiffstr. 73, 45659 Reckl=
+inghausen, Germany.
+
+--699566c764d845bfafabdc894fddb5e2
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+Mime-Version: 1.0
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" style=3D"font-family: 'Helveti=
+ca Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: =
+16px; margin: 0;">
+<head>
+<meta name=3D"viewport" content=3D"width=3Ddevice-width" />
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" />
+
+<title>[ElixirWeekly] Issue #130 - Whistle, a Phoenix LiveView Alternative?=
+</title>
+
+<style type=3D"text/css">
+img {
+max-width: 100%;
+}
+body {
+-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width:=
+ 100% !important; height: 100%; line-height: 1.6em;
+}
+body {
+background-color: #f6f6f6;
+}
+@media only screen and (max-width: 640px) {
+  body {
+    padding: 0 !important;
+  }
+  h1 {
+    font-weight: 800 !important; margin: 20px 0 5px !important;
+  }
+  h2 {
+    font-weight: 800 !important; margin: 20px 0 5px !important;
+  }
+  h3 {
+    font-weight: 800 !important; margin: 20px 0 5px !important;
+  }
+  h4 {
+    font-weight: 800 !important; margin: 20px 0 5px !important;
+  }
+  h1 {
+    font-size: 22px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  .container {
+    padding: 0 !important; width: 100% !important;
+  }
+  .content {
+    padding: 0 !important;
+  }
+  .invoice {
+    width: 100% !important;
+  }
+  a {
+    color: #268bd2;
+  }
+}
+</style>
+</head>
+
+<body itemscope itemtype=3D"http://schema.org/EmailMessage" style=3D"font-f=
+amily: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box;=
+ font-size: 16px; -webkit-font-smoothing: antialiased; -webkit-text-size-ad=
+just: none; width: 100% !important; height: 100%; line-height: 1.6em; backg=
+round-color: #f6f6f6; margin: 0;" bgcolor=3D"#f6f6f6">
+
+<table class=3D"body-wrap" style=3D"font-family: 'Helvetica Neue',Helvetica=
+,Arial,sans-serif; box-sizing: border-box; font-size: 16px; width: 100%; ba=
+ckground-color: #f6f6f6; margin: 0;" bgcolor=3D"#f6f6f6"><tr style=3D"font-=
+family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box=
+; font-size: 16px; margin: 0;">
+    <td class=3D"container" width=3D"600" style=3D"font-family: 'Helvetica =
+Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 16px; =
+vertical-align: top; display: block !important; max-width: 640px !important=
+; clear: both !important; margin: 0 auto;" valign=3D"top">
+
+      <div class=3D"content" style=3D"font-family: 'Helvetica Neue',Helveti=
+ca,Arial,sans-serif; box-sizing: border-box; font-size: 16px; max-width: 64=
+0px; display: block; margin: 0 auto;">
+        <table class=3D"main" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; b=
+ox-sizing: border-box; font-size: 16px; border-radius: 3px; background-colo=
+r: #fff; margin: 0; border: 1px solid #e9e9e9;" bgcolor=3D"#fff">
+          <tr style=3D"font-family: 'Helvetica Neue',Helvetica,Arial,sans-s=
+erif; box-sizing: border-box; font-size: 16px; margin: 0;"><td class=3D"con=
+tent-wrap" style=3D"font-family: 'Helvetica Neue',Helvetica,Arial,sans-seri=
+f; box-sizing: border-box; font-size: 16px; vertical-align: top; margin: 0;=
+ padding: 0;" valign=3D"top">
+              <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" sty=
+le=3D"font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing:=
+ border-box; font-size: 16px; margin: 0;"><tr style=3D"font-family: 'Helvet=
+ica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 16=
+px; margin: 0;"><td class=3D"content-block" style=3D"background: #fff; font=
+-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-bo=
+x; font-size: 16px; vertical-align: top; margin: 0; padding: 0 0 20px;" val=
+ign=3D"top">
+<div style=3D"background: #fff; padding-bottom: 0.5rem">
+<div style=3D"padding: 1.5rem; background: #373f52; color: #d5dae6">
+  <table width=3D"100%" border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+    <tr>
+      <td>
+      <img src=3D"https://elixirweekly.net/o/NDEwOUBsdWNhc0BsdWl0amVzLml0/1=
+31.png" width=3D32 height=3D32 style=3D"width: 32px; height: 32px; vertical=
+-align: text-bottom;" alt=3D"Logo"/>
+      <span style=3D"font-size: 1.5rem; color: #d5dae6;">
+      <a href=3D"http://elixirweekly.net" style=3D"font-size: 1.5rem; color=
+: #d5dae6; text-decoration: none;">ElixirWeekly</a>
+      </span> <span style=3D"font-size: 0.875rem; color: #8692af; white-spa=
+ce: nowrap;">by <a href=3D"http://elixirstatus.com" style=3D"font-size: 0.8=
+75rem; color: #8692af; white-space: nowrap; text-decoration: none;">@elixir=
+status</a></span>
+    </td><td style=3D"text-align: right" align=3D"right"><span style=3D"fon=
+t-size: 1.5rem; color: #d5dae6;">Issue #130</span></td></tr></table>
+</div>
+
+
+
+
+      <div style=3D"padding: 1.5rem 1.5rem 0rem 1.5rem;">
+        <div style=3D"color: #373f52; font-size: 1.25rem; margin: 0 0 0.5re=
+m 0; line-height: 1.25; font-weight: bold;">This week in Elixir</div>
+
+          <p>
+  <a style=3D"font-size: 1.125rem; text-decoration: underline;" href=3D"htt=
+ps://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3273" target=3D"_blank=
+">What&#39;s New in IntelliJ Elixir 10.1.0</a><br>
+ =20
+  <span style=3D"color: #666;">Luke breaks down what&#39;s new in IntelliJ =
+Elixir v10.1.0!</span>
+</p>
+
+          <p>
+  <a style=3D"font-size: 1.125rem; text-decoration: underline;" href=3D"htt=
+ps://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3258" target=3D"_blank=
+">Whistle, a Phoenix LiveView Alternative?</a><br>
+ =20
+  <span style=3D"color: #666;">Mohamed presents Whistle, an implementation =
+of an Elm(ish) architecture in the server, letting you write interactive we=
+b apps entirely in Elixir (similar to Phoenix&#39;s LiveView).</span>
+</p>
+
+          <p>
+  <a style=3D"font-size: 1.125rem; text-decoration: underline;" href=3D"htt=
+ps://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3260" target=3D"_blank=
+">Idempotent Supervision Tree</a><br>
+ =20
+  <span style=3D"color: #666;">Aleksei blogged about a trivial, but often i=
+gnored glitch while performing the initialization of GenServers.</span>
+</p>
+
+          <p>
+  <a style=3D"font-size: 1.125rem; text-decoration: underline;" href=3D"htt=
+ps://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3274" target=3D"_blank=
+">Phoenix Templates: Rendering and Layouts</a><br>
+ =20
+  <span style=3D"color: #666;">Samuel explains Phoenix Templates against th=
+e backdrop of Bob Martin&#39;s classic &quot;Clean Code&quot;.</span>
+</p>
+
+          <p>
+  <a style=3D"font-size: 1.125rem; text-decoration: underline;" href=3D"htt=
+ps://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3261" target=3D"_blank=
+">How to Perform Hot Code Swapping in Elixir</a><br>
+ =20
+  <span style=3D"color: #666;">Hot code swapping is replacing or adding com=
+ponents without stopping or shutting down the system. Here&#39;s how it&#39=
+;s done.</span>
+</p>
+
+          <p>
+  <a style=3D"font-size: 1.125rem; text-decoration: underline;" href=3D"htt=
+ps://elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3278" target=3D"_blank=
+">Ruby on Rails to Elixir: Testing APIs</a><br>
+ =20
+  <span style=3D"color: #666;">Magnus wrote about how he tested an external=
+ API with Elixir.</span>
+</p>
+
+
+      </div>
+
+
+
+
+      <div style=3D"padding: 1.5rem 1.5rem 0rem 1.5rem;">
+        <div style=3D"color: #373f52; font-size: 1.25rem; margin: 0 0 0.5re=
+m 0; line-height: 1.25; font-weight: bold;">Even more from around the Elixi=
+r community</div>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3264" target=3D"_blank">Ma=
+xim Fedorov - Scaling Erlang Cluster to 10,000 Nodes | Code Mesh LDN 18</a>
+<span style=3D"background: #e62117; color: #ffffff; font-size: 11px; border=
+-radius: 3px; padding: 3px; white-space: nowrap">Video</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3263" target=3D"_blank">Sh=
+ould you Choose Erlang or Elixir for Your Project</a>
+<span style=3D"background: #e62117; color: #ffffff; font-size: 11px; border=
+-radius: 3px; padding: 3px; white-space: nowrap">Video</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3259" target=3D"_blank">El=
+ixir vs. Ruby and Phoenix vs. Rails: What to Choose and Why</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3268" target=3D"_blank">Co=
+unting Real-Time Trades</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3265" target=3D"_blank">A =
+Deeper Dive in Elixir&#39;s Plug</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3269" target=3D"_blank">El=
+ixir Behaviours for Blockchain Hard Fork Configurations</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3276" target=3D"_blank">Wr=
+iting Your own Absinthe DSL with Macros and Middleware</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3267" target=3D"_blank">So=
+me Ways Writing Parameterized Testing with ExUnit</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3277" target=3D"_blank">Bu=
+ilding a Basic HTTP Server with Elixir and OTP - Part 1</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3275" target=3D"_blank">Bu=
+ilding a Basic HTTP Server with Elixir and OTP - Part 2</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3272" target=3D"_blank">Ex=
+Venture Updates for December 2018</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3270" target=3D"_blank">Pl=
+ug in JSON API Readonly Webserver</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3271" target=3D"_blank">Ho=
+w to Pattern Match a Function in Elixir</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3266" target=3D"_blank">Cl=
+oak v1.0.0-alpha.0 released!</a>
+<span style=3D"background: #12982e; color: #fff; font-size: 11px; border-ra=
+dius: 3px; padding: 3px; white-space: nowrap">Blog post</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3279" target=3D"_blank">Co=
+rreios CEP v0.3.0 released</a>
+<span style=3D"background: #ffe100; color: #222222; font-size: 11px; border=
+-radius: 3px; padding: 3px; white-space: nowrap">Project update</span></p>
+
+          <p>
+  <a style=3D"font-size: 1rem; text-decoration: underline;" href=3D"https:/=
+/elixirweekly.net/i/NDEwOUBsdWNhc0BsdWl0amVzLml0/3262" target=3D"_blank">Au=
+thex v0.3.0 released!</a>
+<span style=3D"background: #ffe100; color: #222222; font-size: 11px; border=
+-radius: 3px; padding: 3px; white-space: nowrap">Project update</span></p>
+
+
+      </div>
+
+
+<div align=3Dcenter style=3D"text-align: center">
+  <a href=3D"http://elixirstatus.com/?ref=3Delixirweekly" target=3D"_blank"=
+ style=3D"font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-siz=
+ing: border-box; font-size: 14px; color: #FFF; text-decoration: none; line-=
+height: 2em; font-weight: normal; text-align: center; cursor: pointer; disp=
+lay: inline-block; border-radius: 5px; background-color: #725c96; margin: 0=
+; border-color: #725c96; border-style: solid; border-width: 10px 20px;">Sub=
+mit your blog post/project update</a><br>
+</div>
+
+<div style=3D"padding: 0 1.5rem;">
+
+  <div style=3D"border: 1px solid #f1f1f1; margin: 1.5rem 0;"></div>
+
+  That's it for this round, have a great day!<br>
+  <a href=3D"https://github.com/rrrene">@rrrene</a> from <a href=3D"http://=
+elixirweekly.net">ElixirWeekly</a><br>
+  <br>
+
+  If you like this newsletter, please tell the world!<br>
+
+  If you don't, you can easily reply to this mail with your feedback and cr=
+iticism.<br>
+  If it is really bad, you can always <a href=3D"https://elixirweekly.net/u=
+nsubscribe?email=3Dlucas%40luitjes.it&amp;token=3D0B9B7B8182B36FCC54DC2CEE7=
+D042E34EE17234D09A22D1FD3B8B770522F9964" style=3D"color: #aaa">unsubscribe =
+with a single click.</a><br>
+  <br>
+  You can <a href=3D"http://elixirweekly.net/issues/130">view this issue in=
+ your web browser</a>.
+
+</div>
+</div>
+                  </td>
+                </tr></table></td>
+          </tr></table><div class=3D"footer" style=3D"font-family: 'Helveti=
+ca Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 16p=
+x; width: 100%; clear: both; color: #999; margin: 0; padding: 0;">
+          <table width=3D"100%" style=3D"font-family: 'Helvetica Neue',Helv=
+etica,Arial,sans-serif; box-sizing: border-box; font-size: 16px; margin: 0;=
+"><tr style=3D"font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; bo=
+x-sizing: border-box; font-size: 16px; margin: 0;"><td class=3D"aligncenter=
+ content-block" style=3D"font-family: 'Helvetica Neue',Helvetica,Arial,sans=
+-serif; box-sizing: border-box; font-size: 12px; vertical-align: top; color=
+: #999; text-align: center; margin: 0; padding: 0 0 20px;" align=3D"center"=
+ valign=3D"top"><br>
+<span style=3D"color: #aaa">ElixirWeekly is edited by Ren=C3=A9 F=C3=B6hrin=
+g, Reiffstr. 73, 45659 Recklinghausen, Germany.</span>
+</td>
+            </tr></table></div></div>
+    </td>
+
+  </tr></table></body>
+</html>
+
+--699566c764d845bfafabdc894fddb5e2--

@@ -11,3 +11,8 @@ bodies.each do |body|
   email = Email.create(body: File.read(body))
   email.create_links!
 end
+
+Dir["test/fixtures/files/more-samples/*.eml"].each do |path|
+  email = Email.create(body: File.read(body))
+  email.create_links!
+end

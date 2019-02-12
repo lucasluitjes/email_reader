@@ -1,0 +1,1247 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Fri, 04 Jan 2019 12:35:29 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounces+3465002-dca2-lucas=mindrules.net@sg.peterc.org>
+Received: from 205.237.194.29
+	by m8.mxes.net (bayesd) with LMTP id 1546623329-37396-8
+	for <lucas_mindrules.net@ms8.mxes.net>; Fri,  4 Jan 2019 12:35:29 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-05.mxes.net (Postfix) with ESMTP id 60B29276C3
+	for <lucas@mindrules.net>; Fri,  4 Jan 2019 12:35:29 -0500 (EST)
+Received: from o1.sg1.cooperpress.com (o1.sg1.cooperpress.com [167.89.103.72])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mxin.mxes.net (Postfix) with ESMTPS id BC455276A7
+	for <lucas@mindrules.net>; Fri,  4 Jan 2019 12:35:26 -0500 (EST)
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=peterc.org header.i=@peterc.org header.b=Gicm2pn+
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=peterc.org; 
+	h=content-type:from:mime-version:to:subject:list-unsubscribe; 
+	s=s1; bh=ap8s4w427hmEcHFRVwmEje97vgQ=; b=Gicm2pn+V8cTYzpX/lAllDP
+	w4apIKv5KEPlFZm6lPv7PaSJ0108WXuGoPh9kVz4Tqcsw+Atth/a/xvpGa9+Tm7B
+	1qe/asvnk+EgcJ8Ayz0kvnx40H8P5bTMhbSQvTZ7mOcX4K90tuXINkPrlUx0Yz8v
+	hjaT4nk/IkS+dgAkoMOs=
+Received: by filter0047p1iad2.sendgrid.net with SMTP id filter0047p1iad2-21318-5C2F995C-51
+        2019-01-04 17:35:25.188388413 +0000 UTC m=+52989.080993860
+Received: from MzQ2NTAwMg (li299-121.members.linode.com [178.79.161.121])
+	by ismtpd0001p1lon1.sendgrid.net (SG) with HTTP id A_XiAXMBQP-JNU5NXqsiYA
+	Fri, 04 Jan 2019 17:35:24.903 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=314f18ab5b3344eba013c7f9c4bb4c02d4ad8c8eb03807fc5afde1e8f74a
+Date: Fri, 04 Jan 2019 17:35:25 +0000 (UTC)
+From: "JavaScript Weekly" <jsw@peterc.org>
+Mime-Version: 1.0
+To: lucas@mindrules.net
+Message-ID: <A_XiAXMBQP-JNU5NXqsiYA@ismtpd0001p1lon1.sendgrid.net>
+Subject: Top Frameworks and Topics to Learn in 2019, Electron 4.0, and AVA 1.0
+List-Unsubscribe: <mailto:unsub-4068a3c669@n2.cooperpress.com>
+X-SG-EID: 7+Jt56rkNVZjji2DyS6gZoIDNt7Ym1N8JGN8fGA2hR+PfWAc5ZGIPvPPqltkn1uPbNQ/HtmaTMDLCT
+ pEbi6ytosZYiZjwLksWgGTdqIfYbpMA91TFX0dvZUPMCRViR+N8X7SEX/oT8rZHNEwuZjmu0zchlDm
+ gq3LiKV7/EpYGlNWwqxfuKOql1JuX58JvOTvnZlAO2s8k1y3aB3FgukVUr8i70hVzYlS5+PKkOofMv
+ E=
+X-Virus-Scanned: ClamAV
+X-Spam-Sys-BayesResult: Yes, 0.548373
+X-Spam-Scanner: 1546623327-52997-1
+X-Spam-Report: Content analysis details:
+ -10.0 BAYESSCORE             0.351840
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [167.89.103.72 listed in dnswl.mxes.net]
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or Formatted Colors in HTML
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 DMARC_POLICY           Accept on policy failure
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   0.0 DKIM_VALID_EF          Message has a valid DKIM or DK signature from envelope-from domain
+   1.2 SYSTEM_BAYES           Yes 0.548373
+   0.0 T_DMARC_ACCEPT         Sender says accept all mail
+   0.0 DMARC_PASS             From: domain publishes a DMARC policy and the DKIM or SPF alignment test passes
+   0.0 HTML_MESSAGE           HTML included in message
+  -0.0 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 0
+X-Spam-SI: 1
+X-Originating-IP: 167.89.103.72
+X-Dmarc-Status: Pass
+X-Reputation-Delta: -0.0
+X-Envelope-To: <lucas@mindrules.net>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-8.8 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.351840
+X-Spam-Score: -8.8
+X-Spam-Scoring: 0,0
+
+--314f18ab5b3344eba013c7f9c4bb4c02d4ad8c8eb03807fc5afde1e8f74a
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+This week's JavaScript news
+
+#418 =E2=80=94 January  4, 2019
+
+Read on the Web ( https://javascriptweekly.com/issues/418 )
+
+JavaScript Weekly
+
+RunJS: A JavaScript 'Scratchpad' Tool for macOS=20
+( https://projects.lukehaas.me/runjs/ ) =E2=80=94 Write and run JavaScript
+instantly. Useful for learning, experimenting, or perhaps even
+creating screencasts, tweets, or similar educational content.
+
+Luke Haas
+
+FBT: An Internationalization Framework from Facebook=20
+( https://facebookincubator.github.io/fbt/ ) =E2=80=94 Facebook has open
+sourced an internationalization framework that they=E2=80=99ve used
+internally till now. The goal is to be =E2=80=98both powerful and
+intuitive=E2=80=99. GitHub repo.=20
+( https://github.com/facebookincubator/fbt ) Or see example usage
+code=20
+( https://github.com/facebookincubator/fbt/blob/master/demo-app/src/example=
+/Example.react.js )
+ to get a better feel.
+
+Facebook
+
+Top JavaScript Frameworks and Topics to Learn in 2019=20
+( https://medium.com/javascript-scene/top-javascript-frameworks-and-topics-=
+to-learn-in-2019-b4142f38df20 )
+ =E2=80=94 We see a lot of =E2=80=98top X=E2=80=99 posts when editing JavaS=
+cript Weekly
+but this annual review of the JavaScript tech ecosystem by none
+other than Eric Elliott is always a crowd pleaser.
+
+Eric Elliott
+
+Make Magic with Creative Coding in Canvas & WebGL =F0=9F=8E=A9=E2=9C=A8=20
+( https://frontendmasters.com/courses/canvas-webgl/ ) =E2=80=94 Use
+JavaScript to create generative art, interactive animations, 3D
+graphics with ThreeJS, and custom shaders in GLSL. =E2=9C=A8You'll learn
+the fundamentals for creative coding jobs like games,
+advertising, AR/VR and installation artwork!
+
+Frontend Masters sponsor
+
+Electron 4.0 Released=20
+( https://electronjs.org/blog/electron-4-0 ) =E2=80=94 Electron is a
+popular project from GitHub that=E2=80=99s heavily used to create desktop
+apps with modern Web technologies (such as VS Code and Slack's
+desktop client). 4.0 introduces some new features but notably
+bumps up the underlying dependencies to Chromium 69, Node 10.11,
+and V8 6.9.
+
+Michelle Tilley
+
+Artificial Intelligence in JS with TensorFlow.js=20
+( https://www.javascriptjanuary.com/blog/artificial-intelligence-in-javascr=
+ipt-with-tensorflowjs )
+ =E2=80=94 A brief, high level explanation of one of the problems a
+system like TensorFlow.js can solve: the recognition of written
+numbers. (Note: This is one post in the always great annual
+JavaScript January ( https://www.javascriptjanuary.com/ )
+series.)
+
+Seth Juarez
+
+What Happened with Node.js in 2018=20
+( https://nodeweekly.com/issues/269 ) =E2=80=94 This week=E2=80=99s Node We=
+ekly was
+dedicated to a month by month runthrough of the biggest things
+that happened in the world of Node.js. We also did a best
+frontend links of 2018 ( https://frontendfoc.us/issues/372 ) in
+Frontend Focus.
+
+Node Weekly
+
+=F0=9F=92=BB Jobs
+
+JavaScript Developer at X-Team (Remote)=20
+( https://x-team.com/remote-javascript-developer-jobs/?utm_source=3Dcooperp=
+ress&utm_medium=3Demail-ad&utm_campaign=3Djs )
+ =E2=80=94 Join the most energizing community for developers. Work from
+anywhere with the world's leading brands.
+
+X-Team
+
+Find A Job Through Vettery=20
+( https://www.vettery.com/tech?utm_source=3Dnewsletter&utm_medium=3Dcooper-=
+javascriptweekly&utm_term=3Dtech&utm_content=3Dgrouped&utm_campaign=3Dad-77=
+584 )
+ =E2=80=94 Vettery matches top tech talent with growing companies.
+Create your profile to get started.
+
+Vettery
+
+=F0=9F=93=98 Tutorials and Opinions
+
+Fancy Function Parameters=20
+( https://www.javascriptjanuary.com/blog/fancy-function-parameters )
+ =E2=80=94 The process behind making an opaque function call easier to
+understand using objects and optional arguments.
+
+Jake Dohm
+
+Creating and Filling Arrays of Arbitrary Lengths in JavaScript
+( http://2ality.com/2018/12/creating-arrays.html )
+
+Dr. Axel Rauschmayer
+
+Creating a Reusable Accordion Component That Works Anywhere=20
+( https://blog.bitsrc.io/creating-a-reusable-accordion-component-that-works=
+-anywhere-2f2add05baa4 )
+ =E2=80=94 How to make a web component using Angular Elements which can
+now be used with any or no framework.
+
+Priyesh Patel
+
+Read Now: the Ultimate Guide to Npm=20
+( https://pages.nodesource.com/npm-guide-ultimate-nodeweekly.html )
+=E2=80=94 Everything you need to know to know to use the npm CLI, from
+basic building blocks to time-saving tips and tricks.
+
+NodeSource sponsor
+
+Running Node.js 11 on AWS Lambda=20
+( https://statsbot.co/blog/a-crash-course-on-serverless-with-aws-running-no=
+de11-on-lambda/ )
+ =E2=80=94 With Lambda=E2=80=99s new Layers feature and custom runtimes you=
+ can
+now build your own custom artifacts, enabling you to share and
+manage common code between serverless functions.
+
+Adnan Rahic
+
+The Chronicles of JavaScript Objects=20
+( https://blog.bitsrc.io/the-chronicles-of-javascript-objects-2d6b9205cd66 )
+ =E2=80=94 A back to basics tour of what objects are in JavaScript and
+how they behave.
+
+Arfat Salman
+
+Create Your First Custom Angular CLI Schematic with Nx=20
+( https://auth0.com/blog/create-custom-schematics-with-nx/ ) =E2=80=94 Nx=
+=20
+( https://nrwl.io/nx ) is a toolkit for people building
+enterprise-grade Angular apps.
+
+Sam Julien
+
+Storing and Using the Last Known Route in Vue=20
+( https://css-tricks.com/storing-and-using-the-last-known-route-in-vue/ )
+ =E2=80=94 How to keep a reference to the last known route a user
+visited in Vue. Also a good excuse to check out the all-new CSS
+Tricks redesign!
+
+Mateusz Rybczonek
+
+The Developer=E2=80=99s Guide to Not Losing the Metrics You Need=20
+( https://www.influxdata.com/blog/the-developers-guide-to-not-losing-the-me=
+trics-you-need/ )
+
+
+InfluxData sponsor
+
+How Airbnb is Moving 10x Faster at Scale with GraphQL and
+Apollo=20
+( https://medium.com/airbnb-engineering/how-airbnb-is-moving-10x-faster-at-=
+scale-with-graphql-and-apollo-aa4ec92d69e2 )
+
+
+Adam Neary
+
+Reluctant Gatekeeping: The Problem With 'Full Stack'=20
+( http://www.heydonworks.com/article/reluctant-gatekeeping-the-problem-with=
+-full-stack )
+ =E2=80=94 Thoughts I think a lot of us may have had but hadn=E2=80=99t put=
+ into
+words yet.
+
+Heydon Pickering
+
+=F0=9F=94=A7 Code and Tools
+
+AVA 1.0: A Powerful Test Runner for Node=20
+( https://blog.sindresorhus.com/ava-1-0-861d780b2d81 ) =E2=80=94 AVA is a
+test runner with a concise API, detailed error output, and
+process isolation that let you write tests more effectively. You
+may find the README ( https://github.com/avajs/ava#readme ) more
+useful than these release notes if you aren=E2=80=99t familiar with it
+yet though.
+
+Mark Wubben and Sindre Sorhus
+
+Take the Pain Out of Acceptance Testing with Gauge by
+Thoughtworks=20
+( https://gauge.org/?utm_campaign=3Djs_weekly&utm_medium=3Demail&utm_source=
+=3Djs_weekly&utm_content=3Dgauge-home&utm_term=3D )
+
+
+Gauge sponsor
+
+Rollup.js 1.0: A Module Bundler for JavaScript=20
+( https://rollupjs.org/guide/en )
+
+Low.js: A Node Port for Embedded Devices=20
+( http://www.lowjs.org/ ) =E2=80=94 Has far lower system requirements than
+standard Node and can now be flashed on to ESP32-WROVER boards.
+Here=E2=80=99s how. ( https://www.lowjs.org/examples/getting-started.html )=
+=20
+
+neonious GmbH
+
+string-similarity: Finds Degree of Similarity Between Two
+Strings ( https://github.com/aceakash/string-similarity ) =E2=80=94 Uses
+the S=C3=B8rensen=E2=80=93Dice coefficient=20
+( https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient )
+ which is better than Levenshtein distance for many use cases.
+
+Akash K
+
+Magic Grid: A Simple Library for Dynamic Grid Layouts=20
+( https://github.com/e-oj/Magic-Grid ) =E2=80=94 This has a slightly
+different use case than CSS Grids may be useful for as explained
+in this article ( https://codeburst.io/magic-grid-f8e2221e7cef ).
+
+Emmanuel Olaojo
+
+Brain.js: A Neural Network Library=20
+( https://github.com/BrainJS/brain.js ) =E2=80=94 If you=E2=80=99re looking=
+ for an
+excuse to play with neural networks, there=E2=80=99s an interactive 19
+part course ( https://scrimba.com/g/gneuralnetworks ) on using
+Brain.js to do just that.
+
+Robert Plummer
+
+=F0=9F=97=93 Upcoming JavaScript Events
+
+* JS Kongress 2019 (March 11-12 in Munich, Germany)=20
+( https://js-kongress.com/ )
+* VueConf US 2019 (March 25-27 in Tampa, FL) ( http://vueconf.us/ )  =E2=80=
+=94 Great speaker roster including Evan You (creator of Vue.js),
+Sarah Drasner and Gregg Pollack.
+* JSHeroes 2019 (April 11-12 in Romania) ( http://jsheroes.io/ )
+=E2=80=94 Two days of conference talks and workshops.
+* JSConf EU (June 1-2 in Berlin, Germany)=20
+( https://2019.jsconf.eu/ ) =E2=80=94 Tickets that include diversity
+support are currently still available.
+
+Curated by Cooperpress ( https://cooperpress.com/ ) and
+Peter Cooper ( https://twitter.com/peterc )
+
+'JavaScript' is a trademark of Oracle Corporation in the US
+We are not endorsed by or affiliated with Oracle.
+
+Change your email address=20
+( https://javascriptweekly.com/edit_subscription/4068a3c669 ) or
+Stop getting this newsletter=20
+( https://javascriptweekly.com/leave/4068a3c669 )
+
+=C2=A9 Cooper Press Ltd =C2=B7 Fairfield Enterprise Centre, Louth,
+LN11 0LS, United Kingdom
+
+--314f18ab5b3344eba013c7f9c4bb4c02d4ad8c8eb03807fc5afde1e8f74a
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <meta name=3D"format-detection" content=3D"date=3Dno">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+=20=20=20=20
+  <style>body {
+margin: 0; padding: 0; height: 100%; width: 100%; background-color: white; =
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-rendering:=
+ optimizeLegibility; font-feature-settings: "kern" 1;
+}
+body {
+font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-si=
+ze: 15px; line-height: 1.55em;
+}
+img {
+-ms-interpolation-mode: bicubic; border: 0 none; outline: none; height: aut=
+o; text-decoration: none; max-width: 100%;
+}
+@media screen and (max-width: 600px) {
+  table[id=3D"main"] {
+    max-width: 600px !important; width: 100% !important; min-width: 100% !i=
+mportant;
+  }
+  .nomob {
+    display: none !important;
+  }
+  .onlymob {
+    display: inline-block !important;
+  }
+  .rightifmob {
+    text-align: right !important;
+  }
+  .som {
+    max-width: 33% !important;
+  }
+  div.footer p {
+    text-align: left !important;
+  }
+  div.footer td {
+    text-align: left !important;
+  }
+}
+</style>
+</head>
+<body style=3D'height: 100%; margin: 0; padding: 0; width: 100%; background=
+-color: white; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+text-rendering: optimizeLegibility; font-feature-settings: "kern" 1; font-f=
+amily: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15=
+px; line-height: 1.55em;'>
+<div id=3D"preview" class=3D"noarchive" style=3D"display: none; color: #666=
+;">This week's JavaScript news</div>
+
+<!--[if (gte mso 9)|(IE)]>
+<table cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fff=
+fff" width=3D"600"><tr><td valign=3D"top" style=3D"width: 600px;" bgcolor=
+=3D"#ffffff"><![endif]-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=
+=3D"main" width=3D"100%" style=3D"table-layout: fixed; padding: 0px; font-f=
+amily: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15=
+px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse; max-width: 600px; height: 100% !important;">
+  <tr><td style=3D"font-family: -apple-system,BlinkMacSystemFont,Helvetica,=
+sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; border-collapse: collapse;">
+
+  <div id=3D"content">    <!-- left/right splitbar -->
+    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr>
+<td width=3D"50%" align=3D"left" style=3D"padding-left: 4px; font-family: -=
+apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line=
+-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><p style=3D"font-size: 12px; color: #999999; text-transform=
+: uppercase; line-height: 1.0em; font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; margin-top: 0.8em; margin-bottom: 0.8em;">#418 =
+=E2=80=94 January  4, 2019</p></td>
+<td width=3D"50%" align=3D"right" style=3D"padding-right: 4px; font-family:=
+ -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; li=
+ne-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-col=
+lapse: collapse;"><p style=3D"font-size: 12px; text-transform: uppercase; l=
+ine-height: 1.0em; font-family: -apple-system,BlinkMacSystemFont,Helvetica,=
+sans-serif; margin-top: 0.8em; margin-bottom: 0.8em;"><a href=3D"https://ja=
+vascriptweekly.com/issues/418" style=3D"text-decoration: none; color: #3366=
+aa;">Read on the Web</a></p></td>
+</tr></table>
+    <!-- masthead -->
+    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"back=
+ground-color: #f7df1e; text-align: center; color: #222222; mso-table-lspace=
+: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" class=3D"el-masth=
+ead"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemFont,Helveti=
+ca,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse; padding: 0 12px;"><p sty=
+le=3D"font-size: 1.8em; font-weight: 600; line-height: 1.0em; font-family: =
+-apple-system,BlinkMacSystemFont,Helvetica,sans-serif; margin-top: 0.8em; m=
+argin-bottom: 0.8em;">JavaScript Weekly</p></td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td s=
+tyle=3D"font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;=
+ font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; border-collapse: collapse;">
+  <a href=3D"https://javascriptweekly.com/link/57608/4068a3c669" style=3D"t=
+ext-decoration: none; color: #3366aa;"><img src=3D"https://res.cloudinary.c=
+om/cpress/image/upload/w_1280,e_sharpen:60/aodg4lqkpu1dlxogg9nt.jpg" alt=3D=
+"" width=3D"640" style=3D"width: 100%; -ms-interpolation-mode: bicubic; out=
+line: none; height: auto; text-decoration: none; max-width: 100%; border: 0=
+ none;"></a>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57608/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">RunJS: A JavaScript 'Scrat=
+chpad' Tool for macOS</a></span> =E2=80=94 Write and run JavaScript instant=
+ly. Useful for learning, experimenting, or perhaps even creating screencast=
+s, tweets, or similar educational content.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Luke Ha=
+as </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57584/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">FBT: An Internationalizati=
+on Framework from Facebook</a></span> =E2=80=94 Facebook has open sourced a=
+n internationalization framework that they=E2=80=99ve used internally till =
+now. The goal is to be =E2=80=98both powerful and intuitive=E2=80=99. <a hr=
+ef=3D"https://javascriptweekly.com/link/57585/4068a3c669" style=3D"text-dec=
+oration: none; color: #3366aa; border-bottom-width: 1px !important; border-=
+bottom-color: #ddd !important; border-bottom-style: solid !important;">GitH=
+ub repo.</a> Or see <a href=3D"https://javascriptweekly.com/link/57586/4068=
+a3c669" style=3D"text-decoration: none; color: #3366aa; border-bottom-width=
+: 1px !important; border-bottom-color: #ddd !important; border-bottom-style=
+: solid !important;">example usage code</a> to get a better feel.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Faceboo=
+k </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57587/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Top JavaScript Frameworks =
+and Topics to Learn in 2019</a></span> =E2=80=94 We see a <em>lot</em> of =
+=E2=80=98top X=E2=80=99 posts when editing JavaScript Weekly but this annua=
+l review of the JavaScript tech ecosystem by none other than Eric Elliott i=
+s always a crowd pleaser.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Eric El=
+liott </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+  <a target=3D"_blank" href=3D"https://javascriptweekly.com/link/57588/4068=
+a3c669" style=3D"text-decoration: none; color: #3366aa; border-bottom-width=
+: 1px !important; border-bottom-color: #ddd !important; border-bottom-style=
+: solid !important;"><img src=3D"https://copm.s3.amazonaws.com/0e20c86e.jpg=
+" width=3D"125" height=3D"125" style=3D"padding-top: 12px; border: 0 none; =
+padding-left: 12px; -ms-interpolation-mode: bicubic; outline: none; height:=
+ auto; text-decoration: none; max-width: 100%;" align=3D"right" alt=3D"" cl=
+ass=3D"som"></a>
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57588/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Make Magic with Creative C=
+oding in Canvas &amp; WebGL =F0=9F=8E=A9=E2=9C=A8</a></span> =E2=80=94 Use =
+JavaScript to create generative art, interactive animations, 3D graphics wi=
+th ThreeJS, and custom shaders in GLSL. =E2=9C=A8You'll learn the fundament=
+als for creative coding jobs like games, advertising, AR/VR and installatio=
+n artwork!</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Fronten=
+d Masters <span style=3D"text-transform: uppercase; padding: 1px 4px; borde=
+r: 1px solid #eee455; margin-left: 4px; font-size: 0.9em; border-radius: 2p=
+x; background-color: #fffcaa; color: #993 !important;" class=3D"tag-sponsor=
+">sponsor</span></p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57589/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Electron 4.0 Released</a><=
+/span> =E2=80=94 Electron is a popular project from GitHub that=E2=80=99s h=
+eavily used to create desktop apps with modern Web technologies (such as VS=
+ Code and Slack's desktop client). 4.0 introduces some new features but not=
+ably bumps up the underlying dependencies to Chromium 69, Node 10.11, and V=
+8 6.9.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Michell=
+e Tilley </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57596/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Artificial Intelligence in=
+ JS with TensorFlow.js</a></span> =E2=80=94 A brief, high level explanation=
+ of one of the problems a system like TensorFlow.js can solve: the recognit=
+ion of written numbers. <em>(Note: This is one post in the always great ann=
+ual <a href=3D"https://javascriptweekly.com/link/57620/4068a3c669" style=3D=
+"text-decoration: none; color: #3366aa; border-bottom-width: 1px !important=
+; border-bottom-color: #ddd !important; border-bottom-style: solid !importa=
+nt;">JavaScript January</a> series.)</em></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Seth Ju=
+arez </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57592/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">What Happened with Node.js=
+ in 2018</a></span> =E2=80=94 This week=E2=80=99s Node Weekly was dedicated=
+ to a month by month runthrough of the biggest things that happened in the =
+world of Node.js. We also did a best <a href=3D"https://javascriptweekly.co=
+m/link/57593/4068a3c669" style=3D"text-decoration: none; color: #3366aa; bo=
+rder-bottom-width: 1px !important; border-bottom-color: #ddd !important; bo=
+rder-bottom-style: solid !important;">frontend links of 2018</a> in <em>Fro=
+ntend Focus</em>.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Node We=
+ekly </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-headi=
+ng" style=3D"background-color: none !important; text-align: left; margin-to=
+p: 15px; color: #333333; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMa=
+cSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; paddi=
+ng: 0;"><p style=3D"font-size: 1.6em !important; margin: 0.5em 0; font-weig=
+ht: 400 !important; text-transform: none !important; font-family: -apple-sy=
+stem,BlinkMacSystemFont,Helvetica,sans-serif; line-height: 1.55em; display:=
+ inline-block; border-bottom-style: solid; border-bottom-width: 6px; paddin=
+g-bottom: 2px; border-bottom-color: #f7df1e;">=F0=9F=92=BB Jobs</p></td></t=
+r></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57594/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">JavaScript Developer at X-=
+Team (Remote)</a></span> =E2=80=94 Join the most energizing community for d=
+evelopers. Work from anywhere with the world's leading brands.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">X-Team =
+</p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57595/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Find A Job Through Vettery=
+</a></span> =E2=80=94 Vettery matches top tech talent with growing companie=
+s. Create your profile to get started.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Vettery=
+ </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-headi=
+ng" style=3D"background-color: none !important; text-align: left; margin-to=
+p: 15px; color: #333333; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMa=
+cSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; paddi=
+ng: 0;"><p style=3D"font-size: 1.6em !important; margin: 0.5em 0; font-weig=
+ht: 400 !important; text-transform: none !important; font-family: -apple-sy=
+stem,BlinkMacSystemFont,Helvetica,sans-serif; line-height: 1.55em; display:=
+ inline-block; border-bottom-style: solid; border-bottom-width: 6px; paddin=
+g-bottom: 2px; border-bottom-color: #f7df1e;">=F0=9F=93=98 Tutorials and Op=
+inions</p></td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57597/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Fancy Function Parameters<=
+/a></span> =E2=80=94 The process behind making an opaque function call easi=
+er to understand using objects and optional arguments.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Jake Do=
+hm </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57598/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Creating and Filling Array=
+s of Arbitrary Lengths in JavaScript</a></span></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Dr. Axe=
+l Rauschmayer </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57599/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Creating a Reusable Accord=
+ion Component That Works Anywhere</a></span> =E2=80=94 How to make a web co=
+mponent using Angular Elements which can now be used with any or no framewo=
+rk.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Priyesh=
+ Patel </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57600/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Read Now: the Ultimate Gui=
+de to Npm</a></span> =E2=80=94 Everything you need to know to know to use t=
+he npm CLI, from basic building blocks to time-saving tips and tricks.
+</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">NodeSou=
+rce <span style=3D"text-transform: uppercase; padding: 1px 4px; border: 1px=
+ solid #eee455; margin-left: 4px; font-size: 0.9em; border-radius: 2px; bac=
+kground-color: #fffcaa; color: #993 !important;" class=3D"tag-sponsor">spon=
+sor</span></p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57601/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Running Node.js 11 on AWS =
+Lambda</a></span> =E2=80=94 With Lambda=E2=80=99s new <em>Layers</em> featu=
+re and custom runtimes you can now build your own custom artifacts, enablin=
+g you to share and manage common code between serverless functions.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Adnan R=
+ahic </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57602/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">The Chronicles of JavaScri=
+pt Objects</a></span> =E2=80=94 A back to basics tour of what objects <em>a=
+re</em> in JavaScript and how they behave.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Arfat S=
+alman </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57603/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Create Your First Custom A=
+ngular CLI Schematic with Nx</a></span> =E2=80=94 <a href=3D"https://javasc=
+riptweekly.com/link/57604/4068a3c669" style=3D"text-decoration: none; color=
+: #3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !=
+important; border-bottom-style: solid !important;">Nx</a> is a toolkit for =
+people building enterprise-grade Angular apps.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Sam Jul=
+ien </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57605/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Storing and Using the Last=
+ Known Route in Vue</a></span> =E2=80=94 How to keep a reference to the las=
+t known route a user visited in Vue. Also a good excuse to check out the al=
+l-new CSS Tricks redesign!</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Mateusz=
+ Rybczonek </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57609/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">The Developer=E2=80=99s Gu=
+ide to Not Losing the Metrics You Need</a></span></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">InfluxD=
+ata <span style=3D"text-transform: uppercase; padding: 1px 4px; border: 1px=
+ solid #eee455; margin-left: 4px; font-size: 0.9em; border-radius: 2px; bac=
+kground-color: #fffcaa; color: #993 !important;" class=3D"tag-sponsor">spon=
+sor</span></p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57606/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">How Airbnb is Moving 10x F=
+aster at Scale with GraphQL and Apollo</a></span></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Adam Ne=
+ary </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57607/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Reluctant Gatekeeping: The=
+ Problem With 'Full Stack'</a></span> =E2=80=94 Thoughts I think a lot of u=
+s may have had but hadn=E2=80=99t put into words yet.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Heydon =
+Pickering </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-headi=
+ng" style=3D"background-color: none !important; text-align: left; margin-to=
+p: 15px; color: #333333; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMa=
+cSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; paddi=
+ng: 0;"><p style=3D"font-size: 1.6em !important; margin: 0.5em 0; font-weig=
+ht: 400 !important; text-transform: none !important; font-family: -apple-sy=
+stem,BlinkMacSystemFont,Helvetica,sans-serif; line-height: 1.55em; display:=
+ inline-block; border-bottom-style: solid; border-bottom-width: 6px; paddin=
+g-bottom: 2px; border-bottom-color: #f7df1e;">=F0=9F=94=A7 Code and Tools</=
+p></td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57590/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">AVA 1.0: A Powerful Test R=
+unner for Node</a></span> =E2=80=94 AVA is a test runner with a concise API=
+, detailed error output, and process isolation that let you write tests mor=
+e effectively. You may find <a href=3D"https://javascriptweekly.com/link/57=
+591/4068a3c669" style=3D"text-decoration: none; color: #3366aa; border-bott=
+om-width: 1px !important; border-bottom-color: #ddd !important; border-bott=
+om-style: solid !important;">the README</a> more useful than these release =
+notes if you aren=E2=80=99t familiar with it yet though.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Mark Wu=
+bben and Sindre Sorhus </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57617/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Take the Pain Out of Accep=
+tance Testing with Gauge by Thoughtworks</a></span></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Gauge <=
+span style=3D"text-transform: uppercase; padding: 1px 4px; border: 1px soli=
+d #eee455; margin-left: 4px; font-size: 0.9em; border-radius: 2px; backgrou=
+nd-color: #fffcaa; color: #993 !important;" class=3D"tag-sponsor">sponsor</=
+span></p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57610/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Rollup.js 1.0: A Module Bu=
+ndler for JavaScript</a></span></p>
+=20=20
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57611/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Low.js: A Node Port for Em=
+bedded Devices</a></span> =E2=80=94 Has far lower system requirements than =
+standard Node and can now be flashed on to ESP32-WROVER boards. <a href=3D"=
+https://javascriptweekly.com/link/57612/4068a3c669" style=3D"text-decoratio=
+n: none; color: #3366aa; border-bottom-width: 1px !important; border-bottom=
+-color: #ddd !important; border-bottom-style: solid !important;">Here=E2=80=
+=99s how.</a></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">neoniou=
+s GmbH </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57613/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">string-similarity: Finds D=
+egree of Similarity Between Two Strings</a></span> =E2=80=94 Uses the <a hr=
+ef=3D"https://javascriptweekly.com/link/57614/4068a3c669" style=3D"text-dec=
+oration: none; color: #3366aa; border-bottom-width: 1px !important; border-=
+bottom-color: #ddd !important; border-bottom-style: solid !important;"><em>=
+S=C3=B8rensen=E2=80=93Dice coefficient</em></a> which is better than Levens=
+htein distance for many use cases.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Akash K=
+ </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57615/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Magic Grid: A Simple Libra=
+ry for Dynamic Grid Layouts</a></span> =E2=80=94 This has a slightly differ=
+ent use case than CSS Grids may be useful for as explained in <a href=3D"ht=
+tps://javascriptweekly.com/link/57616/4068a3c669" style=3D"text-decoration:=
+ none; color: #3366aa; border-bottom-width: 1px !important; border-bottom-c=
+olor: #ddd !important; border-bottom-style: solid !important;">this article=
+</a>.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Emmanue=
+l Olaojo </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://javascri=
+ptweekly.com/link/57618/4068a3c669" style=3D"text-decoration: none; color: =
+#3366aa; border-bottom-width: 1px !important; border-bottom-color: #ddd !im=
+portant; border-bottom-style: solid !important;">Brain.js: A Neural Network=
+ Library</a></span> =E2=80=94 If you=E2=80=99re looking for an excuse to pl=
+ay with neural networks, there=E2=80=99s an interactive <a href=3D"https://=
+javascriptweekly.com/link/57619/4068a3c669" style=3D"text-decoration: none;=
+ color: #3366aa; border-bottom-width: 1px !important; border-bottom-color: =
+#ddd !important; border-bottom-style: solid !important;">19 part course</a>=
+ on using Brain.js to do just that.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Robert =
+Plummer </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-subta=
+ble" style=3D"background-color: #ffffdd; margin-top: 15px; mso-table-lspace=
+: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style=3D"=
+font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-si=
+ze: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt=
+; border-collapse: collapse; padding: 0px;">
+<!-- normal content section -->
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"content =
+el-content" style=3D"color: #5a5a5a; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; border-collapse: collapse; margin-top: 0 !important;"><tr><td style=
+=3D"font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; fon=
+t-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace:=
+ 0pt; border-collapse: collapse; padding: 0px 15px;">
+<p class=3D"byline" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; margin-top: 0.8=
+em; margin-bottom: 0.8em;">=F0=9F=97=93 <strong style=3D"font-weight: 600;"=
+>Upcoming JavaScript Events</strong></p>
+
+<ul>
+
+<li class=3D"event" style=3D"margin-bottom: 1em; line-height: 1.3em;"><a hr=
+ef=3D"https://javascriptweekly.com/link/57621/4068a3c669" style=3D"text-dec=
+oration: none; color: #3366aa; font-weight: 600;">JS Kongress 2019 (March 1=
+1-12 in Munich, Germany)</a></li>
+
+<li class=3D"event" style=3D"margin-bottom: 1em; line-height: 1.3em;">
+<a href=3D"https://javascriptweekly.com/link/57622/4068a3c669" style=3D"tex=
+t-decoration: none; color: #3366aa; font-weight: 600;">VueConf US 2019 (Mar=
+ch 25-27 in Tampa, FL)</a> =E2=80=94 Great speaker roster including Evan Yo=
+u (creator of Vue.js), Sarah Drasner and Gregg Pollack.</li>
+
+<li class=3D"event" style=3D"margin-bottom: 1em; line-height: 1.3em;">
+<a href=3D"https://javascriptweekly.com/link/57623/4068a3c669" style=3D"tex=
+t-decoration: none; color: #3366aa; font-weight: 600;">JSHeroes 2019 (April=
+ 11-12 in Romania)</a> =E2=80=94 Two days of conference talks and workshops=
+.</li>
+
+<li class=3D"event" style=3D"margin-bottom: 1em; line-height: 1.3em;">
+<a href=3D"https://javascriptweekly.com/link/57624/4068a3c669" style=3D"tex=
+t-decoration: none; color: #3366aa; font-weight: 600;">JSConf EU (June 1-2 =
+in Berlin, Germany)</a> =E2=80=94 Tickets that include diversity support ar=
+e currently still available.</li>
+
+</ul>
+
+</td></tr></table>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td s=
+tyle=3D"height: 16px; font-family: -apple-system,BlinkMacSystemFont,Helveti=
+ca,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+</div>
+
+  </td></tr>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+<div id=3D"footer" class=3D"noarchive">
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"bo=
+rder-top-width: 1px; border-top-color: #dddddd; border-top-style: solid; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr=
+><td style=3D"text-align: center; padding: 20px 15px; font-family: -apple-s=
+ystem,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height=
+: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: co=
+llapse;">
+      <p style=3D"font-size: 12px; line-height: 1.5em; font-family: -apple-=
+system,BlinkMacSystemFont,Helvetica,sans-serif; margin-top: 0.8em; margin-b=
+ottom: 0.8em;">Curated by <a href=3D"https://cooperpress.com/" style=3D"tex=
+t-decoration: none; color: #3366aa;">Cooperpress</a> and <a href=3D"https:/=
+/javascriptweekly.com/link/57625/4068a3c669" style=3D"text-decoration: none=
+; color: #3366aa;">Peter Cooper</a></p>
+      <p style=3D"font-size: 12px; line-height: 1.5em; font-family: -apple-=
+system,BlinkMacSystemFont,Helvetica,sans-serif; margin-top: 0.8em; margin-b=
+ottom: 0.8em;">'JavaScript' is a trademark of Oracle Corporation in the US<=
+br>We are not endorsed by or affiliated with Oracle.</p>
+      <p style=3D"font-size: 0.9em; font-family: -apple-system,BlinkMacSyst=
+emFont,Helvetica,sans-serif; line-height: 1.55em; margin-top: 0.8em; margin=
+-bottom: 0.8em;"><span class=3D"nomob"><a href=3D"https://javascriptweekly.=
+com/edit_subscription/4068a3c669" style=3D"text-decoration: underline; colo=
+r: #3366aa;">Change your email address</a> or </span><a href=3D"https://jav=
+ascriptweekly.com/leave/4068a3c669" style=3D"text-decoration: underline; co=
+lor: #3366aa;">Stop getting this newsletter</a></p>
+      <p style=3D"font-size: 12px; font-family: -apple-system,BlinkMacSyste=
+mFont,Helvetica,sans-serif; line-height: 1.55em; margin-top: 0.8em; margin-=
+bottom: 0.8em;">=C2=A9 Cooper Press Ltd =C2=B7 Fairfield Enterprise Centre,=
+ Louth, LN11 0LS, United Kingdom</p>
+      </td></tr></table>
+  </div>
+<img src=3D"https://javascriptweekly.com/open/418/4068a3c669" width=3D"1" h=
+eight=3D"1" /></body>
+</html>
+
+--314f18ab5b3344eba013c7f9c4bb4c02d4ad8c8eb03807fc5afde1e8f74a--
