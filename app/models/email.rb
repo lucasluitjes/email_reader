@@ -32,14 +32,12 @@ class Email < ApplicationRecord
     urls = url_elements.map do |n|
       [
         n.inner_text.gsub(/\s+/," ").empty?,
-        # filtering by .parent.parent is wonky
-        n.parent.parent.inner_text.gsub(/\s+/," "),
+        n.parent.parent.text.gsub(/\s+/," "),
         /^https:\/\/dbweekly.com\/link\S*/.match(n.attributes["href"].value).to_s
       ]
     end
     urls = urls.select { |link| !link[0] }
     urls = urls.select { |link| link[2] != "" }
-    # splitting on hardcoded unicode characters is lame
     urls = urls.map { |link| [link[1].split(" \u2014 "), link[2]].flatten }
   end
 
@@ -49,15 +47,16 @@ class Email < ApplicationRecord
     url_elements = doc.search("a")
     urls = url_elements.map do |n|
       [
-        n.parent.parent.inner_text.gsub(/\s+/," "),
+        n.parent.parent.text.gsub(/\s+/," "),
         /^https:\/\/javascriptweekly.com\/link\S*/.match(n.attributes["href"].value).to_s
       ]
     end
-    urls = urls.map { |link| [link[0].split(" \u2014 "), link[1]].flatten }
-    # the gsub puts a space that I cant filter out with the line below
-    # also uniq doesn't work because some link names have a space at the start
-    urls = urls.select { |link| link[2] != "" }
+    urls = urls.map { |link| [link[0].lstrip, link[1]] }
     urls = urls.uniq
+    urls = urls.map { |link| [link[0].split(" \u2014 "), link[1]].flatten }
+    urls = urls.select { |link| link[2] != nil }
+    require 'pry';binding.pry
+    urls
   end
 
   def breaking_smart_links

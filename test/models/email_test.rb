@@ -40,7 +40,7 @@ class EmailTest < ActiveSupport::TestCase
   test "grab text from java_weekly" do
     email = Email.new(body: File.read("test/fixtures/files/java_weekly.eml"))
     urls = email.java_weekly_links
-    # assert_equal [], urls[1]
+    assert_equal ["RunJS: A JavaScript 'Scratchpad' Tool for macOS", "Write and run JavaScript instantly. Useful for learning, experimenting, or perhaps even creating screencasts, tweets, or similar educational content.", "https://javascriptweekly.com/link/57608/4068a3c669"], urls[0]
   end
   test "grab text from breaking smart" do
     email = Email.new(body: File.read("test/fixtures/files/breaking_smart.eml"))
