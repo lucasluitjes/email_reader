@@ -13,6 +13,6 @@ bodies.each do |body|
 end
 
 Dir["test/fixtures/files/more-samples/*.eml"].each do |path|
-  email = Email.create(body: File.read(body))
+  email = Email.create(body: File.read(path))
   email.create_links!
 end

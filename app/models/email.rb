@@ -10,7 +10,10 @@ class Email < ApplicationRecord
       "rw@peterc.org" => :ruby_weekly,
       "lex@sreweekly.com" => :sre_weekly,
       "leo.barbosa@canonical.com" => :vulnerabilities,
-      "nieuwsbrief@m.blendle.com" => :blendle
+      "marc.deslauriers@canonical.com" => :vulnerabilities,
+      "nieuwsbrief@m.blendle.com" => :blendle,
+      "lucas@luitjes.it" => :db_weekly,
+      "dbweekly@cooperpress.com" => :db_weekly
     }
 
   def create_links!
@@ -22,6 +25,7 @@ class Email < ApplicationRecord
   def email_list_type
     mail = Mail.new(body)
     sender = mail.from.first
+    pp sender
     symbol = Symbols[sender]
   end
 
@@ -55,8 +59,6 @@ class Email < ApplicationRecord
     urls = urls.uniq
     urls = urls.map { |link| [link[0].split(" \u2014 "), link[1]].flatten }
     urls = urls.select { |link| link[2] != nil }
-    require 'pry';binding.pry
-    urls
   end
 
   def breaking_smart_links
@@ -142,7 +144,6 @@ class Email < ApplicationRecord
     url_elements = url_elements.select do |n|
       url = n.attributes["href"].value
     end
-    url_elements
   end
 
   def blendle_links
@@ -152,11 +153,13 @@ class Email < ApplicationRecord
     url_elements = doc.search("a")
     urls = url_elements.map do |n|
       [
-        n.parent.parent.inner_text.gsub(/\s+/," "),
-        /^https:\/\/javascriptweekly.com\/link\S*/.match(n.attributes["href"].value).to_s
+        (n.parent.parent.inner_text.gsub(/\s+/," ")).lstrip,
+        "",
+        /^https:\/\/open.blendle.com\S*/.match(n.attributes["href"].value).to_s
       ]
     end
-    urls
+    urls = urls.select { |link| link[0] != "" }
+    urls = urls.uniq
   end
 end
 
