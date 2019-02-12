@@ -1,0 +1,1112 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Thu, 24 Jan 2019 11:48:50 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounces+3465002-dca2-lucas=mindrules.net@sg.peterc.org>
+Received: from 205.237.194.16
+	by m8.mxes.net (bayesd) with LMTP id 1548348530-42328-2
+	for <lucas_mindrules.net@ms8.mxes.net>; Thu, 24 Jan 2019 11:48:50 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-02.mxes.net (Postfix) with ESMTP id 75AB72756F
+	for <lucas@mindrules.net>; Thu, 24 Jan 2019 11:48:50 -0500 (EST)
+Received: from o1.sg1.cooperpress.com (o1.sg1.cooperpress.com [167.89.103.72])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mxin.mxes.net (Postfix) with ESMTPS id 32DC227547
+	for <lucas@mindrules.net>; Thu, 24 Jan 2019 11:48:48 -0500 (EST)
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=peterc.org header.i=@peterc.org header.b=elVdgAhu
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=peterc.org; 
+	h=content-type:from:mime-version:to:subject:list-unsubscribe; 
+	s=s1; bh=pPeHnwtlhSCPns1QAPFIsUw/2cs=; b=elVdgAhutyPNVn66+DiNoFl
+	0wzF8gp/x5CYwuH3tEB9uRvUYwgMRJ+2Ki4eR23bDUGOeuWUxvV2sw1f1UO4oukw
+	oJzPmLb4fxTLe605yHXXaP8aXlHbalr85npVQpvcjFdWFl7ECdukMTRDUCK6g6Qh
+	2h6j5KHqM9gZOsE4e2aE=
+Received: by filter0372p1iad2.sendgrid.net with SMTP id filter0372p1iad2-16900-5C49EC68-20
+        2019-01-24 16:48:40.876034571 +0000 UTC m=+52448.047943661
+Received: from MzQ2NTAwMg (li299-121.members.linode.com [178.79.161.121])
+	by ismtpd0001p1lon1.sendgrid.net (SG) with HTTP id _mCAbKiKTf2QC-bRY86iFg
+	Thu, 24 Jan 2019 16:48:40.756 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=cc181c2cb90f4556cbbc72f175f44ec6c51cdd61104588488583da966210
+Date: Thu, 24 Jan 2019 16:48:40 +0000 (UTC)
+From: "Ruby Weekly" <rw@peterc.org>
+Mime-Version: 1.0
+To: lucas@mindrules.net
+Message-ID: <_mCAbKiKTf2QC-bRY86iFg@ismtpd0001p1lon1.sendgrid.net>
+Subject: The first beta of Rails 6.0 is here
+List-Unsubscribe: <mailto:unsub-d218cfa36e@n2.cooperpress.com>
+X-SG-EID: 7+Jt56rkNVZjji2DyS6gZoIDNt7Ym1N8JGN8fGA2hR+AwglzrGRg+I51gVF6gs7ExJN6eWnC0vLvYh
+ Zpy/p6FKD4iN9P4xVt2EBPYwJKjVjIHD0BW9m98PVouh8GJFKMRoTlNBdMNBKVlJMTERWYiKRB3JZo
+ 7t/ydJl0nqmvUvcZjqr9JpJZgWAq2/mnwi41ai94AaE1PeFqDcRAG3IQ7Q==
+X-Virus-Scanned: ClamAV
+X-Spam-Sys-BayesResult: No, 0.218661
+X-Spam-Scanner: 1548348528-89524-3
+X-Spam-Report: Content analysis details:
+   0.0 BAYESSCORE             0.482073
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [167.89.103.72 listed in dnswl.mxes.net]
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or Formatted Colors in HTML
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 DKIM_VALID_EF          Message has a valid DKIM or DK signature from envelope-from domain
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+  -1.5 SYSTEM_BAYES           No 0.218661
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   0.0 DMARC_POLICY           Accept on policy failure
+   0.0 DMARC_PASS             From: domain publishes a DMARC policy and the DKIM or SPF alignment test passes
+   0.0 T_DMARC_ACCEPT         Sender says accept all mail
+   0.0 HTML_MESSAGE           HTML included in message
+   0.6 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 1
+X-Spam-SI: 0
+X-Originating-IP: 167.89.103.72
+X-Dmarc-Status: Pass
+X-Reputation-Delta: 0.6
+X-Envelope-To: <lucas@mindrules.net>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-0.9 threshold=6.0,13.0 
+X-Spam-BayesResult: Unsure, 0.482073
+X-Spam-Score: -0.9
+X-Spam-Scoring: 0,0
+
+--cc181c2cb90f4556cbbc72f175f44ec6c51cdd61104588488583da966210
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+This week's Ruby news, issue 434
+
+#434 =E2=80=94 January 24, 2019
+
+Read on the Web ( https://rubyweekly.com/issues/434 )
+
+Ruby Weekly
+
+The Ruby Toolbox: A Handy Catalog of Ruby Gems=20
+( https://www.ruby-toolbox.com/ ) =E2=80=94 Around for years, then
+abandoned, and now being actively worked on again, the Ruby
+Toolbox is a great way to explore and compare open source Ruby
+libraries. It=E2=80=99s recently been getting lots of neat=20
+( https://www.ruby-toolbox.com/blog/2019-01-09/project-sorting )
+enhancements.=20
+( https://www.ruby-toolbox.com/blog/2019-01-16/bugfix-fork-detection-and-fi=
+ltering )
+
+
+The Ruby Toolbox
+
+The First Beta of Rails 6.0 is Here=20
+( https://weblog.rubyonrails.org/2019/1/18/Rails-6-0-Action-Mailbox-Action-=
+Text-Multiple-DBs-Parallel-Testing/ )
+ =E2=80=94 It=E2=80=99s almost 3 years since Rails 5 was first released, so=
+ this
+is pretty exciting. As well as supporting new things like
+parallel testing and built-in multiple database support, Rails 6
+also features two new frameworks: Action Mailbox=20
+( https://weblog.rubyonrails.org/2018/12/13/introducing-action-mailbox-for-=
+rails-6/ )
+ and Action Text=20
+( https://weblog.rubyonrails.org/2018/10/3/introducing-action-text-for-rail=
+s-6/ )
+.
+
+David Heinemeier Hansson
+
+Level Up Your Knowledge of Ruby's Exception System=20
+( https://honeybadger.leadpages.co/exceptions/ ) =E2=80=94 Ruby's exception
+system is more powerful than many people realize. This book shows
+you how to get the most from it.
+
+Honeybadger sponsor
+
+Run.rb: Run Ruby in the Browser using WebAssembly=20
+( https://jasoncharnes.com/run-rb/ ) =E2=80=94 Pronounced =E2=80=9Crunner b=
+ee=E2=80=9D,
+this project is Ruby 2.6 compiled to WebAssembly so you can
+execute Ruby without leaving the browser. It=E2=80=99s still very basic,
+but the promise is real and you can play with the demo here=20
+( https://runrb.io/ ).
+
+Jason Charnes and Will Glynn
+
+Zeitwerk: An Efficient and Thread-Safe Code Loader=20
+( https://github.com/fxn/zeitwerk ) =E2=80=94 Provides a way to forget
+about requires in your code - just name things following a
+convention and you=E2=80=99re done. =E2=80=9CThe original goal of this proj=
+ect
+was to bring a better autoloading mechanism for Rails 6.=E2=80=9D It=E2=80=
+=99s
+not in Rails 6 yet but is due for beta 2.
+
+Xavier Noria
+
+Using OAuth to Access Google Services from a Ruby Script=20
+( https://martinfowler.com/articles/command-line-google.html ) =E2=80=94
+Like Martin, I=E2=80=99ve found this a pain in the past, so it=E2=80=99s gr=
+eat
+he=E2=80=99s documented the process. If you want to interact with
+something like, say, YouTube=E2=80=99s API, this will be a lifesaver.
+
+Martin Fowler
+
+=F0=9F=92=BB Jobs
+
+Sr/Software Engineer - The Age of Privacy Is Here. (SF Bay
+Area) ( https://datagrail.io/jobs?utm=3Druby_weekly ) =E2=80=94 DataGrail
+helps customers offer transparency and control of personal data.
+Rails. Go. CI/CD. Modern stack.
+
+DataGrail
+
+Senior Ruby Developer=20
+( https://companycam.com/careers/ruby-on-rails-developer/?&utm_source=3Dcoo=
+perpress&utm_medium=3Dnewsletter&utm_campaign=3Djob_listing&utm_content=3Dr=
+uby_rails&utm_term=3Dq4_2018 )
+ =E2=80=94 We are the best camera app for contractors. Join the team and
+help us scale our infrastructure to handle the 50+ million photos
+we will process this year.
+
+CompanyCam, Inc.
+
+Find A Job Through Vettery=20
+( https://www.vettery.com/tech?utm_source=3Dnewsletter&utm_medium=3Dcooper-=
+rubyweekly&utm_term=3Dtech&utm_content=3Dgrouped&utm_campaign=3Dad-77582 )
+ =E2=80=94 Vettery specializes in developer roles and is completely free
+for job seekers.
+
+Vettery
+
+=F0=9F=93=98 Articles & Tutorials
+
+Ruby Tricks for Junior Developers=20
+( https://drivy.engineering/ruby-tricks-for-junior-devs/ ) =E2=80=94 As you
+level up in Ruby, there are many intermediate and advanced
+functions and techniques that will help you discover more of the
+language. Here are just a few including the safe navigation
+operator and the dig method.
+
+Clement Bruno
+
+Why Ruby Doesn't Have A Boolean Class=20
+( https://www.rubytapas.com/2019/01/08/boolean/ ) =E2=80=94 Ruby has
+TrueClass and FalseClass, but no Boolean class to unite the two.
+What gives??
+
+Avdi Grimm
+
+Use Lead Time Metric to Improve Your CI/CD Process=20
+( https://www.gocd.org/2019/01/14/cd-metrics-deployment-lead-time/?utm_camp=
+aign=3DCD_Analytics&utm_medium=3Dnewsletter_ad&utm_source=3Dcooperpress_rub=
+y&utm_content=3DCD_analytics_part3&utm_term=3D )
+ =E2=80=94 GoCD=E2=80=99s latest CD metrics blog will guide you how to iden=
+tify
+bottlenecks and improve your CI/CD process.
+
+GoCD sponsor
+
+Building and Deploying a Ruby Slack Bot on AWS Lambda=20
+( https://www.mutuallyhuman.com/blog/2018/12/18/slackbot-on-lambda-with-rub=
+y/ )
+ =E2=80=94 This step-by-step tutorial lambda-fies a Sinatra app.
+
+Mutually Human
+
+Launching Your Own Ruby Gem: Popularizing It Within The Ruby
+Community=20
+( https://buttercms.com/blog/launching-your-own-ruby-gem-part-2-promote-it )
+ =E2=80=94 Once you=E2=80=99ve built your gem, you=E2=80=99ll want to encou=
+rage to use
+and maintain it, which boils down to docs, marketing, and
+presentation.
+
+Pawe=C5=82 D=C4=85browski
+
+Using Google reCAPTCHA v3 with Turbolinks=20
+( https://blog.bmonkeys.net/2019/using-recaptcha-v3-with-turbolinks )
+ =E2=80=94 reCAPTCHA v3 is essentially a hidden, score-based CAPTCHA but
+you=E2=80=99ll need to write some extra code to let it work with
+Turbolinks-powered pages.
+
+Sven Pachnit
+
+First Explorations of GitHub's New 'Actions' System=20
+( https://blog.phusion.nl/2019/01/23/first-explorations-of-githubs-actions/=
+ )
+ =E2=80=94 The tale of automating the workflow of releasing a Ruby gem,
+based off of the GitHub Action for npm.
+
+Floor Drees (Phusion)
+
+Use Multiple Migrations When Adding Database Constraints=20
+( https://andycroll.com/ruby/use-multiple-migrations-when-adding-database-c=
+onstraints/ )
+ =E2=80=94 If you don=E2=80=99t do this correctly, you could be looking at
+downtime as your DB catches up.
+
+Andy Croll
+
+Best Practices for Improving Page Load Speed Whitepaper.
+Download Now.=20
+( https://info.cloudinary.com/media_rich_and_fast_whitepaper_registration.h=
+tml?utm_source=3Druby_weekly&utm_medium=3Dbrief_link&utm_campaign=3Ddevelop=
+er_whitepaper )
+
+
+Cloudinary sponsor
+
+The autoload Method in Ruby=20
+( https://medium.com/rubycademy/the-autoload-method-in-ruby-11fd079562ef )
+
+
+Mehdi Farsi
+
+Ruby Memory, ActiveRecord, and Draper=20
+( https://medium.com/appaloosa-store-engineering/ruby-memory-activerecord-a=
+nd-draper-64f06abeeb34 )
+ =E2=80=94 How Appaloosa tracked down an ActiveRecord method that was
+ballooning CPU and memory usage under load. These kinds of posts
+are very valuable.
+
+Appaloosa Store
+
+=F0=9F=94=A7 Code & Tools
+
+macinbox: Puts MacOS Mojave into a Vagrant Box=20
+( https://github.com/bacongravy/macinbox )
+
+David Kramer
+
+script_core: A Script Engine Powered by mruby=20
+( https://github.com/rails-engine/script_core ) =E2=80=94 A fork of
+Shopify=E2=80=99s =E2=80=98enterprise script service=E2=80=99 that can be u=
+sed to execute
+untrusted Ruby code in a sandbox.
+
+Rails Engine
+
+James Cox Working on Awesome Print 2.0=20
+( https://github.com/awesome-print/awesome_print/pull/350 ) =E2=80=94
+Awesome Print ( https://github.com/awesome-print/awesome_print )
+is a long-standing =E2=80=98pretty printer=E2=80=99 for Ruby objects and so=
+me new
+life is being breathed into it - use 2.0.0.pre or --pre to grab
+it for now.
+
+James Cox
+
+40 Best Ruby Gems We Can't Live Without=20
+( https://www.codica.com/blog/top-ruby-gems-we-cant-live-without/ )
+=E2=80=94 I feel like it=E2=80=99s been a while since we posted one of thes=
+e so,
+here you go, a roundup of some goodies.
+
+Sergiy Volkov and Rostyslav Korin
+
+Curated by Cooperpress ( https://cooperpress.com/ )
+
+Change your email address=20
+( https://rubyweekly.com/edit_subscription/d218cfa36e ) or Stop
+getting this newsletter=20
+( https://rubyweekly.com/leave/d218cfa36e )
+
+=C2=A9 Cooper Press Ltd =C2=B7 Fairfield Enterprise Centre, Louth,
+LN11 0LS, United Kingdom=
+
+--cc181c2cb90f4556cbbc72f175f44ec6c51cdd61104588488583da966210
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <meta name=3D"format-detection" content=3D"date=3Dno">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+=20=20=20=20
+  <style>body {
+margin: 0; padding: 0; height: 100%; width: 100%; background-color: white; =
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-rendering:=
+ optimizeLegibility; font-feature-settings: "kern" 1;
+}
+body {
+font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-si=
+ze: 15px; line-height: 1.55em;
+}
+img {
+-ms-interpolation-mode: bicubic; border: 0 none; outline: none; height: aut=
+o; text-decoration: none; max-width: 100%;
+}
+@media screen and (max-width: 600px) {
+  table[id=3D"main"] {
+    max-width: 600px !important; width: 100% !important; min-width: 100% !i=
+mportant;
+  }
+  .nomob {
+    display: none !important;
+  }
+  .onlymob {
+    display: inline-block !important;
+  }
+  .rightifmob {
+    text-align: right !important;
+  }
+  .som {
+    max-width: 33% !important;
+  }
+  div.footer p {
+    text-align: left !important;
+  }
+  div.footer td {
+    text-align: left !important;
+  }
+}
+</style>
+</head>
+<body style=3D'height: 100%; width: 100%; background-color: white; -webkit-=
+text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-rendering: optimiz=
+eLegibility; font-feature-settings: "kern" 1; font-family: -apple-system,Bl=
+inkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em=
+; margin: 0; padding: 0;'>
+<div id=3D"preview" class=3D"noarchive" style=3D"display: none; color: #666=
+;">This week's Ruby news, issue 434</div>
+
+<!--[if (gte mso 9)|(IE)]>
+<table cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fff=
+fff" width=3D"600"><tr><td valign=3D"top" style=3D"width: 600px;" bgcolor=
+=3D"#ffffff"><![endif]-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=
+=3D"main" width=3D"100%" style=3D"table-layout: fixed; font-family: -apple-=
+system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-heigh=
+t: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: c=
+ollapse; max-width: 600px; height: 100% !important; padding: 0px;">
+  <tr><td style=3D"font-family: -apple-system,BlinkMacSystemFont,Helvetica,=
+sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; border-collapse: collapse;">
+
+  <div id=3D"content">    <!-- left/right splitbar -->
+    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr>
+<td width=3D"50%" align=3D"left" style=3D"padding-left: 4px; font-family: -=
+apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line=
+-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><p style=3D"font-size: 12px; color: #999999; text-transform=
+: uppercase; line-height: 1.0em; font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; margin-top: 0.8em; margin-bottom: 0.8em;">#434 =
+=E2=80=94 January 24, 2019</p></td>
+<td width=3D"50%" align=3D"right" style=3D"padding-right: 4px; font-family:=
+ -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; li=
+ne-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-col=
+lapse: collapse;"><p style=3D"font-size: 12px; text-transform: uppercase; l=
+ine-height: 1.0em; font-family: -apple-system,BlinkMacSystemFont,Helvetica,=
+sans-serif; margin-top: 0.8em; margin-bottom: 0.8em;"><a href=3D"https://ru=
+byweekly.com/issues/434" style=3D"text-decoration: none; color: #0055bb;">R=
+ead on the Web</a></p></td>
+</tr></table>
+    <!-- masthead -->
+    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"back=
+ground-color: #cc0000; text-align: center; color: #fff6f6; mso-table-lspace=
+: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" class=3D"el-masth=
+ead"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemFont,Helveti=
+ca,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse; padding: 0 12px;"><p sty=
+le=3D"font-size: 1.8em; font-weight: 600; line-height: 1.0em; font-family: =
+-apple-system,BlinkMacSystemFont,Helvetica,sans-serif; margin-top: 0.8em; m=
+argin-bottom: 0.8em;">Ruby Weekly</p></td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td s=
+tyle=3D"font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;=
+ font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; border-collapse: collapse;">
+  <a href=3D"https://rubyweekly.com/link/58435/d218cfa36e" style=3D"text-de=
+coration: none; color: #0055bb;"><img src=3D"https://res.cloudinary.com/cpr=
+ess/image/upload/w_1280,e_sharpen:60/q4gnqj4s3c9qh8apxa17.jpg" alt=3D"" wid=
+th=3D"640" style=3D"border-bottom-color: #999999; -ms-interpolation-mode: b=
+icubic; outline: none; height: auto; text-decoration: none; max-width: 100%=
+; border-style: none none dashed; border-width: 0 0 1px;"></a>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td s=
+tyle=3D"height: 4px; font-family: -apple-system,BlinkMacSystemFont,Helvetic=
+a,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; =
+mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 1.05em; line-height: 1.55em; color: #5a5a5=
+a; margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; f=
+ont-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubywe=
+ekly.com/link/58435/d218cfa36e" title=3D"www.ruby-toolbox.com" style=3D"tex=
+t-decoration: none; color: #0055bb; border-bottom-width: 1px !important; bo=
+rder-bottom-color: #ddd !important; border-bottom-style: solid !important; =
+font-size: 1.1em; line-height: 1.4em;">The Ruby Toolbox: A Handy Catalog of=
+ Ruby Gems</a></span> =E2=80=94 Around for years, then abandoned, and now b=
+eing actively worked on again, the Ruby Toolbox is a great way to explore a=
+nd compare open source Ruby libraries. It=E2=80=99s recently been getting l=
+ots of <a href=3D"https://rubyweekly.com/link/58436/d218cfa36e" style=3D"te=
+xt-decoration: none; color: #0055bb; border-bottom-width: 1px !important; b=
+order-bottom-color: #ddd !important; border-bottom-style: solid !important;=
+">neat</a> <a href=3D"https://rubyweekly.com/link/58437/d218cfa36e" style=
+=3D"text-decoration: none; color: #0055bb; border-bottom-width: 1px !import=
+ant; border-bottom-color: #ddd !important; border-bottom-style: solid !impo=
+rtant;">enhancements.</a></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">The Rub=
+y Toolbox </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58438/d218cfa36e" title=3D"weblog.rubyonrails.org" style=3D"tex=
+t-decoration: none; color: #0055bb; border-bottom-width: 1px !important; bo=
+rder-bottom-color: #ddd !important; border-bottom-style: solid !important; =
+font-size: 1.05em;">The First Beta of Rails 6.0 is Here</a></span> =E2=80=
+=94 It=E2=80=99s almost 3 years since Rails 5 was first released, so this i=
+s pretty exciting. As well as supporting new things like parallel testing a=
+nd built-in multiple database support, Rails 6 also features two new framew=
+orks: <a href=3D"https://rubyweekly.com/link/58439/d218cfa36e" style=3D"tex=
+t-decoration: none; color: #0055bb; border-bottom-width: 1px !important; bo=
+rder-bottom-color: #ddd !important; border-bottom-style: solid !important;"=
+>Action Mailbox</a> and <a href=3D"https://rubyweekly.com/link/58440/d218cf=
+a36e" style=3D"text-decoration: none; color: #0055bb; border-bottom-width: =
+1px !important; border-bottom-color: #ddd !important; border-bottom-style: =
+solid !important;">Action Text</a>.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">David H=
+einemeier Hansson </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+  <a target=3D"_blank" href=3D"https://rubyweekly.com/link/58441/d218cfa36e=
+" style=3D"text-decoration: none; color: #0055bb; border-bottom-width: 1px =
+!important; border-bottom-color: #ddd !important; border-bottom-style: soli=
+d !important;"><img src=3D"https://copm.s3.amazonaws.com/a913988e.png" widt=
+h=3D"140" height=3D"105" style=3D"padding-top: 12px; padding-left: 12px; -m=
+s-interpolation-mode: bicubic; outline: none; height: auto; text-decoration=
+: none; max-width: 100%; border: 0 none;" align=3D"right" alt=3D"" class=3D=
+"som"></a>
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58441/d218cfa36e" title=3D"honeybadger.leadpages.co" style=3D"t=
+ext-decoration: none; color: #0055bb; border-bottom-width: 1px !important; =
+border-bottom-color: #ddd !important; border-bottom-style: solid !important=
+; font-size: 1.05em;">Level Up Your Knowledge of Ruby's Exception System</a=
+></span> =E2=80=94 Ruby's exception system is more powerful than many peopl=
+e realize. This book shows you how to get the most from it.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Honeyba=
+dger <span style=3D"text-transform: uppercase; margin-left: 4px; font-size:=
+ 0.9em; border-radius: 2px; background-color: #ffc; color: #997 !important;=
+ padding: 1px 4px; border: 1px solid #eeb;" class=3D"tag-sponsor">sponsor</=
+span></p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td s=
+tyle=3D"height: 6px; font-family: -apple-system,BlinkMacSystemFont,Helvetic=
+a,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; =
+mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58442/d218cfa36e" title=3D"jasoncharnes.com" style=3D"text-deco=
+ration: none; color: #0055bb; border-bottom-width: 1px !important; border-b=
+ottom-color: #ddd !important; border-bottom-style: solid !important; font-s=
+ize: 1.05em;">Run.rb: Run Ruby in the Browser using WebAssembly</a></span> =
+=E2=80=94 Pronounced =E2=80=9Crunner bee=E2=80=9D, this project is Ruby 2.6=
+ compiled to WebAssembly so you can execute Ruby <em>without leaving the br=
+owser.</em> It=E2=80=99s still very basic, but the promise is real and you =
+can <a href=3D"https://rubyweekly.com/link/58443/d218cfa36e" style=3D"text-=
+decoration: none; color: #0055bb; border-bottom-width: 1px !important; bord=
+er-bottom-color: #ddd !important; border-bottom-style: solid !important;">p=
+lay with the demo here</a>.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Jason C=
+harnes and Will Glynn </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58444/d218cfa36e" title=3D"github.com" style=3D"text-decoration=
+: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-=
+color: #ddd !important; border-bottom-style: solid !important; font-size: 1=
+.05em;">Zeitwerk: An Efficient and Thread-Safe Code Loader</a></span> =E2=
+=80=94 Provides a way to forget about <code>require</code>s in your code - =
+just name things following a convention and you=E2=80=99re done. <em>=E2=80=
+=9CThe original goal of this project was to bring a better autoloading mech=
+anism for Rails 6.=E2=80=9D</em> It=E2=80=99s not in Rails 6 yet but is due=
+ for beta 2.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Xavier =
+Noria </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58445/d218cfa36e" title=3D"martinfowler.com" style=3D"text-deco=
+ration: none; color: #0055bb; border-bottom-width: 1px !important; border-b=
+ottom-color: #ddd !important; border-bottom-style: solid !important; font-s=
+ize: 1.05em;">Using OAuth to Access Google Services from a Ruby Script</a><=
+/span> =E2=80=94 Like Martin, I=E2=80=99ve found this a pain in the past, s=
+o it=E2=80=99s great he=E2=80=99s documented the process. If you want to in=
+teract with something like, say, YouTube=E2=80=99s API, this will be a life=
+saver.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Martin =
+Fowler </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-headi=
+ng" style=3D"background-color: none !important; text-align: left; margin-to=
+p: 15px; color: #333333; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMa=
+cSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; paddi=
+ng: 0;"><p style=3D"font-size: 1.6em !important; font-weight: 400 !importan=
+t; text-transform: none !important; font-family: -apple-system,BlinkMacSyst=
+emFont,Helvetica,sans-serif; line-height: 1.55em; display: inline-block; bo=
+rder-bottom-width: 6px; border-bottom-color: #f4f4f4; border-bottom-style: =
+solid; margin: 0.5em 0;">=F0=9F=92=BB=C2=A0Jobs</p></td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58446/d218cfa36e" title=3D"datagrail.io" style=3D"text-decorati=
+on: none; color: #0055bb; border-bottom-width: 1px !important; border-botto=
+m-color: #ddd !important; border-bottom-style: solid !important; font-size:=
+ 1.05em;">Sr/Software Engineer - The Age of Privacy Is Here. (SF Bay Area)<=
+/a></span> =E2=80=94 DataGrail helps customers offer transparency and contr=
+ol of personal data. Rails. Go. CI/CD. Modern stack.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">DataGra=
+il </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58464/d218cfa36e" title=3D"companycam.com" style=3D"text-decora=
+tion: none; color: #0055bb; border-bottom-width: 1px !important; border-bot=
+tom-color: #ddd !important; border-bottom-style: solid !important; font-siz=
+e: 1.05em;">Senior Ruby Developer</a></span> =E2=80=94 We are the best came=
+ra app for contractors. Join the team and help us scale our infrastructure =
+to handle the 50+ million photos we will process this year. </p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Company=
+Cam, Inc. </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58447/d218cfa36e" title=3D"www.vettery.com" style=3D"text-decor=
+ation: none; color: #0055bb; border-bottom-width: 1px !important; border-bo=
+ttom-color: #ddd !important; border-bottom-style: solid !important; font-si=
+ze: 1.05em;">Find A Job Through Vettery</a></span> =E2=80=94 Vettery specia=
+lizes in developer roles and is completely free for job seekers.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Vettery=
+ </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-headi=
+ng" style=3D"background-color: none !important; text-align: left; margin-to=
+p: 15px; color: #333333; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMa=
+cSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; paddi=
+ng: 0;"><p style=3D"font-size: 1.6em !important; font-weight: 400 !importan=
+t; text-transform: none !important; font-family: -apple-system,BlinkMacSyst=
+emFont,Helvetica,sans-serif; line-height: 1.55em; display: inline-block; bo=
+rder-bottom-width: 6px; border-bottom-color: #f4f4f4; border-bottom-style: =
+solid; margin: 0.5em 0;">=F0=9F=93=98 Articles &amp; Tutorials </p></td></t=
+r></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58448/d218cfa36e" title=3D"drivy.engineering" style=3D"text-dec=
+oration: none; color: #0055bb; border-bottom-width: 1px !important; border-=
+bottom-color: #ddd !important; border-bottom-style: solid !important; font-=
+size: 1.05em;">Ruby Tricks for Junior Developers</a></span> =E2=80=94 As yo=
+u level up in Ruby, there are many intermediate and advanced functions and =
+techniques that will help you discover more of the language. Here are just =
+a few including the safe navigation operator and the <code>dig</code> metho=
+d.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Clement=
+ Bruno </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58449/d218cfa36e" title=3D"www.rubytapas.com" style=3D"text-dec=
+oration: none; color: #0055bb; border-bottom-width: 1px !important; border-=
+bottom-color: #ddd !important; border-bottom-style: solid !important; font-=
+size: 1.05em;">Why Ruby Doesn't Have A Boolean Class</a></span> =E2=80=94 R=
+uby has TrueClass and FalseClass, but no Boolean class to unite the two. Wh=
+at gives??</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Avdi Gr=
+imm </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58450/d218cfa36e" title=3D"www.gocd.org" style=3D"text-decorati=
+on: none; color: #0055bb; border-bottom-width: 1px !important; border-botto=
+m-color: #ddd !important; border-bottom-style: solid !important; font-size:=
+ 1.05em;">Use Lead Time Metric to Improve Your CI/CD Process</a></span> =E2=
+=80=94 GoCD=E2=80=99s latest CD metrics blog will guide you how to identify=
+ bottlenecks and improve your CI/CD process. </p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">GoCD <s=
+pan style=3D"text-transform: uppercase; margin-left: 4px; font-size: 0.9em;=
+ border-radius: 2px; background-color: #ffc; color: #997 !important; paddin=
+g: 1px 4px; border: 1px solid #eeb;" class=3D"tag-sponsor">sponsor</span></=
+p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58451/d218cfa36e" title=3D"www.mutuallyhuman.com" style=3D"text=
+-decoration: none; color: #0055bb; border-bottom-width: 1px !important; bor=
+der-bottom-color: #ddd !important; border-bottom-style: solid !important; f=
+ont-size: 1.05em;">Building and Deploying a Ruby Slack Bot on AWS Lambda</a=
+></span> =E2=80=94 This step-by-step tutorial lambda-fies a Sinatra app.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Mutuall=
+y Human </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58452/d218cfa36e" title=3D"buttercms.com" style=3D"text-decorat=
+ion: none; color: #0055bb; border-bottom-width: 1px !important; border-bott=
+om-color: #ddd !important; border-bottom-style: solid !important; font-size=
+: 1.05em;">Launching Your Own Ruby Gem: Popularizing It Within The Ruby Com=
+munity</a></span> =E2=80=94 Once you=E2=80=99ve built your gem, you=E2=80=
+=99ll want to encourage to use and maintain it, which boils down to docs, m=
+arketing, and presentation.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Pawe=C5=
+=82 D=C4=85browski </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58453/d218cfa36e" title=3D"blog.bmonkeys.net" style=3D"text-dec=
+oration: none; color: #0055bb; border-bottom-width: 1px !important; border-=
+bottom-color: #ddd !important; border-bottom-style: solid !important; font-=
+size: 1.05em;">Using Google reCAPTCHA v3 with Turbolinks</a></span> =E2=80=
+=94 reCAPTCHA v3 is essentially a hidden, score-based CAPTCHA but you=E2=80=
+=99ll need to write some extra code to let it work with Turbolinks-powered =
+pages.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Sven Pa=
+chnit </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58454/d218cfa36e" title=3D"blog.phusion.nl" style=3D"text-decor=
+ation: none; color: #0055bb; border-bottom-width: 1px !important; border-bo=
+ttom-color: #ddd !important; border-bottom-style: solid !important; font-si=
+ze: 1.05em;">First Explorations of GitHub's New 'Actions' System</a></span>=
+ =E2=80=94 The tale of automating the workflow of releasing a Ruby gem, bas=
+ed off of the GitHub Action for npm.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Floor D=
+rees (Phusion) </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58455/d218cfa36e" title=3D"andycroll.com" style=3D"text-decorat=
+ion: none; color: #0055bb; border-bottom-width: 1px !important; border-bott=
+om-color: #ddd !important; border-bottom-style: solid !important; font-size=
+: 1.05em;">Use Multiple Migrations When Adding Database Constraints</a></sp=
+an> =E2=80=94 If you don=E2=80=99t do this correctly, you could be looking =
+at downtime as your DB catches up.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Andy Cr=
+oll </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58456/d218cfa36e" title=3D"info.cloudinary.com" style=3D"text-d=
+ecoration: none; color: #0055bb; border-bottom-width: 1px !important; borde=
+r-bottom-color: #ddd !important; border-bottom-style: solid !important; fon=
+t-size: 1.05em;">Best Practices for Improving Page Load Speed Whitepaper. D=
+ownload Now.</a></span></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Cloudin=
+ary <span style=3D"text-transform: uppercase; margin-left: 4px; font-size: =
+0.9em; border-radius: 2px; background-color: #ffc; color: #997 !important; =
+padding: 1px 4px; border: 1px solid #eeb;" class=3D"tag-sponsor">sponsor</s=
+pan></p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58457/d218cfa36e" title=3D"medium.com" style=3D"text-decoration=
+: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-=
+color: #ddd !important; border-bottom-style: solid !important; font-size: 1=
+.05em;">The <code style=3D'font-family: menlo, monaco, "Ubuntu Mono", couri=
+er, monospace; font-weight: normal;'>autoload</code> Method in Ruby</a></sp=
+an></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Mehdi F=
+arsi </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58458/d218cfa36e" title=3D"medium.com" style=3D"text-decoration=
+: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-=
+color: #ddd !important; border-bottom-style: solid !important; font-size: 1=
+.05em;">Ruby Memory, ActiveRecord, and Draper</a></span> =E2=80=94 How Appa=
+loosa tracked down an ActiveRecord method that was ballooning CPU and memor=
+y usage under load. These kinds of posts are very valuable.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Appaloo=
+sa Store </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-headi=
+ng" style=3D"background-color: none !important; text-align: left; margin-to=
+p: 15px; color: #333333; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMa=
+cSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso=
+-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; paddi=
+ng: 0;"><p style=3D"font-size: 1.6em !important; font-weight: 400 !importan=
+t; text-transform: none !important; font-family: -apple-system,BlinkMacSyst=
+emFont,Helvetica,sans-serif; line-height: 1.55em; display: inline-block; bo=
+rder-bottom-width: 6px; border-bottom-color: #f4f4f4; border-bottom-style: =
+solid; margin: 0.5em 0;">=F0=9F=94=A7=C2=A0Code &amp; Tools </p></td></tr><=
+/table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58459/d218cfa36e" title=3D"github.com" style=3D"text-decoration=
+: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-=
+color: #ddd !important; border-bottom-style: solid !important; font-size: 1=
+.05em;">macinbox: Puts MacOS Mojave into a Vagrant Box</a></span></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">David K=
+ramer </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58460/d218cfa36e" title=3D"github.com" style=3D"text-decoration=
+: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-=
+color: #ddd !important; border-bottom-style: solid !important; font-size: 1=
+.05em;">script_core: A Script Engine Powered by mruby</a></span> =E2=80=94 =
+A fork of Shopify=E2=80=99s =E2=80=98enterprise script service=E2=80=99 tha=
+t can be used to execute untrusted Ruby code in a sandbox.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Rails E=
+ngine </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58461/d218cfa36e" title=3D"github.com" style=3D"text-decoration=
+: none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-=
+color: #ddd !important; border-bottom-style: solid !important; font-size: 1=
+.05em;">James Cox Working on Awesome Print 2.0</a></span> =E2=80=94 <a href=
+=3D"https://rubyweekly.com/link/58462/d218cfa36e" style=3D"text-decoration:=
+ none; color: #0055bb; border-bottom-width: 1px !important; border-bottom-c=
+olor: #ddd !important; border-bottom-style: solid !important;">Awesome Prin=
+t</a> is a long-standing =E2=80=98pretty printer=E2=80=99 for Ruby objects =
+and some new life is being breathed into it - use <code>2.0.0.pre</code> or=
+ <code>--pre</code> to grab it for now.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">James C=
+ox </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://rubyweek=
+ly.com/link/58463/d218cfa36e" title=3D"www.codica.com" style=3D"text-decora=
+tion: none; color: #0055bb; border-bottom-width: 1px !important; border-bot=
+tom-color: #ddd !important; border-bottom-style: solid !important; font-siz=
+e: 1.05em;">40 Best Ruby Gems We Can't Live Without</a></span> =E2=80=94 I =
+feel like it=E2=80=99s been a while since we posted one of these so, here y=
+ou go, a roundup of some goodies.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Sergiy =
+Volkov and Rostyslav Korin </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td s=
+tyle=3D"height: 16px; font-family: -apple-system,BlinkMacSystemFont,Helveti=
+ca,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+</div>
+
+  </td></tr>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+<div id=3D"footer" class=3D"noarchive">
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"bo=
+rder-top-width: 1px; border-top-color: #dddddd; border-top-style: solid; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr=
+><td style=3D"text-align: center; font-family: -apple-system,BlinkMacSystem=
+Font,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 20p=
+x 15px;">
+      <p style=3D"font-size: 12px; line-height: 1.5em; font-family: -apple-=
+system,BlinkMacSystemFont,Helvetica,sans-serif; margin-top: 0.8em; margin-b=
+ottom: 0.8em;">Curated by <a href=3D"https://cooperpress.com/" style=3D"tex=
+t-decoration: none; color: #0055bb;">Cooperpress</a></p>
+      <p style=3D"font-size: 0.9em; font-family: -apple-system,BlinkMacSyst=
+emFont,Helvetica,sans-serif; line-height: 1.55em; margin-top: 0.8em; margin=
+-bottom: 0.8em;"><span class=3D"nomob"><a href=3D"https://rubyweekly.com/ed=
+it_subscription/d218cfa36e" style=3D"text-decoration: underline; color: #00=
+55bb;">Change your email address</a> or </span><a href=3D"https://rubyweekl=
+y.com/leave/d218cfa36e" style=3D"text-decoration: underline; color: #0055bb=
+;">Stop getting this newsletter</a></p>
+      <p style=3D"font-size: 12px; font-family: -apple-system,BlinkMacSyste=
+mFont,Helvetica,sans-serif; line-height: 1.55em; margin-top: 0.8em; margin-=
+bottom: 0.8em;">=C2=A9 Cooper Press Ltd =C2=B7 Fairfield Enterprise Centre,=
+ Louth, LN11 0LS, United Kingdom</p>
+      </td></tr></table>
+  </div>
+<img src=3D"https://rubyweekly.com/open/434/d218cfa36e" width=3D"1" height=
+=3D"1" /></body>
+</html>
+
+--cc181c2cb90f4556cbbc72f175f44ec6c51cdd61104588488583da966210--

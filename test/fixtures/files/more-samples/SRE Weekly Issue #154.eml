@@ -1,0 +1,377 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Sun, 06 Jan 2019 20:27:05 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounce-mc.us12_50324829.1355889-lucas=luitjes.it@mail33.sea21.rsgsv.net>
+Received: from 205.237.194.28
+	by m8.mxes.net (bayesd) with LMTP id 1546824425-81356-2
+	for <lucas_mindrules.net@ms8.mxes.net>; Sun,  6 Jan 2019 20:27:05 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-06.mxes.net (Postfix) with ESMTP id 2CB1C275CA
+	for <lucas@luitjes.it>; Sun,  6 Jan 2019 20:27:05 -0500 (EST)
+Received: from mail33.sea21.rsgsv.net (mail33.sea21.rsgsv.net [148.105.12.33])
+	by mxin.mxes.net (Postfix) with ESMTP id 6B04C27609
+	for <lucas@luitjes.it>; Sun,  6 Jan 2019 20:27:03 -0500 (EST)
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=sreweekly.com header.i=lex@sreweekly.com header.b=pww/DMrF
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=sreweekly.com;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+ Content-Type:MIME-Version; i=lex@sreweekly.com;
+ bh=/t71C4Y7t4F4TPzYCPCQjUGwAL0Sre9yt0KyYmO4q/w=;
+ b=pww/DMrFO1xQ6i9V4PLZIbRJkVFWkdbEqX012LZ1HnRf8AFpShvqadcUXw1j+LtJax6qjHv/jU9S
+   pU9mjvP3XqScIrSITVe7U8tIMykiCEPx5bHrrMKuRgV41z2kn+JN8OgAxel8J/yEgafZtwKqi94i
+   sNC+V3sTYkCUJiQsXBI=
+Received: from (127.0.0.1) by mail33.sea21.rsgsv.net id h6alee2ddl4r for <lucas@luitjes.it>; Mon, 7 Jan 2019 01:26:55 +0000 (envelope-from <bounce-mc.us12_50324829.1355889-lucas=luitjes.it@mail33.sea21.rsgsv.net>)
+Subject: =?utf-8?Q?SRE=20Weekly=20Issue=20#154?=
+From: =?utf-8?Q?Lex=20Neva?= <lex@sreweekly.com>
+Reply-To: =?utf-8?Q?Lex=20Neva?= <lex@sreweekly.com>
+To: =?utf-8?Q?SRE=20Weekly=20Newsletter?= <lucas@luitjes.it>
+Date: Mon, 7 Jan 2019 01:26:55 +0000
+Message-ID: <9c8a79a721fa3d63d32e147fe.b50d1ba9ef.20190107012639.eaf4076570.621283cc@mail33.sea21.rsgsv.net>
+X-Mailer: MailChimp Mailer - **CIDeaf4076570b50d1ba9ef**
+X-Campaign: mailchimp9c8a79a721fa3d63d32e147fe.eaf4076570
+X-campaignid: mailchimp9c8a79a721fa3d63d32e147fe.eaf4076570
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=9c8a79a721fa3d63d32e147fe&id=eaf4076570&e=b50d1ba9ef
+X-MC-User: 9c8a79a721fa3d63d32e147fe
+Feedback-ID: 50324829:50324829.1355889:us12:mc
+List-ID: 9c8a79a721fa3d63d32e147femc list <9c8a79a721fa3d63d32e147fe.64717.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <https://sreweekly.us12.list-manage.com/unsubscribe?u=9c8a79a721fa3d63d32e147fe&id=24b1f473e5&e=b50d1ba9ef&c=eaf4076570>, <mailto:unsubscribe-mc.us12_9c8a79a721fa3d63d32e147fe.eaf4076570-b50d1ba9ef@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1410488280"
+MIME-Version: 1.0
+X-Virus-Scanned: ClamAV
+X-Spam-Sys-BayesResult: No, 0.141871
+X-Spam-Scanner: 1546824423-49451-1
+X-Spam-Report: Content analysis details:
+ -10.0 BAYESSCORE             0.005500
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [148.105.12.33 listed in dnswl.mxes.net]
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+   1.0 URI_TRY_3LD            URI: "Try it" URI, suspicious hostname
+   0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or Formatted Colors in HTML
+   0.0 MIME_QP_LONG_LINE      RAW: Quoted-printable line longer than 76 chars
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+  -2.5 SYSTEM_BAYES           No 0.141871
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail domains are different
+   0.0 HTML_MESSAGE           HTML included in message
+   0.2 SPF_MECH_2             Permissive SPF record ?all
+   0.5 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 2
+X-Spam-SI: 0
+X-Originating-IP: 148.105.12.33
+X-Reputation-Delta: 0.5
+X-Envelope-To: <lucas@luitjes.it>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-10.7 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.005500
+X-Spam-Score: -10.7
+X-Spam-Scoring: 0,0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1410488280
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+View on sreweekly.com (http://sreweekly.com/sre-weekly-issue-154/)
+
+
+** A message from our sponsor=2C VictorOps:
+------------------------------------------------------------
+
+The golden signals of SRE will help you create visibility into system heal=
+th and allow you to proactively build robust services. See how you can sta=
+rt leveraging SRE=E2=80=99s golden signals today:
+
+http://try.victorops.com/sreweekly/sre-golden-signals
+
+
+** Articles
+------------------------------------------------------------
+
+STAMPing on event-stream (https://www.hillelwayne.com/post/stamping-on-eve=
+ntstream/)
+
+Hands-down the best thing I=E2=80=99ve read in awhile! The author draws on=
+ the work of Nancy Leveson=2C applying her STAMP theory to a recent incide=
+nt involving a rogue NPM package that stole bitcoin wallets.
+
+Hillel Wayne
+
+Applying STAMP in Accident Analysis (https://shemesh.larc.nasa.gov/iria03/=
+p13-leveson.pdf)
+
+For more on STAMP theory (Systems-Theoretic Accident Modeling and Processe=
+s)=2C check out this academic paper by Leveson et al. It centers around a=
+ chilling case study of the e. coli poisoning of a community in Canada. Wh=
+ile starts off looking to be a clear case of negligence=2C it quickly beco=
+mes apparent that an accident of this sort was nearly guaranteed to happen=
+=2E
+
+Nancy Leveson=2C Mirna Daouk=2C Nicolas Dulac=2C and Karen Marais
+
+I=E2=80=99m John Allspaw=2C Ask Me Anything about incident analysis and po=
+stmortems (https://community.atlassian.com/t5/Jira-Ops-questions/I-m-John-=
+Allspaw-Ask-Me-Anything-about-incident-analysis-and/qaq-p/957084)
+
+It=E2=80=99s pretty much as awesome as you=E2=80=99d expect given that tit=
+le. I originally thought this was a video or audio AMA and was waiting for=
+ a recording to be posted. Instead=2C he answered the excellent questions=
+ in the comments=2C and each answer is like its own polished article.
+
+John Allspaw (and many commenters)
+
+Sarah Mei on Twitter: compensation for on-call (https://twitter.com/sarahm=
+ei/status/1078475018294616065)
+
+My fundamental issue with being on call is that I care more about my perso=
+nal life & health than I do about whether my employer=E2=80=99s website is=
+ operational.
+
+I assume everyone does! So=E2=80=A6why do we put up with on-call at all?
+
+Required reading for anyone who=E2=80=99s on call or manages folks that ar=
+e on call.
+
+Sarah Mei
+
+Why SRE Documents Matter (https://cacm.acm.org/magazines/2018/12/232897-wh=
+y-sre-documents-matter/fulltext)
+
+If you manage an SRE team or intend to start one=2C this article will help=
+ you understand the types of documents your team needs to write and why ea=
+ch type is needed=2C allowing you to plan for and prioritize documentation=
+ work along with other team projects.
+
+Shylaja Nukala and Vivek Rau =E2=80=94 ACM Qeueue
+
+
+** Outages
+------------------------------------------------------------
+* Amazon Alexa (https://www.businessinsider.com/amazon-alexa-issues-christ=
+mas-europe-2018-12)
+* Discord (https://discord.statuspage.io/incidents/khyfkdb9q248)
+* Google Cloud (http://status.cloud.google.com/incident/storage/18005#1800=
+5010)
++ Followup post for an incident that occurred on December 21:
+
+The additional load was created by a partially-deployed new feature. A rou=
+tine maintenance operation in combination with this new feature resulted i=
+n an unexpected increase in the load on the metadata store.
+* 911 emergency service in communities across the US (https://www.theinter=
+netpatrol.com/fcc-investigating-centurylink-outage-says-unacceptable/)
++ While visiting the library with my kids=2C my phone (and those of others=
+ around me) blew up with an emergency alert telling me that 911 service wa=
+s down and that I should dial the local police directly. CenturyLink provi=
+des the infrastructure that runs emergency phone services for various area=
+s in the US=2C and they had an extended outage.
+* Snapchat (https://www.express.co.uk/life-style/science-technology/106559=
+3/Snapchat-DOWN-Map-issues-not-working-New-Year)
+* Banner Health electronic health records (https://ehrintelligence.com/new=
+s/banner-health-recovered-from-ehr-downtime-following-network-outage)
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+You are receiving this email because you signed up for the SRE Weekly News=
+letter at sreweekly.com.  Thank you!
+
+Unsubscribe lucas@luitjes.it from this list:
+https://sreweekly.us12.list-manage.com/unsubscribe?u=3D9c8a79a721fa3d63d32=
+e147fe&id=3D24b1f473e5&e=3Db50d1ba9ef&c=3Deaf4076570
+
+Our mailing address is:
+SRE Weekly
+PO Box 253
+South Lancaster=2C MA 01561-0253
+USA
+
+Our telephone:
+
+
+Forward this email to a friend:
+http://us12.forward-to-friend.com/forward?u=3D9c8a79a721fa3d63d32e147fe&id=
+=3Deaf4076570&e=3Db50d1ba9ef
+
+Update your profile:
+https://sreweekly.us12.list-manage.com/profile?u=3D9c8a79a721fa3d63d32e147=
+fe&id=3D24b1f473e5&e=3Db50d1ba9ef
+--_----------=_MCPart_1410488280
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<a href=3D"http://sreweekly.com/sre-weekly-issue-154/" title=3D"Permalink=
+ to SRE Weekly Issue #154" class=3D"email_only">View on sreweekly.com</a>
+<div class=3D"sreweekly-sponsor-message" style=3D"border: 1px solid #b0b0b=
+0; padding-left: 1rem; padding-right: 1rem; width: 80%; align: center; mar=
+gin: 2rem auto 2rem auto;">
+<h2 style=3D"text-align: center; font-size: 80%; color: #909090;">A messag=
+e from our sponsor=2C VictorOps:</h2>
+<p>The golden signals of SRE will help you create visibility into system h=
+ealth and allow you to proactively build robust services. See how you can=
+ start leveraging SRE=E2=80=99s golden signals today:</p>
+<p><a href=3D"http://try.victorops.com/sreweekly/sre-golden-signals">http:=
+//try.victorops.com/sreweekly/sre-golden-signals</a></p>
+</div>
+<h2>Articles</h2>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://www.hillelwayne.com/post=
+/stamping-on-eventstream/" target=3D"_blank">STAMPing on event-stream</a><=
+/div>
+<div class=3D"sreweekly-description">
+<p>Hands-down the best thing I&#8217;ve read in awhile! The author draws o=
+n the work of Nancy Leveson=2C applying her STAMP theory to a recent incid=
+ent involving a rogue NPM package that stole bitcoin wallets.</p>
+<p><small>Hillel Wayne</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://shemesh.larc.nasa.gov/ir=
+ia03/p13-leveson.pdf" target=3D"_blank">Applying STAMP in Accident Analysi=
+s</a></div>
+<div class=3D"sreweekly-description">
+<p>For more on STAMP theory (Systems-Theoretic Accident Modeling and Proce=
+sses)=2C check out this academic paper by Leveson et al. It centers around=
+ a chilling case study of the <i>e. coli</i> poisoning of a community in C=
+anada. While starts off looking to be a clear case of negligence=2C it qui=
+ckly becomes apparent that an accident of this sort was nearly guaranteed=
+ to happen.</p>
+<p><small>Nancy Leveson=2C Mirna Daouk=2C Nicolas Dulac=2C and Karen Marai=
+s</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://community.atlassian.com/=
+t5/Jira-Ops-questions/I-m-John-Allspaw-Ask-Me-Anything-about-incident-anal=
+ysis-and/qaq-p/957084" target=3D"_blank"> I&#8217;m John Allspaw=2C Ask Me=
+ Anything about incident analysis and postmortems</a></div>
+<div class=3D"sreweekly-description">
+<p>It&#8217;s pretty much as awesome as you&#8217;d expect given that titl=
+e. I originally thought this was a video or audio AMA and was waiting for=
+ a recording to be posted. Instead=2C he answered the excellent questions=
+ in the comments=2C and each answer is like its own polished article.</p>
+<p><small>John Allspaw (and many commenters)</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://twitter.com/sarahmei/sta=
+tus/1078475018294616065" target=3D"_blank">Sarah Mei on Twitter: compensat=
+ion for on-call</a></div>
+<div class=3D"sreweekly-description">
+<blockquote><p>My fundamental issue with being on call is that I care more=
+ about my personal life &amp; health than I do about whether my employer=
+=E2=80=99s website is operational.</p>
+<p>I assume everyone does! So&#8230;why do we put up with on-call at all?<=
+/p></blockquote>
+<p>Required reading for anyone who&#8217;s on call or manages folks that a=
+re on call.</p>
+<p><small>Sarah Mei</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://cacm.acm.org/magazines/2=
+018/12/232897-why-sre-documents-matter/fulltext" target=3D"_blank">Why SRE=
+ Documents Matter</a></div>
+<div class=3D"sreweekly-description">
+<blockquote><p>If you manage an SRE team or intend to start one=2C this ar=
+ticle will help you understand the types of documents your team needs to w=
+rite and why each type is needed=2C allowing you to plan for and prioritiz=
+e documentation work along with other team projects.</p></blockquote>
+<p><small>Shylaja Nukala and Vivek Rau =E2=80=94 ACM Qeueue</small></p>
+</div>
+</div>
+<h2>Outages</h2>
+<ul class=3D"sreweekly-outages">
+<li><a href=3D"https://www.businessinsider.com/amazon-alexa-issues-christm=
+as-europe-2018-12"> Amazon Alexa</a></li>
+<li><a href=3D"https://discord.statuspage.io/incidents/khyfkdb9q248">Disco=
+rd</a></li>
+<li><a href=3D"http://status.cloud.google.com/incident/storage/18005#18005=
+010">Google Cloud</a>
+<ul class=3D"sreweekly-outage">
+<li class=3D"sreweekly-outage">Followup post for an incident that occurred=
+ on December 21:<br />
+<blockquote><p>The additional load was created by a partially-deployed new=
+ feature. A routine maintenance operation in combination with this new fea=
+ture resulted in an unexpected increase in the load on the metadata store.=
+</p></blockquote>
+</li>
+</ul>
+</li>
+<li><a href=3D"https://www.theinternetpatrol.com/fcc-investigating-century=
+link-outage-says-unacceptable/">911 emergency service in communities acros=
+s the US</a>
+<ul class=3D"sreweekly-outage">
+<li class=3D"sreweekly-outage">While visiting the library with my kids=2C=
+ my phone (and those of others around me) blew up with an emergency alert=
+ telling me that 911 service was down and that I should dial the local pol=
+ice directly. CenturyLink provides the infrastructure that runs emergency=
+ phone services for various areas in the US=2C and they had an extended ou=
+tage.</li>
+</ul>
+</li>
+<li><a href=3D"https://www.express.co.uk/life-style/science-technology/106=
+5593/Snapchat-DOWN-Map-issues-not-working-New-Year">Snapchat</a></li>
+<li><a href=3D"https://ehrintelligence.com/news/banner-health-recovered-fr=
+om-ehr-downtime-following-network-outage">Banner Health electronic health=
+ records</a></li>
+</ul>            <center>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" id=3D"canspamBarWrapper" style=3D"background-color:#FFFFFF; b=
+order-top:1px solid #E5E5E5;">
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng-top:20px; padding-bottom:20px;">
+                            <table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" id=3D"canspamBar">
+                                <tr>
+                                    <td align=3D"center" valign=3D"top" st=
+yle=3D"color:#606060; font-family:Helvetica=2C Arial=2C sans-serif; font-s=
+ize:11px; line-height:150%; padding-right:20px; padding-bottom:5px; paddin=
+g-left:20px; text-align:center;">
+                                        This email was sent to <a href=3D"=
+mailto:lucas@luitjes.it" target=3D"_blank" style=3D"color:#404040 !importa=
+nt;">lucas@luitjes.it</a>
+                                        <br />
+                                        <a href=3D"https://sreweekly.us12.=
+list-manage.com/about?u=3D9c8a79a721fa3d63d32e147fe&id=3D24b1f473e5&e=3D=
+b50d1ba9ef&c=3Deaf4076570" target=3D"_blank" style=3D"color:#404040 !important=
+;"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"http=
+s://sreweekly.us12.list-manage.com/unsubscribe?u=3D9c8a79a721fa3d63d32e147=
+fe&id=3D24b1f473e5&e=3Db50d1ba9ef&c=3Deaf4076570" style=3D"color:#404040 !im=
+portant;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D=
+"https://sreweekly.us12.list-manage.com/profile?u=3D9c8a79a721fa3d63d32e14=
+7fe&id=3D24b1f473e5&e=3Db50d1ba9ef" style=3D"color:#404040 !important;">upda=
+te subscription preferences</a>
+                                        <br />
+                                        SRE Weekly &middot; PO Box 253 &mi=
+ddot; South Lancaster=2C MA 01561-0253 &middot; USA
+                                        <br />
+                                        <br />
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <style type=3D"text/css">
+                    @media only screen and (max-width: 480px){
+                        table#canspamBar td{font-size:14px !important;}
+                        table#canspamBar td a{display:block !important; ma=
+rgin-top:10px !important;}
+                    }
+                </style>
+            </center><img src=3D"https://sreweekly.us12.list-manage.com/tr=
+ack/open.php?u=3D9c8a79a721fa3d63d32e147fe&id=3Deaf4076570&e=3Db50d1ba9ef=
+" height=3D"1" width=3D"1">
+--_----------=_MCPart_1410488280--

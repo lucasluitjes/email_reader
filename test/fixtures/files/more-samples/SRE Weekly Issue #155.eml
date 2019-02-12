@@ -1,0 +1,454 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Sun, 13 Jan 2019 20:26:12 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounce-mc.us12_50324829.1355893-lucas=luitjes.it@mail173.atl241.mcsv.net>
+Received: from 205.237.194.28
+	by m8.mxes.net (bayesd) with LMTP id 1547429172-39456-2
+	for <lucas_mindrules.net@ms8.mxes.net>; Sun, 13 Jan 2019 20:26:12 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-06.mxes.net (Postfix) with ESMTP id 1220D275AD
+	for <lucas@luitjes.it>; Sun, 13 Jan 2019 20:26:12 -0500 (EST)
+Received: from mail173.atl241.mcsv.net (mail173.atl241.mcsv.net [198.2.141.173])
+	by mxin.mxes.net (Postfix) with ESMTP id 2A6542751C
+	for <lucas@luitjes.it>; Sun, 13 Jan 2019 20:26:10 -0500 (EST)
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=sreweekly.com header.i=lex@sreweekly.com header.b=b94hdwU2
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=sreweekly.com;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+ Content-Type:MIME-Version; i=lex@sreweekly.com;
+ bh=XKMeSX/sbo1z8uJMAPHXGHbOu6NaXl4JZodZp2WQ6v8=;
+ b=b94hdwU20Ybhu81gbhtxyIXgMD/msmye9PFHJ4KrsM7X48RsGOVq8otHzI2cMHgVMxbpHNSs1C/N
+   c2g/VsLHdufvot/+EtDG8AHUJ46rvam0J/Wc/fWxH17NbpooVnximyucmmN9lErCQoAW1XD4/rkw
+   TgComRn8u/QuMIjUkCU=
+Received: from (127.0.0.1) by mail173.atl241.mcsv.net id h7fij42ddl4f for <lucas@luitjes.it>; Mon, 14 Jan 2019 01:26:01 +0000 (envelope-from <bounce-mc.us12_50324829.1355893-lucas=luitjes.it@mail173.atl241.mcsv.net>)
+Subject: =?utf-8?Q?SRE=20Weekly=20Issue=20#155?=
+From: =?utf-8?Q?Lex=20Neva?= <lex@sreweekly.com>
+Reply-To: =?utf-8?Q?Lex=20Neva?= <lex@sreweekly.com>
+To: =?utf-8?Q?SRE=20Weekly=20Newsletter?= <lucas@luitjes.it>
+Date: Mon, 14 Jan 2019 01:26:01 +0000
+Message-ID: <9c8a79a721fa3d63d32e147fe.b50d1ba9ef.20190114012547.e0943be48b.41875fc5@mail173.atl241.mcsv.net>
+X-Mailer: MailChimp Mailer - **CIDe0943be48bb50d1ba9ef**
+X-Campaign: mailchimp9c8a79a721fa3d63d32e147fe.e0943be48b
+X-campaignid: mailchimp9c8a79a721fa3d63d32e147fe.e0943be48b
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=9c8a79a721fa3d63d32e147fe&id=e0943be48b&e=b50d1ba9ef
+X-MC-User: 9c8a79a721fa3d63d32e147fe
+Feedback-ID: 50324829:50324829.1355893:us12:mc
+List-ID: 9c8a79a721fa3d63d32e147femc list <9c8a79a721fa3d63d32e147fe.64717.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <https://sreweekly.us12.list-manage.com/unsubscribe?u=9c8a79a721fa3d63d32e147fe&id=24b1f473e5&e=b50d1ba9ef&c=e0943be48b>, <mailto:unsubscribe-mc.us12_9c8a79a721fa3d63d32e147fe.e0943be48b-b50d1ba9ef@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1907606360"
+MIME-Version: 1.0
+X-Virus-Scanned: ClamAV
+X-Spam-Sys-BayesResult: No, 0.054591
+X-Spam-Scanner: 1547429170-498-1
+X-Spam-Report: Content analysis details:
+ -10.0 BAYESSCORE             0.000001
+   3.5 URIBL_SPAMSOURCES      Contains an URL listed in the spamsources.mxes.net blocklist
+     [URIs: govavailability.info]
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [198.2.141.173 listed in dnswl.mxes.net]
+   0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   1.0 URI_TRY_3LD            URI: "Try it" URI, suspicious hostname
+   0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or Formatted Colors in HTML
+   0.0 MIME_QP_LONG_LINE      RAW: Quoted-printable line longer than 76 chars
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+  -2.5 SYSTEM_BAYES           No 0.054591
+   0.0 HTML_MESSAGE           HTML included in message
+   0.2 SPF_MECH_2             Permissive SPF record ?all
+   0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail domains are different
+  -1.7 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 3
+X-Spam-SI: 1
+X-Originating-IP: 198.2.141.173
+X-Reputation-Delta: -1.7
+X-Envelope-To: <lucas@luitjes.it>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-9.5 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.000001
+X-Spam-Score: -9.5
+X-Spam-Scoring: 0,0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1907606360
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+View on sreweekly.com (http://sreweekly.com/sre-weekly-issue-155/)
+
+
+** A message from our sponsor=2C VictorOps:
+------------------------------------------------------------
+
+Machine learning and AI are becoming integrated into numerous services and=
+ applications across industries. See how SRE and DevOps teams can leverage=
+ MLOps to help shorten the incident lifecycle and maintain highly reliable=
+ systems:
+
+http://try.victorops.com/sreweekly/mlops-incident-lifecycle
+
+
+** Articles
+------------------------------------------------------------
+
+Developer On Call (https://henrikwarne.com/2018/12/03/developer-on-call/)
+
+A developer=E2=80=99s perspective on why being on call is important and ho=
+w to structure it fairly (hint: compensation).
+
+Henrik Warne
+
+Interpreting Kafka=E2=80=99s Exactly-Once Semantics (https://dzone.com/art=
+icles/interpreting-kafkas-exactly-once-semantics)
+
+The Conclusion section sums it up nicely:
+
+In this post=2C we talked about various delivery guarantee semantics such=
+ as at-least-once=2C at-most-once=2C and exactly-once. We also talked abou=
+t why exactly-once is important=2C the issues in the way of achieving exac=
+tly-once=2C and how Kafka supports it out-of-the-box with a simple configu=
+ration and minimal coding.
+
+Rahul Agarwal =E2=80=94 DZone
+
+DevOps Discussions: Postmortem Chat =E2=80=93 Part 1 (YouTube) (https://ww=
+w.youtube.com/watch?v=3DTkA6u8qEugc&feature=3Dyoutu.be)
+
+This is a riveting discussion about retrospective analysis of incidents=2C=
+ hosted by Microsoft. Throughout the discussion=2C there=E2=80=99s an emph=
+asis on learning from incidents as opposed to simply coming up with action=
+ items.
+
+Note: one of the panelists is my fellow employee at Fastly.
+
+Jessica DeVita =E2=80=94 Microsoft=2C with Duck Lawn (Pushpay)=2C Tom Grif=
+fin (Pushpay)=2C Sue Allspaw Pomeroy (Fastly)=2C John Allspaw (Adaptive Ca=
+patacity Labs) and Dr. Richard Cook (Adaptive Capacity Labs)
+
+An Agile SRE Meeting Plan (https://tech.mangot.com/blog/2019/01/09/an-agil=
+e-sre-meeting-plan/)
+
+If you=E2=80=99re looking for a blueprint of how to structure your SRE org=
+anization=E2=80=99s meetings=2C this is a great resource.
+
+Dave Mangot
+
+Designing resilient systems: Circuit Breakers or Retries? (Part 2) (https:=
+//engineering.grab.com/designing-resilient-systems-part-2)
+
+This post is the second part of the series on Designing Resilient Systems.=
+ In Part 1=2C we looked at use cases for implementing circuit breakers. In=
+ this second part=2C we will do a deep dive on retries and its use cases=
+=2C followed by a technical comparison of both approaches.
+
+This article is really thorough and includes a section on combining retrie=
+s with circuit breakers.
+
+Corey Scott =E2=80=94 Grab
+
+Towards Successful Resilient Software Design (https://www.infoq.com/articl=
+es/towards-resilient-software-design)
+
+The problem is that most advice how to =E2=80=9Cget design right=E2=80=9D=
+ only applies to design inside a process boundary. Most of those advices d=
+o not work well if applied to distributed systems.
+
+What I have learnt over time is that we basically need to re-learn how to=
+ design systems=2C i.e.=2C how to spread the functionality in a distribute=
+d environment.
+
+Uwe Friedrichsen =E2=80=94 InfoQ
+
+Courier: Dropbox migration to gRPC (https://blogs.dropbox.com/tech/2019/01=
+/courier-dropbox-migration-to-grpc/)
+
+This really stood out to me:
+
+In practice=2C we have fixed whole classes of reliability problems by forc=
+ing engineers to define deadlines in their service definitions.
+
+Ruslan Nigmatullin and Alexey Ivanov =E2=80=94 Dropbox
+
+
+** Outages
+------------------------------------------------------------
+* Fastly (https://status.fastly.com/incidents/w9f6c4krv5yt)
++ Fastly had the above issue in its MDW PoP and also a repeat (https://sta=
+tus.fastly.com/incidents/70p9g66n5k9x) .
+Full disclosure: Fastly is my employer.
+* Zoom (https://status.zoom.us/incidents/7mcj28xfdhh1)
+* Slack (https://status.slack.com/2019-01/65dd2378d9565469)
++ Android notifications were busted.
+* Gov Availability (https://govavailability.info/)
++ This site shows a live-updated availability percentage for the US Govern=
+ment. As of now=2C the =E2=80=9CThis Year=E2=80=9D percentage is stuck at=
+ infinite zeroes (due to our current government shutdown). On a less tongu=
+e-in-cheek note=2C lots of US Government sites have expired TLS certificat=
+es (https://news.netcraft.com/archives/2019/01/10/gov-security-falters-dur=
+ing-u-s-shutdown.html) because employees aren=E2=80=99t there to renew the=
+m.
+* Duo Security (https://status.duo.com/incidents/mbc689bdjmy8)
+* Azure Storage (UK south region) (https://www.theregister.co.uk/2019/01/1=
+0/microsoft_uk_south_wobble/)
+* GitHub (https://www.githubstatus.com/incidents/6rbyhd6vrc0k)
+* Reddit (https://reddit.statuspage.io/incidents/zw6khxbl5qk2)
+* YouTube (https://9to5google.com/2019/01/08/psa-youtube-down/)
+* Tinder (https://www.cnet.com/news/tinder-down-for-some-users-looking-to-=
+swipe-this-morning/)
+* Google Cloud Platform (various API functions) (http://status.cloud.googl=
+e.com/incident/appengine/19001#19001008)
++
+
+Google engineers began rolling out a new feature designed to improve the f=
+ault-tolerance of the metadata store.
+Ironically=2C that rollout took down the metadata store.
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+You are receiving this email because you signed up for the SRE Weekly News=
+letter at sreweekly.com.  Thank you!
+
+Unsubscribe lucas@luitjes.it from this list:
+https://sreweekly.us12.list-manage.com/unsubscribe?u=3D9c8a79a721fa3d63d32=
+e147fe&id=3D24b1f473e5&e=3Db50d1ba9ef&c=3De0943be48b
+
+Our mailing address is:
+SRE Weekly
+PO Box 253
+South Lancaster=2C MA 01561-0253
+USA
+
+Our telephone:
+
+
+Forward this email to a friend:
+http://us12.forward-to-friend.com/forward?u=3D9c8a79a721fa3d63d32e147fe&id=
+=3De0943be48b&e=3Db50d1ba9ef
+
+Update your profile:
+https://sreweekly.us12.list-manage.com/profile?u=3D9c8a79a721fa3d63d32e147=
+fe&id=3D24b1f473e5&e=3Db50d1ba9ef
+--_----------=_MCPart_1907606360
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<a href=3D"http://sreweekly.com/sre-weekly-issue-155/" title=3D"Permalink=
+ to SRE Weekly Issue #155" class=3D"email_only">View on sreweekly.com</a>
+<div class=3D"sreweekly-sponsor-message" style=3D"border: 1px solid #b0b0b=
+0; padding-left: 1rem; padding-right: 1rem; width: 80%; align: center; mar=
+gin: 2rem auto 2rem auto;">
+<h2 style=3D"text-align: center; font-size: 80%; color: #909090;">A messag=
+e from our sponsor=2C VictorOps:</h2>
+<p>Machine learning and AI are becoming integrated into numerous services=
+ and applications across industries. See how SRE and DevOps teams can leve=
+rage MLOps to help shorten the incident lifecycle and maintain highly reli=
+able systems:</p>
+<p><a href=3D"http://try.victorops.com/sreweekly/mlops-incident-lifecycle"=
+>http://try.victorops.com/sreweekly/mlops-incident-lifecycle</a></p>
+</div>
+<h2>Articles</h2>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://henrikwarne.com/2018/12/=
+03/developer-on-call/" target=3D"_blank">Developer On Call</a></div>
+<div class=3D"sreweekly-description">
+<p>A developer&#8217;s perspective on why being on call is important and h=
+ow to structure it fairly (hint: compensation).</p>
+<p><small>Henrik Warne</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://dzone.com/articles/inter=
+preting-kafkas-exactly-once-semantics" target=3D"_blank">Interpreting Kafk=
+a&#8217;s Exactly-Once Semantics</a></div>
+<div class=3D"sreweekly-description">
+<p>The Conclusion section sums it up nicely:</p>
+<blockquote><p>In this post=2C we talked about various delivery guarantee=
+ semantics such as at-least-once=2C at-most-once=2C and exactly-once. We a=
+lso talked about why exactly-once is important=2C the issues in the way of=
+ achieving exactly-once=2C and how Kafka supports it out-of-the-box with a=
+ simple configuration and minimal coding.</p></blockquote>
+<p><small> Rahul Agarwal =E2=80=94 DZone</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://www.youtube.com/watch?v=
+=3DTkA6u8qEugc&feature=3Dyoutu.be" target=3D"_blank">DevOps Discussions: P=
+ostmortem Chat &#8211; Part 1 (YouTube)</a></div>
+<div class=3D"sreweekly-description">
+<p>This is a riveting discussion about retrospective analysis of incidents=
+=2C hosted by Microsoft. Throughout the discussion=2C there&#8217;s an emp=
+hasis on learning from incidents as opposed to simply coming up with actio=
+n items.</p>
+<p><small><em>Note: one of the panelists is my fellow employee at Fastly.<=
+/em></small></p>
+<p><small>Jessica DeVita =E2=80=94 Microsoft=2C with Duck Lawn (Pushpay)=
+=2C Tom Griffin (Pushpay)=2C Sue Allspaw Pomeroy (Fastly)=2C John Allspaw=
+ (Adaptive Capatacity Labs) and Dr. Richard Cook (Adaptive Capacity Labs)<=
+/small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://tech.mangot.com/blog/201=
+9/01/09/an-agile-sre-meeting-plan/" target=3D"_blank">An Agile SRE Meeting=
+ Plan</a></div>
+<div class=3D"sreweekly-description">
+<p>If you&#8217;re looking for a blueprint of how to structure your SRE or=
+ganization&#8217;s meetings=2C this is a great resource.</p>
+<p><small> Dave Mangot</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://engineering.grab.com/des=
+igning-resilient-systems-part-2" target=3D"_blank">Designing resilient sys=
+tems: Circuit Breakers or Retries? (Part 2)</a></div>
+<div class=3D"sreweekly-description">
+<blockquote><p>This post is the second part of the series on Designing Res=
+ilient Systems. In Part 1=2C we looked at use cases for implementing circu=
+it breakers. In this second part=2C we will do a deep dive on retries and=
+ its use cases=2C followed by a technical comparison of both approaches.</=
+p></blockquote>
+<p>This article is really thorough and includes a section on combining ret=
+ries with circuit breakers.</p>
+<p><small>Corey Scott =E2=80=94 Grab</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://www.infoq.com/articles/t=
+owards-resilient-software-design" target=3D"_blank">Towards Successful Res=
+ilient Software Design</a></div>
+<div class=3D"sreweekly-description">
+<blockquote><p>The problem is that most advice how to =E2=80=9Cget design=
+ right=E2=80=9D only applies to design inside a process boundary. Most of=
+ those advices do not work well if applied to distributed systems.</p>
+<p>What I have learnt over time is that we basically need to re-learn how=
+ to design systems=2C i.e.=2C how to spread the functionality in a distrib=
+uted environment.</p></blockquote>
+<p><small>Uwe Friedrichsen =E2=80=94 InfoQ</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://blogs.dropbox.com/tech/2=
+019/01/courier-dropbox-migration-to-grpc/" target=3D"_blank">Courier: Drop=
+box migration to gRPC</a></div>
+<div class=3D"sreweekly-description">
+<p>This really stood out to me:</p>
+<blockquote><p>In practice=2C we have fixed whole classes of reliability p=
+roblems by forcing engineers to define deadlines in their service definiti=
+ons.</p></blockquote>
+<p><small>Ruslan Nigmatullin and Alexey Ivanov =E2=80=94 Dropbox</small></=
+p>
+</div>
+</div>
+<h2>Outages</h2>
+<ul class=3D"sreweekly-outages">
+<li><a href=3D"https://status.fastly.com/incidents/w9f6c4krv5yt">Fastly</a=
+>
+<ul class=3D"sreweekly-outage">
+<li class=3D"sreweekly-outage">Fastly had the above issue in its MDW PoP a=
+nd also a <a href=3D"https://status.fastly.com/incidents/70p9g66n5k9x">rep=
+eat</a>.
+<p><small><em>Full disclosure: Fastly is my employer.</em></small></li>
+</ul>
+</li>
+<li><a href=3D"https://status.zoom.us/incidents/7mcj28xfdhh1">Zoom</a></li=
+>
+<li><a href=3D"https://status.slack.com/2019-01/65dd2378d9565469">Slack</a=
+>
+<ul class=3D"sreweekly-outage">
+<li class=3D"sreweekly-outage">Android notifications were busted.</li>
+</ul>
+</li>
+<li><a href=3D"https://govavailability.info/">Gov Availability</a>
+<ul class=3D"sreweekly-outage">
+<li class=3D"sreweekly-outage">This site shows a live-updated availability=
+ percentage for the US Government. As of now=2C the &#8220;This Year&#8221=
+; percentage is stuck at infinite zeroes (due to our current government sh=
+utdown). On a less tongue-in-cheek note=2C lots of US Government sites hav=
+e <a href=3D"https://news.netcraft.com/archives/2019/01/10/gov-security-fa=
+lters-during-u-s-shutdown.html">expired TLS certificates</a> because emplo=
+yees aren&#8217;t there to renew them.</li>
+</ul>
+</li>
+<li><a href=3D"https://status.duo.com/incidents/mbc689bdjmy8">Duo Security=
+</a></li>
+<li><a href=3D"https://www.theregister.co.uk/2019/01/10/microsoft_uk_south=
+_wobble/">Azure Storage (UK south region)</a></li>
+<li><a href=3D"https://www.githubstatus.com/incidents/6rbyhd6vrc0k">GitHub=
+</a></li>
+<li><a href=3D"https://reddit.statuspage.io/incidents/zw6khxbl5qk2">Reddit=
+</a></li>
+<li><a href=3D"https://9to5google.com/2019/01/08/psa-youtube-down/">YouTub=
+e</a></li>
+<li><a href=3D"https://www.cnet.com/news/tinder-down-for-some-users-lookin=
+g-to-swipe-this-morning/">Tinder</a></li>
+<li><a href=3D"http://status.cloud.google.com/incident/appengine/19001#190=
+01008">Google Cloud Platform (various API functions)</a>
+<ul class=3D"sreweekly-outage">
+<li class=3D"sreweekly-outage">
+<blockquote><p>Google engineers began rolling out a new feature designed t=
+o improve the fault-tolerance of the metadata store.</p></blockquote>
+<p>Ironically=2C that rollout took down the metadata store.</li>
+</ul>
+</li>
+</ul>            <center>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" id=3D"canspamBarWrapper" style=3D"background-color:#FFFFFF; b=
+order-top:1px solid #E5E5E5;">
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng-top:20px; padding-bottom:20px;">
+                            <table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" id=3D"canspamBar">
+                                <tr>
+                                    <td align=3D"center" valign=3D"top" st=
+yle=3D"color:#606060; font-family:Helvetica=2C Arial=2C sans-serif; font-s=
+ize:11px; line-height:150%; padding-right:20px; padding-bottom:5px; paddin=
+g-left:20px; text-align:center;">
+                                        This email was sent to <a href=3D"=
+mailto:lucas@luitjes.it" target=3D"_blank" style=3D"color:#404040 !importa=
+nt;">lucas@luitjes.it</a>
+                                        <br />
+                                        <a href=3D"https://sreweekly.us12.=
+list-manage.com/about?u=3D9c8a79a721fa3d63d32e147fe&id=3D24b1f473e5&e=3D=
+b50d1ba9ef&c=3De0943be48b" target=3D"_blank" style=3D"color:#404040 !important=
+;"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"http=
+s://sreweekly.us12.list-manage.com/unsubscribe?u=3D9c8a79a721fa3d63d32e147=
+fe&id=3D24b1f473e5&e=3Db50d1ba9ef&c=3De0943be48b" style=3D"color:#404040 !im=
+portant;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D=
+"https://sreweekly.us12.list-manage.com/profile?u=3D9c8a79a721fa3d63d32e14=
+7fe&id=3D24b1f473e5&e=3Db50d1ba9ef" style=3D"color:#404040 !important;">upda=
+te subscription preferences</a>
+                                        <br />
+                                        SRE Weekly &middot; PO Box 253 &mi=
+ddot; South Lancaster=2C MA 01561-0253 &middot; USA
+                                        <br />
+                                        <br />
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <style type=3D"text/css">
+                    @media only screen and (max-width: 480px){
+                        table#canspamBar td{font-size:14px !important;}
+                        table#canspamBar td a{display:block !important; ma=
+rgin-top:10px !important;}
+                    }
+                </style>
+            </center><img src=3D"https://sreweekly.us12.list-manage.com/tr=
+ack/open.php?u=3D9c8a79a721fa3d63d32e147fe&id=3De0943be48b&e=3Db50d1ba9ef=
+" height=3D"1" width=3D"1">
+--_----------=_MCPart_1907606360--

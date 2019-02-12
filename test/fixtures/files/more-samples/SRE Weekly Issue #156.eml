@@ -1,0 +1,316 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Sun, 20 Jan 2019 20:12:12 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounce-mc.us12_50324829.1355897-lucas=luitjes.it@mail190.wdc02.mcdlv.net>
+Received: from 205.237.194.28
+	by m8.mxes.net (bayesd) with LMTP id 1548033132-96584-6
+	for <lucas_mindrules.net@ms8.mxes.net>; Sun, 20 Jan 2019 20:12:12 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-06.mxes.net (Postfix) with ESMTP id DBFB827600
+	for <lucas@luitjes.it>; Sun, 20 Jan 2019 20:12:11 -0500 (EST)
+Received: from mail190.wdc02.mcdlv.net (mail190.wdc02.mcdlv.net [205.201.130.190])
+	by mxin.mxes.net (Postfix) with ESMTP id 4D35827571
+	for <lucas@luitjes.it>; Sun, 20 Jan 2019 20:12:10 -0500 (EST)
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=sreweekly.com header.i=lex@sreweekly.com header.b=LkhLzsJ5
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=sreweekly.com;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+ Content-Type:MIME-Version; i=lex@sreweekly.com;
+ bh=3tX2+Nm25G4Fkp68eCPNhV79oIwL3N5T+DDYZdDw9qM=;
+ b=LkhLzsJ5Xhefxit5OBck2G2Gaycq1tsqyySCec7ZUyrYWU8LpyOTvkJIovKtnk9FTSFfvnZbCNKF
+   ubku+/+GYis2kZF0IT1c0RmEdlfPp+5rdrPKJgr9JNVmOw7WalCvHzekj+B+a4sILHH6RtO5zwKW
+   FiT24Y8j+f2oXncl+r0=
+Received: from (127.0.0.1) by mail190.wdc02.mcdlv.net id h8ke6k2ddl42 for <lucas@luitjes.it>; Mon, 21 Jan 2019 01:12:01 +0000 (envelope-from <bounce-mc.us12_50324829.1355897-lucas=luitjes.it@mail190.wdc02.mcdlv.net>)
+Subject: =?utf-8?Q?SRE=20Weekly=20Issue=20#156?=
+From: =?utf-8?Q?Lex=20Neva?= <lex@sreweekly.com>
+Reply-To: =?utf-8?Q?Lex=20Neva?= <lex@sreweekly.com>
+To: =?utf-8?Q?SRE=20Weekly=20Newsletter?= <lucas@luitjes.it>
+Date: Mon, 21 Jan 2019 01:12:01 +0000
+Message-ID: <9c8a79a721fa3d63d32e147fe.b50d1ba9ef.20190121011147.ccf4d83176.b9700835@mail190.wdc02.mcdlv.net>
+X-Mailer: MailChimp Mailer - **CIDccf4d83176b50d1ba9ef**
+X-Campaign: mailchimp9c8a79a721fa3d63d32e147fe.ccf4d83176
+X-campaignid: mailchimp9c8a79a721fa3d63d32e147fe.ccf4d83176
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=9c8a79a721fa3d63d32e147fe&id=ccf4d83176&e=b50d1ba9ef
+X-MC-User: 9c8a79a721fa3d63d32e147fe
+Feedback-ID: 50324829:50324829.1355897:us12:mc
+List-ID: 9c8a79a721fa3d63d32e147femc list <9c8a79a721fa3d63d32e147fe.64717.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <https://sreweekly.us12.list-manage.com/unsubscribe?u=9c8a79a721fa3d63d32e147fe&id=24b1f473e5&e=b50d1ba9ef&c=ccf4d83176>, <mailto:unsubscribe-mc.us12_9c8a79a721fa3d63d32e147fe.ccf4d83176-b50d1ba9ef@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1584529631"
+MIME-Version: 1.0
+X-Virus-Scanned: ClamAV
+X-Spam-Sys-BayesResult: Yes, 1.000000
+X-Spam-Scanner: 1548033130-21784-1
+X-Spam-Report: Content analysis details:
+ -10.0 BAYESSCORE             0.000000
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [205.201.130.190 listed in dnswl.mxes.net]
+   0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   1.0 URI_TRY_3LD            URI: "Try it" URI, suspicious hostname
+   0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or Formatted Colors in HTML
+   0.0 MIME_QP_LONG_LINE      RAW: Quoted-printable line longer than 76 chars
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   5.5 SYSTEM_BAYES           Yes 1.000000
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+   0.2 SPF_MECH_2             Permissive SPF record ?all
+   0.0 HTML_MESSAGE           HTML included in message
+   0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail domains are different
+  -4.4 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 0
+X-Spam-SI: 2
+X-Originating-IP: 205.201.130.190
+X-Reputation-Delta: -4.4
+X-Envelope-To: <lucas@luitjes.it>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-7.7 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.000000
+X-Spam-Score: -7.7
+X-Spam-Scoring: 0,0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1584529631
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+View on sreweekly.com (http://sreweekly.com/sre-weekly-issue-156/)
+
+
+** A message from our sponsor=2C VictorOps:
+------------------------------------------------------------
+
+DevOps and SRE go hand-in-hand. See how building a DevOps culture of trans=
+parency and collaboration can inherently lead to proactive SRE efforts =E2=
+=80=93 and ultimately=2C more reliable systems:
+
+http://try.victorops.com/sreweekly/devops-leads-to-inherent-sre
+
+
+** Articles
+------------------------------------------------------------
+
+Introducing the Redesigned Twilio Status Page (https://www.twilio.com/blog=
+/introducing-redesigned-twilio-status-page)
+
+Lots of companies seem to be redesigning their status pages lately. I love=
+ learning what was wrong with the old one and what they=E2=80=99ve changed=
+ to try to fix it.
+
+Benjamin Stein =E2=80=94 Twilio
+
+On Infrastructure at Scale: A Cascading Failure of Distributed Systems (ht=
+tps://medium.com/@daniel.p.woods/on-infrastructure-at-scale-a-cascading-fa=
+ilure-of-distributed-systems-7cff2a3cd2df)
+
+A cringe-worthy story of a system failure (thankfully not production!) alo=
+ng with some ideas on preventing such failures.
+
+Dan Woods
+
+SRE Survey 2019 (http://www.sresurvey2019.com/)
+
+Just like last year=2C Catchpoint will donate $5 to charity if you take th=
+eir survey!
+
+This year we are back with a focus on outages and incidents. What impact d=
+o incidents have on the organization and the people responding to the inci=
+dents? How does this change across industry and organization?
+
+Catchpoint
+
+The Myth of the Server=E2=80=99s Terrible=2C Horrible=2C No Good=2C Very B=
+ad Day (https://lightstep.com/blog/myth-server-bad-day-latency/)
+
+You can do a lot better than =E2=80=9Cthe server is unhappy.=E2=80=9D Be o=
+n the lookout for language like that. It=E2=80=99s usually a good learning=
+ opportunity or at the very least a good time to fill some gaps in instrum=
+entation.
+
+Arya Asemanfar =E2=80=94 LightStep
+
+
+** Outages
+------------------------------------------------------------
+* Sling TV (https://www.newsweek.com/sling-down-not-working-no-signal-erro=
+r-code-online-server-login-account-1297481)
+* UK=E2=80=99s Criminal Justice Secure eMail system (CJSM) (https://www.th=
+eregister.co.uk/2019/01/18/cjsm_secure_email_court_prosecutors_outage/)
+* Amazon.com (https://www.newsweek.com/amazon-down-outage-error-search-not=
+-working-dog-photos-1294259)
+* Amazon Alexa (https://www.rt.com/news/448922-alexa-down-ignores-users/)
+* Fastly Status =E2=80=93 [Retrospective] Elevated Errors in Ashburn (IAD=
+/BWI/DCA) (https://status.fastly.com/incidents/p17f51x2clnf)
++ Also this one (https://status.fastly.com/incidents/rwq6zbr0pl0v) .Full d=
+isclosure: Fastly is my employer.
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+You are receiving this email because you signed up for the SRE Weekly News=
+letter at sreweekly.com.  Thank you!
+
+Unsubscribe lucas@luitjes.it from this list:
+https://sreweekly.us12.list-manage.com/unsubscribe?u=3D9c8a79a721fa3d63d32=
+e147fe&id=3D24b1f473e5&e=3Db50d1ba9ef&c=3Dccf4d83176
+
+Our mailing address is:
+SRE Weekly
+PO Box 253
+South Lancaster=2C MA 01561-0253
+USA
+
+Our telephone:
+
+
+Forward this email to a friend:
+http://us12.forward-to-friend.com/forward?u=3D9c8a79a721fa3d63d32e147fe&id=
+=3Dccf4d83176&e=3Db50d1ba9ef
+
+Update your profile:
+https://sreweekly.us12.list-manage.com/profile?u=3D9c8a79a721fa3d63d32e147=
+fe&id=3D24b1f473e5&e=3Db50d1ba9ef
+--_----------=_MCPart_1584529631
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<a href=3D"http://sreweekly.com/sre-weekly-issue-156/" title=3D"Permalink=
+ to SRE Weekly Issue #156" class=3D"email_only">View on sreweekly.com</a>
+<div class=3D"sreweekly-sponsor-message" style=3D"border: 1px solid #b0b0b=
+0; padding-left: 1rem; padding-right: 1rem; width: 80%; align: center; mar=
+gin: 2rem auto 2rem auto;">
+<h2 style=3D"text-align: center; font-size: 80%; color: #909090;">A messag=
+e from our sponsor=2C VictorOps:</h2>
+<p>DevOps and SRE go hand-in-hand. See how building a DevOps culture of tr=
+ansparency and collaboration can inherently lead to proactive SRE efforts=
+ =E2=80=93 and ultimately=2C more reliable systems:</p>
+<p><a href=3D"http://try.victorops.com/sreweekly/devops-leads-to-inherent-=
+sre">http://try.victorops.com/sreweekly/devops-leads-to-inherent-sre</a></=
+p>
+</div>
+<h2>Articles</h2>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://www.twilio.com/blog/intr=
+oducing-redesigned-twilio-status-page" target=3D"_blank">Introducing the R=
+edesigned Twilio Status Page</a></div>
+<div class=3D"sreweekly-description">
+<p>Lots of companies seem to be redesigning their status pages lately. I l=
+ove learning what was wrong with the old one and what they&#8217;ve change=
+d to try to fix it.</p>
+<p><small>Benjamin Stein =E2=80=94 Twilio</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://medium.com/@daniel.p.woo=
+ds/on-infrastructure-at-scale-a-cascading-failure-of-distributed-systems-7=
+cff2a3cd2df" target=3D"_blank">On Infrastructure at Scale: A Cascading Fai=
+lure of Distributed Systems</a></div>
+<div class=3D"sreweekly-description">
+<p>A cringe-worthy story of a system failure (thankfully not production!)=
+ along with some ideas on preventing such failures.</p>
+<p><small>Dan Woods</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"http://www.sresurvey2019.com/" t=
+arget=3D"_blank">SRE Survey 2019</a></div>
+<div class=3D"sreweekly-description">
+<p>Just like last year=2C Catchpoint will donate $5 to charity if you take=
+ their survey!</p>
+<blockquote><p>This year we are back with a focus on outages and incidents=
+=2E What impact do incidents have on the organization and the people respond=
+ing to the incidents? How does this change across industry and organizatio=
+n?</p></blockquote>
+<p><small>Catchpoint</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://lightstep.com/blog/myth-=
+server-bad-day-latency/" target=3D"_blank">The Myth of the Server&#8217;s=
+ Terrible=2C Horrible=2C No Good=2C Very Bad Day</a></div>
+<div class=3D"sreweekly-description">
+<blockquote><p>You can do a lot better than =E2=80=9Cthe server is unhappy=
+=2E=E2=80=9D Be on the lookout for language like that. It=E2=80=99s usually=
+ a good learning opportunity or at the very least a good time to fill some=
+ gaps in instrumentation.</p></blockquote>
+<p><small>Arya Asemanfar =E2=80=94 LightStep</small></p>
+</div>
+</div>
+<h2>Outages</h2>
+<ul class=3D"sreweekly-outages">
+<li><a href=3D"https://www.newsweek.com/sling-down-not-working-no-signal-e=
+rror-code-online-server-login-account-1297481">Sling TV</a></li>
+<li><a href=3D"https://www.theregister.co.uk/2019/01/18/cjsm_secure_email_=
+court_prosecutors_outage/">UK&#8217;s Criminal Justice Secure eMail system=
+ (CJSM)</a></li>
+<li><a href=3D"https://www.newsweek.com/amazon-down-outage-error-search-no=
+t-working-dog-photos-1294259">Amazon.com</a></li>
+<li><a href=3D"https://www.rt.com/news/448922-alexa-down-ignores-users/">A=
+mazon Alexa</a></li>
+<li><a href=3D"https://status.fastly.com/incidents/p17f51x2clnf">Fastly St=
+atus &#8211; [Retrospective] Elevated Errors in Ashburn (IAD/BWI/DCA)</a>
+<ul class=3D"sreweekly-outage">
+<li class=3D"sreweekly-outage">Also <a href=3D"https://status.fastly.com/i=
+ncidents/rwq6zbr0pl0v">this one</a>.<small><em>Full disclosure: Fastly is=
+ my employer.</em></small></li>
+</ul>
+</li>
+</ul>            <center>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" id=3D"canspamBarWrapper" style=3D"background-color:#FFFFFF; b=
+order-top:1px solid #E5E5E5;">
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng-top:20px; padding-bottom:20px;">
+                            <table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" id=3D"canspamBar">
+                                <tr>
+                                    <td align=3D"center" valign=3D"top" st=
+yle=3D"color:#606060; font-family:Helvetica=2C Arial=2C sans-serif; font-s=
+ize:11px; line-height:150%; padding-right:20px; padding-bottom:5px; paddin=
+g-left:20px; text-align:center;">
+                                        This email was sent to <a href=3D"=
+mailto:lucas@luitjes.it" target=3D"_blank" style=3D"color:#404040 !importa=
+nt;">lucas@luitjes.it</a>
+                                        <br />
+                                        <a href=3D"https://sreweekly.us12.=
+list-manage.com/about?u=3D9c8a79a721fa3d63d32e147fe&id=3D24b1f473e5&e=3D=
+b50d1ba9ef&c=3Dccf4d83176" target=3D"_blank" style=3D"color:#404040 !important=
+;"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"http=
+s://sreweekly.us12.list-manage.com/unsubscribe?u=3D9c8a79a721fa3d63d32e147=
+fe&id=3D24b1f473e5&e=3Db50d1ba9ef&c=3Dccf4d83176" style=3D"color:#404040 !im=
+portant;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D=
+"https://sreweekly.us12.list-manage.com/profile?u=3D9c8a79a721fa3d63d32e14=
+7fe&id=3D24b1f473e5&e=3Db50d1ba9ef" style=3D"color:#404040 !important;">upda=
+te subscription preferences</a>
+                                        <br />
+                                        SRE Weekly &middot; PO Box 253 &mi=
+ddot; South Lancaster=2C MA 01561-0253 &middot; USA
+                                        <br />
+                                        <br />
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <style type=3D"text/css">
+                    @media only screen and (max-width: 480px){
+                        table#canspamBar td{font-size:14px !important;}
+                        table#canspamBar td a{display:block !important; ma=
+rgin-top:10px !important;}
+                    }
+                </style>
+            </center><img src=3D"https://sreweekly.us12.list-manage.com/tr=
+ack/open.php?u=3D9c8a79a721fa3d63d32e147fe&id=3Dccf4d83176&e=3Db50d1ba9ef=
+" height=3D"1" width=3D"1">
+--_----------=_MCPart_1584529631--

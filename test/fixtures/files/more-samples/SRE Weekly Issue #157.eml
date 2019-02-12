@@ -1,0 +1,392 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Sun, 27 Jan 2019 20:19:48 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounce-mc.us12_50324829.1355901-lucas=luitjes.it@mail134.atl241.mcsv.net>
+Received: from 205.237.194.29
+	by m8.mxes.net (bayesd) with LMTP id 1548638388-55553-8
+	for <lucas_mindrules.net@ms8.mxes.net>; Sun, 27 Jan 2019 20:19:48 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-05.mxes.net (Postfix) with ESMTP id 58E76276E2
+	for <lucas@luitjes.it>; Sun, 27 Jan 2019 20:19:48 -0500 (EST)
+Received: from mail134.atl241.mcsv.net (mail134.atl241.mcsv.net [198.2.141.134])
+	by mxin.mxes.net (Postfix) with ESMTP id 9EC10275C3
+	for <lucas@luitjes.it>; Sun, 27 Jan 2019 20:19:46 -0500 (EST)
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=sreweekly.com header.i=lex@sreweekly.com header.b=r3gwgE0d
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=sreweekly.com;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+ Content-Type:MIME-Version; i=lex@sreweekly.com;
+ bh=erWRsRek8wYKQ/0psW8TLwiDpnzk0ylhaB+iwo15zhM=;
+ b=r3gwgE0djsmw4yrZHZUzHkcYyCR8dWVazNDV3o0uCyFx5Yqb4Oj/xDwTFdtYqpbyvrwaZcd9phOz
+   kmQntmx7yEYATWVQipTtlglspg56kOXEFkTvQvWxNnxUWP+5kUcpVzb60P3UkMquzEePwjCyHPgY
+   bgFH5IQ24pYYEGVQDU8=
+Received: from (127.0.0.1) by mail134.atl241.mcsv.net id h9pcb42ddl4h for <lucas@luitjes.it>; Mon, 28 Jan 2019 01:19:37 +0000 (envelope-from <bounce-mc.us12_50324829.1355901-lucas=luitjes.it@mail134.atl241.mcsv.net>)
+Subject: =?utf-8?Q?SRE=20Weekly=20Issue=20#157?=
+From: =?utf-8?Q?Lex=20Neva?= <lex@sreweekly.com>
+Reply-To: =?utf-8?Q?Lex=20Neva?= <lex@sreweekly.com>
+To: =?utf-8?Q?SRE=20Weekly=20Newsletter?= <lucas@luitjes.it>
+Date: Mon, 28 Jan 2019 01:19:37 +0000
+Message-ID: <9c8a79a721fa3d63d32e147fe.b50d1ba9ef.20190128011924.e957613e2f.6cac7d9f@mail134.atl241.mcsv.net>
+X-Mailer: MailChimp Mailer - **CIDe957613e2fb50d1ba9ef**
+X-Campaign: mailchimp9c8a79a721fa3d63d32e147fe.e957613e2f
+X-campaignid: mailchimp9c8a79a721fa3d63d32e147fe.e957613e2f
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=9c8a79a721fa3d63d32e147fe&id=e957613e2f&e=b50d1ba9ef
+X-MC-User: 9c8a79a721fa3d63d32e147fe
+Feedback-ID: 50324829:50324829.1355901:us12:mc
+List-ID: 9c8a79a721fa3d63d32e147femc list <9c8a79a721fa3d63d32e147fe.64717.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <https://sreweekly.us12.list-manage.com/unsubscribe?u=9c8a79a721fa3d63d32e147fe&id=24b1f473e5&e=b50d1ba9ef&c=e957613e2f>, <mailto:unsubscribe-mc.us12_9c8a79a721fa3d63d32e147fe.e957613e2f-b50d1ba9ef@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1712536289"
+MIME-Version: 1.0
+X-Virus-Scanned: ClamAV
+X-Spam-Sys-BayesResult: No, 0.456929
+X-Spam-Scanner: 1548638386-78729-3
+X-Spam-Report: Content analysis details:
+ -10.0 BAYESSCORE             0.000014
+   3.5 URIBL_SPAMSOURCES      Contains an URL listed in the spamsources.mxes.net blocklist
+     [URIs: dbmsmusings.blogspot.com]
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [198.2.141.134 listed in dnswl.mxes.net]
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+   1.0 URI_TRY_3LD            URI: "Try it" URI, suspicious hostname
+   0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or Formatted Colors in HTML
+   0.0 MIME_QP_LONG_LINE      RAW: Quoted-printable line longer than 76 chars
+  -0.2 SYSTEM_BAYES           No 0.456929
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+   0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail domains are different
+   0.0 HTML_MESSAGE           HTML included in message
+   0.2 SPF_MECH_2             Permissive SPF record ?all
+  -2.3 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 2
+X-Spam-SI: 2
+X-Originating-IP: 198.2.141.134
+X-Reputation-Delta: -2.3
+X-Envelope-To: <lucas@luitjes.it>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-7.9 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.000014
+X-Spam-Score: -7.9
+X-Spam-Scoring: 0,0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1712536289
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+View on sreweekly.com (http://sreweekly.com/sre-weekly-issue-157/)
+
+
+** A message from our sponsor=2C VictorOps:
+------------------------------------------------------------
+
+See how VictorOps built their SRE efforts from scratch and structured SRE=
+ operations across a smaller team. Developing a culture of collaboration a=
+nd accountability takes time and effort =E2=80=93 but it makes all the dif=
+ference:
+
+http://try.victorops.com/sreweekly/building-a-culture-of-sre
+
+
+** Articles
+------------------------------------------------------------
+
+When Does an Investigation End? (http://www.ryanfrantz.com/posts/when-does=
+-an-investigation-end.html)
+
+Best article about post-incident investigations that I=E2=80=99ve seen in=
+ awhile. My favorite part is the recommendation not to use a template for=
+ the retrospective=2C as it will artificially narrow the scope of the inve=
+stigation.
+
+Ryan Frantz
+
+[Survey] On-call compensation in tech/IT (https://docs.google.com/forms/d=
+/e/1FAIpQLSd1bXweEUs2OHpBccKaXrj1hvvInGgbW8JRJEA8Lu-EnGBBpQ/viewform)
+
+These folks have set up a survey to gather information on whether and how=
+ folks are compensated for on-call in IT. This topic has been gaining trac=
+tion over the past couple of years=2C and I can=E2=80=99t wait to see the=
+ results of the survey. Please take a moment to fill it out.
+
+Chris Evans and Spike Lindsey
+
+[Upcoming Talk] Running Excellent Retrospectives: Talking for Humans (htt=
+ps://www.usenix.org/conference/srecon19americas/presentation/eckhardt)
+
+I=E2=80=99ll be speaking at SRECon19 Americas this March with my former co=
+worker=2C Courtney Eckhardt. The talk lineup looks incredible and I=E2=80=
+=99m really excited to go!
+
+If you=E2=80=99re going to be there=2C drop me an email (I=E2=80=99m terri=
+ble at Twitter) and let me know. I=E2=80=99ll have lots of swag available=
+=2C made with 100% open source software (Ink/Stitch (https://inkstitch.org=
+/) and inkscape-silhouette (https://github.com/fablabnbg/inkscape-silhouet=
+te) ).
+
+Surviving On-Call: Tips from a Hosted Graphite SRE (https://www.hostedgrap=
+hite.com/blog/surviving-on-call-tips-from-a-hosted-graphite-sre)
+
+Especially useful for folks new to on-call.
+
+If you only take one thing away from this post=2C it=E2=80=99s that you ne=
+ed to put your own well-being first=2C and once you do that other aspects=
+ of on-call will become easier.
+
+Dave Fennell =E2=80=94 Hosted Graphite
+
+DBMS Musings: It=E2=80=99s Time to Move on from Two Phase Commit (http://d=
+bmsmusings.blogspot.com/2019/01/its-time-to-move-on-from-two-phase.html)
+
+I have to admit I wasn=E2=80=99t clear on two-phase commit before I read t=
+his. Now I know what it=E2=80=99s all about =E2=80=94 and its drawbacks.
+
+Daniel Abadi
+
+Do you have an SRE team yet? How to start and assess your journey (https:/=
+/cloud.google.com/blog/products/devops-sre/how-to-start-and-assess-your-sr=
+e-journey/)
+
+This guide from Google describes the qualities and practices of SRE teams=
+ of various levels from beginner to advanced.
+
+Gustavo Franco =E2=80=94 Google
+
+What Does a Site Reliability Engineer Do? (https://blog.scalyr.com/2019/01=
+/site-reliability-engineer/)
+
+A good intro if you=E2=80=99re new around here.
+
+Sylvia Fronczak =E2=80=94 Scalyr
+
+
+** Outages
+------------------------------------------------------------
+* Slack (https://status.slack.com/2019-01/2a10adb34c0b1f4e)
+* Greenhouse.io (https://status.greenhouse.io/incidents/y3b8ysd6724k)
+* Microsoft Office 365 (https://www.cbronline.com/news/microsoft-office-36=
+5-down)
+* CenturyLink explains end-of-year outage (https://www.abqjournal.com/1271=
+943/century-link-explains-end-of-year-outage.html)
++ Here are some details on the CenturyLink outage that took down 911 emerg=
+ency services across portions of the US in late December.
+* Passport Canada (https://www.ctvnews.ca/canada/passport-canada-can-t-pro=
+cess-some-passports-because-of-internet-outage-1.4265836)
++ Canada was unable to process passports during the outage.
+* WhatsApp (https://www.rt.com/news/449446-whatsapp-down-messenger-not-wor=
+king/)
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+You are receiving this email because you signed up for the SRE Weekly News=
+letter at sreweekly.com.  Thank you!
+
+Unsubscribe lucas@luitjes.it from this list:
+https://sreweekly.us12.list-manage.com/unsubscribe?u=3D9c8a79a721fa3d63d32=
+e147fe&id=3D24b1f473e5&e=3Db50d1ba9ef&c=3De957613e2f
+
+Our mailing address is:
+SRE Weekly
+PO Box 253
+South Lancaster=2C MA 01561-0253
+USA
+
+Our telephone:
+
+
+Forward this email to a friend:
+http://us12.forward-to-friend.com/forward?u=3D9c8a79a721fa3d63d32e147fe&id=
+=3De957613e2f&e=3Db50d1ba9ef
+
+Update your profile:
+https://sreweekly.us12.list-manage.com/profile?u=3D9c8a79a721fa3d63d32e147=
+fe&id=3D24b1f473e5&e=3Db50d1ba9ef
+--_----------=_MCPart_1712536289
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<a href=3D"http://sreweekly.com/sre-weekly-issue-157/" title=3D"Permalink=
+ to SRE Weekly Issue #157" class=3D"email_only">View on sreweekly.com</a>
+<div class=3D"sreweekly-sponsor-message" style=3D"border: 1px solid #b0b0b=
+0; padding-left: 1rem; padding-right: 1rem; width: 80%; align: center; mar=
+gin: 2rem auto 2rem auto;">
+<h2 style=3D"text-align: center; font-size: 80%; color: #909090;">A messag=
+e from our sponsor=2C VictorOps:</h2>
+<p>See how VictorOps built their SRE efforts from scratch and structured S=
+RE operations across a smaller team. Developing a culture of collaboration=
+ and accountability takes time and effort =E2=80=93 but it makes all the d=
+ifference:</p>
+<p><a href=3D"http://try.victorops.com/sreweekly/building-a-culture-of-sre=
+">http://try.victorops.com/sreweekly/building-a-culture-of-sre</a></p>
+</div>
+<h2>Articles</h2>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"http://www.ryanfrantz.com/posts/=
+when-does-an-investigation-end.html" target=3D"_blank">When Does an Invest=
+igation End?</a></div>
+<div class=3D"sreweekly-description">
+<p>Best article about post-incident investigations that I&#8217;ve seen in=
+ awhile. My favorite part is the recommendation <em>not</em> to use a temp=
+late for the retrospective=2C as it will artificially narrow the scope of=
+ the investigation.</p>
+<p><small>Ryan Frantz</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://docs.google.com/forms/d/=
+e/1FAIpQLSd1bXweEUs2OHpBccKaXrj1hvvInGgbW8JRJEA8Lu-EnGBBpQ/viewform" targe=
+t=3D"_blank">[Survey] On-call compensation in tech/IT </a></div>
+<div class=3D"sreweekly-description">
+<p>These folks have set up a survey to gather information on whether and h=
+ow folks are compensated for on-call in IT. This topic has been gaining tr=
+action over the past couple of years=2C and I can&#8217;t wait to see the=
+ results of the survey. Please take a moment to fill it out.</p>
+<p><small>Chris Evans and Spike Lindsey</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://www.usenix.org/conferenc=
+e/srecon19americas/presentation/eckhardt" target=3D"_blank">[Upcoming Tal=
+k] Running Excellent Retrospectives: Talking for Humans</a></div>
+<div class=3D"sreweekly-description">
+<p>I&#8217;ll be speaking at SRECon19 Americas this March with my former c=
+oworker=2C Courtney Eckhardt. The talk lineup looks incredible and I&#8217=
+;m really excited to go!</p>
+<p>If you&#8217;re going to be there=2C drop me an email (I&#8217;m terrib=
+le at Twitter) and let me know. I&#8217;ll have lots of swag available=2C=
+ made with 100% open source software (<a href=3D"https://inkstitch.org/">I=
+nk/Stitch</a> and <a href=3D"https://github.com/fablabnbg/inkscape-silhoue=
+tte">inkscape-silhouette</a>).</p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://www.hostedgraphite.com/b=
+log/surviving-on-call-tips-from-a-hosted-graphite-sre" target=3D"_blank">S=
+urviving On-Call: Tips from a Hosted Graphite SRE</a></div>
+<div class=3D"sreweekly-description">
+<p>Especially useful for folks new to on-call.</p>
+<blockquote><p>If you only take one thing away from this post=2C it=E2=80=
+=99s that you need to put your own well-being first=2C and once you do tha=
+t other aspects of on-call will become easier.</p></blockquote>
+<p><small>Dave Fennell =E2=80=94 Hosted Graphite</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"http://dbmsmusings.blogspot.com/=
+2019/01/its-time-to-move-on-from-two-phase.html" target=3D"_blank">DBMS Mu=
+sings: It=E2=80=99s Time to Move on from Two Phase Commit</a></div>
+<div class=3D"sreweekly-description">
+<p>I have to admit I wasn&#8217;t clear on two-phase commit before I read=
+ this. Now I know what it&#8217;s all about =E2=80=94 and its drawbacks.</=
+p>
+<p><small>Daniel Abadi</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://cloud.google.com/blog/pr=
+oducts/devops-sre/how-to-start-and-assess-your-sre-journey/" target=3D"_bl=
+ank">Do you have an SRE team yet? How to start and assess your journey</a>=
+</div>
+<div class=3D"sreweekly-description">
+<p>This guide from Google describes the qualities and practices of SRE tea=
+ms of various levels from beginner to advanced.</p>
+<p><small>Gustavo Franco =E2=80=94 Google</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://blog.scalyr.com/2019/01/=
+site-reliability-engineer/" target=3D"_blank">What Does a Site Reliability=
+ Engineer Do?</a></div>
+<div class=3D"sreweekly-description">
+<p>A good intro if you&#8217;re new around here.</p>
+<p><small>Sylvia Fronczak =E2=80=94 Scalyr<br />
+</small></p>
+</div>
+</div>
+<h2>Outages</h2>
+<ul class=3D"sreweekly-outages">
+<li><a href=3D"https://status.slack.com/2019-01/2a10adb34c0b1f4e">Slack</a=
+></li>
+<li><a href=3D"https://status.greenhouse.io/incidents/y3b8ysd6724k">Greenh=
+ouse.io</a></li>
+<li><a href=3D"https://www.cbronline.com/news/microsoft-office-365-down">M=
+icrosoft Office 365</a></li>
+<li><a href=3D"https://www.abqjournal.com/1271943/century-link-explains-en=
+d-of-year-outage.html">CenturyLink explains end-of-year outage</a>
+<ul class=3D"sreweekly-outage">
+<li class=3D"sreweekly-outage">Here are some details on the CenturyLink ou=
+tage that took down 911 emergency services across portions of the US in la=
+te December.</li>
+</ul>
+</li>
+<li><a href=3D"https://www.ctvnews.ca/canada/passport-canada-can-t-process=
+-some-passports-because-of-internet-outage-1.4265836">Passport Canada</a>
+<ul class=3D"sreweekly-outage">
+<li class=3D"sreweekly-outage">Canada was unable to process passports duri=
+ng the outage.</li>
+</ul>
+</li>
+<li><a href=3D"https://www.rt.com/news/449446-whatsapp-down-messenger-not-=
+working/">WhatsApp</a></li>
+</ul>            <center>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" id=3D"canspamBarWrapper" style=3D"background-color:#FFFFFF; b=
+order-top:1px solid #E5E5E5;">
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng-top:20px; padding-bottom:20px;">
+                            <table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" id=3D"canspamBar">
+                                <tr>
+                                    <td align=3D"center" valign=3D"top" st=
+yle=3D"color:#606060; font-family:Helvetica=2C Arial=2C sans-serif; font-s=
+ize:11px; line-height:150%; padding-right:20px; padding-bottom:5px; paddin=
+g-left:20px; text-align:center;">
+                                        This email was sent to <a href=3D"=
+mailto:lucas@luitjes.it" target=3D"_blank" style=3D"color:#404040 !importa=
+nt;">lucas@luitjes.it</a>
+                                        <br />
+                                        <a href=3D"https://sreweekly.us12.=
+list-manage.com/about?u=3D9c8a79a721fa3d63d32e147fe&id=3D24b1f473e5&e=3D=
+b50d1ba9ef&c=3De957613e2f" target=3D"_blank" style=3D"color:#404040 !important=
+;"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"http=
+s://sreweekly.us12.list-manage.com/unsubscribe?u=3D9c8a79a721fa3d63d32e147=
+fe&id=3D24b1f473e5&e=3Db50d1ba9ef&c=3De957613e2f" style=3D"color:#404040 !im=
+portant;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D=
+"https://sreweekly.us12.list-manage.com/profile?u=3D9c8a79a721fa3d63d32e14=
+7fe&id=3D24b1f473e5&e=3Db50d1ba9ef" style=3D"color:#404040 !important;">upda=
+te subscription preferences</a>
+                                        <br />
+                                        SRE Weekly &middot; PO Box 253 &mi=
+ddot; South Lancaster=2C MA 01561-0253 &middot; USA
+                                        <br />
+                                        <br />
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <style type=3D"text/css">
+                    @media only screen and (max-width: 480px){
+                        table#canspamBar td{font-size:14px !important;}
+                        table#canspamBar td a{display:block !important; ma=
+rgin-top:10px !important;}
+                    }
+                </style>
+            </center><img src=3D"https://sreweekly.us12.list-manage.com/tr=
+ack/open.php?u=3D9c8a79a721fa3d63d32e147fe&id=3De957613e2f&e=3Db50d1ba9ef=
+" height=3D"1" width=3D"1">
+--_----------=_MCPart_1712536289--

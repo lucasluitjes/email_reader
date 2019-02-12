@@ -1,0 +1,708 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Fri, 11 Jan 2019 10:58:02 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounces+3465002-dca2-lucas=mindrules.net@sg.cooperpress.com>
+Received: from 205.237.194.47
+	by m8.mxes.net (bayesd) with LMTP id 1547222282-91318-8
+	for <lucas_mindrules.net@ms8.mxes.net>; Fri, 11 Jan 2019 10:58:02 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-01.mxes.net (Postfix) with ESMTP id 737CE276E2
+	for <lucas@mindrules.net>; Fri, 11 Jan 2019 10:58:02 -0500 (EST)
+Received: from o1.sg1.cooperpress.com (o1.sg1.cooperpress.com [167.89.103.72])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mxin.mxes.net (Postfix) with ESMTPS id 7C45C276B8
+	for <lucas@mindrules.net>; Fri, 11 Jan 2019 10:58:00 -0500 (EST)
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=cooperpress.com header.i=@cooperpress.com header.b=kZn3+fvG
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; 
+	d=cooperpress.com; 
+	h=content-type:from:mime-version:to:subject:list-unsubscribe; 
+	s=s1; bh=HL07xS6RjLOv4j8lKR3FNxxjb4s=; b=kZn3+fvGPg4vLKnuC77Zj0h
+	h4ufLcJaTnq5+6YLa+s1mT/JK3BSntuGygUGe5AU8+8LWsuURyutzN1AwrjiCfWZ
+	IwV2t4BWKSxoP97U9ISaIqoW4QYOxPicf9BsBCyKE7vNF03Y4jUgk42eh5L4BTBC
+	ZlXPcdwM/YNruQXXGblI=
+Received: by filter1709p1mdw1.sendgrid.net with SMTP id filter1709p1mdw1-18937-5C38BD06-45
+        2019-01-11 15:57:59.032621729 +0000 UTC m=+310098.506396016
+Received: from MzQ2NTAwMg (li299-121.members.linode.com [178.79.161.121])
+	by ismtpd0005p1lon1.sendgrid.net (SG) with HTTP id jqrw_l86Rfuj58FF1mrxBg
+	Fri, 11 Jan 2019 15:57:58.752 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=a39d84f71d2904b5a2fd52bd76e98e4cc5aeb6aec94569586c2e7aa83ee0
+Date: Fri, 11 Jan 2019 15:57:59 +0000 (UTC)
+From: "DB Weekly" <dbweekly@cooperpress.com>
+Mime-Version: 1.0
+To: lucas@mindrules.net
+Message-ID: <jqrw_l86Rfuj58FF1mrxBg@ismtpd0005p1lon1.sendgrid.net>
+Subject: Amazon unveils a new MongoDB-compatible database
+List-Unsubscribe: <mailto:unsub-85a4c1edbc@n2.cooperpress.com>
+X-SG-EID: 7+Jt56rkNVZjji2DyS6gZoIDNt7Ym1N8JGN8fGA2hR9JqOeyOuGaCIbpRDtcTAVfrVwMZW0mZvjBnz
+ GDxVzDQrnYUgSaYtN0rUZXGdpSTDWhq5O0efv0Qo3nEdjX6wx1UID8R/Vw3Uw6yPv3QT3u+xvFftHB
+ ZX2lcfgBboE+PCc5344ZE0bEHECYcVoVluFEHoZnb2D/3UB1nAOj8xyT6WM1O23yAbp23N+bJO5uvV
+ M=
+X-Virus-Scanned: ClamAV
+X-Spam-Sys-BayesResult: Yes, 0.541527
+X-Spam-Scanner: 1547222281-1751-1
+X-Spam-Report: Content analysis details:
+ -10.0 BAYESSCORE             0.422176
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [167.89.103.72 listed in dnswl.mxes.net]
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or Formatted Colors in HTML
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   0.0 DMARC_POLICY           Reject on policy failure
+   1.2 SYSTEM_BAYES           Yes 0.541527
+   0.0 DKIM_VALID_EF          Message has a valid DKIM or DK signature from envelope-from domain
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+   0.0 DMARC_PASS             From: domain publishes a DMARC policy and the DKIM or SPF alignment test passes
+   0.0 HTML_MESSAGE           HTML included in message
+  -0.8 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 0
+X-Spam-SI: 1
+X-Originating-IP: 167.89.103.72
+X-Dmarc-Status: Pass
+X-Reputation-Delta: -0.8
+X-Envelope-To: <lucas@mindrules.net>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-9.5 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.422176
+X-Spam-Score: -9.5
+X-Spam-Scoring: 0,0
+
+--a39d84f71d2904b5a2fd52bd76e98e4cc5aeb6aec94569586c2e7aa83ee0
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+This week's database news
+
+#236 =E2=80=94 January 11, 2019
+
+Read on the Web ( https://dbweekly.com/issues/236 )
+
+Database Weekly
+
+Amazon Releases DocumentDB, a Document Database with MongoDB
+Compatibility ( https://aws.amazon.com/documentdb/ ) =E2=80=94 AWS has
+decided to compete with MongoDB=E2=80=99s own Atlas=20
+( https://www.mongodb.com/cloud/atlas ) service by offering
+DocumentDB, a scalable, highly available, and fully managed
+document database service that supports MongoDB workloads.
+GeekWire reports=20
+( https://www.geekwire.com/2019/amazon-web-services-calls-mongodbs-licensin=
+g-bluff-documentdb-new-managed-database/ )
+ on the background to the story.
+
+Amazon Web Services, Inc.
+
+SQL is No Excuse to Avoid DevOps=20
+( https://queue.acm.org/detail.cfm?id=3D3300018 ) =E2=80=94 Should the
+presence of database administrators restrict your ability to
+adopt modern devops practices? No, argues Thomas, who then
+suggests some solutions to any deadlock.
+
+Thomas A. Limoncelli
+
+How Quickly Can You Respond to an Insider Threat?=20
+( https://www.strongdm.com/dbw-01-11-19/?utm_source=3D&utm_medium=3Demail&u=
+tm_campaign=3D2019-01-11%20-%20%5BNL%5D%20-%20%5BSchD%5D%20-%20%5BSDM%5D%20=
+-%20DBW-INSIDER-JAN )
+ =E2=80=94 Revoke access to every database & server in less time than it
+takes to read this. Centrally manage access with your SSO and
+audit every query, SSH & RDP session. strongDM delivers complete
+control & instant answers. Click here to see a demo=20
+( https://www.strongdm.com/dbw-01-11-19/?utm_source=3D&utm_medium=3Demail&u=
+tm_campaign=3D2019-01-11%20-%20%5BNL%5D%20-%20%5BSchD%5D%20-%20%5BSDM%5D%20=
+-%20DBW-INSIDER-JAN )
+.
+
+strongDM sponsor
+
+PostgreSQL is DB-Engine's 'DBMS of the Year 2018'=20
+( https://db-engines.com/en/blog_post/79 ) =E2=80=94 DB-Engines is a
+popular ranking of database system popularity and they=E2=80=99ve given
+their annual =E2=80=9CDBMS of the Year=E2=80=9D accolade to Postgres for the
+second year in a row. MongoDB and Redis take the silver and
+bronze.
+
+Paul Andlinger and Matthias Gelbmann
+
+Dejavu 3.0: The 'Missing' Web UI for Elasticsearch=20
+( https://medium.appbase.io/dejavu-3-0-the-missing-web-ui-for-elasticsearch=
+-214b18502727 )
+ =E2=80=94 3.0 adds an interesting new feature that lets you rapidly
+build and visually test search-related user interfaces.
+
+Siddharth Kothari
+
+LiteCLI: A Better Command-Line Client for SQLite=20
+( https://www.pgcli.com/launching-litecli.html ) =E2=80=94 SQLite comes
+with its own command line client but it=E2=80=99s not super user
+friendly. This alternative, based on pgcli and mycli, offers
+niceties like auto completion and syntax highlighting.
+
+Amjith Ramanujam et al.
+
+Redis Enterprise Now Available for Intel Optane Persistent
+Memory=20
+( https://redislabs.com/press/redis-labs-delivers-fastest-multi-model-datab=
+ase-intel-optane-dc-persistent-memory/ )
+ =E2=80=94 Either on supporting cloud services or for companies
+participating in Intel=E2=80=99s hardware beta program.
+
+Redis Labs
+
+Apache Cassandra Database Optimization Tips=20
+( https://www.backblaze.com/blog/wide-partitions-in-apache-cassandra-3-11/ )
+ =E2=80=94 Demonstrating that well designed data models can go beyond
+the existing 400MB recommendation without nodes crashing through
+heap pressure.
+
+Mick Semb Wever
+
+Fun with SQL: Self Joins=20
+( https://www.citusdata.com/blog/2019/01/02/fun-with-sql-self-joins/ )
+ =E2=80=94 Self joins are a simple but occasionally handy notion within
+SQL allowing you to join a table to itself when some relationship
+is defined within a single row to another row within that table.
+
+Craig Kerstiens
+
+=E2=96=B6 How to Run Neo4j Across Cloud Platforms (or Just About
+Anywhere) ( https://www.youtube.com/watch?v=3DZjqDSUnp4Ok ) =E2=80=94 Neo4j
+is perhaps the leader in graph databases right now.
+
+David Allen
+
+Raising the Bar on Open Source Database Management in 2018=20
+( https://severalnines.com/blog/severalnines-2018-momentum-raising-bar-mysq=
+l-mariadb-postgresql-mongodb-management?utm_campaign=3DDB_Speed_Campaign_JA=
+N19&utm_content=3Dmom&utm_medium=3DPaid_Search&utm_source=3Dbanner )
+ =E2=80=94 Learn how Severalnines improved the management of MySQL,
+MariaDB, MongoDB & PostgreSQL.
+
+Severalnines sponsor
+
+Comparing MongoDB Engines: MMAPV1 vs WiredTiger=20
+( https://www.percona.com/blog/2019/01/03/mongodb-engines-mmapv1-vs-wiredti=
+ger/ )
+ =E2=80=94 Comparing the original MongoDB storage engine (that won=E2=80=99=
+t be
+included from MongoDB 4.2 onward) and the newer engine introduced
+in MongoDB 3.2.
+
+Vinodh Krishnaswamy
+
+=F0=9F=92=BB Jobs
+
+Get a Job That Gets You=20
+( https://hackajob.co/p/discover?utm_source=3Dcooperpress&utm_medium=3Dpaid=
+&utm_campaign=3Ddb_jan-4&utm_term=3Ddata )
+ =E2=80=94 Make 2019 the year you get hired because of your data skills.
+
+hackajob
+
+A Cooperpress ( https://cooperpress.com/ ) publication.
+
+Change your email address=20
+( https://dbweekly.com/edit_subscription/85a4c1edbc ) or Stop
+getting this newsletter ( https://dbweekly.com/leave/85a4c1edbc )=20
+
+=C2=A9 Cooper Press Ltd =C2=B7 Fairfield Enterprise Centre, Louth,
+LN11 0LS, United Kingdom
+
+--a39d84f71d2904b5a2fd52bd76e98e4cc5aeb6aec94569586c2e7aa83ee0
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <meta name=3D"format-detection" content=3D"date=3Dno">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+=20=20=20=20
+  <style>body {
+margin: 0; padding: 0; height: 100%; width: 100%; background-color: white; =
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-rendering:=
+ optimizeLegibility; font-feature-settings: "kern" 1;
+}
+body {
+font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-si=
+ze: 15px; line-height: 1.55em;
+}
+img {
+-ms-interpolation-mode: bicubic; border: 0 none; outline: none; height: aut=
+o; text-decoration: none; max-width: 100%;
+}
+@media screen and (max-width: 600px) {
+  table[id=3D"main"] {
+    max-width: 600px !important; width: 100% !important; min-width: 100% !i=
+mportant;
+  }
+  .nomob {
+    display: none !important;
+  }
+  .onlymob {
+    display: inline-block !important;
+  }
+  .rightifmob {
+    text-align: right !important;
+  }
+  .som {
+    max-width: 33% !important;
+  }
+  div.footer p {
+    text-align: left !important;
+  }
+  div.footer td {
+    text-align: left !important;
+  }
+}
+</style>
+</head>
+<body style=3D'height: 100%; margin: 0; padding: 0; width: 100%; background=
+-color: white; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; =
+text-rendering: optimizeLegibility; font-feature-settings: "kern" 1; font-f=
+amily: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15=
+px; line-height: 1.55em;'>
+<div id=3D"preview" class=3D"noarchive" style=3D"display: none; color: #666=
+;">This week's database news</div>
+
+<!--[if (gte mso 9)|(IE)]>
+<table cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fff=
+fff" width=3D"600"><tr><td valign=3D"top" style=3D"width: 600px;" bgcolor=
+=3D"#ffffff"><![endif]-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=
+=3D"main" width=3D"100%" style=3D"table-layout: fixed; padding: 0px; font-f=
+amily: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15=
+px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; bord=
+er-collapse: collapse; max-width: 600px; height: 100% !important;">
+  <tr><td style=3D"font-family: -apple-system,BlinkMacSystemFont,Helvetica,=
+sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; border-collapse: collapse;">
+
+  <div id=3D"content">    <!-- left/right splitbar -->
+    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr>
+<td width=3D"50%" align=3D"left" style=3D"padding-left: 4px; font-family: -=
+apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line=
+-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><p style=3D"font-size: 12px; color: #999999; text-transform=
+: uppercase; line-height: 1.0em; font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; margin-top: 0.8em; margin-bottom: 0.8em;">#236 =
+=E2=80=94 January 11, 2019</p></td>
+<td width=3D"50%" align=3D"right" style=3D"padding-right: 4px; font-family:=
+ -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; li=
+ne-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-col=
+lapse: collapse;"><p style=3D"font-size: 12px; text-transform: uppercase; l=
+ine-height: 1.0em; font-family: -apple-system,BlinkMacSystemFont,Helvetica,=
+sans-serif; margin-top: 0.8em; margin-bottom: 0.8em;"><a href=3D"https://db=
+weekly.com/issues/236" style=3D"text-decoration: none; color: #478dda;">Rea=
+d on the Web</a></p></td>
+</tr></table>
+    <!-- masthead -->
+    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"back=
+ground-color: #478dda; text-align: center; color: #ffffff; mso-table-lspace=
+: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" class=3D"el-masth=
+ead"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemFont,Helveti=
+ca,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse; padding: 0 12px;"><p sty=
+le=3D"font-size: 1.8em; font-weight: 600; line-height: 1.0em; font-family: =
+-apple-system,BlinkMacSystemFont,Helvetica,sans-serif; margin-top: 0.8em; m=
+argin-bottom: 0.8em;">Database Weekly</p></td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td s=
+tyle=3D"font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;=
+ font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; border-collapse: collapse;">
+  <a href=3D"https://dbweekly.com/link/57879/85a4c1edbc" style=3D"text-deco=
+ration: none; color: #478dda;"><img src=3D"https://res.cloudinary.com/cpres=
+s/image/upload/w_1280,e_sharpen:60/mlzvsonvazatxpdj8k7r.jpg" alt=3D"" width=
+=3D"640" style=3D"width: 100%; -ms-interpolation-mode: bicubic; outline: no=
+ne; height: auto; text-decoration: none; max-width: 100%; border: 0 none;">=
+</a>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 1.05em; line-height: 1.55em; color: #5a5a5=
+a; margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; f=
+ont-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweek=
+ly.com/link/57880/85a4c1edbc" style=3D"text-decoration: none; color: #478dd=
+a; border-bottom-width: 1px !important; border-bottom-color: #ddd !importan=
+t; border-bottom-style: solid !important; font-size: 1.2em; line-height: 1.=
+4em;">Amazon Releases DocumentDB, a Document Database with MongoDB Compatib=
+ility</a></span> =E2=80=94 AWS has decided to compete with MongoDB=E2=80=99=
+s own <a href=3D"https://dbweekly.com/link/57881/85a4c1edbc" style=3D"text-=
+decoration: none; color: #478dda; border-bottom-width: 1px !important; bord=
+er-bottom-color: #ddd !important; border-bottom-style: solid !important;">A=
+tlas</a> service by offering DocumentDB, a scalable, highly available, and =
+fully managed document database service that supports MongoDB workloads. Ge=
+ekWire <a href=3D"https://dbweekly.com/link/57882/85a4c1edbc" style=3D"text=
+-decoration: none; color: #478dda; border-bottom-width: 1px !important; bor=
+der-bottom-color: #ddd !important; border-bottom-style: solid !important;">=
+reports</a> on the background to the story.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Amazon =
+Web Services, Inc. </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/57883/85a4c1edbc" style=3D"text-decoration: none; color: #478dda;=
+ border-bottom-width: 1px !important; border-bottom-color: #ddd !important;=
+ border-bottom-style: solid !important; font-size: 1.05em;">SQL is No Excus=
+e to Avoid DevOps</a></span> =E2=80=94 Should the presence of database admi=
+nistrators restrict your ability to adopt modern devops practices? No, argu=
+es Thomas, who then suggests some solutions to any deadlock.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Thomas =
+A. Limoncelli </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+  <a target=3D"_blank" href=3D"https://dbweekly.com/link/57884/85a4c1edbc" =
+style=3D"text-decoration: none; color: #478dda; border-bottom-width: 1px !i=
+mportant; border-bottom-color: #ddd !important; border-bottom-style: solid =
+!important;"><img src=3D"https://copm.s3.amazonaws.com/b04496e8.jpg" width=
+=3D"125" height=3D"125" style=3D"padding-top: 12px; border: 0 none; padding=
+-left: 12px; -ms-interpolation-mode: bicubic; outline: none; height: auto; =
+text-decoration: none; max-width: 100%;" align=3D"right" alt=3D"" class=3D"=
+som"></a>
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/57884/85a4c1edbc" style=3D"text-decoration: none; color: #478dda;=
+ border-bottom-width: 1px !important; border-bottom-color: #ddd !important;=
+ border-bottom-style: solid !important; font-size: 1.05em;">How Quickly Can=
+ You Respond to an Insider Threat?</a></span> =E2=80=94 Revoke access to ev=
+ery database &amp; server in less time than it takes to read this. Centrall=
+y manage access with your SSO and audit every query, SSH &amp; RDP session.=
+ strongDM delivers complete control &amp; instant answers. <a href=3D"https=
+://dbweekly.com/link/57884/85a4c1edbc" style=3D"text-decoration: none; colo=
+r: #478dda; border-bottom-width: 1px !important; border-bottom-color: #ddd =
+!important; border-bottom-style: solid !important;">Click here to see a dem=
+o</a>.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">strongD=
+M <span style=3D"text-transform: uppercase; padding: 1px 4px; border: 1px s=
+olid #eeb; margin-left: 4px; font-size: 0.9em; border-radius: 2px; backgrou=
+nd-color: #ffc; color: #997 !important;" class=3D"tag-sponsor">sponsor</spa=
+n></p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/57885/85a4c1edbc" style=3D"text-decoration: none; color: #478dda;=
+ border-bottom-width: 1px !important; border-bottom-color: #ddd !important;=
+ border-bottom-style: solid !important; font-size: 1.05em;">PostgreSQL is D=
+B-Engine's 'DBMS of the Year 2018'</a></span> =E2=80=94 DB-Engines is a pop=
+ular ranking of database system popularity and they=E2=80=99ve given their =
+annual =E2=80=9CDBMS of the Year=E2=80=9D accolade to Postgres for the seco=
+nd year in a row. MongoDB and Redis take the silver and bronze.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Paul An=
+dlinger and Matthias Gelbmann </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/57886/85a4c1edbc" style=3D"text-decoration: none; color: #478dda;=
+ border-bottom-width: 1px !important; border-bottom-color: #ddd !important;=
+ border-bottom-style: solid !important; font-size: 1.05em;">Dejavu 3.0: The=
+ 'Missing' Web UI for Elasticsearch</a></span> =E2=80=94 3.0 adds an intere=
+sting new feature that lets you rapidly build and visually test search-rela=
+ted user interfaces.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Siddhar=
+th Kothari </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/57887/85a4c1edbc" style=3D"text-decoration: none; color: #478dda;=
+ border-bottom-width: 1px !important; border-bottom-color: #ddd !important;=
+ border-bottom-style: solid !important; font-size: 1.05em;">LiteCLI: A Bett=
+er Command-Line Client for SQLite</a></span> =E2=80=94 SQLite comes with it=
+s own command line client but it=E2=80=99s not super user friendly. This al=
+ternative, based on pgcli and mycli, offers niceties like auto completion a=
+nd syntax highlighting.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Amjith =
+Ramanujam et al. </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/57888/85a4c1edbc" style=3D"text-decoration: none; color: #478dda;=
+ border-bottom-width: 1px !important; border-bottom-color: #ddd !important;=
+ border-bottom-style: solid !important; font-size: 1.05em;">Redis Enterpris=
+e Now Available for Intel Optane Persistent Memory</a></span> =E2=80=94 Eit=
+her on supporting cloud services or for companies participating in Intel=E2=
+=80=99s hardware beta program.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Redis L=
+abs </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/57889/85a4c1edbc" style=3D"text-decoration: none; color: #478dda;=
+ border-bottom-width: 1px !important; border-bottom-color: #ddd !important;=
+ border-bottom-style: solid !important; font-size: 1.05em;">Apache Cassandr=
+a Database Optimization Tips</a></span> =E2=80=94 Demonstrating that well d=
+esigned data models can go beyond the existing 400MB recommendation without=
+ nodes crashing through heap pressure.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Mick Se=
+mb Wever </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/57890/85a4c1edbc" style=3D"text-decoration: none; color: #478dda;=
+ border-bottom-width: 1px !important; border-bottom-color: #ddd !important;=
+ border-bottom-style: solid !important; font-size: 1.05em;">Fun with SQL: S=
+elf Joins</a></span> =E2=80=94 Self joins are a simple but occasionally han=
+dy notion within SQL allowing you to join a table to <em>itself</em> when s=
+ome relationship is defined within a single row to another row within that =
+table.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Craig K=
+erstiens </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  video" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-=
+collapse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSy=
+stemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding:=
+ 0px 15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink">=E2=96=B6=C2=A0=C2=A0<a hre=
+f=3D"https://dbweekly.com/link/57891/85a4c1edbc" style=3D"text-decoration: =
+none; color: #478dda; border-bottom-width: 1px !important; border-bottom-co=
+lor: #ddd !important; border-bottom-style: solid !important; font-size: 1.0=
+5em;">How to Run Neo4j Across Cloud Platforms (or Just About Anywhere)</a><=
+/span> =E2=80=94 Neo4j is perhaps the leader in graph databases right now.<=
+/p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">David A=
+llen </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/57892/85a4c1edbc" style=3D"text-decoration: none; color: #478dda;=
+ border-bottom-width: 1px !important; border-bottom-color: #ddd !important;=
+ border-bottom-style: solid !important; font-size: 1.05em;">Raising the Bar=
+ on Open Source Database Management in 2018</a></span> =E2=80=94 Learn how =
+Severalnines improved the management of MySQL, MariaDB, MongoDB &amp; Postg=
+reSQL.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Several=
+nines <span style=3D"text-transform: uppercase; padding: 1px 4px; border: 1=
+px solid #eeb; margin-left: 4px; font-size: 0.9em; border-radius: 2px; back=
+ground-color: #ffc; color: #997 !important;" class=3D"tag-sponsor">sponsor<=
+/span></p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/57893/85a4c1edbc" style=3D"text-decoration: none; color: #478dda;=
+ border-bottom-width: 1px !important; border-bottom-color: #ddd !important;=
+ border-bottom-style: solid !important; font-size: 1.05em;">Comparing Mongo=
+DB Engines: MMAPV1 vs WiredTiger</a></span> =E2=80=94 Comparing the origina=
+l MongoDB storage engine (that won=E2=80=99t be included from MongoDB 4.2 o=
+nward) and the newer engine introduced in MongoDB 3.2.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Vinodh =
+Krishnaswamy </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-headi=
+ng" style=3D"background-color: #478dda; text-align: left; margin-top: 15px;=
+ color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;"><p style=3D"font-size: 1.1em; font-weight: 600; text-transform: none=
+ !important; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif; line-height: 1.55em; margin: 0.5em 0;">=F0=9F=92=BB=C2=A0Jobs</p></td=
+></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/57894/85a4c1edbc" style=3D"text-decoration: none; color: #478dda;=
+ border-bottom-width: 1px !important; border-bottom-color: #ddd !important;=
+ border-bottom-style: solid !important; font-size: 1.05em;">Get a Job That =
+Gets You</a></span> =E2=80=94 Make 2019 the year you get hired because of y=
+our data skills.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">hackajo=
+b </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td s=
+tyle=3D"height: 16px; font-family: -apple-system,BlinkMacSystemFont,Helveti=
+ca,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+</div>
+
+  </td></tr>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+<div id=3D"footer" class=3D"noarchive">
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"bo=
+rder-top-width: 1px; border-top-color: #dddddd; border-top-style: solid; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr=
+><td style=3D"text-align: center; padding: 20px 15px; font-family: -apple-s=
+ystem,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height=
+: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: co=
+llapse;">
+      <p style=3D"font-size: 12px; line-height: 1.5em; font-family: -apple-=
+system,BlinkMacSystemFont,Helvetica,sans-serif; margin-top: 0.8em; margin-b=
+ottom: 0.8em;">A <strong style=3D"font-weight: 600;"><a href=3D"https://coo=
+perpress.com/" style=3D"text-decoration: none; color: #478dda;">Cooperpress=
+</a></strong> publication.</p>
+      <p style=3D"font-size: 0.9em; font-family: -apple-system,BlinkMacSyst=
+emFont,Helvetica,sans-serif; line-height: 1.55em; margin-top: 0.8em; margin=
+-bottom: 0.8em;"><span class=3D"nomob"><a href=3D"https://dbweekly.com/edit=
+_subscription/85a4c1edbc" style=3D"text-decoration: underline; color: #478d=
+da;">Change your email address</a> or </span><a href=3D"https://dbweekly.co=
+m/leave/85a4c1edbc" style=3D"text-decoration: underline; color: #478dda;">S=
+top getting this newsletter</a></p>
+      <p style=3D"font-size: 12px; font-family: -apple-system,BlinkMacSyste=
+mFont,Helvetica,sans-serif; line-height: 1.55em; margin-top: 0.8em; margin-=
+bottom: 0.8em;">=C2=A9 Cooper Press Ltd =C2=B7 Fairfield Enterprise Centre,=
+ Louth, LN11 0LS, United Kingdom</p>
+      </td></tr></table>
+  </div>
+<img src=3D"https://dbweekly.com/open/236/85a4c1edbc" width=3D"1" height=3D=
+"1" /></body>
+</html>
+
+--a39d84f71d2904b5a2fd52bd76e98e4cc5aeb6aec94569586c2e7aa83ee0--

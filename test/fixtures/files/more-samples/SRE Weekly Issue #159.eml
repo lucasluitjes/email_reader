@@ -1,0 +1,439 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Sun, 10 Feb 2019 20:36:01 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounce-mc.us12_50324829.1355909-lucas=luitjes.it@mail48.suw91.mcdlv.net>
+Received: from 205.237.194.29
+	by m8.mxes.net (bayesd) with LMTP id 1549848961-85017-6
+	for <lucas_mindrules.net@ms8.mxes.net>; Sun, 10 Feb 2019 20:36:01 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-05.mxes.net (Postfix) with ESMTP id 3DA42275F5
+	for <lucas@luitjes.it>; Sun, 10 Feb 2019 20:36:01 -0500 (EST)
+Received: from mail48.suw91.mcdlv.net (mail48.suw91.mcdlv.net [198.2.184.48])
+	by mxin.mxes.net (Postfix) with ESMTP id 60E8D275C6
+	for <lucas@luitjes.it>; Sun, 10 Feb 2019 20:35:59 -0500 (EST)
+Authentication-Results: mxin.mxes.net; arc=none
+ARC-Seal: i=1; a=rsa-sha256; d=mxes.net; s=2018; t=1549848959; cv=none; b=JEwZNdGJ1WoLx7mM7LJ276jUHaJCXVl6iGfIEdzET3ncInce1mdxlPaXda7RwDabl9DtzJVNDRKoKgNnUhDQZ6MGhSMCCkO+yUbRQKfS7Pe6tMVNFfOyDamzEPxx60Eg7Q1uDib04EDW3ko/JJup0DR/87nrWgSYPD0Pz9zuKZU=
+ARC-Message-Signature: i=1; a=rsa-sha256; d=mxes.net; s=2018; t=1549848959;
+	c=relaxed/relaxed; bh=opiSWo3s2E2Eo8SsA/mrpnbHsi1H3kfYLKCz2sTyP5Q=;
+	h=From:Reply-To:To:Date:Message-ID:MIME-Version; b=V0H1ehx87kyaOECcig2Ve/iqr8cQ0U+NMljkPFv9TOOBKJRAjkElApwSgDGVmKAUWRsySWrHCxVYCuW8HI95Ihhx69GoeWJ3ZS4KqIJrwcZMZrxaZ/a6t4CEj/vYRC+JV11SJIQ8bVSKDfIDPax99e9RvTuCLE54sgmnbJyC3WU=
+ARC-Authentication-Results: i=1; mxin.mxes.net; dmarc=none (p=none dis=none) header.from=sreweekly.comspf=pass smtp.mailfrom=bounce-mc.us12_50324829.1355909-lucas=luitjes.it@mail48.suw91.mcdlv.netdkim=pass (1024-bit key) header.d=sreweekly.com header.i=lex@sreweekly.com header.b=d/URoXNV; arc=none
+Authentication-Results: mxin.mxes.net; dmarc=none (p=none dis=none) header.from=sreweekly.com
+Authentication-Results: mxin.mxes.net; spf=pass smtp.mailfrom=bounce-mc.us12_50324829.1355909-lucas=luitjes.it@mail48.suw91.mcdlv.net
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=sreweekly.com header.i=lex@sreweekly.com header.b=d/URoXNV
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=k1; d=sreweekly.com;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+ Content-Type:MIME-Version; i=lex@sreweekly.com;
+ bh=opiSWo3s2E2Eo8SsA/mrpnbHsi1H3kfYLKCz2sTyP5Q=;
+ b=d/URoXNViHabjTsR7ed0aW9ykMyGCmZtEahBYgyOy1EfNpAl2w2MoKteneyjmZPxhyolpVSUO2IX
+   oxeSAwFwQP0xkqLEXrXAS1EcNbkps+qn7QhIsqgNCUV3yJ0J8by/krsXiLgzt+TsD3AOK/aZXZBK
+   NgkOCcvIyH2MLrS82ig=
+Received: from (127.0.0.1) by mail48.suw91.mcdlv.net id hc38nu2ddl4c for <lucas@luitjes.it>; Mon, 11 Feb 2019 01:35:51 +0000 (envelope-from <bounce-mc.us12_50324829.1355909-lucas=luitjes.it@mail48.suw91.mcdlv.net>)
+Subject: =?utf-8?Q?SRE=20Weekly=20Issue=20#159?=
+From: =?utf-8?Q?Lex=20Neva?= <lex@sreweekly.com>
+Reply-To: =?utf-8?Q?Lex=20Neva?= <lex@sreweekly.com>
+To: =?utf-8?Q?SRE=20Weekly=20Newsletter?= <lucas@luitjes.it>
+Date: Mon, 11 Feb 2019 01:35:51 +0000
+Message-ID: <9c8a79a721fa3d63d32e147fe.b50d1ba9ef.20190211013535.ae798c43a5.eb2080ef@mail48.suw91.mcdlv.net>
+X-Mailer: MailChimp Mailer - **CIDae798c43a5b50d1ba9ef**
+X-Campaign: mailchimp9c8a79a721fa3d63d32e147fe.ae798c43a5
+X-campaignid: mailchimp9c8a79a721fa3d63d32e147fe.ae798c43a5
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=9c8a79a721fa3d63d32e147fe&id=ae798c43a5&e=b50d1ba9ef
+X-MC-User: 9c8a79a721fa3d63d32e147fe
+Feedback-ID: 50324829:50324829.1355909:us12:mc
+List-ID: 9c8a79a721fa3d63d32e147femc list <9c8a79a721fa3d63d32e147fe.64717.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <https://sreweekly.us12.list-manage.com/unsubscribe?u=9c8a79a721fa3d63d32e147fe&id=24b1f473e5&e=b50d1ba9ef&c=ae798c43a5>, <mailto:unsubscribe-mc.us12_9c8a79a721fa3d63d32e147fe.ae798c43a5-b50d1ba9ef@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1288600745"
+MIME-Version: 1.0
+X-Spam-Sys-BayesResult: Yes, 0.989575
+X-Spam-Report: 1549848959-29427-1  Content analysis details:
+ -10.0 BAYESSCORE             0.006850
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [198.2.184.48 listed in dnswl.mxes.net]
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   0.0 SPF_HELO_PASS          SPF: HELO matches SPF record
+   1.0 URI_TRY_3LD            URI: "Try it" URI, suspicious hostname
+   0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or Formatted Colors in HTML
+   0.0 MIME_QP_LONG_LINE      RAW: Quoted-printable line longer than 76 chars
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   4.5 SYSTEM_BAYES           Yes 0.989575
+   0.0 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail domains are different
+   0.0 HTML_MESSAGE           HTML included in message
+   0.2 SPF_MECH_2             Permissive SPF record ?all
+  -2.4 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 0
+X-Spam-SI: 3
+X-Originating-IP: 198.2.184.48
+X-Reputation-Delta: -2.4
+X-Envelope-To: <lucas@luitjes.it>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-6.7 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.006850
+X-Spam-Score: -6.7
+X-Spam-Scoring: 0,0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1288600745
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+View on sreweekly.com (http://sreweekly.com/sre-weekly-issue-159/)
+
+A huge thanks to my awesome former coworker Greg Burek (https://gregburek.=
+com/)  whose helpful link contributions make up fully half of this issue.=
+  Thanks=2C Greg!
+
+
+** A message from our sponsor=2C VictorOps:
+------------------------------------------------------------
+
+Are you an SRE working with Microsoft Azure? Learn more about the key serv=
+ices offered in Azure and how SRE teams can leverage these tools and appli=
+cations to build and deploy reliable services at a consistent pace:
+
+http://try.victorops.com/sreweekly/microsoft-azure
+
+
+** Articles
+------------------------------------------------------------
+
+Ironies of Automation (https://www.ise.ncsu.edu/wp-content/uploads/2017/02=
+/Bainbridge_1983_Automatica.pdf)
+
+This paper discusses the ways in which automation of industrial processes=
+ may expand rather than eliminate problems with the human operator.
+
+My favorite bit of irony: presenting data to the user in the manner most r=
+eadily understood results in lower likelihood of remembering the data=2C s=
+o perhaps the most easily grasped display is not actually the best!
+
+Lisanne Bainbridge
+
+Laziness Does Not Exist (https://medium.com/@devonprice/laziness-does-not-=
+exist-3af27e312d01)
+
+Like malice and incompetence=2C laziness should be far off our radar when=
+ we investigate an incident. I hope that reading this article opens minds=
+ about the true scope of blamelessness.
+
+Devon Price
+
+The New Systems Engineer (https://mattouille.com/articles/2019-01/the-new-=
+systems-engineer/)
+
+Whether or not you agree with this particular attempt at defining what a S=
+ystems Engineer (or SRE or anything related) is=2C it=E2=80=99s worth thin=
+king about and discussing. Our field is evolving quickly=2C and titles are=
+ a moving target.
+
+Matt Ouille
+
+Behind the Lion Air Crash=2C a Trail of Decisions Kept Pilots in the Dark=
+ (https://www.nytimes.com/2019/02/03/world/asia/lion-air-plane-crash-pilot=
+s.html)
+
+Driven by a desire to update their 737 without causing airlines to have to=
+ retrain pilots=2C Boeing seemingly kept pilots in the dark about what may=
+ have been an important little detail of how the new 737 Max operates=2C w=
+ith a tragic result.
+
+James Glanz=2C Julie Creswell=2C Thomas Kaplan and Zach Wichter =E2=80=94=
+ New York Times
+
+Questions for a new technology. (https://kellanem.com/notes/new-tech)
+
+An experienced SRE will develop an innate skepticism of new technologies=
+=2C even if they don=E2=80=99t realize it. This article provides an excell=
+ent list of questions to help articulate that skepticism when evaluating a=
+ potential design.
+
+Kellan Elliott-McCrea
+
+When AWS Autoscale Doesn=E2=80=99t (https://segment.com/blog/when-aws-auto=
+scale-doesn-t/)
+
+Auto-scaling isn=E2=80=99t all roses. Like any tool=2C you have to underst=
+and how it works in order to avoid the pitfalls. Read this article to lear=
+n what these folks learned the hard way.
+
+Tyson Mote =E2=80=94 Segment
+
+Postmortems Part 2: How to Adopt a Learning Culture (https://www.pagerduty=
+=2Ecom/blog/postmortems-cultural-change/)
+
+Transitioning to a blameless culture can be difficult=2C especially as fol=
+ks might blame each other for forgetting to be blameless!
+
+Rachael Byrne =E2=80=94 PagerDuty
+
+Logs vs Structured Events (https://charity.wtf/2019/02/05/logs-vs-structur=
+ed-events/)
+
+Many of the old arguments for not instrumenting code (mostly about perform=
+ance) no longer apply=2C and a host of new arguments push toward structure=
+d events.
+
+Charity Majors
+
+
+** Outages
+------------------------------------------------------------
+* QuadrigaCX (https://www.bloomberg.com/news/articles/2019-02-04/crypto-ex=
+change-founder-dies-leaves-behind-200-million-problem?fbclid=3DIwAR1-vukfl=
+Pz-dQjxU55vpCFBzjQw_j3AWtqqnk8WdMOOWZO4i50TXV68uSA)
++ Bloomberg=E2=80=99s title for the above-linked article says it all:
+
+Crypto CEO Dies Holding Only Passwords That Can Unlock Millions in Custome=
+r Coins
+QuadrigaCX ceased trading and posted a note (https://www.quadrigacx.com/)=
+ on their front page.
+* Gmail (https://www.google.com/appsstatus#hl=3Den&v=3Dissue&sid=3D1&iid=
+=3D366f3a7bd51af8441fd97852989b300f)
+* Mailchimp Mandrill (https://twitter.com/mandrillapp/status/1092824328255=
+741952)
++ A PostgreSQL transaction ID wraparound in a central database caused this=
+ prolonged outage on Superbowl Sunday.
+* Wells Fargo (bank) (https://www.americanbanker.com/news/flaws-in-testing=
+-may-be-real-source-of-wells-fargos-tech-failure)
+* Crunchyroll (https://www.express.co.uk/entertainment/gaming/1083511/Crun=
+chyroll-down-Server-status-latest-anime-service-error)
+* Hosted Graphite (https://status.hostedgraphite.com/incidents/zvkxt1vct10=
+g)
+* reddit (https://reddit.statuspage.io/incidents/fn9mlv6knwgw)
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+You are receiving this email because you signed up for the SRE Weekly News=
+letter at sreweekly.com.  Thank you!
+
+Unsubscribe lucas@luitjes.it from this list:
+https://sreweekly.us12.list-manage.com/unsubscribe?u=3D9c8a79a721fa3d63d32=
+e147fe&id=3D24b1f473e5&e=3Db50d1ba9ef&c=3Dae798c43a5
+
+Our mailing address is:
+SRE Weekly
+PO Box 253
+South Lancaster=2C MA 01561-0253
+USA
+
+Our telephone:
+
+
+Forward this email to a friend:
+http://us12.forward-to-friend.com/forward?u=3D9c8a79a721fa3d63d32e147fe&id=
+=3Dae798c43a5&e=3Db50d1ba9ef
+
+Update your profile:
+https://sreweekly.us12.list-manage.com/profile?u=3D9c8a79a721fa3d63d32e147=
+fe&id=3D24b1f473e5&e=3Db50d1ba9ef
+--_----------=_MCPart_1288600745
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<a href=3D"http://sreweekly.com/sre-weekly-issue-159/" title=3D"Permalink=
+ to SRE Weekly Issue #159" class=3D"email_only">View on sreweekly.com</a>
+<p>A huge thanks to my awesome former coworker <a href=3D"https://gregbure=
+k.com/">Greg Burek</a>=C2=A0whose helpful link contributions make up fully=
+ half of this issue.=C2=A0 Thanks=2C Greg!</p>
+<div class=3D"sreweekly-sponsor-message" style=3D"border: 1px solid #b0b0b=
+0; padding-left: 1rem; padding-right: 1rem; width: 80%; align: center; mar=
+gin: 2rem auto 2rem auto;">
+<h2 style=3D"text-align: center; font-size: 80%; color: #909090;">A messag=
+e from our sponsor=2C VictorOps:</h2>
+<p>Are you an SRE working with Microsoft Azure? Learn more about the key s=
+ervices offered in Azure and how SRE teams can leverage these tools and ap=
+plications to build and deploy reliable services at a consistent pace:</p>
+<p><a href=3D"http://try.victorops.com/sreweekly/microsoft-azure">http://t=
+ry.victorops.com/sreweekly/microsoft-azure</a></p>
+</div>
+<h2>Articles</h2>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://www.ise.ncsu.edu/wp-cont=
+ent/uploads/2017/02/Bainbridge_1983_Automatica.pdf" target=3D"_blank">Iron=
+ies of Automation</a></div>
+<div class=3D"sreweekly-description">
+<blockquote><p>This paper discusses the ways in which automation of indust=
+rial processes may expand rather than eliminate problems with the human op=
+erator.</p></blockquote>
+<p>My favorite bit of irony: presenting data to the user in the manner mos=
+t readily understood results in lower likelihood of remembering the data=
+=2C so perhaps the most easily grasped display is not actually the best!</=
+p>
+<p><small>Lisanne Bainbridge</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://medium.com/@devonprice/l=
+aziness-does-not-exist-3af27e312d01" target=3D"_blank">Laziness Does Not E=
+xist</a></div>
+<div class=3D"sreweekly-description">
+<p>Like malice and incompetence=2C laziness should be far off our radar wh=
+en we investigate an incident. I hope that reading this article opens mind=
+s about the true scope of blamelessness.</p>
+<p><small>Devon Price</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://mattouille.com/articles/=
+2019-01/the-new-systems-engineer/" target=3D"_blank">The New Systems Engin=
+eer</a></div>
+<div class=3D"sreweekly-description">
+<p>Whether or not you agree with this particular attempt at defining what=
+ a Systems Engineer (or SRE or anything related) is=2C it&#8217;s worth th=
+inking about and discussing. Our field is evolving quickly=2C and titles a=
+re a moving target.</p>
+<p><small>Matt Ouille</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://www.nytimes.com/2019/02/=
+03/world/asia/lion-air-plane-crash-pilots.html" target=3D"_blank">Behind t=
+he Lion Air Crash=2C a Trail of Decisions Kept Pilots in the Dark</a></div=
+>
+<div class=3D"sreweekly-description">
+<p>Driven by a desire to update their 737 without causing airlines to have=
+ to retrain pilots=2C Boeing seemingly kept pilots in the dark about what=
+ may have been an important little detail of how the new 737 Max operates=
+=2C with a tragic result.</p>
+<p><small>James Glanz=2C Julie Creswell=2C Thomas Kaplan and Zach Wichter=
+ =E2=80=94 New York Times</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://kellanem.com/notes/new-t=
+ech" target=3D"_blank">Questions for a new technology.</a></div>
+<div class=3D"sreweekly-description">
+<p>An experienced SRE will develop an innate skepticism of new technologie=
+s=2C even if they don&#8217;t realize it. This article provides an excelle=
+nt list of questions to help articulate that skepticism when evaluating a=
+ potential design.</p>
+<p><small>Kellan Elliott-McCrea</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://segment.com/blog/when-aw=
+s-autoscale-doesn-t/" target=3D"_blank">When AWS Autoscale Doesn=E2=80=99t=
+</a></div>
+<div class=3D"sreweekly-description">
+<p>Auto-scaling isn&#8217;t all roses. Like any tool=2C you have to unders=
+tand how it works in order to avoid the pitfalls. Read this article to lea=
+rn what these folks learned the hard way.</p>
+<p><small>Tyson Mote =E2=80=94 Segment</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://www.pagerduty.com/blog/p=
+ostmortems-cultural-change/" target=3D"_blank">Postmortems Part 2: How to=
+ Adopt a Learning Culture</a></div>
+<div class=3D"sreweekly-description">
+<p>Transitioning to a blameless culture can be difficult=2C especially as=
+ folks might blame each other for forgetting to be blameless!</p>
+<p><small>Rachael Byrne =E2=80=94 PagerDuty</small></p>
+</div>
+</div>
+<div class=3D"sreweekly-entry">
+<div class=3D"sreweekly-title"><a href=3D"https://charity.wtf/2019/02/05/l=
+ogs-vs-structured-events/" target=3D"_blank">Logs vs Structured Events</a>=
+</div>
+<div class=3D"sreweekly-description">
+<p>Many of the old arguments for not instrumenting code (mostly about perf=
+ormance) no longer apply=2C and a host of new arguments push toward struct=
+ured events.</p>
+<p><small>Charity Majors</small></p>
+</div>
+</div>
+<h2>Outages</h2>
+<ul class=3D"sreweekly-outages">
+<li><a href=3D"https://www.bloomberg.com/news/articles/2019-02-04/crypto-e=
+xchange-founder-dies-leaves-behind-200-million-problem?fbclid=3DIwAR1-vukf=
+lPz-dQjxU55vpCFBzjQw_j3AWtqqnk8WdMOOWZO4i50TXV68uSA">QuadrigaCX</a>
+<ul class=3D"sreweekly-outage">
+<li class=3D"sreweekly-outage">Bloomberg&#8217;s title for the above-linke=
+d article says it all:<br />
+<blockquote><p>Crypto CEO Dies Holding Only Passwords That Can Unlock Mill=
+ions in Customer Coins</p></blockquote>
+<p>QuadrigaCX ceased trading and posted a <a href=3D"https://www.quadrigac=
+x.com/">note</a> on their front page.</li>
+</ul>
+</li>
+<li><a href=3D"https://www.google.com/appsstatus#hl=3Den&v=3Dissue&sid=3D1=
+&iid=3D366f3a7bd51af8441fd97852989b300f">Gmail</a></li>
+<li><a href=3D"https://twitter.com/mandrillapp/status/1092824328255741952"=
+>Mailchimp Mandrill</a>
+<ul class=3D"sreweekly-outage">
+<li class=3D"sreweekly-outage">A PostgreSQL transaction ID wraparound in a=
+ central database caused this prolonged outage on Superbowl Sunday.</li>
+</ul>
+</li>
+<li><a href=3D"https://www.americanbanker.com/news/flaws-in-testing-may-be=
+-real-source-of-wells-fargos-tech-failure">Wells Fargo (bank)</a></li>
+<li><a href=3D"https://www.express.co.uk/entertainment/gaming/1083511/Crun=
+chyroll-down-Server-status-latest-anime-service-error">Crunchyroll</a></li=
+>
+<li><a href=3D"https://status.hostedgraphite.com/incidents/zvkxt1vct10g">H=
+osted Graphite</a></li>
+<li><a href=3D"https://reddit.statuspage.io/incidents/fn9mlv6knwgw">reddit=
+</a></li>
+</ul>            <center>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" id=3D"canspamBarWrapper" style=3D"background-color:#FFFFFF; b=
+order-top:1px solid #E5E5E5;">
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng-top:20px; padding-bottom:20px;">
+                            <table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" id=3D"canspamBar">
+                                <tr>
+                                    <td align=3D"center" valign=3D"top" st=
+yle=3D"color:#606060; font-family:Helvetica=2C Arial=2C sans-serif; font-s=
+ize:11px; line-height:150%; padding-right:20px; padding-bottom:5px; paddin=
+g-left:20px; text-align:center;">
+                                        This email was sent to <a href=3D"=
+mailto:lucas@luitjes.it" target=3D"_blank" style=3D"color:#404040 !importa=
+nt;">lucas@luitjes.it</a>
+                                        <br />
+                                        <a href=3D"https://sreweekly.us12.=
+list-manage.com/about?u=3D9c8a79a721fa3d63d32e147fe&id=3D24b1f473e5&e=3D=
+b50d1ba9ef&c=3Dae798c43a5" target=3D"_blank" style=3D"color:#404040 !important=
+;"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D"http=
+s://sreweekly.us12.list-manage.com/unsubscribe?u=3D9c8a79a721fa3d63d32e147=
+fe&id=3D24b1f473e5&e=3Db50d1ba9ef&c=3Dae798c43a5" style=3D"color:#404040 !im=
+portant;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D=
+"https://sreweekly.us12.list-manage.com/profile?u=3D9c8a79a721fa3d63d32e14=
+7fe&id=3D24b1f473e5&e=3Db50d1ba9ef" style=3D"color:#404040 !important;">upda=
+te subscription preferences</a>
+                                        <br />
+                                        SRE Weekly &middot; PO Box 253 &mi=
+ddot; South Lancaster=2C MA 01561-0253 &middot; USA
+                                        <br />
+                                        <br />
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <style type=3D"text/css">
+                    @media only screen and (max-width: 480px){
+                        table#canspamBar td{font-size:14px !important;}
+                        table#canspamBar td a{display:block !important; ma=
+rgin-top:10px !important;}
+                    }
+                </style>
+            </center><img src=3D"https://sreweekly.us12.list-manage.com/tr=
+ack/open.php?u=3D9c8a79a721fa3d63d32e147fe&id=3Dae798c43a5&e=3Db50d1ba9ef=
+" height=3D"1" width=3D"1">
+--_----------=_MCPart_1288600745--

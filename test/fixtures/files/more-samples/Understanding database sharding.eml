@@ -1,0 +1,698 @@
+Received: from m8.mxes.net ([unix socket])
+	 by m8.mxes.net (Cyrus v2.4.20) with LMTPA;
+	 Fri, 08 Feb 2019 09:56:03 -0500
+X-Sieve: CMU Sieve 2.4
+Return-Path: <bounces+3465002-dca2-lucas=mindrules.net@sg.cooperpress.com>
+Received: from 205.237.194.16
+	by m8.mxes.net (bayesd) with LMTP id 1549637763-34815-5
+	for <lucas_mindrules.net@ms8.mxes.net>; Fri,  8 Feb 2019 09:56:03 -0500 (EST)
+Received: from localhost.mxes.net (localhost [127.0.0.1])
+	by mxout-02.mxes.net (Postfix) with ESMTP id 9F88B27635
+	for <lucas@mindrules.net>; Fri,  8 Feb 2019 09:56:03 -0500 (EST)
+Received: from o1.sg1.cooperpress.com (o1.sg1.cooperpress.com [167.89.103.72])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES128-GCM-SHA256 (128/128 bits))
+	(No client certificate requested)
+	by mxin.mxes.net (Postfix) with ESMTPS id C6641275D4
+	for <lucas@mindrules.net>; Fri,  8 Feb 2019 09:56:01 -0500 (EST)
+Authentication-Results: mxin.mxes.net; arc=none
+Authentication-Results: mxin.mxes.net; dmarc=pass (p=reject dis=none) header.from=cooperpress.com
+Authentication-Results: mxin.mxes.net; spf=pass smtp.mailfrom=bounces+3465002-dca2-lucas=mindrules.net@sg.cooperpress.com
+Authentication-Results: mxin.mxes.net;
+	dkim=pass (1024-bit key) header.d=cooperpress.com header.i=@cooperpress.com header.b=Xrhqo45A
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; 
+	d=cooperpress.com; 
+	h=content-type:from:mime-version:to:subject:list-unsubscribe; 
+	s=s1; bh=au80evvvH7n3g+p/WaNmWc7vc2g=; b=Xrhqo45AdzZpspSRhBo/H1A
+	RZuC6YvgTOXjOM1cnqWuc2F+/d2lmBn7skzGuPTRsOP1unyp92Eh962d27v1oMPy
+	fR9ysJCexS1qD7rrL4Pxrk4yYo9hb0+RLEI23Qs30SG6HnJzQbb7HRO/mRg0bYEq
+	/6FHVf5rK5MyVZthZ7y8=
+Received: by filter0797p1las1.sendgrid.net with SMTP id filter0797p1las1-8554-5C5D9880-33
+        2019-02-08 14:56:00.874660712 +0000 UTC m=+241392.521880282
+Received: from MzQ2NTAwMg (li299-121.members.linode.com [178.79.161.121])
+	by ismtpd0002p1lon1.sendgrid.net (SG) with HTTP id 9Af8ZS1dSLq7G2VZPPyicQ
+	Fri, 08 Feb 2019 14:56:00.680 +0000 (UTC)
+Content-Type: multipart/alternative; boundary=84ea2a6d56193d297e88d3491ba4580343a41a32eb5e95b99d886549c092
+Date: Fri, 08 Feb 2019 14:56:00 +0000 (UTC)
+From: "DB Weekly" <dbweekly@cooperpress.com>
+Mime-Version: 1.0
+To: lucas@mindrules.net
+Message-ID: <9Af8ZS1dSLq7G2VZPPyicQ@ismtpd0002p1lon1.sendgrid.net>
+Subject: Understanding database sharding
+List-Unsubscribe: <mailto:unsub-85a4c1edbc@n2.cooperpress.com>
+X-SG-EID: 7+Jt56rkNVZjji2DyS6gZoIDNt7Ym1N8JGN8fGA2hR8pFcveJJogg7P+MDP+1g1s4TFfdb4DYcA2FJ
+ wLJWpJH3IVSkVtgkRAecL/ZqSwVTdO0Da0UJvTbVWSOCadxS5tyfd5RDCr4NP1uUlgisP4suLP7P5w
+ zjve+COxn0AXzW36iQrqd3bCFgnZ0th8n7bQo7UWz4ThfNYpgpT1tXpC6U5Z1Tc+04REs9+04b/m6D
+ g=
+X-Spam-Sys-BayesResult: No, 0.172236
+X-Spam-Report: 1549637762-59577-1  Content analysis details:
+ -10.0 BAYESSCORE             0.401825
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at http://www.dnswl.org/, no trust
+     [167.89.103.72 listed in dnswl.mxes.net]
+   0.0 SPF_PASS               SPF: sender matches SPF record
+   0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or Formatted Colors in HTML
+   0.0 DMARC_POLICY           Reject on policy failure
+   0.0 DKIM_VALID_EF          Message has a valid DKIM or DK signature from envelope-from domain
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+  -1.5 SYSTEM_BAYES           No 0.172236
+   0.0 HTML_MESSAGE           HTML included in message
+   0.0 DMARC_PASS             From: domain publishes a DMARC policy and the DKIM or SPF alignment test passes
+   0.8 TXREP                  Score normalizing based on sender's reputation
+X-Spam-BB: 1
+X-Spam-SI: 0
+X-Originating-IP: 167.89.103.72
+X-Dmarc-Status: Pass
+X-Reputation-Delta: 0.8
+X-Envelope-To: <lucas@mindrules.net>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-10.7 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.401825
+X-Spam-Score: -10.7
+X-Spam-Scoring: 0,0
+
+--84ea2a6d56193d297e88d3491ba4580343a41a32eb5e95b99d886549c092
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=UTF-8
+Mime-Version: 1.0
+
+This week's database news
+
+#240 =E2=80=94 February 8, 2019
+
+Read on the Web ( https://dbweekly.com/issues/240 )
+
+Database Weekly
+
+Understanding Database Sharding=20
+( https://www.digitalocean.com/community/tutorials/understanding-database-s=
+harding )
+ =E2=80=94 Goes over what sharding is, some of its main benefits and
+drawbacks, and also a few common sharding approaches.
+
+Mark Drake
+
+Recommending Similar Fashion Images with Deep Learning=20
+( https://blog.floydhub.com/similar-fashion-images/ ) =E2=80=94 Databases
+and search features often go hand in hand (e.g. Elasticsearch)
+but deep learning is having an interesting impact on search by
+providing a totally different model for it. Stories like this get
+me wondering about the interesting places where databases and ML
+collide.
+
+James Le (FloydHub)
+
+Don=E2=80=99t Miss Postgres Vision 2019 ( https://postgresvision.com/ )
+=E2=80=94 Save the date: June 24 - 26, Boston, MA.
+
+EnterpriseDB sponsor
+
+=E2=96=B6 PostgreSQL Goes to Eleven=20
+( https://www.youtube.com/watch?v=3DMJ_y5Ej-5vE ) =E2=80=94 Joe Conway=E2=
+=80=99s talk
+from FOSDEM digs into some of the history of PostgreSQL and
+briefly covers what arrived in Postgres 11 and what's set for
+Postgres 12. 48 minutes.
+
+Joe Conway
+
+What Queries Does Microsoft's Telemetry Service Run on Your SQL
+Server?=20
+( https://www.brentozar.com/archive/2019/02/what-queries-does-microsofts-te=
+lemetry-service-run-on-your-sql-server/ )
+ =E2=80=94 Since SQL Server 2016, SQL Server instances 'phone home' to
+MS by default with the results of various queries ran against
+your database, but what are they? Brent Ozar captured a trace.
+
+Brent Ozar
+
+A brief news break..
+
+MailChimp's Mandrill Service Experiences Outage Due to
+PostgreSQL Transaction ID Wraparound=20
+( https://news.ycombinator.com/item?id=3D19086626 ) =E2=80=94 This is
+something you really need to be aware of if using Postgres at
+scale and aren't fully in tune with your autovacuuming setup.
+Sentry experienced a similar outage in 2015=20
+( https://blog.sentry.io/2015/07/23/transaction-id-wraparound-in-postgres.h=
+tml )
+ and did a full writeup.
+
+Hacker News
+
+Microsoft Invests in Databricks=20
+( https://www.datanami.com/2019/02/05/microsoft-invests-in-databricks/ )
+ =E2=80=94 Databricks is a =E2=80=9Chigh-flying analytics startup founded b=
+y the
+creators of Apache Spark=E2=80=9D.
+
+Datanami
+
+PostgreSQL at Scale: Database Schema Changes Without Downtime=20
+( https://medium.com/braintree-product-technology/postgresql-at-scale-datab=
+ase-schema-changes-without-downtime-20d3749ed680 )
+ =E2=80=94 Braintree Payments, a division of PayPal, heavily uses
+Postgres and due to offering payment processing services, zero
+downtime is a must. Here=E2=80=99s a deep dive into all the things
+involved in making schema updates without downtime.
+
+James Coleman
+
+New Whitepaper: Choosing a Database Proxy for MySQL and MariaDB
+
+( https://severalnines.com/resources/whitepapers/choosing-database-proxy-my=
+sql-and-mariadb?utm_campaign=3DDB_Speed_Campaign_JAN19&utm_content=3Ddbweek=
+ly&utm_medium=3DPaid_Search&utm_source=3Dbanner )
+ =E2=80=94 What is a proxy and why do you need it to achieve high
+availability for your database?
+
+Severalnines sponsor
+
+Implementing Versioning and Audit Trails with SQL Server
+Temporal Tables and .NET Core=20
+( https://rossjayjones.github.io/dotnetcore/2018/11/13/first-class-versioni=
+ng-and-auditing-with-sql-temporal-tables.html )
+ =E2=80=94 When working with personal or otherwise valuable data, it can
+become essential to see who is making changes to it, when those
+changes are, and what they were.
+
+Ross Jay Jones
+
+mongofluxd: Real-Time Sync from MongoDB into InfluxDB=20
+( https://github.com/rwynn/mongofluxd )
+
+Ryan Wynn
+
+=F0=9F=90=A6 Spotted on Twitter
+
+'We Use SQLite Mounted on a Shared Volume in WAL Mode' (To
+Communicate Between Containers)=20
+( https://twitter.com/rbranson/status/1090735760515379200 ) =E2=80=94 I=E2=
+=80=99m
+really looking forward to the blog post to follow on this
+interesting approach for container communication. Database as
+databus?
+
+Rick Branson on Twitter
+
+A Cooperpress ( https://cooperpress.com/ ) publication.
+
+Change your email address=20
+( https://dbweekly.com/edit_subscription/85a4c1edbc ) or Stop
+getting this newsletter ( https://dbweekly.com/leave/85a4c1edbc )=20
+
+=C2=A9 Cooper Press Ltd =C2=B7 Fairfield Enterprise Centre, Louth,
+LN11 0LS, United Kingdom=
+
+--84ea2a6d56193d297e88d3491ba4580343a41a32eb5e95b99d886549c092
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=UTF-8
+Mime-Version: 1.0
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width">
+    <meta name=3D"format-detection" content=3D"date=3Dno">
+    <meta name=3D"format-detection" content=3D"telephone=3Dno">
+=20=20=20=20
+  <style>body {
+margin: 0; padding: 0; height: 100%; width: 100%; background-color: white; =
+-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-rendering:=
+ optimizeLegibility; font-feature-settings: "kern" 1;
+}
+body {
+font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-si=
+ze: 15px; line-height: 1.55em;
+}
+img {
+-ms-interpolation-mode: bicubic; border: 0 none; outline: none; height: aut=
+o; text-decoration: none; max-width: 100%;
+}
+@media screen and (max-width: 600px) {
+  table[id=3D"main"] {
+    max-width: 600px !important; width: 100% !important; min-width: 100% !i=
+mportant;
+  }
+  .nomob {
+    display: none !important;
+  }
+  .onlymob {
+    display: inline-block !important;
+  }
+  .rightifmob {
+    text-align: right !important;
+  }
+  .som {
+    max-width: 33% !important;
+  }
+  div.footer p {
+    text-align: left !important;
+  }
+  div.footer td {
+    text-align: left !important;
+  }
+}
+</style>
+</head>
+<body style=3D'height: 100%; width: 100%; background-color: white; -webkit-=
+text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-rendering: optimiz=
+eLegibility; font-feature-settings: "kern" 1; font-family: -apple-system,Bl=
+inkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em=
+; margin: 0; padding: 0;'>
+<div id=3D"preview" class=3D"noarchive" style=3D"display: none; color: #666=
+;">This week's database news</div>
+
+<!--[if (gte mso 9)|(IE)]>
+<table cellpadding=3D"0" cellspacing=3D"0" align=3D"center" bgcolor=3D"#fff=
+fff" width=3D"600"><tr><td valign=3D"top" style=3D"width: 600px;" bgcolor=
+=3D"#ffffff"><![endif]-->
+<table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" id=
+=3D"main" width=3D"100%" style=3D"table-layout: fixed; font-family: -apple-=
+system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-heigh=
+t: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: c=
+ollapse; max-width: 600px; height: 100% !important; padding: 0px;">
+  <tr><td style=3D"font-family: -apple-system,BlinkMacSystemFont,Helvetica,=
+sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; ms=
+o-table-rspace: 0pt; border-collapse: collapse;">
+
+  <div id=3D"content">    <!-- left/right splitbar -->
+    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-=
+table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr>
+<td width=3D"50%" align=3D"left" style=3D"padding-left: 4px; font-family: -=
+apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line=
+-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><p style=3D"font-size: 12px; color: #999999; text-transform=
+: uppercase; line-height: 1.0em; font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; margin-top: 0.8em; margin-bottom: 0.8em;">#240 =
+=E2=80=94 February 8, 2019</p></td>
+<td width=3D"50%" align=3D"right" style=3D"padding-right: 4px; font-family:=
+ -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; li=
+ne-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-col=
+lapse: collapse;"><p style=3D"font-size: 12px; text-transform: uppercase; l=
+ine-height: 1.0em; font-family: -apple-system,BlinkMacSystemFont,Helvetica,=
+sans-serif; margin-top: 0.8em; margin-bottom: 0.8em;"><a href=3D"https://db=
+weekly.com/issues/240" style=3D"text-decoration: none; color: #478dda;">Rea=
+d on the Web</a></p></td>
+</tr></table>
+    <!-- masthead -->
+    <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"back=
+ground-color: #478dda; text-align: center; color: #ffffff; mso-table-lspace=
+: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;" class=3D"el-masth=
+ead"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemFont,Helveti=
+ca,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse; padding: 0 12px;"><p sty=
+le=3D"font-size: 1.8em; font-weight: 600; line-height: 1.0em; font-family: =
+-apple-system,BlinkMacSystemFont,Helvetica,sans-serif; margin-top: 0.8em; m=
+argin-bottom: 0.8em;">Database Weekly</p></td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td s=
+tyle=3D"font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif;=
+ font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rsp=
+ace: 0pt; border-collapse: collapse;">
+  <a href=3D"https://dbweekly.com/link/59148/85a4c1edbc" style=3D"text-deco=
+ration: none; color: #478dda;"><img src=3D"https://res.cloudinary.com/cpres=
+s/image/upload/w_1280,e_sharpen:60/kixpgozyckjykvko0brd.jpg" alt=3D"" width=
+=3D"640" style=3D"width: 100%; -ms-interpolation-mode: bicubic; outline: no=
+ne; height: auto; text-decoration: none; max-width: 100%; border: 0 none;">=
+</a>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 1.05em; line-height: 1.55em; color: #5a5a5=
+a; margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; f=
+ont-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweek=
+ly.com/link/59148/85a4c1edbc" title=3D"www.digitalocean.com" style=3D"text-=
+decoration: none; color: #478dda; border-bottom-width: 1px !important; bord=
+er-bottom-color: #ddd !important; border-bottom-style: solid !important; fo=
+nt-size: 1.1em; line-height: 1.4em;">Understanding Database Sharding</a></s=
+pan> =E2=80=94 Goes over what sharding is, some of its main benefits and dr=
+awbacks, and also a few common sharding approaches.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Mark Dr=
+ake </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/59149/85a4c1edbc" title=3D"blog.floydhub.com" style=3D"text-decor=
+ation: none; color: #478dda; border-bottom-width: 1px !important; border-bo=
+ttom-color: #ddd !important; border-bottom-style: solid !important; font-si=
+ze: 1.05em;">Recommending Similar Fashion Images with Deep Learning</a></sp=
+an> =E2=80=94 Databases and search features often go hand in hand (e.g. Ela=
+sticsearch) but deep learning is having an interesting impact on search by =
+providing a totally different model for it. Stories like this get me wonder=
+ing about the interesting places where databases and ML collide.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">James L=
+e (FloydHub) </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+  <a target=3D"_blank" href=3D"https://dbweekly.com/link/59150/85a4c1edbc" =
+style=3D"text-decoration: none; color: #478dda; border-bottom-width: 1px !i=
+mportant; border-bottom-color: #ddd !important; border-bottom-style: solid =
+!important;"><img src=3D"https://copm.s3.amazonaws.com/5e99dd98.png" width=
+=3D"125" height=3D"45" style=3D"padding-top: 12px; padding-left: 12px; -ms-=
+interpolation-mode: bicubic; outline: none; height: auto; text-decoration: =
+none; max-width: 100%; border: 0 none;" align=3D"right" alt=3D"" class=3D"s=
+om"></a>
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/59150/85a4c1edbc" title=3D"postgresvision.com" style=3D"text-deco=
+ration: none; color: #478dda; border-bottom-width: 1px !important; border-b=
+ottom-color: #ddd !important; border-bottom-style: solid !important; font-s=
+ize: 1.05em;">Don=E2=80=99t Miss Postgres Vision 2019</a></span> =E2=80=94 =
+Save the date: June 24 - 26, Boston, MA.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Enterpr=
+iseDB <span style=3D"text-transform: uppercase; margin-left: 4px; font-size=
+: 0.9em; border-radius: 2px; background-color: #ffc; color: #997 !important=
+; padding: 1px 4px; border: 1px solid #eeb;" class=3D"tag-sponsor">sponsor<=
+/span></p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  video" style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-=
+collapse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSy=
+stemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-ta=
+ble-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding:=
+ 0px 15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink">=E2=96=B6=C2=A0=C2=A0<a hre=
+f=3D"https://dbweekly.com/link/59151/85a4c1edbc" title=3D"www.youtube.com" =
+style=3D"text-decoration: none; color: #478dda; border-bottom-width: 1px !i=
+mportant; border-bottom-color: #ddd !important; border-bottom-style: solid =
+!important; font-size: 1.05em;">PostgreSQL Goes to Eleven</a></span> =E2=80=
+=94 Joe Conway=E2=80=99s talk from FOSDEM digs into some of the history of =
+PostgreSQL and briefly covers what arrived in Postgres 11 and what's set fo=
+r Postgres 12. <em>48 minutes.</em></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Joe Con=
+way </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/59152/85a4c1edbc" title=3D"www.brentozar.com" style=3D"text-decor=
+ation: none; color: #478dda; border-bottom-width: 1px !important; border-bo=
+ttom-color: #ddd !important; border-bottom-style: solid !important; font-si=
+ze: 1.05em;">What Queries Does Microsoft's Telemetry Service Run on Your SQ=
+L Server?</a></span> =E2=80=94 Since SQL Server 2016, SQL Server instances =
+'phone home' to MS by default with the results of various queries ran again=
+st your database, but what are they? Brent Ozar captured a trace.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Brent O=
+zar </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-subta=
+ble " style=3D"background-color: #f3faff; margin-top: 15px; mso-table-lspac=
+e: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td style=3D=
+"font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-serif; font-s=
+ize: 15px; line-height: 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0p=
+t; border-collapse: collapse; padding: 0px;">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; margin-top=
+: 0 !important;"><tr><td style=3D"height: 16px; font-family: -apple-system,=
+BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55=
+em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse=
+;"></td></tr></table>
+<!-- normal content section -->
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"content =
+el-content" style=3D"color: #5a5a5a; mso-table-lspace: 0pt; mso-table-rspac=
+e: 0pt; border-collapse: collapse;"><tr><td style=3D"font-family: -apple-sy=
+stem,BlinkMacSystemFont,Helvetica,sans-serif; font-size: 15px; line-height:=
+ 1.55em; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: col=
+lapse; padding: 0px 15px;"><span style=3D"font-size: 1.2em;">A brief news b=
+reak..</span></td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 1.05em; line-height: 1.55em; color: #5a5a5=
+a; margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; f=
+ont-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweek=
+ly.com/link/59153/85a4c1edbc" title=3D"news.ycombinator.com" style=3D"text-=
+decoration: none; color: #478dda; border-bottom-width: 1px !important; bord=
+er-bottom-color: #ddd !important; border-bottom-style: solid !important; fo=
+nt-size: 1.05em;">MailChimp's Mandrill Service Experiences Outage Due to Po=
+stgreSQL Transaction ID Wraparound</a></span> =E2=80=94 This is something y=
+ou <em>really</em> need to be aware of if using Postgres at scale and aren'=
+t fully in tune with your autovacuuming setup. Sentry experienced <a href=
+=3D"https://dbweekly.com/link/59154/85a4c1edbc" style=3D"text-decoration: n=
+one; color: #478dda; border-bottom-width: 1px !important; border-bottom-col=
+or: #ddd !important; border-bottom-style: solid !important;">a similar outa=
+ge in 2015</a> and did a full writeup.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Hacker =
+News </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/59155/85a4c1edbc" title=3D"www.datanami.com" style=3D"text-decora=
+tion: none; color: #478dda; border-bottom-width: 1px !important; border-bot=
+tom-color: #ddd !important; border-bottom-style: solid !important; font-siz=
+e: 1.05em;">Microsoft Invests in Databricks</a></span> =E2=80=94 Databricks=
+ is a <em>=E2=80=9Chigh-flying analytics startup founded by the creators of=
+ Apache Spark=E2=80=9D</em>.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Datanam=
+i </p>
+</td></tr></table>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td s=
+tyle=3D"height: 4px; font-family: -apple-system,BlinkMacSystemFont,Helvetic=
+a,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt; =
+mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/59156/85a4c1edbc" title=3D"medium.com" style=3D"text-decoration: =
+none; color: #478dda; border-bottom-width: 1px !important; border-bottom-co=
+lor: #ddd !important; border-bottom-style: solid !important; font-size: 1.0=
+5em;">PostgreSQL at Scale: Database Schema Changes Without Downtime</a></sp=
+an> =E2=80=94 Braintree Payments, a division of PayPal, heavily uses Postgr=
+es and due to offering payment processing services, zero downtime is a must=
+. Here=E2=80=99s a deep dive into all the things involved in making schema =
+updates without downtime.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">James C=
+oleman </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/59157/85a4c1edbc" title=3D"severalnines.com" style=3D"text-decora=
+tion: none; color: #478dda; border-bottom-width: 1px !important; border-bot=
+tom-color: #ddd !important; border-bottom-style: solid !important; font-siz=
+e: 1.05em;">New Whitepaper: Choosing a Database Proxy for MySQL and MariaDB=
+</a></span> =E2=80=94 What is a proxy and why do you need it to achieve hig=
+h availability for your database?</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Several=
+nines <span style=3D"text-transform: uppercase; margin-left: 4px; font-size=
+: 0.9em; border-radius: 2px; background-color: #ffc; color: #997 !important=
+; padding: 1px 4px; border: 1px solid #eeb;" class=3D"tag-sponsor">sponsor<=
+/span></p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/59158/85a4c1edbc" title=3D"rossjayjones.github.io" style=3D"text-=
+decoration: none; color: #478dda; border-bottom-width: 1px !important; bord=
+er-bottom-color: #ddd !important; border-bottom-style: solid !important; fo=
+nt-size: 1.05em;">Implementing Versioning and Audit Trails with SQL Server =
+Temporal Tables and .NET Core</a></span> =E2=80=94 When working with person=
+al or otherwise valuable data, it can become essential to see who is making=
+ changes to it, when those changes are, and <em>what</em> they were.</p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Ross Ja=
+y Jones </p>
+</td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/59159/85a4c1edbc" title=3D"github.com" style=3D"text-decoration: =
+none; color: #478dda; border-bottom-width: 1px !important; border-bottom-co=
+lor: #ddd !important; border-bottom-style: solid !important; font-size: 1.0=
+5em;">mongofluxd: Real-Time Sync from MongoDB into InfluxDB</a></span></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Ryan Wy=
+nn </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-headi=
+ng" style=3D"background-color: #478dda; text-align: left; margin-top: 15px;=
+ color: #ffffff; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;"><p style=3D"font-size: 1.1em; font-weight: 600; text-transform: none=
+ !important; font-family: -apple-system,BlinkMacSystemFont,Helvetica,sans-s=
+erif; line-height: 1.55em; margin: 0.5em 0;">=F0=9F=90=A6=C2=A0Spotted on T=
+witter</p></td></tr></table>
+
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" class=3D"el-item =
+item  " style=3D"mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-colla=
+pse: collapse;"><tr><td style=3D"font-family: -apple-system,BlinkMacSystemF=
+ont,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-l=
+space: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 0px =
+15px;">
+=20=20
+  <p class=3D"desc" style=3D"font-family: -apple-system,BlinkMacSystemFont,=
+Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; color: #5a5a5a;=
+ margin-top: 0.8em; margin-bottom: 0;"><span style=3D"font-weight: 600; fon=
+t-size: 1.1em; color: #000;" class=3D"mainlink"><a href=3D"https://dbweekly=
+.com/link/59160/85a4c1edbc" title=3D"twitter.com" style=3D"text-decoration:=
+ none; color: #478dda; border-bottom-width: 1px !important; border-bottom-c=
+olor: #ddd !important; border-bottom-style: solid !important; font-size: 1.=
+05em;">'We Use SQLite Mounted on a Shared Volume in WAL Mode' (To Communica=
+te Between Containers)</a></span> =E2=80=94 I=E2=80=99m <em>really</em> loo=
+king forward to the blog post to follow on this interesting approach for co=
+ntainer communication. Database as data<em>bus?</em></p>
+  <p class=3D"name" style=3D"color: #5a5a5a; font-family: -apple-system,Bli=
+nkMacSystemFont,Helvetica,sans-serif; font-size: 12px; line-height: 1.55em;=
+ margin-top: 2px; margin-bottom: 0.8em; text-transform: uppercase;">Rick Br=
+anson on Twitter </p>
+</td></tr></table>
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"mso-tabl=
+e-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr><td s=
+tyle=3D"height: 16px; font-family: -apple-system,BlinkMacSystemFont,Helveti=
+ca,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-lspace: 0pt;=
+ mso-table-rspace: 0pt; border-collapse: collapse;"></td></tr></table>
+</div>
+
+  </td></tr>
+</table>
+<!--[if (gte mso 9)|(IE)]></td></tr></table><![endif]-->
+
+<div id=3D"footer" class=3D"noarchive">
+      <table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"bo=
+rder-top-width: 1px; border-top-color: #dddddd; border-top-style: solid; ms=
+o-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;"><tr=
+><td style=3D"text-align: center; font-family: -apple-system,BlinkMacSystem=
+Font,Helvetica,sans-serif; font-size: 15px; line-height: 1.55em; mso-table-=
+lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse; padding: 20p=
+x 15px;">
+      <p style=3D"font-size: 12px; line-height: 1.5em; font-family: -apple-=
+system,BlinkMacSystemFont,Helvetica,sans-serif; margin-top: 0.8em; margin-b=
+ottom: 0.8em;">A <strong style=3D"font-weight: 600;"><a href=3D"https://coo=
+perpress.com/" style=3D"text-decoration: none; color: #478dda;">Cooperpress=
+</a></strong> publication.</p>
+      <p style=3D"font-size: 0.9em; font-family: -apple-system,BlinkMacSyst=
+emFont,Helvetica,sans-serif; line-height: 1.55em; margin-top: 0.8em; margin=
+-bottom: 0.8em;"><span class=3D"nomob"><a href=3D"https://dbweekly.com/edit=
+_subscription/85a4c1edbc" style=3D"text-decoration: underline; color: #478d=
+da;">Change your email address</a> or </span><a href=3D"https://dbweekly.co=
+m/leave/85a4c1edbc" style=3D"text-decoration: underline; color: #478dda;">S=
+top getting this newsletter</a></p>
+      <p style=3D"font-size: 12px; font-family: -apple-system,BlinkMacSyste=
+mFont,Helvetica,sans-serif; line-height: 1.55em; margin-top: 0.8em; margin-=
+bottom: 0.8em;">=C2=A9 Cooper Press Ltd =C2=B7 Fairfield Enterprise Centre,=
+ Louth, LN11 0LS, United Kingdom</p>
+      </td></tr></table>
+  </div>
+<img src=3D"https://dbweekly.com/open/240/85a4c1edbc" width=3D"1" height=3D=
+"1" /></body>
+</html>
+
+--84ea2a6d56193d297e88d3491ba4580343a41a32eb5e95b99d886549c092--
