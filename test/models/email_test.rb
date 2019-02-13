@@ -58,16 +58,17 @@ class EmailTest < ActiveSupport::TestCase
     email = Email.new(body: File.read("test/fixtures/files/Hacker\ Newsletter\ \#434.eml"))
     urls = email.hacker_newsletter_links
     assert_equal ["Algorithms, by Jeff Erickson",
- "https://hackernewsletter.us1.list-manage.com/track/click?u=faa8eb4ef3a111cef92c4f3d4&id=56ee376af8&e=16cfb65b5e"] , urls[1]
+ "https://hackernewsletter.us1.list-manage.com/track/click?u=faa8eb4ef3a111cef92c4f3d4&id=56ee376af8&e=16cfb65b5e"] , urls[0]
+    assert_equal 55, urls.size
   end
 
   test "grab text from ruby weekly" do
     email = Email.new(body: File.read("test/fixtures/files/ruby_weekly.eml"))
     urls = email.ruby_weekly_links
     assert_equal ["Ruby 2.6 Released",
-  " — As is traditional, the latest major release of Ruby came out on Christmas Day. The much awaited 2.6 includes an initial implementation of a JIT compiler (which needs to be enabled manually), the then alias for yield_self, RubyVM::AbstractSyntaxTree, endless ranges, and a lot more (see next item).",
+  "Ruby 2.6 Released — As is traditional, the latest major release of Ruby came out on Christmas Day. The much awaited 2.6 includes an initial implementation of a JIT compiler (which needs to be enabled manually), the then alias for yield_self, RubyVM::AbstractSyntaxTree, endless ranges, and a lot more (see next item).",
   "https://rubyweekly.com/link/57534/d218cfa36e"], urls[0]
-    assert_equal 27, urls.size
+    assert_equal 30, urls.size
   end
 
   test "grab text from sre weekly" do

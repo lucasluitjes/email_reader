@@ -86,10 +86,14 @@ class Email < ApplicationRecord
   end
 
   def hacker_newsletter_links
-    # TODO group links by h2 headers, remove comment links
+    # TODO group links by h2 headers
     html_string = Mail.new(body).html_part.decoded
     doc = Nokogiri::HTML.parse(html_string)
     url_elements = doc.search("a")
+    url_elements = url_elements.select { |link| link.text.slice(0,8) != "comments" }
+    url_elements = url_elements.select { |link| link.text != "hackernewsletter" }
+    url_elements = url_elements.select { |link| link.text != "http://hackernewsletter.com" }
+    url_elements = url_elements.select { |link| link.text != "Curpress" }
     url_elements = url_elements.select do |n|
       url = n.attributes["href"].value
       url =~ /^https:\/\/hackernewsletter.us1.list-manage.com\/track\//
@@ -112,14 +116,15 @@ class Email < ApplicationRecord
     end
     urls = url_elements.map do |n|
       title = n.text.gsub(/\s+/," ")
-      description = n.parent.parent.text
-      description.slice!(title)
+      description_node = n.xpath('./ancestor::p[1]').first
+      description = description_node ? description_node.text.gsub(/\s+/," ") : ""
       [
         title,
         description,
         n.attributes["href"].value
       ]
     end
+    urls.uniq { |link| [link[1], link[2]]}
   end
 
   def sre_weekly_links
