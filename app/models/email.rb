@@ -57,6 +57,7 @@ class Email < ApplicationRecord
     end
     urls = urls.map { |link| [link[0].lstrip, link[1]] }
     urls = urls.map { |link| [link[0].split(" \u2014 "), link[1]].flatten }
+    urls = urls.map { |link| link.size < 3 ? [link[0], "", link[1] ] : link }
     urls.uniq! { |link| link[0]}
   end
 
