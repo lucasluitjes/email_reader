@@ -34,14 +34,16 @@ class EmailTest < ActiveSupport::TestCase
     assert_equal ["Redis Speeds Towards a Multi-Model Future",
  "Redis is best known as a very fast key-value store, but there’s more to it than that especially if Redis Labs gets its way. Here’s an update on where Redis is at right now.",
  "https://dbweekly.com/link/53785/85a4c1edbc"], urls[1]
- assert_equal 18, urls.size
+    assert_equal 18, urls.size
   end
 
   test "grab text from java_weekly" do
     email = Email.new(body: File.read("test/fixtures/files/java_weekly.eml"))
     urls = email.java_weekly_links
-    assert_equal ["RunJS: A JavaScript 'Scratchpad' Tool for macOS", "Write and run JavaScript instantly. Useful for learning, experimenting, or perhaps even creating screencasts, tweets, or similar educational content.", "https://javascriptweekly.com/link/57608/4068a3c669"], urls[0]
+    assert_equal ["RunJS: A JavaScript 'Scratchpad' Tool for macOS", "Write and run JavaScript instantly. Useful for learning, experimenting, or perhaps even creating screencasts, tweets, or similar educational content.", "https://javascriptweekly.com/link/57608/4068a3c669"], urls[1]
+    assert_equal 31, urls.size
   end
+
   test "grab text from breaking smart" do
     email = Email.new(body: File.read("test/fixtures/files/breaking_smart.eml"))
     url = email.breaking_smart_links

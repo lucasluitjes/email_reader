@@ -25,7 +25,6 @@ class Email < ApplicationRecord
   def email_list_type
     mail = Mail.new(body)
     sender = mail.from.first
-    pp sender
     symbol = Symbols[sender]
   end
 
@@ -49,6 +48,7 @@ class Email < ApplicationRecord
     html_string = Mail.new(body).html_part.decoded
     doc = Nokogiri::HTML.parse(html_string)
     url_elements = doc.search("a")
+    url_elements = url_elements.select { |link| link.text != "Read on the Web" }
     urls = url_elements.map do |n|
       [
         n.parent.parent.text.gsub(/\s+/," "),
@@ -56,9 +56,8 @@ class Email < ApplicationRecord
       ]
     end
     urls = urls.map { |link| [link[0].lstrip, link[1]] }
-    urls = urls.uniq
     urls = urls.map { |link| [link[0].split(" \u2014 "), link[1]].flatten }
-    urls = urls.select { |link| link[2] != nil }
+    urls.uniq! { |link| link[0]}
   end
 
   def breaking_smart_links
