@@ -111,6 +111,7 @@ class Email < ApplicationRecord
     urls = url_elements.map do |n|
       [
         n.text,
+        " ",
         n.attributes["href"].value
       ]
     end
