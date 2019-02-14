@@ -145,12 +145,15 @@ class Email < ApplicationRecord
     url_elements = url_elements.select do |n|
       url = n.attributes["href"].value
     end
+    url_elements = url_elements.reject { |link| link.text == "View on sreweekly.com" }
     urls = url_elements.map do |n|
       [
-        n.parent.parent.inner_text.gsub(/\s+/," "),
+        n.parent.parent.inner_text.lstrip.gsub(/\s+/," "),
         n.attributes["href"].value
       ]
     end
+    urls = urls.reject { |link| link[0].slice(0,26) == "A message from our sponsor" }
+    urls = urls.reject { |link| link[0].slice(0,22) == "This email was sent to" }
   end
 
   def vulnerabilities_links

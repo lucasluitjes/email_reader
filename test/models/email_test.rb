@@ -76,6 +76,7 @@ class EmailTest < ActiveSupport::TestCase
   test "grab text from sre weekly" do
     email = Email.new(body: File.read("test/fixtures/files/SRE\ Weekly\ Issue\ \#154.eml"))
     urls = email.sre_weekly_links
+    assert_equal 11, urls.size
   end
 
   test "grab text from vulnerabilities newsletter" do
