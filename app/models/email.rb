@@ -51,12 +51,15 @@ class Email < ApplicationRecord
     doc = Nokogiri::HTML.parse(html_string)
     url_elements = doc.search("a")
     url_elements = url_elements.select { |link| link.text != "Read on the Web" }
+    url_elements = url_elements.reject { |link| link.children.size < 2 && link.children.first.name == "img" }
+
     urls = url_elements.map do |n|
       [
         n.parent.parent.text.gsub(/\s+/," "),
         /^https:\/\/javascriptweekly.com\/link\S*/.match(n.attributes["href"].value).to_s
       ]
     end
+
     urls = urls.map { |link| [link[0].lstrip, link[1]] }
     urls = urls.map { |link| [link[0].split(" \u2014 "), link[1]].flatten }
     urls = urls.map { |link| link.size < 3 ? [link[0], "", link[1] ] : link }
