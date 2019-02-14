@@ -76,6 +76,8 @@ class EmailTest < ActiveSupport::TestCase
   test "grab text from sre weekly" do
     email = Email.new(body: File.read("test/fixtures/files/SRE\ Weekly\ Issue\ \#154.eml"))
     urls = email.sre_weekly_links
+    assert_equal ["STAMPing on event-stream Hands-down the best thing I’ve read in awhile! The author draws on the work of Nancy Leveson, applying her STAMP theory to a recent incident involving a rogue NPM package that stole bitcoin wallets. Hillel Wayne ",
+  " ", "https://www.hillelwayne.com/post/stamping-on-eventstream/"], urls[0]
     assert_equal 11, urls.size
   end
 

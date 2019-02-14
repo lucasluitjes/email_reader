@@ -141,19 +141,25 @@ class Email < ApplicationRecord
   def sre_weekly_links
     html_string = Mail.new(body).html_part.decoded
     doc = Nokogiri::HTML.parse(html_string)
+    # all articles
     url_elements = doc.search("a")
     url_elements = url_elements.select do |n|
-      url = n.attributes["href"].value
+      url = n.parent.get_attribute("class") == "sreweekly-title"
     end
     url_elements = url_elements.reject { |link| link.text == "View on sreweekly.com" }
     urls = url_elements.map do |n|
       [
         n.parent.parent.inner_text.lstrip.gsub(/\s+/," "),
+        " ",
         n.attributes["href"].value
       ]
     end
+    # all outages
+    url_elements2 = doc.xpath('/html/body/ul/li')
+    urls2 = url_elements2.map { |n| [n.text.gsub(/\s+/," "), " ", n.children[0]["href"]] }
     urls = urls.reject { |link| link[0].slice(0,26) == "A message from our sponsor" }
     urls = urls.reject { |link| link[0].slice(0,22) == "This email was sent to" }
+    urls = urls + urls2
   end
 
   def vulnerabilities_links
