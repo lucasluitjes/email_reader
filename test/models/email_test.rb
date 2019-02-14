@@ -34,7 +34,7 @@ class EmailTest < ActiveSupport::TestCase
     assert_equal ["Redis Speeds Towards a Multi-Model Future",
  "Redis is best known as a very fast key-value store, but there’s more to it than that especially if Redis Labs gets its way. Here’s an update on where Redis is at right now.",
  "https://dbweekly.com/link/53785/85a4c1edbc"], urls[1]
-    assert_equal 18, urls.size
+    assert_equal 15, urls.size
   end
 
   test "grab text from java_weekly" do

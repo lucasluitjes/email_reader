@@ -42,6 +42,8 @@ class Email < ApplicationRecord
     urls = urls.select { |link| !link[0] }
     urls = urls.select { |link| link[2] != "" }
     urls = urls.map { |link| [link[1].split(" \u2014 "), link[2]].flatten }
+    urls = urls.map { |link| [link[0].lstrip, link[1], link[2]] }
+    urls = urls.uniq { |link| link[0] }
   end
 
   def java_weekly_links
