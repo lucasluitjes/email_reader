@@ -89,5 +89,6 @@ class EmailTest < ActiveSupport::TestCase
   test "grab text from blendle" do
     email = Email.new(body: File.read("test/fixtures/files/blendle.eml"))
     urls = email.blendle_links
+    assert_equal 14, urls.size
   end
 end

@@ -179,12 +179,16 @@ class Email < ApplicationRecord
     urls = url_elements.map do |n|
       [
         (n.parent.parent.inner_text.gsub(/\s+/," ")).lstrip,
-        "",
+        " ",
         /^https:\/\/open.blendle.com\S*/.match(n.attributes["href"].value).to_s
       ]
     end
     urls = urls.select { |link| link[0] != "" }
-    urls = urls.uniq
+    urls = urls.reject { |link| link[0].slice(0,16) == "Verzonden naar l" }
+    urls = urls.reject { |link| link[0].slice(0,27) == "Is deze nieuwsbrief naar je" }
+    urls = urls.reject { |link| link[0].slice(0,26) == "Elke dag onbeperkt toegang" }
+    urls = urls.reject { |link| link[0] == "  " }
+    urls = urls.uniq { |link| link[2]}
   end
 end
 
