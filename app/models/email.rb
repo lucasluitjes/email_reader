@@ -51,8 +51,9 @@ class Email < ApplicationRecord
     doc = Nokogiri::HTML.parse(html_string)
     url_elements = doc.search("a")
     url_elements = url_elements.select { |link| link.text != "Read on the Web" }
-    url_elements = url_elements.reject { |link| link.children.size < 2 && link.children.first.name == "img" }
-
+    url_elements = url_elements.reject do |link|
+      link.children.size < 2 && link.children.first.name == "img"
+    end
     urls = url_elements.map do |n|
       [
         n.parent.parent.text.gsub(/\s+/," "),
@@ -70,7 +71,11 @@ class Email < ApplicationRecord
     html_string = Mail.new(body).html_part.decoded
     doc = Nokogiri::HTML.parse(html_string)
     url_elements = doc.search("a")
-    url = [url_elements[0].inner_text, url_elements[0].attributes["href"].value]
+    url =
+    [
+      "breaking smart link", "view this email in your browser",
+      url_elements[0].get_attribute("href")
+    ]
   end
 
   def elixir_weekly_links
@@ -129,7 +134,8 @@ class Email < ApplicationRecord
         n.attributes["href"].value
       ]
     end
-    urls.uniq { |link| [link[1], link[2]]}
+    urls = urls.reject {|link| link[0] == ""}
+    urls = urls.uniq { |link| [link[1], link[2]]}
   end
 
   def sre_weekly_links

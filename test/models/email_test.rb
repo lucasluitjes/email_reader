@@ -47,7 +47,7 @@ class EmailTest < ActiveSupport::TestCase
   test "grab text from breaking smart" do
     email = Email.new(body: File.read("test/fixtures/files/breaking_smart.eml"))
     url = email.breaking_smart_links
-    assert_equal ["View this email in your browser", "https://mailchi.mp/ribbonfarm/good-afternoon-internet-im-listening?e=4c5a41c2ff"], url
+    assert_equal ["breaking smart link", "view this email in your browser", "https://mailchi.mp/ribbonfarm/good-afternoon-internet-im-listening?e=4c5a41c2ff"], url
   end
 
   test "grab text from elixir weekly" do
@@ -70,7 +70,7 @@ class EmailTest < ActiveSupport::TestCase
     assert_equal ["Ruby 2.6 Released",
   "Ruby 2.6 Released — As is traditional, the latest major release of Ruby came out on Christmas Day. The much awaited 2.6 includes an initial implementation of a JIT compiler (which needs to be enabled manually), the then alias for yield_self, RubyVM::AbstractSyntaxTree, endless ranges, and a lot more (see next item).",
   "https://rubyweekly.com/link/57534/d218cfa36e"], urls[0]
-    assert_equal 30, urls.size
+    assert_equal 29, urls.size
   end
 
   test "grab text from sre weekly" do
