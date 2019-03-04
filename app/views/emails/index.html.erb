@@ -4,8 +4,10 @@
 
 <% @emails.each do |email| %>
   <p>
-    <%= email.created_at %>: 
-    <%= email.subject %>
+    <b> <%= Mail.new(email.body)[:from].display_names.first %>: </b>
+    <%= email.created_at %>:
+    <%= Mail.new(email.body).subject %>
+    <%= link_to 'Show', email , target: :_blank%>
   </p>
   <ul>
     <% email.links.each do |link| %>

@@ -10,6 +10,7 @@ class EmailsController < ApplicationController
   # GET /emails/1
   # GET /emails/1.json
   def show
+    render :html => Mail.new(@email.body).html_part.decoded.html_safe
   end
 
   # GET /emails/new

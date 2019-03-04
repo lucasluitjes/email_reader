@@ -111,7 +111,7 @@ class Email < ApplicationRecord
     urls = url_elements.map do |n|
       [
         n.text,
-        " ",
+        n.parent.xpath("span").nil? ? " " : n.parent.xpath("span").text,
         n.attributes["href"].value
       ]
     end
