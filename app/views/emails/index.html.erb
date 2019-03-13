@@ -2,6 +2,9 @@
 
 <h1>Emails</h1>
 
+<%= paginate @emails %>
+<%= page_entries_info @emails %>
+
 <% @emails.each do |email| %>
   <p>
     <b> <%= Mail.new(email.body)[:from].display_names.first %>: </b>
@@ -17,6 +20,9 @@
     <% end %>
   </ul>
 <% end %>
+
+<%= paginate @emails %>
+<%= page_entries_info @emails %>
 <!-- <table>
   <thead>
     <tr>
