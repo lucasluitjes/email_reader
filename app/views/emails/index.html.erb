@@ -15,9 +15,12 @@
   <ul>
     <% email.links.each do |link| %>
       <li> 
+        <%# set read to whatever value app/models/email.read is %>
+        <input id="read" name="read" type="checkbox" checked="checked" />
         <a href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %>
       </li>
     <% end %>
+   <%= link_to "Open selected links", "#", :class => "openSelectedLinks" %>
   </ul>
 <% end %>
 

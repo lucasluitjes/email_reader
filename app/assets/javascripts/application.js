@@ -12,4 +12,14 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery
 //= require_tree .
+
+$(document).ready(function() {
+  $(".openSelectedLinks").on("click", function(){
+    console.log($( this ));
+    var links = console.log($( this ).siblings());
+    // var checked_links = console.log(links.filter("input:checked"));
+    return false;
+  });
+});
