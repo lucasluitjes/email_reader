@@ -21,7 +21,7 @@ $(document).ready(function() {
     var checked_links = links.children().filter("input:checked").parent();
     var adresses = checked_links.children("a");
     adresses.each(function() {
-      window.open(this.href);
+      window.open("/lazy_loading.html#" + this.href,'_blank');
     });
     return false;
   });

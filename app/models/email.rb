@@ -44,6 +44,9 @@ class Email < ApplicationRecord
     urls = urls.map { |link| [link[1].split(" \u2014 "), link[2]].flatten }
     urls = urls.map { |link| [link[0].lstrip, link[1], link[2]] }
     urls = urls.uniq { |link| link[0] }
+    urls = urls.map do |link|
+      if link[2] == nil then [link[0], "No description", link[1]] else link end
+    end
   end
 
   def java_weekly_links
