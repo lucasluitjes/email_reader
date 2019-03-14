@@ -17,9 +17,12 @@
 
 $(document).ready(function() {
   $(".openSelectedLinks").on("click", function(){
-    console.log($( this ));
-    var links = console.log($( this ).siblings());
-    // var checked_links = console.log(links.filter("input:checked"));
+    var links = $( this ).siblings();
+    var checked_links = links.children().filter("input:checked").parent();
+    var adresses = checked_links.children("a");
+    adresses.each(function() {
+      window.open(this.href);
+    });
     return false;
   });
 });
