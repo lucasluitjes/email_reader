@@ -7,7 +7,7 @@ class EmailsController < ApplicationController
     raise "Total brutal lack of configuration, security kitty is not pleased :(" unless username.present? && password.present?
     http_basic_authenticate_with name: username, password: password
   end
-  
+
   # GET /emails
   # GET /emails.json
   def index
@@ -17,7 +17,9 @@ class EmailsController < ApplicationController
   # GET /emails/1
   # GET /emails/1.json
   def show
-    render :html => Mail.new(@email.body).html_part.decoded.html_safe
+    mail = Mail.new(@email.body)
+    body = mail.html_part ? html_part : text_part
+    render :html => body.decode.html_safe
   end
 
   # GET /emails/new
