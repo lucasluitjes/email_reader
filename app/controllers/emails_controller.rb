@@ -18,7 +18,7 @@ class EmailsController < ApplicationController
   # GET /emails/1.json
   def show
     mail = Mail.new(@email.body)
-    body = mail.html_part.decode || mail.text_part.decode || mail.decoded
+    body = mail.html_part&.decode || mail.text_part&.decode || mail.decoded
     render :html => body.html_safe
   end
 
