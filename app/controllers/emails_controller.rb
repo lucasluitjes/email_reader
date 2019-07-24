@@ -11,7 +11,7 @@ class EmailsController < ApplicationController
   # GET /emails
   # GET /emails.json
   def index
-    @emails = Email.page(params[:page]).per(10)
+    @emails = Email.order("created_at DESC").page(params[:page]).per(10)
   end
 
   # GET /emails/1
