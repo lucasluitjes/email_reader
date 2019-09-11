@@ -10,8 +10,7 @@ class IncomingEmailsController < ApplicationController
       subject: mail.subject,
       body: params[:message]
       )
-    email.create_links!
-
+    CreateLinksJob.perform_later(email)
     render text: "OK"
   end
 end
