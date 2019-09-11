@@ -26,3 +26,34 @@ $(document).ready(function() {
     return false;
   });
 });
+
+
+var listItem = document.getElementById( "li" );
+
+function boldLink(index) {
+  $("li").eq( index ).css( "font-weight", "bold");
+};
+
+function unBoldLink(index) {
+  $("li").eq( index ).css( "font-weight", "lighter");
+};
+
+$(document).ready(function() {
+  boldLink(listItem)
+});
+
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'ArrowDown') {
+    unBoldLink(listItem)
+    listItem += 1;
+    boldLink(listItem)
+  }
+});
+
+document.addEventListener('keyup', function(event) {
+  if (event.code == 'ArrowUp') {
+    unBoldLink(listItem)
+    listItem -= 1;
+    boldLink(listItem)
+  }
+});
