@@ -30,6 +30,10 @@ $(document).ready(function() {
 
 var listItem = document.getElementById( "li" );
 
+$(document).ready(function() {
+  boldLink(listItem)
+});
+
 function boldLink(index) {
   $("li").eq( index ).css( "font-weight", "bold");
 };
@@ -38,8 +42,21 @@ function unBoldLink(index) {
   $("li").eq( index ).css( "font-weight", "lighter");
 };
 
-$(document).ready(function() {
-  boldLink(listItem)
+function toggleCheckBox(index) {
+  $("li").eq( index ).children(0).prop('checked', function (i, value) {
+    return !value;
+  });
+};
+
+$(document).keydown(function(e){
+  var code = e.keyCode;
+  if (code == 37 || code == 38 || code == 40) {
+    e.preventDefault();
+    return false;
+  }
+  else {
+    return true;
+  } 
 });
 
 document.addEventListener('keydown', function(event) {
@@ -50,10 +67,16 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-document.addEventListener('keyup', function(event) {
+document.addEventListener('keydown', function(event) {
   if (event.code == 'ArrowUp') {
     unBoldLink(listItem)
     listItem -= 1;
     boldLink(listItem)
+  }
+});
+
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'ArrowLeft') {
+    toggleCheckBox(listItem);
   }
 });
