@@ -6,22 +6,24 @@
 <%= page_entries_info @emails %>
 
 <% @emails.each do |email| %>
-  <p>
-    <b> <%= Mail.new(email.body)[:from].display_names.first %>: </b>
-    <%= email.created_at %>:
-    <%= Mail.new(email.body).subject %>
-    <%= link_to 'Show', email , target: :_blank%>
-  </p>
-  <ul>
-    <% email.links.each do |link| %>
-      <li> 
-        <%# set read to whatever value app/models/email.read is %>
-        <input id="read" name="read" type="checkbox" checked />
-        <a href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %>
-      </li>
-    <% end %>
-   <%= link_to "Open selected links", "#", :class => "openSelectedLinks" %>
-  </ul>
+  <div>
+    <p>
+      <b> <%= Mail.new(email.body)[:from].display_names.first %>: </b>
+      <%= email.created_at %>:
+      <%= Mail.new(email.body).subject %>
+      <%= link_to 'Show', email , target: :_blank%>
+    </p>
+    <ul>
+      <% email.links.each do |link| %>
+        <li>
+          <%# set read to whatever value app/models/email.read is %>
+          <input id="read" name="read" type="checkbox" checked />
+          <a href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %>
+        </li>
+      <% end %>
+     <%= link_to "Open selected links", "#", :class => "openSelectedLinks" %>
+    </ul>
+  </div>
 <% end %>
 
 <%= paginate @emails %>
