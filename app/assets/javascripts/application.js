@@ -23,6 +23,8 @@ $(document).ready(function() {
     adresses.each(function() {
       window.open("/lazy_loading.html#" + this.href,'_blank');
     });
+    var email_id = $(this).parent().parent().children().children().eq(1).attr("href");
+    console.log(email_id);
     return false;
   });
 });
