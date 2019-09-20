@@ -25,6 +25,16 @@ $(document).ready(function() {
     });
     var email_id = $(this).parent().parent().children().children().eq(1).attr("href");
     console.log(email_id);
+    $.ajax({
+      type: "PATCH",
+      url: email_id,
+      beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]'). attr('content'))},
+      dataType: "json",
+      data:  {email: { read: true}},
+      success: function(data, textStatus, xhr) {
+      console.log(data);
+      }
+    });
     return false;
   });
 });
