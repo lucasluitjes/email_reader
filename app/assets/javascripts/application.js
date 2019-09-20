@@ -23,7 +23,7 @@ $(document).ready(function() {
     adresses.each(function() {
       window.open("/lazy_loading.html#" + this.href,'_blank');
     });
-    var email_id = $(this).parent().parent().children().children().eq(1).attr("href");
+    var email_id = $(this).parent().parent().children().children().eq(2).attr("href");
     console.log(email_id);
     $.ajax({
       type: "PATCH",
@@ -32,9 +32,10 @@ $(document).ready(function() {
       dataType: "json",
       data:  {email: { read: true}},
       success: function(data, textStatus, xhr) {
-      console.log(data);
       }
     });
+    var read_status = $(this).parent().parent().children().children().eq(1);
+    read_status.text("- Read -")
     return false;
   });
 });

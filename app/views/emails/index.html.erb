@@ -9,7 +9,7 @@
   <div>
     <p>
       <b> <%= Mail.new(email.body)[:from].display_names.first %>: </b>
-      - <%= email.read ? "Read" : "Unread" %> -
+      <a> - <%= email.read ? "Read" : "Unread" %> - </a>
       <%= email.created_at %>:
       <%= Mail.new(email.body).subject %>
       <%= link_to 'Show', email , target: :_blank%>
