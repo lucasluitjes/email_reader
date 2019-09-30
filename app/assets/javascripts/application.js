@@ -23,6 +23,19 @@ $(document).ready(function() {
     adresses.each(function() {
       window.open("/lazy_loading.html#" + this.href,'_blank');
     });
+    var email_id = $(this).parent().parent().children().children().eq(2).attr("href");
+    console.log(email_id);
+    $.ajax({
+      type: "PATCH",
+      url: email_id,
+      beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]'). attr('content'))},
+      dataType: "json",
+      data:  {email: { read: true}},
+      success: function(data, textStatus, xhr) {
+      }
+    });
+    var read_status = $(this).parent().parent().children().children().eq(1);
+    read_status.text("- Read -")
     return false;
   });
 });
