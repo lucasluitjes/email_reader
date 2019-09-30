@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require jquery
 //= require_tree .
 
@@ -39,7 +38,6 @@ $(document).ready(function() {
     return false;
   });
 });
-
 
 var listItem = document.getElementById( "li" );
 
