@@ -19,8 +19,8 @@ $(document).ready(function() {
     var links = $( this ).siblings();
     var checked_links = links.children().filter("input:checked").parent();
     var adresses = checked_links.children("a");
-    adresses.each(function() {
-      window.open("/lazy_loading.html#" + this.href,'_blank');
+    adresses.each(function(i, el) {
+      window.open("/lazy_loading.html#" + el.href,'_blank');
     });
     var email_id = $(this).parent().parent().children().children().eq(2).attr("href");
     console.log(email_id);
