@@ -12,7 +12,7 @@
       <a> - <%= email.read ? "Read" : "Unread" %> - </a>
       <%= email.created_at %>:
       <%= Mail.new(email.body).subject %>
-      <%= link_to 'Show', email , target: :_blank%>
+      <%= link_to 'Show', email , target: :_blank, class: 'show-email', id: email.id %>
     </p>
     <ul>
       <% email.links.each do |link| %>
