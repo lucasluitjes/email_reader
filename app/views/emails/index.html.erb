@@ -17,8 +17,12 @@
     </p>
     <ul>
       <%=  %>
-      <% email.links.each do |link| %>
-        <li>
+      <% email.links.each_with_index do |link, index| %>
+        <% if index == 5 %>
+          <li style="padding-bottom: 25px">
+        <% else %>
+          <li>
+        <% end %>
           <% if sender == 'Hacker Newsletter' %>
             <%= check_box 'read', link , {checked: true} %>
           <% else %>
