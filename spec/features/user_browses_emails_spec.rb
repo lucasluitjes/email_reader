@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "UserBrowsesEmails", type: :feature do
+RSpec.feature "User browses mails", type: :feature do
   scenario 'and sees their emails' do
     visit emails_path
     expect(page).to have_content("Emails")
@@ -9,7 +9,7 @@ RSpec.feature "UserBrowsesEmails", type: :feature do
 
   scenario 'and clicks show on an email' do
     visit emails_path
-    puts page.html
+    # puts page.html
     link = page.find_link('59')[:href]
     puts link
   end
