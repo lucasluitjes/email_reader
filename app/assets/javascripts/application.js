@@ -91,3 +91,17 @@ document.addEventListener('keydown', function(event) {
     toggleCheckBox(listItem);
   }
 });
+
+document.addEventListener('keyup', function(event) {
+  if (event.key == 'PageDown') {
+    setTimeout(function(){
+      alert('keydown')
+
+      // unBoldLink(listItem)
+      // listItem = $('li:visible:first')
+      // boldLink(listItem)
+      li = $('li:visible:first')
+      li.css('background','blue');
+    }, 500);
+  }
+});
