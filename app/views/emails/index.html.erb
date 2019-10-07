@@ -16,9 +16,8 @@
       <%= link_to 'Show', email , target: :_blank, class: 'show-email', id: email.id %>
     </p>
     <ul>
-      <%=  %>
-      <% email.links.each_with_index do |link, index| %>
-        <% if index == 5 %>
+      <% email.links.order('created_at ASC').each_with_index do |link, index| %>
+        <% if index % 6 == 0 %>
           <li style="padding-bottom: 25px">
         <% else %>
           <li>
