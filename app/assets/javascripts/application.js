@@ -39,7 +39,7 @@ $(document).ready(function() {
   });
 });
 
-var listItem = document.getElementById( "li" );
+var listItem = 0;
 
 $(document).ready(function() {
   boldLink(listItem)
@@ -87,21 +87,28 @@ document.addEventListener('keydown', function(event) {
 });
 
 document.addEventListener('keydown', function(event) {
-  if (event.code == 'ArrowLeft') {
+  if (event.code == 'ArrowLeft' || event.code == 'ArrowRight') {
     toggleCheckBox(listItem);
   }
 });
 
 document.addEventListener('keyup', function(event) {
-  if (event.key == 'PageDown') {
+  if (event.key == 'PageDown' || event.key == 'PageUp') {
+    unBoldLink(listItem)
     setTimeout(function(){
-      alert('keydown')
-
-      // unBoldLink(listItem)
-      // listItem = $('li:visible:first')
-      // boldLink(listItem)
-      li = $('li:visible:first')
-      li.css('background','blue');
-    }, 500);
+      range = document.caretRangeFromPoint(0,0);
+      // console.log(range)
+      element = range.startContainer;
+      // console.log(element)
+      // if (element.className !== 'link') {
+      //   console.log('got the wrong element')
+      //   console.log($(element).children('.link'))
+      //   console.log($(element).find('.link'))
+      // }
+      link = $(element).closest('.link')
+      // console.log(link)
+      listItem = $( ".link" ).index( link ) + 1
+      boldLink(listItem)
+    }, 200);
   }
 });
