@@ -109,6 +109,6 @@ document.addEventListener('keyup', function(event) {
       // console.log(link)
       listItem = $( ".link" ).index( link ) + 1
       boldLink(listItem)
-    }, 200);
+    }, 900);
   }
 });
