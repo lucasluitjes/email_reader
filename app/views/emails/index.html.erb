@@ -23,9 +23,9 @@
           <li class="link">
         <% end %>
           <% if sender == 'Hacker Newsletter' %>
-            <%= check_box 'read', link , {checked: true} %>
+            <%= check_box_tag 'read', link , true %>
           <% else %>
-            <%= check_box 'read', link , {checked: false} %>
+            <%= check_box_tag 'read', link , false %>
           <% end %>
           <a href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %>
         </li>
