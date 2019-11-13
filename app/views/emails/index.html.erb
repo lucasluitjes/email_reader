@@ -17,10 +17,10 @@
     </p>
     <ul>
       <% email.links.order('created_at ASC').each_with_index do |link, index| %>
-        <% if index % 6 == 0 %>
-          <li class="link" style="padding-bottom: 25px">
+        <% if index > 0 and index % 6 == 0 %>
+          <li class="link" style="padding-bottom: 7px; padding-top: 25px">
         <% else %>
-          <li class="link">
+          <li class="link" style="padding-bottom: 7px">
         <% end %>
           <% if sender == 'Hacker Newsletter' %>
             <%= check_box_tag 'read', link , true %>
