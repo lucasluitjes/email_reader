@@ -11,6 +11,7 @@ class EmailsController < ApplicationController
   # GET /emails
   # GET /emails.json
   def index
+    @testing = "#{request.remote_ip.inspect} - #{request.env["HTTP_X_FORWARDED_FOR"].inspect}"
     @emails = Email.order("created_at DESC").page(params[:page]).per(10)
   end
 
