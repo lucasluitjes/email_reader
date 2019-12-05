@@ -59,6 +59,11 @@ function toggleCheckBox(index) {
   });
 };
 
+function openLinksButton(index) {
+  $("a.openSelectedLinks").eq( index ).css( "color", "red"); // show what you've read already
+  $("a.openSelectedLinks").eq( index ).click();
+};
+
 $(document).keydown(function(e){
   var code = e.keyCode;
   if (code == 37 || code == 38 || code == 40) {
@@ -89,6 +94,18 @@ document.addEventListener('keydown', function(event) {
 document.addEventListener('keydown', function(event) {
   if (event.code == 'ArrowLeft' || event.code == 'ArrowRight') {
     toggleCheckBox(listItem);
+  }
+});
+
+document.addEventListener('keydown', function(event) {
+  if (event.key == 'Enter') {
+    li = $(document).find( 'li' ).eq(listItem)
+    // console.log(li)
+    button = $(li).closest( 'ul' ).find( '.openSelectedLinks' )
+    // console.log(button)
+    buttonIndex = $( "a.openSelectedLinks" ).index( button )
+    // console.log(buttonIndex)
+    openLinksButton(buttonIndex)
   }
 });
 
