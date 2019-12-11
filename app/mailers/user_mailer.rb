@@ -1,6 +1,6 @@
 class UserMailer < ApplicationMailer
   def email_overview
-    email = "justin.koningsberger@gmail.com"
+    email = "lucas@luitjes.it"
     unread_mails_past_week = generate_weekly_overview
     subject = "Past week you received emails from: #{unread_mails_past_week}"
     mail to: email, subject: subject
