@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190211155815) do
+ActiveRecord::Schema.define(version: 20191211135533) do
 
   create_table "emails", force: :cascade do |t|
     t.string "sender"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20190211155815) do
     t.string "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "last_overview", default: "2019-12-11 14:29:48", null: false
   end
 
   create_table "links", force: :cascade do |t|

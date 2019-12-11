@@ -28,6 +28,14 @@ class Email < ApplicationRecord
     symbol = Symbols[sender]
   end
 
+  def self.update_last_overview
+    Email.update(last_overview: DateTime.now)
+  end
+
+  def self.last_overview?
+    Email.select(last_overview:)
+  end
+
   def db_weekly_links
     html_string = Mail.new(body).html_part.decoded
     doc = Nokogiri::HTML.parse(html_string)
@@ -195,5 +203,3 @@ class Email < ApplicationRecord
     urls = urls.uniq { |link| link[2]}
   end
 end
-
-
