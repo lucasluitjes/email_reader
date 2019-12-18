@@ -1,4 +1,12 @@
 class UserMailer < ApplicationMailer
+
+  def initialize
+    super
+    if Rails.env == "production"
+      default from: "lucas@luitjes.it"
+    end
+  end
+
   def email_overview
     email = "lucas@luitjes.it"
     unread_mails_past_week = generate_weekly_overview
