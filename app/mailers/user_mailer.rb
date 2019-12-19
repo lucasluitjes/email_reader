@@ -1,17 +1,15 @@
+require 'mailgun-ruby'
+
 class UserMailer < ApplicationMailer
 
-  def initialize
-    super
-    if Rails.env == "production"
-      default from: "lucas@luitjes.it"
-    end
-  end
+  default from: "email-overview@luitjes.it"
 
   def email_overview
     email = "lucas@luitjes.it"
     unread_mails_past_week = generate_weekly_overview
-    subject = "Past week you received emails from: #{unread_mails_past_week}"
-    mail to: email, subject: subject
+    subject= "mail received last week"
+    text = "Past week you received emails from: #{unread_mails_past_week}"
+    mail to: email, subject: subject, body: text
   end
 
   private
