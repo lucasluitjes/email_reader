@@ -59,15 +59,40 @@ function toggleCheckBox(index) {
   });
 };
 
+function openLinksButton(index) {
+   $("a.openSelectedLinks").eq( index ).css( "color", "red"); // show what you've read already
+   $("a.openSelectedLinks").eq( index ).click();
+ };
+
 $(document).keydown(function(e){
   var code = e.keyCode;
-  if (code == 37 || code == 38 || code == 40) {
+  if (code == 13 || code == 37 || code == 38  || code == 39 || code == 40) {
     e.preventDefault();
     return false;
   }
   else {
     return true;
   } 
+});
+
+document.addEventListener('keydown', function(event) {
+  if (event.key == 'Enter') {
+    li = $(document).find( 'li' ).eq(listItem)
+    // console.log(li)
+    button = $(li).closest( 'ul' ).find( '.openSelectedLinks' )
+    // console.log(button)
+    buttonIndex = $( "a.openSelectedLinks" ).index( button )
+    // console.log(buttonIndex)
+    openLinksButton(buttonIndex)
+  }
+});
+
+document.addEventListener('keydown', function(event) {
+  if (event.code == 'Space') {
+    unBoldLink(listItem)
+    listItem += 1;
+    boldLink(listItem)
+  }
 });
 
 document.addEventListener('keydown', function(event) {
@@ -96,7 +121,17 @@ document.addEventListener('keyup', function(event) {
   if (event.key == 'PageDown' || event.key == 'PageUp') {
     unBoldLink(listItem)
     setTimeout(function(){
-      range = document.caretRangeFromPoint(0,0);
+      if (window.navigator.userAgent =~ /Firefox/) {
+        // console.log(window.navigator.userAgent)
+        var doc = document;
+        start = doc.caretPositionFromPoint(0, 0);
+        end = doc.caretPositionFromPoint(100, 100);
+        range = doc.createRange();
+        range.setStart(start.offsetNode, start.offset);
+        range.setEnd(end.offsetNode, end.offset);
+      } else {
+        range = document.caretRangeFromPoint(0,0);
+      }
       // console.log(range)
       element = range.startContainer;
       // console.log(element)
@@ -109,6 +144,6 @@ document.addEventListener('keyup', function(event) {
       // console.log(link)
       listItem = $( ".link" ).index( link ) + 1
       boldLink(listItem)
-    }, 900);
+    }, 400);
   }
 });
