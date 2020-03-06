@@ -1,4 +1,4 @@
-import 'app/mailers/usermailer.rb'
+
 
 desc "This task is called by the Heroku scheduler add-on"
 task :email_overview => :environment do
