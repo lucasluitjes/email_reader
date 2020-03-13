@@ -1,0 +1,11 @@
+# config/elastic_apm.yml:
+
+# Set service name - allowed characters: a-z, A-Z, 0-9, -, _ and space
+# Defaults to the name of your Rails app
+# service_name: 'my-service'
+
+# Use if APM Server requires a token
+secret_token: 'VXlsdgvwDFoo1CKZDu'
+
+# Set custom APM Server URL (default: http://localhost:8200)
+server_url: 'https://f4943bd142e749e9a3d3f76075390dda.apm.eu-central-1.aws.cloud.es.io:443'
