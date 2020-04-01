@@ -88,14 +88,6 @@ document.addEventListener('keydown', function(event) {
 });
 
 document.addEventListener('keydown', function(event) {
-  if (event.code == 'Space') {
-    unBoldLink(listItem)
-    listItem += 1;
-    boldLink(listItem)
-  }
-});
-
-document.addEventListener('keydown', function(event) {
   if (event.code == 'ArrowDown') {
     unBoldLink(listItem)
     listItem += 1;
@@ -117,24 +109,13 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-document.addEventListener('keydown', function(event) {
-  if (event.key == 'Enter') {
-    li = $(document).find( 'li' ).eq(listItem)
-    // console.log(li)
-    button = $(li).closest( 'ul' ).find( '.openSelectedLinks' )
-    // console.log(button)
-    buttonIndex = $( "a.openSelectedLinks" ).index( button )
-    // console.log(buttonIndex)
-    openLinksButton(buttonIndex)
-  }
-});
-
 document.addEventListener('keyup', function(event) {
-  if (event.key == 'PageDown' || event.key == 'PageUp') {
+  if (event.key == 'PageDown' || event.key == 'PageUp' || event.key == ' ') {
     unBoldLink(listItem)
     setTimeout(function(){
-      if (window.navigator.userAgent =~ /Firefox/) {
-        // console.log(window.navigator.userAgent)
+      browser = window.navigator.userAgent
+      // console.log(browser)
+      if (browser.indexOf("Firefox") > -1) {
         var doc = document;
         start = doc.caretPositionFromPoint(0, 0);
         end = doc.caretPositionFromPoint(100, 100);
