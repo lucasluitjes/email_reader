@@ -10,6 +10,8 @@ class IncomingEmailsController < ApplicationController
       subject: mail.subject,
       body: params[:message]
       )
+
+    SendNotificationJob.perform_now(email)
     CreateLinksJob.perform_later(email)
     render text: "OK"
   end

@@ -26,6 +26,8 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  config.active_job.queue_adapter = :inline
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
@@ -50,9 +52,9 @@ Rails.application.configure do
     :authentication => :plain,
     :address => "smtp.mailgun.org",
     :port => 587,
-    :domain => "sandbox29a7387b2f62407999739f2df11d504c.mailgun.org",
-    :user_name => "postmaster@sandbox29a7387b2f62407999739f2df11d504c.mailgun.org",
-    :password => "d686b560db7efda51c73b5217182911f-f8b3d330-fa644dd8"
+    :domain => ENV.fetch("SMTP_DOMAIN"),
+    :user_name => ENV.fetch("SMTP_USERNAME"),
+    :password => ENV.fetch("SMTP_PASSWORD")
   }
 
   # Raises error for missing translations

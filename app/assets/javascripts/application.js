@@ -14,12 +14,12 @@
 //= require jquery
 //= require_tree .
 
-$(document).ready(function() {
+$(document).ready(() => {
   $(".openSelectedLinks").on("click", function(){
     var links = $( this ).siblings();
     var checked_links = links.children().filter(":checked").parent();
     var addresses = checked_links.children("a");
-    addresses.each(function(i, el) {
+    addresses.each((i, el) => {
       window.open("/lazy_loading.html#" + el.href,'_blank');
     });
     var email_id = $(this).parent().parent().children().children().eq(2).attr("href");
@@ -27,11 +27,10 @@ $(document).ready(function() {
     $.ajax({
       type: "PATCH",
       url: email_id,
-      beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]'). attr('content'))},
+      beforeSend: (xhr) => {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]'). attr('content'))},
       dataType: "json",
       data:  {email: { read: true}},
-      success: function(data, textStatus, xhr) {
-      }
+      success: (data, textStatus, xhr) => {}
     });
     var read_status = $(this).parent().parent().children().children().eq(1);
     read_status.text("- Read -")
@@ -39,43 +38,35 @@ $(document).ready(function() {
   });
 });
 
-var listItem = 0;
+let listItem = 0;
 
-$(document).ready(function() {
-  boldLink(listItem)
-});
+$(document).ready( () => boldLink(listItem) );
 
-function boldLink(index) {
-  $("li").eq( index ).css( "font-weight", "bold");
-};
+const boldLink = (index) => $("li").eq( index ).css( "font-weight", "bold")
 
-function unBoldLink(index) {
-  $("li").eq( index ).css( "font-weight", "lighter");
-};
+const unBoldLink = (index) => $("li").eq( index ).css( "font-weight", "lighter")
 
-function toggleCheckBox(index) {
-  $("li").eq( index ).children(0).prop('checked', function (i, value) {
+const toggleCheckBox = (index) => {
+  $("li").eq( index ).children(0).prop('checked', (i, value) => {
     return !value;
   });
 };
 
-function openLinksButton(index) {
-  $("a.openSelectedLinks").eq( index ).css( "color", "red"); // show what you've read already
+const openLinksButton = (index) => {
+  $("a.openSelectedLinks").eq( index ).css( "color", "red"); // show which newsletter you've clicked already
   $("a.openSelectedLinks").eq( index ).click();
 };
 
-$(document).keydown(function(e){
-  var code = e.keyCode;
-  if (code == 13 || code == 37 || code == 38  || code == 39 || code == 40) {
+$(document).keydown((e) => {
+  const keys = ['Enter', 'ArrowLeft', 'ArrowUp', 'ArrowRight', 'ArrowDown']
+  if (keys.includes(e.key)) {
     e.preventDefault();
     return false;
   }
-  else {
-    return true;
-  } 
+  else {true;} 
 });
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', (event) => {
   if (event.key == 'Enter') {
     li = $(document).find( 'li' ).eq(listItem)
     // console.log(li)
@@ -87,7 +78,7 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', (event) => {
   if (event.code == 'ArrowDown') {
     unBoldLink(listItem)
     listItem += 1;
@@ -95,7 +86,7 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', (event) => {
   if (event.code == 'ArrowUp') {
     unBoldLink(listItem)
     listItem -= 1;
@@ -103,16 +94,18 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', (event) => {
   if (event.code == 'ArrowLeft' || event.code == 'ArrowRight') {
     toggleCheckBox(listItem);
   }
 });
-
-document.addEventListener('keyup', function(event) {
-  if (event.key == 'PageDown' || event.key == 'PageUp' || event.key == ' ') {
+const timeOut = 400
+document.addEventListener('keyup', (event) => {
+  const spacebar = ' '
+  const keys = ["PageDown", "PageUp", spacebar]
+  if (keys.includes(event.key)) {
     unBoldLink(listItem)
-    setTimeout(function(){
+    setTimeout(() => {
       browser = window.navigator.userAgent
       // console.log(browser)
       if (browser.indexOf("Firefox") > -1) {
@@ -137,6 +130,6 @@ document.addEventListener('keyup', function(event) {
       // console.log(link)
       listItem = $( ".link" ).index( link ) + 1
       boldLink(listItem)
-    }, 400);
+    }, timeOut);
   }
 });

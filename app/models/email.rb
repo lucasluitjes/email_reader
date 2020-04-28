@@ -107,6 +107,7 @@ class Email < ApplicationRecord
     url_elements = url_elements.select { |link| link.text != "hackernewsletter" }
     url_elements = url_elements.select { |link| link.text != "http://hackernewsletter.com" }
     url_elements = url_elements.select { |link| link.text != "Curpress" }
+    url_elements = url_elements.select { |link| link.text != "last year" }
     url_elements = url_elements.select do |n|
       url = n.attributes["href"].value
       url =~ /^https:\/\/hackernewsletter.us1.list-manage.com\/track\//

@@ -5,11 +5,6 @@ class EmailsControllerTest < ActionDispatch::IntegrationTest
     @email = emails(:one)
   end
 
-  test "should get index" do
-    get emails_url
-    assert_response :success
-  end
-
   test "should get new" do
     get new_email_url
     assert_response :success
