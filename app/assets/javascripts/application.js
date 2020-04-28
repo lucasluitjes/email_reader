@@ -63,7 +63,7 @@ $(document).keydown((e) => {
     e.preventDefault();
     return false;
   }
-  else {true;} 
+  else {true;}
 });
 
 document.addEventListener('keydown', (event) => {

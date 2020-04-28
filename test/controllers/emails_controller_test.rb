@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class EmailsControllerTest < ActionDispatch::IntegrationTest
@@ -5,12 +7,12 @@ class EmailsControllerTest < ActionDispatch::IntegrationTest
     @email = emails(:one)
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_email_url
     assert_response :success
   end
 
-  test "should create email" do
+  test 'should create email' do
     assert_difference('Email.count') do
       post emails_url, params: { email: { body: @email.body, read: @email.read, sender: @email.sender, subject: @email.subject } }
     end
@@ -18,22 +20,22 @@ class EmailsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to email_url(Email.last)
   end
 
-  test "should show email" do
+  test 'should show email' do
     get email_url(@email)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_email_url(@email)
     assert_response :success
   end
 
-  test "should update email" do
+  test 'should update email' do
     patch email_url(@email), params: { email: { body: @email.body, read: @email.read, sender: @email.sender, subject: @email.subject } }
     assert_redirected_to email_url(@email)
   end
 
-  test "should destroy email" do
+  test 'should destroy email' do
     assert_difference('Email.count', -1) do
       delete email_url(@email)
     end

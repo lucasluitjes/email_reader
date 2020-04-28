@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -49,12 +51,12 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :authentication => :plain,
-    :address => "smtp.mailgun.org",
-    :port => 587,
-    :domain => ENV.fetch("SMTP_DOMAIN"),
-    :user_name => ENV.fetch("SMTP_USERNAME"),
-    :password => ENV.fetch("SMTP_PASSWORD")
+    authentication: :plain,
+    address: 'smtp.mailgun.org',
+    port: 587,
+    domain: ENV.fetch('SMTP_DOMAIN'),
+    user_name: ENV.fetch('SMTP_USERNAME'),
+    password: ENV.fetch('SMTP_PASSWORD')
   }
 
   # Raises error for missing translations
