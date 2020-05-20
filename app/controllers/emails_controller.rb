@@ -1,17 +1,22 @@
+# frozen_string_literal: true
+
 class EmailsController < ApplicationController
-  before_action :set_email, only: [:show, :edit, :update, :destroy]
+  before_action :set_email, only: %i[show edit update destroy]
 
   if Rails.env == 'production'
-    username = ENV["BASIC_USERNAME"]
-    password = ENV["BASIC_PASSWORD"]
-    raise "Total brutal lack of configuration, security kitty is not pleased :(" unless username.present? && password.present?
+    username = ENV['BASIC_USERNAME']
+    password = ENV['BASIC_PASSWORD']
+    unless username.present? && password.present?
+      raise 'Total brutal lack of configuration, security kitty is not pleased :('
+    end
+
     http_basic_authenticate_with name: username, password: password
   end
 
   # GET /emails
   # GET /emails.json
   def index
-    @emails = Email.order("created_at DESC").page(params[:page]).per(10)
+    @emails = Email.order('created_at DESC').page(params[:page]).per(10)
   end
 
   # GET /emails/1
@@ -19,7 +24,7 @@ class EmailsController < ApplicationController
   def show
     mail = Mail.new(@email.body)
     body = mail.html_part || mail.text_part || mail
-    render :html => body.decoded.html_safe
+    render html: body.decoded.html_safe
   end
 
   # GET /emails/new
@@ -28,8 +33,7 @@ class EmailsController < ApplicationController
   end
 
   # GET /emails/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /emails
   # POST /emails.json
@@ -72,13 +76,14 @@ class EmailsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_email
-      @email = Email.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def email_params
-      params.require(:email).permit(:sender, :read, :subject, :body)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_email
+    @email = Email.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def email_params
+    params.require(:email).permit(:sender, :read, :subject, :body)
+  end
 end
