@@ -12,9 +12,10 @@ class Email < ApplicationRecord
       "leo.barbosa@canonical.com" => :vulnerabilities,
       "marc.deslauriers@canonical.com" => :vulnerabilities,
       "nieuwsbrief@m.blendle.com" => :blendle,
-      "lucas@luitjes.it" => :db_weekly,
-      "dbweekly@cooperpress.com" => :db_weekly
-    }
+      'lucas@luitjes.it' => :db_weekly,
+      'dbweekly@cooperpress.com' => :db_weekly,
+      'info@cloudseclist.com' => :cloud_sec
+  }.freeze
 
   def create_links!
     send(:"#{email_list_type}_links").each do |title, description, url|
@@ -27,6 +28,30 @@ class Email < ApplicationRecord
     sender = mail.from.first
     symbol = Symbols[sender]
   end
+
+  def cloud_sec_links
+    binding.pry
+    doc = Nokogiri::HTML.parse(body)
+    url_elements = doc.search('a')
+    url_elements = url_elements.reject { |link| link.attributes['dseclist.com'] }
+    url_elements = url_elements.reject { |link| link.children.text == 'Marco Lancini' }
+    url_elements = url_elements.reject { |link| link.children.children.text == "The Cloud Security Read=\r\ning List" }
+    url_elements = url_elements.reject { |link| link.attributes['list.com'] }
+    url_elements = url_elements.reject { |link| link.attributes['ter.com'] }
+    url_elements = url_elements.reject { |link| link.attributes['buymeacoffee.com'] }
+    url_elements = url_elements.reject { |link| link.children.text == 'Unsubscribe from CloudSecList' }
+    url_elements = url_elements.reject { |link| link.children.text == 'View this email in your browser' }
+    url_elements = url_elements.reject { |link| link.attributes['class'].nil? }
+    urls = url_elements.map do |n|
+      [
+        n.children.text,
+
+      ]
+    end
+    binding.pry
+    urls
+  end
+
 
   def db_weekly_links
     html_string = Mail.new(body).html_part.decoded
