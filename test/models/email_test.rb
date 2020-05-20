@@ -70,7 +70,7 @@ class EmailTest < ActiveSupport::TestCase
     urls = email.hacker_newsletter_links
     assert_equal ["Algorithms, by Jeff Erickson", "//illinois comments→",
  "https://hackernewsletter.us1.list-manage.com/track/click?u=faa8eb4ef3a111cef92c4f3d4&id=56ee376af8&e=16cfb65b5e"] , urls[0]
-    assert_equal 55, urls.size
+    assert_equal 56, urls.size
   end
 
   test "grab text from ruby weekly" do

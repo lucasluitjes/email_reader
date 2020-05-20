@@ -142,6 +142,7 @@ class Email < ApplicationRecord
         n.attributes["href"].value
       ]
     end
+    urls.reject { |link| link[0] == 'last year' }
   end
 
   def ruby_weekly_links
