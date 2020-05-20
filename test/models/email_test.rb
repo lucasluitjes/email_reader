@@ -33,8 +33,8 @@ class EmailTest < ActiveSupport::TestCase
   test 'grab text from cloudSecList' do
     email = Email.new(body: File.read("test/fixtures/files/The\ CloudSecList.eml"))
     urls = email.cloud_sec_links
-    # TODO, write assert equal test for a CloudSecList link
-    assert_equal 18, urls.size
+    assert_equal ["The undetectable way of exporting an AWS DynamoDB", "https://blog.3coresec.com/2020/04/the-undetectable-way-of-exporting-aws.html"], urls[0]
+    assert_equal 20, urls.size
   end
 
   test "grab text from db_weekly" do

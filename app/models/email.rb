@@ -30,26 +30,25 @@ class Email < ApplicationRecord
   end
 
   def cloud_sec_links
-    binding.pry
-    doc = Nokogiri::HTML.parse(body)
+    html_string = Mail.new(body).body.decoded
+    doc = Nokogiri::HTML.parse(html_string)
     url_elements = doc.search('a')
-    url_elements = url_elements.reject { |link| link.attributes['dseclist.com'] }
-    url_elements = url_elements.reject { |link| link.children.text == 'Marco Lancini' }
-    url_elements = url_elements.reject { |link| link.children.children.text == "The Cloud Security Read=\r\ning List" }
-    url_elements = url_elements.reject { |link| link.attributes['list.com'] }
-    url_elements = url_elements.reject { |link| link.attributes['ter.com'] }
-    url_elements = url_elements.reject { |link| link.attributes['buymeacoffee.com'] }
-    url_elements = url_elements.reject { |link| link.children.text == 'Unsubscribe from CloudSecList' }
-    url_elements = url_elements.reject { |link| link.children.text == 'View this email in your browser' }
-    url_elements = url_elements.reject { |link| link.attributes['class'].nil? }
-    urls = url_elements.map do |n|
-      [
-        n.children.text,
 
+    links = url_elements.map do |n|
+      [
+        n.children.inner_text,
+        n.attributes["href"].value
       ]
     end
-    binding.pry
-    urls
+
+    links.reject do |link|
+      link.first == 'Unsubscribe from CloudSecList' ||
+      link.first == 'View this email in your browser' ||
+      link.last == 'https://cloudseclist.com' ||
+      link.last == 'https://www.buymeacoffee.com/marcolancini' ||
+      link.last == 'https://twitter.com/lancinimarco' ||
+      link.last == 'https://www.marcolancini.it/'
+    end
   end
 
 
