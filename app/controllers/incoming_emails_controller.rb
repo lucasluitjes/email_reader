@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'mail'
 
 class IncomingEmailsController < ApplicationController
@@ -9,8 +11,8 @@ class IncomingEmailsController < ApplicationController
       sender: mail.from,
       subject: mail.subject,
       body: params[:message]
-      )
+    )
     CreateLinksJob.perform_later(email)
-    render text: "OK"
+    render text: 'OK'
   end
 end
