@@ -28,6 +28,15 @@ class EmailTest < ActiveSupport::TestCase
     assert_equal :vulnerabilities, email_list_type
     email_list_type = Email.new(body: File.read('test/fixtures/files/blendle.eml')).email_list_type
     assert_equal :blendle, email_list_type
+    email_list_type = Email.new(body: File.read("test/fixtures/files/The\ CloudSecList.eml")).email_list_type
+    assert_equal :cloud_sec, email_list_type
+  end
+
+  test 'grab text from cloudSecList' do
+    email = Email.new(body: File.read("test/fixtures/files/The\ CloudSecList.eml"))
+    urls = email.cloud_sec_links
+    assert_equal ["The undetectable way of exporting an AWS DynamoDB", "https://blog.3coresec.com/2020/04/the-undetectable-way-of-exporting-aws.html"], urls[0]
+    assert_equal 20, urls.size
   end
 
   test 'grab text from db_weekly' do
@@ -61,9 +70,9 @@ class EmailTest < ActiveSupport::TestCase
   test 'grab text from hacker newsletter' do
     email = Email.new(body: File.read("test/fixtures/files/Hacker\ Newsletter\ \#434.eml"))
     urls = email.hacker_newsletter_links
-    assert_equal ['Algorithms, by Jeff Erickson', '//illinois comments→',
-                  'https://hackernewsletter.us1.list-manage.com/track/click?u=faa8eb4ef3a111cef92c4f3d4&id=56ee376af8&e=16cfb65b5e'], urls[0]
-    assert_equal 55, urls.size
+    assert_equal ["Algorithms, by Jeff Erickson", "//illinois comments→",
+ "https://hackernewsletter.us1.list-manage.com/track/click?u=faa8eb4ef3a111cef92c4f3d4&id=56ee376af8&e=16cfb65b5e"] , urls[0]
+    assert_equal 56, urls.size
   end
 
   test 'grab text from ruby weekly' do
