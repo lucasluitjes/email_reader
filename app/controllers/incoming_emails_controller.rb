@@ -13,7 +13,7 @@ class IncomingEmailsController < ApplicationController
       body: params[:message]
     )
 
-    SendNotificationJob.perform_now(email)
+    SendNotificationJob.perform_later(email)
     CreateLinksJob.perform_later(email)
     render text: 'OK'
   end

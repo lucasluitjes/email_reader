@@ -63,7 +63,9 @@ $(document).keydown((e) => {
     e.preventDefault();
     return false;
   }
-  else {true;}
+  else {
+    return true;
+  }
 });
 
 document.addEventListener('keydown', (event) => {
@@ -76,29 +78,21 @@ document.addEventListener('keydown', (event) => {
     // console.log(buttonIndex)
     openLinksButton(buttonIndex)
   }
-});
-
-document.addEventListener('keydown', (event) => {
   if (event.code == 'ArrowDown') {
     unBoldLink(listItem)
     listItem += 1;
     boldLink(listItem)
   }
-});
-
-document.addEventListener('keydown', (event) => {
   if (event.code == 'ArrowUp') {
     unBoldLink(listItem)
     listItem -= 1;
     boldLink(listItem)
   }
-});
-
-document.addEventListener('keydown', (event) => {
   if (event.code == 'ArrowLeft' || event.code == 'ArrowRight') {
     toggleCheckBox(listItem);
   }
 });
+
 const timeOut = 400
 document.addEventListener('keyup', (event) => {
   const spacebar = ' '
