@@ -16,6 +16,7 @@
       <%= email.created_at %>:
       <%= Mail.new(email.body).subject %>
       <%= link_to 'Show', email , target: :_blank, class: 'show-email', id: email.id %>
+      <%= email.id %>
     </p>
     <ul>
       <% email.links.order('created_at ASC').each_with_index do |link, index| %>
@@ -30,6 +31,7 @@
             <%= check_box_tag 'read', link , false %>
           <% end %>
           <a href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %>
+          - id:<%= index + 1 %>
         </li>
       <% end %>
      <%= link_to "Open selected links", "#", :class => "openSelectedLinks" %>
