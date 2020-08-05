@@ -5,17 +5,18 @@ require 'mail'
 class Email < ApplicationRecord
   has_many :links
   Symbols = {
-    'jsw@peterc.org' => :java_weekly,
-    'vgr@ribbonfarm.com' => :breaking_smart,
-    'newsletter@elixirweekly.net' => :elixir_weekly,
-    'kale@hackernewsletter.com' => :hacker_newsletter,
-    'rw@peterc.org' => :ruby_weekly,
-    'lex@sreweekly.com' => :sre_weekly,
-    'leo.barbosa@canonical.com' => :vulnerabilities,
-    'marc.deslauriers@canonical.com' => :vulnerabilities,
-    'nieuwsbrief@m.blendle.com' => :blendle,
-    'lucas@luitjes.it' => :db_weekly,
-    'dbweekly@cooperpress.com' => :db_weekly
+      "jsw@peterc.org" => :java_weekly,
+      "vgr@ribbonfarm.com" => :breaking_smart,
+      "newsletter@elixirweekly.net" => :elixir_weekly,
+      "kale@hackernewsletter.com" => :hacker_newsletter,
+      "rw@peterc.org" => :ruby_weekly,
+      "lex@sreweekly.com" => :sre_weekly,
+      "leo.barbosa@canonical.com" => :vulnerabilities,
+      "marc.deslauriers@canonical.com" => :vulnerabilities,
+      "nieuwsbrief@m.blendle.com" => :blendle,
+      'lucas@luitjes.it' => :db_weekly,
+      'dbweekly@cooperpress.com' => :db_weekly,
+      'info@cloudseclist.com' => :cloud_sec
   }.freeze
 
   def create_links!
@@ -29,6 +30,29 @@ class Email < ApplicationRecord
     sender = mail.from.first
     symbol = Symbols[sender]
   end
+
+  def cloud_sec_links
+    html_string = Mail.new(body).body.decoded
+    doc = Nokogiri::HTML.parse(html_string)
+    url_elements = doc.search('a')
+
+    links = url_elements.map do |n|
+      [
+        n.children.inner_text,
+        n.attributes["href"].value
+      ]
+    end
+
+    links.reject do |link|
+      link.first == 'Unsubscribe from CloudSecList' ||
+      link.first == 'View this email in your browser' ||
+      link.last == 'https://cloudseclist.com' ||
+      link.last == 'https://www.buymeacoffee.com/marcolancini' ||
+      link.last == 'https://twitter.com/lancinimarco' ||
+      link.last == 'https://www.marcolancini.it/'
+    end
+  end
+
 
   def db_weekly_links
     html_string = Mail.new(body).html_part.decoded
@@ -121,6 +145,7 @@ class Email < ApplicationRecord
         n.attributes['href'].value
       ]
     end
+    urls.reject { |link| link[0] == 'last year' }
   end
 
   def ruby_weekly_links

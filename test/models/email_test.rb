@@ -28,6 +28,15 @@ class EmailTest < ActiveSupport::TestCase
     assert_equal :vulnerabilities, email_list_type
     email_list_type = Email.new(body: File.read('test/fixtures/files/blendle.eml')).email_list_type
     assert_equal :blendle, email_list_type
+    email_list_type = Email.new(body: File.read("test/fixtures/files/The\ CloudSecList.eml")).email_list_type
+    assert_equal :cloud_sec, email_list_type
+  end
+
+  test 'grab text from cloudSecList' do
+    email = Email.new(body: File.read("test/fixtures/files/The\ CloudSecList.eml"))
+    urls = email.cloud_sec_links
+    assert_equal ["The undetectable way of exporting an AWS DynamoDB", "https://blog.3coresec.com/2020/04/the-undetectable-way-of-exporting-aws.html"], urls[0]
+    assert_equal 20, urls.size
   end
 
   test 'grab text from db_weekly' do

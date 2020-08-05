@@ -1,0 +1,1505 @@
+Received: from M4.localhost ([unix socket])
+	 by localhost (Cyrus v2.4.20) with LMTPA;
+	 Sun, 19 Apr 2020 11:09:47 -0400
+Return-Path: <0102017192fcd3d7-56472149-19ab-4713-a08c-4739f223074b-000000@eu-west-1.amazonses.com>
+Received: from a4-14.smtp-out.eu-west-1.amazonses.com (a4-14.smtp-out.eu-west-1.amazonses.com [54.240.4.14])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx1.mxes.net (Postfix) with ESMTPS id B830A75A04
+	for <lucas@luitjes.it>; Sun, 19 Apr 2020 11:09:40 -0400 (EDT)
+Authentication-Results: mx1.mxes.net; dmarc=none (p=none dis=none pu=p) header.from=cloudseclist.com
+Authentication-Results: mx1.mxes.net; spf=pass smtp.mailfrom=0102017192fcd3d7-56472149-19ab-4713-a08c-4739f223074b-000000@eu-west-1.amazonses.com
+Authentication-Results: mx1.mxes.net; arc=none smtp.remote-ip=54.240.4.14
+ARC-Seal: i=1; a=rsa-sha256; d=mxes.net; s=2018; t=1587308981; cv=none; b=V5g2nGnwyEuPwxdH8ToQAfRbGGTHYb89ANkI8v70tw6LblGdR2MJmK21s1bZ0KNY9tKXczgzY0njqOlsG07o5KlR5uxAQCVhvUov36mLe74KdR6pF1MdfN+jb8S4SxSdMKWfxyzJDTVXfuVLonY1ZSqU6kqvOSTAIAjWCN/qHw0=
+ARC-Message-Signature: i=1; a=rsa-sha256; d=mxes.net; s=2018; t=1587308981;
+	c=relaxed/relaxed; bh=zHzpgUsi7xaP+zj7MnWlFQanRPvy8yLtCB/BF6Lpt+k=;
+	h=From:To:MIME-Version:Content-Transfer-Encoding:Message-ID:Date;
+	b=LpIPRMSUzgBfIKpJgLitqcWLaThLosqovwEvXUwSNIOh9m8U+B5kAcLjoAR8yAWaT6FjLHuyncNv3NlUoYac+qCXx9CN3oLjfvxeb+ZgtbB8/eFGfy0mywlRmrBNE4/EHIMaUUU50j3l5xrFH0MWJddI8FXLQqo2x8JQTbQX99Q=
+ARC-Authentication-Results: i=1; mx1.mxes.net; dkim=pass (1024-bit key; unprotected) header.d=cloudseclist.com header.i=@cloudseclist.com header.a=rsa-sha256 header.s=txr75bwtpsmrdbj5xgri4d5emwqinak2 header.b=Hd648P6T; dkim=pass (1024-bit key; unprotected) header.d=amazonses.com header.i=@amazonses.com header.a=rsa-sha256 header.s=shh3fegwg5fppqsuzphvschd53n6ihuv header.b=B+dhvMIZ
+Authentication-Results: mx1.mxes.net;
+	dkim=pass (1024-bit key; unprotected) header.d=cloudseclist.com header.i=@cloudseclist.com header.a=rsa-sha256 header.s=txr75bwtpsmrdbj5xgri4d5emwqinak2 header.b=Hd648P6T;
+	dkim=pass (1024-bit key; unprotected) header.d=amazonses.com header.i=@amazonses.com header.a=rsa-sha256 header.s=shh3fegwg5fppqsuzphvschd53n6ihuv header.b=B+dhvMIZ
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=txr75bwtpsmrdbj5xgri4d5emwqinak2; d=cloudseclist.com;
+	t=1587308975;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date;
+	bh=95PZJ42KMb40MMizC8NXv8NysG3c4KkylEcmkYQbEqI=;
+	b=Hd648P6TNNYGK9eSPWdK4kwJ5bge3lzLYVibkaok5JSp4l2JQi2qrsKcLumP1X96
+	hR6THe/huQ/W3FBLpWX29b9MRV5rXbKuQ/t5EcWmXOJe4oMv4P3CwoMcDdywQbVrSrT
+	lWNPX98Czg16YaXSruOX+gELTdzvNfW0Fji905Fw=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=shh3fegwg5fppqsuzphvschd53n6ihuv; d=amazonses.com; t=1587308975;
+	h=From:To:Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:Message-ID:Date:Feedback-ID;
+	bh=95PZJ42KMb40MMizC8NXv8NysG3c4KkylEcmkYQbEqI=;
+	b=B+dhvMIZN5eYAbF1UhmUUEKd9jgqPbZIUnBb/ZAP85XLS6wfHxPqT46ybpzq5muO
+	68VIkRNj4U20tCfsjEsIM2FXhw0DQQhHFvG5GEQtH9efalDG0F6tynP8Y0uMMj1G+sD
+	uJ0G9TOCfVfw8mf0ieZz11M6z2uysHkaAc1qvq7Q=
+From: Marco from CloudSecList <info@cloudseclist.com>
+To: lucas@luitjes.it
+Subject: =?UTF-8?Q?=F0=9F=93=96_[The_CloudSecList]_Issue_33?=
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <0102017192fcd3d7-56472149-19ab-4713-a08c-4739f223074b-000000@eu-west-1.amazonses.com>
+Date: Sun, 19 Apr 2020 15:09:35 +0000
+X-SES-Outgoing: 2020.04.19-54.240.4.14
+Feedback-ID: 1.eu-west-1.DQETFs0oKmhOPSGIF5UKTyv02pXri4TNxZtNwh6GWww=:AmazonSES
+X-Spam-Sys-BayesResult: No, 0.417021
+X-Spam-Report: 1587308982-66189-19  Content analysis details:
+ -10.0 BAYESSCORE             0.242382
+   0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/, no trust
+     [54.240.4.14 listed in dnswl.mxes.lan]
+  -0.0 SPF_PASS               SPF: sender matches SPF record
+   0.0 SPF_HELO_NONE          SPF: HELO does not publish an SPF Record
+  -3.0 MX_IPREP               99/100 IP reputation (218/215) 54.240.4.14
+  -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+     [54.240.4.14 listed in wl.mailspike.net]
+   0.0 DKIM_VALID_AU          Message has a valid DKIM or DK signature from author's domain
+   0.0 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily valid
+   0.0 DKIM_VALID_EF          Message has a valid DKIM or DK signature from envelope-from domain
+  -0.2 SYSTEM_BAYES           No 0.417021
+   0.0 DKIM_VALID             Message has at least one valid DKIM or DK signature
+   0.0 HTML_MESSAGE           HTML included in message
+   0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level mail domains are different
+   0.0 T_DMARC_ACCEPT         Sender says accept all mail
+   0.1 MIME_HTML_ONLY         Message only has text/html MIME parts
+X-Spam-BB: 0
+X-Spam-SI: 0
+X-Spam-Scoring: 0,0
+X-Originating-IP: 54.240.4.14
+X-Dmarc: Test none, Policy none
+X-Envelope-To: <lucas@luitjes.it>
+X-Spam-Check: Enabled,6.0,13.0,1,1,42,1,0,0,1,1,0,0,0,[SPAM],
+X-Spam-Status: No, score=-12.9 threshold=6.0,13.0 
+X-Spam-BayesResult: No, 0.242382
+X-Spam-Score: -12.9
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/htm=
+l4/strict.dtd">
+<!doctype html>
+<head>
+    <!--[if gte mso 15]>
+    <xml>
+        <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <!--[if !mso]><!-->
+    <link href=3D"https://fonts.googleapis.com/css?family=3DLato:400,400i,7=
+00,700i" rel=3D"stylesheet">
+    <!--<![endif]-->
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1, maximum-scale=3D1">
+    <meta name=3D"referrer" content=3D"origin">
+    <meta charset=3D"UTF-8">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+
+    <meta name=3D"date" content=3D"2020-04-19 00:00:00 +0100">
+    <meta property=3D"og:title" content=3D"=F0=9F=93=96 [The CloudSecList] =
+Issue 33">
+    <title>=F0=9F=93=96 [The CloudSecList] Issue 33</title>
+
+    <style type=3D"text/css">
+        p{
+            margin:10px 0;
+            padding:0;
+        }
+        table{
+            border-collapse:collapse;
+        }
+        h1,h2,h3,h4,h5,h6{
+            display:block;
+            margin:0;
+            padding:0;
+        }
+        img,a img{
+            border:0;
+            height:auto;
+            outline:none;
+            text-decoration:none;
+        }
+        body,#bodyTable,#bodyCell{
+            height:100%;
+            margin:0;
+            padding:0;
+            width:100%;
+        }
+        .cslPreviewText{
+            display:none !important;
+        }
+        #outlook a{
+            padding:0;
+        }
+        img{
+            -ms-interpolation-mode:bicubic;
+        }
+        table{
+            mso-table-lspace:0pt;
+            mso-table-rspace:0pt;
+        }
+        .ReadMsgBody{
+            width:100%;
+        }
+        .ExternalClass{
+            width:100%;
+        }
+        p,a,li,td,blockquote{
+            mso-line-height-rule:exactly;
+        }
+        a[href^=3Dtel],a[href^=3Dsms]{
+            color:inherit;
+            cursor:default;
+            text-decoration:none;
+        }
+        p,a,li,td,body,table,blockquote{
+            -ms-text-size-adjust:100%;
+            -webkit-text-size-adjust:100%;
+        }
+        .ExternalClass,.ExternalClass p,.ExternalClass td,.ExternalClass di=
+v,.ExternalClass span,.ExternalClass font{
+            line-height:100%;
+        }
+        a[x-apple-data-detectors]{
+            color:inherit !important;
+            text-decoration:none !important;
+            font-size:inherit !important;
+            font-family:inherit !important;
+            font-weight:inherit !important;
+            line-height:inherit !important;
+        }
+        #bodyCell{
+            padding:10px;
+            border-top:0;
+        }
+        .templateContainer{
+            max-width:600px !important;
+        }
+        a.mcnButton{
+            display:block;
+        }
+        .mcnImage,.mcnRetinaImage{
+            vertical-align:bottom;
+        }
+        .mcnTextContent{
+            word-break:break-word;
+        }
+        .mcnTextContent img{
+            height:auto !important;
+        }
+        .mcnDividerBlock{
+            table-layout:fixed !important;
+        }
+        body,#bodyTable{
+            background-color:#FAFAFA;
+        }
+        #bodyCell{
+            border-top:0;
+        }
+        .templateContainer{
+            border:0;
+        }
+        h1{
+            color:#202020;
+            font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-se=
+rif;
+            font-size:26px;
+            font-style:normal;
+            font-weight:bold;
+            line-height:150%;
+            letter-spacing:normal;
+            text-align:left;
+        }
+        h2{
+            color:#202020;
+            font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-se=
+rif;
+            font-size:22px;
+            font-style:normal;
+            font-weight:bold;
+            line-height:125%;
+            letter-spacing:normal;
+            text-align:left;
+        }
+        h3{
+            color:#202020;
+            font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-se=
+rif;
+            font-size:20px;
+            font-style:normal;
+            font-weight:bold;
+            line-height:125%;
+            letter-spacing:normal;
+            text-align:left;
+        }
+        h4{
+            color:#202020;
+            font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-se=
+rif;
+            font-size:18px;
+            font-style:normal;
+            font-weight:bold;
+            line-height:125%;
+            letter-spacing:normal;
+            text-align:left;
+        }
+        #templatePreheader{
+            background-color:#fafafa;
+            background-image:none;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            border-top:0;
+            border-bottom:0;
+            padding-top:9px;
+            padding-bottom:9px;
+        }
+        #templatePreheader .mcnTextContent,#templatePreheader .mcnTextConte=
+nt p{
+            color:#656565;
+            font-family:Helvetica;
+            font-size:12px;
+            line-height:150%;
+            text-align:left;
+        }
+        #templatePreheader .mcnTextContent a,#templatePreheader .mcnTextCon=
+tent p a{
+            color:#656565;
+            font-weight:normal;
+            text-decoration:underline;
+        }
+        #templateHeader{
+            background-color:#ffffff;
+            background-image:none;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            border-top:0;
+            border-bottom:0;
+            padding-top:9px;
+            padding-bottom:0;
+        }
+        #templateHeader .mcnTextContent,#templateHeader .mcnTextContent p{
+            color:#202020;
+            font-family:Helvetica;
+            font-size:16px;
+            line-height:150%;
+            text-align:left;
+        }
+        #templateHeader .mcnTextContent a,#templateHeader .mcnTextContent p=
+ a{
+            color:#3a98d8;
+            font-weight:normal;
+            text-decoration:underline;
+        }
+        #templateBody{
+            background-color:#ffffff;
+            background-image:none;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            border-top:0;
+            border-bottom:2px solid #EAEAEA;
+            padding-top:0;
+            padding-bottom:9px;
+        }
+        #templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+            color:#202020;
+            font-family:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-se=
+rif;
+            font-size:16px;
+            line-height:150%;
+            text-align:left;
+        }
+        #templateBody .mcnTextContent a,#templateBody .mcnTextContent p a{
+            color:#3a98d8;
+            font-weight:normal;
+            text-decoration:underline;
+        }
+        #templateFooter{
+            background-color:#fafafa;
+            background-image:none;
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:cover;
+            border-top:0;
+            border-bottom:0;
+            padding-top:9px;
+            padding-bottom:9px;
+        }
+        #templateFooter .mcnTextContent,#templateFooter .mcnTextContent p{
+            color:#656565;
+            font-family:Helvetica;
+            font-size:12px;
+            line-height:150%;
+            text-align:center;
+        }
+        #templateFooter .mcnTextContent a,#templateFooter .mcnTextContent p=
+ a{
+            color:#656565;
+            font-weight:normal;
+            text-decoration:underline;
+        }
+        @media only screen and (min-width:768px){
+            .templateContainer{
+                width:600px !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            body,table,td,p,a,li,blockquote{
+                -webkit-text-size-adjust:none !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            body{
+                width:100% !important;
+                min-width:100% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            #bodyCell{
+                padding-top:10px !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnRetinaImage{
+                max-width:100% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnImage{
+                width:100% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnCartContainer,.mcnCaptionTopContent,.mcnRecContentContainer=
+,.mcnCaptionBottomContent,.mcnTextContentContainer,.mcnBoxedTextContentCont=
+ainer,.mcnImageGroupContentContainer,.mcnCaptionLeftTextContentContainer,.m=
+cnCaptionRightTextContentContainer,.mcnCaptionLeftImageContentContainer,.mc=
+nCaptionRightImageContentContainer,.mcnImageCardLeftTextContentContainer,.m=
+cnImageCardRightTextContentContainer,.mcnImageCardLeftImageContentContainer=
+,.mcnImageCardRightImageContentContainer{
+                max-width:100% !important;
+                width:100% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnBoxedTextContentContainer{
+                min-width:100% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnImageGroupContent{
+                padding:9px !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnCaptionLeftContentOuter .mcnTextContent,.mcnCaptionRightCon=
+tentOuter .mcnTextContent{
+                padding-top:9px !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnImageCardTopImageContent,.mcnCaptionBottomContent:last-chil=
+d .mcnCaptionBottomImageContent,.mcnCaptionBlockInner .mcnCaptionTopContent=
+:last-child .mcnTextContent{
+                padding-top:18px !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnImageCardBottomImageContent{
+                padding-bottom:9px !important;
+            }
+        }
+        @media only screen and (max-width: 480px){
+            .mcnImageGroupBlockInner{
+                padding-top:0 !important;
+                padding-bottom:0 !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnImageGroupBlockOuter{
+                padding-top:9px !important;
+                padding-bottom:9px !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnTextContent,.mcnBoxedTextContentColumn{
+                padding-right:18px !important;
+                padding-left:18px !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnImageCardLeftImageContent,.mcnImageCardRightImageContent{
+                padding-right:18px !important;
+                padding-bottom:0 !important;
+                padding-left:18px !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcpreview-image-uploader{
+                display:none !important;
+                width:100% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            h1{
+                font-size:22px !important;
+                line-height:125% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            h2{
+                font-size:20px !important;
+                line-height:125% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            h3{
+                font-size:18px !important;
+                line-height:125% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            h4{
+                font-size:16px !important;
+                line-height:150% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            .mcnBoxedTextContentContainer .mcnTextContent,.mcnBoxedTextCont=
+entContainer .mcnTextContent p{
+                font-size:14px !important;
+                line-height:150% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            #templatePreheader{
+                display:block !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            #templatePreheader .mcnTextContent,#templatePreheader .mcnTextC=
+ontent p{
+                font-size:14px !important;
+                line-height:150% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            #templateHeader .mcnTextContent,#templateHeader .mcnTextContent=
+ p{
+                font-size:16px !important;
+                line-height:150% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            #templateBody .mcnTextContent,#templateBody .mcnTextContent p{
+                font-size:16px !important;
+                line-height:150% !important;
+            }
+        }=09
+        @media only screen and (max-width: 480px){
+            #templateFooter .mcnTextContent,#templateFooter .mcnTextContent=
+ p{
+                font-size:14px !important;
+                line-height:150% !important;
+            }
+        }
+        .table-container {
+            border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspac=
+e: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
+        }
+            .mcnImageContentContainer {
+            min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;
+        }
+        .mcnTextContentContainer {
+            max-width: 100%;min-width: 100%;border-collapse: collapse;mso-t=
+able-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;
+        }
+        .mcnDividerBlock {
+            min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt=
+;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust:=
+ 100%;table-layout: fixed !important;
+        }
+        .table-row {
+            background-image: none;background-repeat: no-repeat;background-=
+position: center;background-size: cover;border-top: 0;border-bottom: 0;
+        }
+        .ruler {
+            min-width: 100%;border-top: 2px solid #EAEAEA;border-collapse: =
+collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: =
+100%;-webkit-text-size-adjust: 100%;
+        }
+        .hyperlink {
+            color: #3a98d8;font-weight: normal;text-decoration: underline;
+        }
+        .main-centered-image {
+            padding-bottom: 0;
+            display: inline !important;
+            vertical-align: bottom;
+            border: 0;
+            height: auto;
+            outline: none;
+            text-decoration: none;
+            -ms-interpolation-mode: bicubic;
+        }
+    </style>        =20
+</head>
+<body style=3D"height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FAFAFA;mso-l=
+ine-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+    <!--[if !gte mso 9]-->
+        <span class=3D"cslPreviewText" style=3D"display:none; font-size:0px=
+; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidde=
+n; visibility:hidden; mso-hide:all;">This week's reading list...</span>
+=09<!--<![endif]-->
+    <center>
+        <!--[if (gte mso 9)|(IE)]>
+        <table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"600" style=3D"width:600px;">
+            <tr>
+                <td align=3D"center" valign=3D"top" width=3D"600" style=3D"=
+width:600px;">
+        <![endif]-->
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"table-container templateContainer" style=3D"border: 0;max-widt=
+h: 600px !important;">
+            <!-- ROW - HEADER -->
+            <tr>
+                <td valign=3D"top" id=3D"templateHeader" class=3D"table-row=
+" style=3D"background:#ffffff none no-repeat center/cover;background-color:=
+ #ffffff;padding-top: 9px;padding-bottom: 0;">
+                    <!-- HEADER IMAGE -->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" class=3D"mcnImageBlock mcnImageContentContainer">
+                        <tbody class=3D"mcnImageBlockOuter">
+                            <tr>
+                                <td valign=3D"top" style=3D"padding: 9px;" =
+class=3D"mcnImageBlockInner">
+                                    <table align=3D"left" width=3D"100%" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentCont=
+ainer mcnImageContentContainer">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"mcnImageConten=
+t" valign=3D"top" style=3D"padding-right: 9px;padding-left: 9px;padding-top=
+: 0;padding-bottom: 0;text-align: center;">
+                                                    <a href=3D"https://clou=
+dseclist.com"><img align=3D"center" alt=3D"" src=3D"https://cloudseclist.co=
+m/assets/header.png" width=3D"564" style=3D"max-width: 1200px;" class=3D"mc=
+nImage main-centered-image"></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- RELEASE DATE -->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" class=3D"mcnTextBlock mcnImageContentContainer">
+                        <tbody class=3D"mcnTextBlockOuter">
+                            <tr>
+                                <td valign=3D"top" class=3D"mcnTextBlockInn=
+er" style=3D"padding-top: 9px;">
+                                    <!--[if mso]>
+                                    <table align=3D"left" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;">
+                                    <tr>
+                                    <td valign=3D"top" width=3D"600" style=
+=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0"  width=3D"100%" class=3D"mcnTextContentCont=
+ainer">
+                                        <tbody>
+                                            <tr>
+                                                <td valign=3D"top" class=3D=
+"mcnTextContent" style=3D"padding-top: 0;padding-right: 18px;padding-bottom=
+: 9px;padding-left: 18px;word-break: break-word;color: #202020;font-family:=
+ Helvetica;font-size: 16px;line-height: 150%;text-align: left;">   =20
+                                                    <div style=3D"text-alig=
+n: center;"><span style=3D"color:#354a5d"><span style=3D"font-family:lucida=
+ sans unicode,lucida grande,sans-serif">
+                                                        <span style=3D"font=
+-size:12px"><strong>Release Date: 19/04/2020&nbsp;| Issue: 33</strong></spa=
+n></span></span></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- RULER -->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" class=3D"mcnDividerBlock" >
+                        <tbody class=3D"mcnDividerBlockOuter">
+                            <tr>
+                                <td class=3D"mcnDividerBlockInner" style=3D=
+"min-width: 100%;padding: 18px;">
+                                    <table class=3D"mcnDividerContent ruler=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style=3D"">
+                                                    <span></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--           =20
+                                    <td class=3D"mcnDividerBlockInner" styl=
+e=3D"padding: 18px;">
+                                    <hr class=3D"mcnDividerContent" style=
+=3D"border-bottom-color:none; border-left-color:none; border-right-color:no=
+ne; border-bottom-width:0; border-left-width:0; border-right-width:0; margi=
+n-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+                                    -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- DESCRIPTION -->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" class=3D"mcnTextBlock mcnImageContentContainer">
+                        <tbody class=3D"mcnTextBlockOuter">
+                            <tr>
+                                <td valign=3D"top" class=3D"mcnTextBlockInn=
+er" style=3D"padding-top: 9px;">
+                                <!--[if mso]>
+                                <table align=3D"left" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;">
+                                <tr>
+                                <td valign=3D"top" width=3D"600" style=3D"w=
+idth:600px;">
+                                <![endif]-->
+                                <table align=3D"left" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0"  width=3D"100%" class=3D"mcnTextContentContaine=
+r">
+                                    <tbody>
+                                        <tr>
+                                            <td valign=3D"top" class=3D"mcn=
+TextContent" style=3D"padding: 0px 18px 9px;font-family: Lato, &quot;Helvet=
+ica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;word-break: br=
+eak-word;color: #202020;line-height: 150%;text-align: left;">
+                                            <div style=3D"text-align: cente=
+r;">
+                                                <a href=3D'https://cloudsec=
+list.com' target=3D'_blank' class=3D'hyperlink'><em>The Cloud Security Read=
+ing List</em></a> is a low volume mailing list (once per week) that highlig=
+hts security-related news focused on the cloud native landscape,<br>hand cu=
+rated by <a href=3D'https://www.marcolancini.it/' target=3D'_blank' class=
+=3D'hyperlink'>Marco Lancini</a>.
+                                            </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!--[if mso]>
+                                </td>
+                                </tr>
+                                </table>
+                                <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- RULER -->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" class=3D"mcnDividerBlock" >
+                        <tbody class=3D"mcnDividerBlockOuter">
+                            <tr>
+                                <td class=3D"mcnDividerBlockInner" style=3D=
+"min-width: 100%;padding: 18px;">
+                                    <table class=3D"mcnDividerContent ruler=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style=3D"">
+                                                    <span></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--           =20
+                                    <td class=3D"mcnDividerBlockInner" styl=
+e=3D"padding: 18px;">
+                                    <hr class=3D"mcnDividerContent" style=
+=3D"border-bottom-color:none; border-left-color:none; border-right-color:no=
+ne; border-bottom-width:0; border-left-width:0; border-right-width:0; margi=
+n-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+                                    -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- END ROW - HEADER -->
+            <!-- ROW - ARTICLES -->
+            <tr>
+                <td valign=3D"top" id=3D"templateBody" class=3D"table-row" =
+style=3D"background:#ffffff none no-repeat center/cover;background-color: #=
+ffffff;border-bottom: 2px solid #EAEAEA;padding-top: 0;padding-bottom: 9px;=
+">
+                    <!-- ARTICLES -->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" class=3D"mcnTextBlock mcnImageContentContainer">
+                        <tbody class=3D"mcnTextBlockOuter">
+                            <tr>
+                                <td valign=3D"top" class=3D"mcnTextBlockInn=
+er" style=3D"padding-top: 9px;">
+                                    <!--[if mso]>
+                                    <table align=3D"left" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;">
+                                    <tr>
+                                    <td valign=3D"top" width=3D"600" style=
+=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0"  width=3D"100%" class=3D"mcnTextContentCont=
+ainer">
+                                    <tbody>
+                                        <tr>
+                                            <td valign=3D"top" class=3D"mcn=
+TextContent" style=3D"padding: 0px 18px 9px;font-family: Lato, &quot;Helvet=
+ica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: no=
+rmal;font-weight: normal;word-break: break-word;color: #202020;line-height:=
+ 150%;text-align: left;">
+                                            <h1 style=3D"display: block;mar=
+gin: 0;padding: 0;color: #202020;font-family: 'Lato', 'Helvetica Neue', Hel=
+vetica, Arial, sans-serif;font-size: 26px;font-style: normal;font-weight: b=
+old;line-height: 150%;letter-spacing: normal;text-align: left;">This week's=
+ articles</h1>
+
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://blog.3coresec.com/2020/04/the-undetectable-w=
+ay-of-exporting-aws.html" target=3D"_blank" class=3D"hyperlink">The undetec=
+table way of exporting an AWS DynamoDB</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        This post describes a limitation in the current AWS CloudTrail logg=
+ing features that limit detection capabilities of possible abuse against AW=
+S DynamoDB, in the event of the user's AWS IAM keys being compromised. In p=
+articular, CloudTrail doesn't currently record any scanning/reading of a Dy=
+namoDB table through awscli.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://github.com/cyberark/SkyWrapper" target=3D"_b=
+lank" class=3D"hyperlink">SkyWrapper</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        SkyWrapper is an open source project which analyzes behaviors of te=
+mporary tokens created in a given AWS account. It aims to find suspicious c=
+reation forms and uses of temporary tokens, so to detect malicious activity=
+ in the account.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://github.com/appsecco/breaking-and-pwning-apps=
+-and-servers-aws-azure-training" target=3D"_blank" class=3D"hyperlink">Brea=
+king and Pwning Apps and Servers on AWS and Azure</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Free course content, lab setup instructions, and documentation of a=
+ hands on training.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://medium.com/hashicorp-engineering/enforcing-a=
+ws-s3-security-best-practice-using-terraform-sentinel-ddcd181ff4b7" target=
+=3D"_blank" class=3D"hyperlink">Enforcing AWS S3 Security Best Practices Us=
+ing Terraform & Sentinel</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Unsecured AWS S3 buckets are a frequent source behind many of today=
+'s cloud security breach headlines. This blog post shows how to use Terrafo=
+rm and Sentinel to ensure that every S3 bucket that is provisioned is compl=
+iant with security best practices.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://www.stackrox.com/post/2019/09/amazon-eks-sec=
+urity-best-practices/" target=3D"_blank" class=3D"hyperlink">Amazon EKS Sec=
+urity Best Practices</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Lessons learned and best practices for engineers running workloads =
+on EKS clusters.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://rbac.dev/" target=3D"_blank" class=3D"hyperl=
+ink">RBAC.dev</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        A site dedicated to good practices and tooling around Kubernetes RB=
+AC.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://github.com/iann0036/aws-account-controller" =
+target=3D"_blank" class=3D"hyperlink">AWS Account Controller</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Very interesting account controller solution, which creates an AWS =
+SSO application for federated users to create or delete ephemeral/sandbox a=
+ccounts.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://github.com/appscode/guard" target=3D"_blank"=
+ class=3D"hyperlink">guard</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Guard is a Kubernetes Webhook Authentication server. Using guard, y=
+ou can log into your Kubernetes cluster using various auth providers such a=
+s Azure, Google, etc.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://learnk8s.io/kubernetes-custom-authentication=
+" target=3D"_blank" class=3D"hyperlink">Implementing a custom Kubernetes au=
+thentication method</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Learn how you can implement LDAP authentication for Kubernetes.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://partlycloudy.blog/2019/12/15/fully-automated=
+-creation-of-an-aad-integrated-kubernetes-cluster-with-terraform/" target=
+=3D"_blank" class=3D"hyperlink">Fully automated creation of an AAD-integrat=
+ed Kubernetes cluster with Terraform</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Terraform sample for an out-of-the-box, AAD integrated AKS/Kubernet=
+es cluster: create a Kubernetes cluster with Terraform, integrate it with A=
+zure Active Directory, add an AAD group, and bind it to the cluster-admin r=
+ole.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://menendezjaume.com/post/policy-as-code-except=
+ions-lists/" target=3D"_blank" class=3D"hyperlink">Creating Exceptions List=
+s for Conftest in Rego</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Interesting article on how to create exceptions lists for Conftest =
+in Rego, so to offload your decision making from your code.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <a href=3D"https://www.stackrox.com/post/2020/01/kubernetes-net=
+working-demystified/" target=3D"_blank" class=3D"hyperlink">Kubernetes Netw=
+orking Demystified: A Brief Guide</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Kubernetes cluster networking can be more than a bit confusing. In =
+this article you will follow the journey of an HTTP request to a service ru=
+nning on a basic Kubernetes cluster.
+    </div>
+</div>
+<br>
+
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    </table>               =20
+                                    <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- RULER -->
+                   =20
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" class=3D"mcnDividerBlock" >
+                        <tbody class=3D"mcnDividerBlockOuter">
+                            <tr>
+                                <td class=3D"mcnDividerBlockInner" style=3D=
+"min-width: 100%;padding: 18px;">
+                                    <table class=3D"mcnDividerContent ruler=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style=3D"">
+                                                    <span></span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--           =20
+                                    <td class=3D"mcnDividerBlockInner" styl=
+e=3D"padding: 18px;">
+                                    <hr class=3D"mcnDividerContent" style=
+=3D"border-bottom-color:none; border-left-color:none; border-right-color:no=
+ne; border-bottom-width:0; border-left-width:0; border-right-width:0; margi=
+n-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+                                    -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                   =20
+                    <!-- FROM THE CSPS -->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" class=3D"mcnTextBlock mcnImageContentContainer">
+                        <tbody class=3D"mcnTextBlockOuter">
+                            <tr>
+                                <td valign=3D"top" class=3D"mcnTextBlockInn=
+er" style=3D"padding-top: 9px;">
+                                    <!--[if mso]>
+                                    <table align=3D"left" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;">
+                                    <tr>
+                                    <td valign=3D"top" width=3D"600" style=
+=3D"width:600px;">
+                                    <![endif]-->
+                                    <table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0"  width=3D"100%" class=3D"mcnTextContentCont=
+ainer">
+                                    <tbody>
+                                        <tr>
+                                            <td valign=3D"top" class=3D"mcn=
+TextContent" style=3D"padding: 0px 18px 9px;font-family: Lato, &quot;Helvet=
+ica Neue&quot;, Helvetica, Arial, sans-serif;font-size: 16px;font-style: no=
+rmal;font-weight: normal;word-break: break-word;color: #202020;line-height:=
+ 150%;text-align: left;">
+                                           =20
+                                            <h1 style=3D"display: block;mar=
+gin: 0;padding: 0;color: #202020;font-family: 'Lato', 'Helvetica Neue', Hel=
+vetica, Arial, sans-serif;font-size: 26px;font-style: normal;font-weight: b=
+old;line-height: 150%;letter-spacing: normal;text-align: left;">From the cl=
+oud providers</h1>
+                                           =20
+
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <img height=3D"20" src=3D"https://cloudseclist.com/assets/icons=
+/icon_aws.png" style=3D"border: 0px;width: 20px;height: 20px;margin: 0px;ou=
+tline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width=
+=3D"20" alt=3D"AWS Icon">&nbsp;
+            <a href=3D"https://aws.amazon.com/blogs/security/how-to-define-=
+least-privileged-permissions-for-actions-called-by-aws-services/" target=3D=
+"_blank" class=3D"hyperlink">How to define least-privileged permissions for=
+ actions called by AWS services</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Want to restrict actions on your AWS resources to specific services=
+? Here's how to define least-privileged permissions for actions called by A=
+WS services.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <img height=3D"20" src=3D"https://cloudseclist.com/assets/icons=
+/icon_aws.png" style=3D"border: 0px;width: 20px;height: 20px;margin: 0px;ou=
+tline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width=
+=3D"20" alt=3D"AWS Icon">&nbsp;
+            <a href=3D"https://aws.amazon.com/blogs/security/enable-automat=
+ic-logging-of-web-acls-by-using-aws-config/" target=3D"_blank" class=3D"hyp=
+erlink">Enable automatic logging of web ACLs by using AWS Config</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        How to use AWS Config, with its auto-remediation functionality, to =
+ensure that all web ACLs have logging enabled. The AWS CloudFormation templ=
+ate included in this blog post will facilitate this solution, and will get =
+you started being able to manage web ACL logging at scale.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <img height=3D"20" src=3D"https://cloudseclist.com/assets/icons=
+/icon_aws.png" style=3D"border: 0px;width: 20px;height: 20px;margin: 0px;ou=
+tline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width=
+=3D"20" alt=3D"AWS Icon">&nbsp;
+            <a href=3D"https://aws.amazon.com/blogs/storage/aws-storage-gat=
+eway-adds-file-gateway-audit-logs/" target=3D"_blank" class=3D"hyperlink">A=
+WS Storage Gateway adds File Gateway audit logs</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        <a href=3D'https://aws.amazon.com/storagegateway/' target=3D'_blank=
+'>AWS Storage Gateway</a> now enables logging end-user operations on files =
+and folders for SMB file shares when using File Gateway.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <img height=3D"20" src=3D"https://cloudseclist.com/assets/icons=
+/icon_aws.png" style=3D"border: 0px;width: 20px;height: 20px;margin: 0px;ou=
+tline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width=
+=3D"20" alt=3D"AWS Icon">&nbsp;
+            <a href=3D"https://aws.amazon.com/blogs/mt/extend-a-self-manage=
+d-active-directory-to-aws-control-tower/" target=3D"_blank" class=3D"hyperl=
+ink">Extend a self-managed Active Directory to AWS Control Tower</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Already using Microsoft Active Directory? This step-by-step tutoria=
+l shows how to set up AWS Control Tower to delegate user authentication to =
+a self-managed Microsoft Active Directory via AWS Managed Microsoft AD.
+    </div>
+</div>
+<br>
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <img height=3D"20" src=3D"https://cloudseclist.com/assets/icons=
+/icon_aws.png" style=3D"border: 0px;width: 20px;height: 20px;margin: 0px;ou=
+tline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width=
+=3D"20" alt=3D"AWS Icon">&nbsp;
+            <a href=3D"https://aws.amazon.com/about-aws/whats-new/2020/04/a=
+ws-snowball-now-supports-local-aws-iam/" target=3D"_blank" class=3D"hyperli=
+nk">AWS Snowball now supports local AWS IAM</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        <a href=3D'https://aws.amazon.com/snowball/' target=3D'_blank'>AWS =
+Snowball</a> now supports local AWS Identity and Access Management (IAM), a=
+llowing you to securely manage access to AWS services and resources running=
+ on your Snowball device by controlling what actions users can take, and wh=
+at AWS resources on the device users can take those actions on.
+    </div>
+</div>
+<br>
+
+
+<br>
+<div>
+    <span style=3D"font-size:18px">
+        <strong>
+            <img height=3D"11" src=3D"https://cloudseclist.com/assets/icons=
+/icon_gcp.png" style=3D"border: 0px;width: 20px;height: 11px;margin: 0px;ou=
+tline: none;text-decoration: none;-ms-interpolation-mode: bicubic;" width=
+=3D"20" alt=3D"GCP Icon">&nbsp;
+            <a href=3D"https://cloud.google.com/blog/products/management-to=
+ols/new-os-patch-management-service-protects-your-compute-engine-vms" targe=
+t=3D"_blank" class=3D"hyperlink">Protect your running VMs with new OS patch=
+ management service</a>
+        </strong>
+    </span>
+    <div dir=3D"ltr">
+        Google announced the general availability of Google Cloud's OS patc=
+h management service to protect your running VMs against defects and vulner=
+abilities. With OS patch management, you can apply OS patches across a set =
+of VMs, receive patch compliance data across your environments, and automat=
+e installation of OS patches across VMs=E2=80=94all from one centralized lo=
+cation.=20
+    </div>
+</div>
+<br>
+
+
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                    </table>               =20
+                                    <!--[if mso]>
+                                    </td>
+                                    </tr>
+                                    </table>
+                                    <![endif]-->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- END ROW - ARTICLES -->
+            <!-- ROW - SOCIAL -->
+            <tr>
+                <td valign=3D"top" id=3D"templateFooter" class=3D"table-row=
+" style=3D"background:#fafafa none no-repeat center/cover;background-color:=
+ #fafafa;padding-top: 9px;padding-bottom: 9px;">
+=09=09=09=09=09<!-- SOCIAL -->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" class=3D"mcnFollowBlock mcnImageContentContainer">
+                        <!-- <tbody class=3D"mcnFollowBlockOuter"> -->
+                        <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddin=
+g: 9px;" class=3D"mcnFollowBlockInner">
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"mcnFollowContentContainer mcnImageContentCon=
+tainer">
+                            <tbody>
+                            <tr>
+                            <td align=3D"center" style=3D"padding-left: 9px=
+;padding-right: 9px;">
+                                <table border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"100%" class=3D"mcnImageContentContainer" class=3D"mcn=
+FollowContent">
+                                <tbody>
+                                <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"padding-top: 9px;padding-right: 9px;padding-left: 9px;">
+                                    <table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" class=3D"table-container" style=3D"">
+                                    <tbody><tr>
+                                    <td align=3D"center" valign=3D"top" sty=
+le=3D"">
+                                    <!--[if mso]>
+                                    <table align=3D"center" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0">
+                                    <tr>
+                                    <td align=3D"center" valign=3D"top">
+                                    <![endif]-->
+
+                                    <!-- WEBSITE -->
+                                    <table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"display: inline;border-collapse: c=
+ollapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;">
+                                    <tbody>
+                                    <tr>
+                                    <td valign=3D"top" style=3D"padding-rig=
+ht: 10px;padding-bottom: 9px;" class=3D"mcnFollowContentItemContainer">
+                                        <table border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"100%" class=3D"mcnFollowContentItem" class=3D=
+"table-container" style=3D"">
+                                        <tbody>
+                                        <tr>
+                                        <td align=3D"left" valign=3D"middle=
+" style=3D"padding-top: 5px;padding-right: 10px;padding-bottom: 5px;padding=
+-left: 9px;">
+                                            <table align=3D"left" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"table-container=
+" style=3D"">
+                                            <tbody>
+                                            <tr>
+                                            <td align=3D"center" valign=3D"=
+middle" width=3D"24" class=3D"mcnFollowIconContent" style=3D"">
+                                                <a href=3D"https://cloudsec=
+list.com" target=3D"_blank" style=3D""><img src=3D"https://cloudseclist.com=
+/assets/icons/icon_web.png" alt=3D"Website" style=3D"display: block;border:=
+ 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode:=
+ bicubic;" height=3D"24" width=3D"24" class=3D""></a>
+                                            </td>
+                                            </tr>
+                                            </tbody>
+                                            </table>
+                                        </td>
+                                        </tr>
+                                        </tbody>
+                                        </table>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    <!--[if mso]>
+                                    </td>
+                                    <td align=3D"center" valign=3D"top">
+                                    <![endif]-->
+                                    <!-- TWITTER -->
+                                    <table align=3D"left" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" style=3D"display: inline;border-collapse: c=
+ollapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;">
+                                        <tbody>
+                                        <tr>
+                                        <td valign=3D"top" style=3D"padding=
+-right: 10px;padding-bottom: 9px;" class=3D"mcnFollowContentItemContainer">
+                                            <table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnFollowContentItem" clas=
+s=3D"table-container" style=3D"">
+                                            <tbody>
+                                            <tr>
+                                            <td align=3D"left" valign=3D"mi=
+ddle" style=3D"padding-top: 5px;padding-right: 10px;padding-bottom: 5px;pad=
+ding-left: 9px;">
+                                                <table align=3D"left" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"" class=3D"table-conta=
+iner" style=3D"">
+                                                <tbody>
+                                                <tr>
+                                                <td align=3D"center" valign=
+=3D"middle" width=3D"24" class=3D"mcnFollowIconContent" style=3D"">
+                                                    <a href=3D"https://twit=
+ter.com/lancinimarco" target=3D"_blank" style=3D""><img src=3D"https://clou=
+dseclist.com/assets/icons/icon_twitter.png" alt=3D"Twitter" style=3D"displa=
+y: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-int=
+erpolation-mode: bicubic;" height=3D"24" width=3D"24" class=3D""></a>
+                                                </td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                            </td>
+                                            </tr>
+                                            </tbody>
+                                            </table>
+                                        </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--[if mso]>
+                                    </td>
+                                    <td align=3D"center" valign=3D"top">
+                                    <![endif]-->
+                                </td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- BUY ME A COFFEE -->
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" class=3D"mcnImageBlock mcnImageContentContainer">
+                        <tbody class=3D"mcnImageBlockOuter">
+                            <tr>
+                                <td valign=3D"top" style=3D"padding: 9px;" =
+class=3D"mcnImageBlockInner">
+                                    <table align=3D"left" width=3D"100%" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentCont=
+ainer mcnImageContentContainer">
+                                        <tbody>
+                                            <tr>
+                                                <td class=3D"mcnImageConten=
+t" valign=3D"top" style=3D"padding-right: 9px;padding-left: 9px;padding-top=
+: 0;padding-bottom: 0;text-align: center;">
+                                                    <a href=3D"https://www.=
+buymeacoffee.com/marcolancini" title=3D"" class=3D"" target=3D"_blank" styl=
+e=3D"">
+                                                    <img align=3D"center" a=
+lt=3D"Buy me a coffee" src=3D"https://cloudseclist.com/assets/icons/icon_bu=
+ymeacoffee.png" width=3D"144" style=3D"max-width: 288px;" class=3D"mcnRetin=
+aImage .main-centered-image">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- END ROW - SOCIAL -->
+        </table>
+        <!-- RULER -->
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnDividerBlock" >
+            <tbody class=3D"mcnDividerBlockOuter">
+                <tr>
+                    <td class=3D"mcnDividerBlockInner" style=3D"min-width: =
+100%;padding: 18px;">
+                        <table class=3D"mcnDividerContent ruler" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">
+                            <tbody>
+                                <tr>
+                                    <td style=3D"">
+                                        <span></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--           =20
+                        <td class=3D"mcnDividerBlockInner" style=3D"padding=
+: 18px;">
+                        <hr class=3D"mcnDividerContent" style=3D"border-bot=
+tom-color:none; border-left-color:none; border-right-color:none; border-bot=
+tom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margi=
+n-right:0; margin-bottom:0; margin-left:0;" />
+                        -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- FOOTER -->
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"10=
+0%" class=3D"mcnTextBlock mcnImageContentContainer">
+            <tbody class=3D"mcnTextBlockOuter">
+                <!-- UNSUBSCRIBE -->
+                <tr>
+                    <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D=
+"padding-top: 9px;">
+                        <!--[if mso]>
+                        <table align=3D"left" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;">
+                        <tr>
+                        <td valign=3D"top" width=3D"600" style=3D"width:600=
+px;">
+                        <![endif]-->
+                        <table align=3D"left" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0"  width=3D"100%" class=3D"mcnTextContentContainer">
+                            <tbody>
+                                <tr>
+                                    <td valign=3D"top" class=3D"mcnTextCont=
+ent" style=3D"padding: 0px 18px 9px;text-align: center;word-break: break-wo=
+rd;color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;=
+">
+                                        <a href=3D"https://cloudseclist.com=
+/unsubscribe/?id=3D_39758559684048918863103521260227&email=3Dlucas%40luitje=
+s.it" style=3D"color: #656565;font-weight: normal;text-decoration: underlin=
+e;" >Unsubscribe from CloudSecList</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <!-- COPYRIGHT -->
+                <tr>
+                    <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D=
+"padding-top: 9px;">
+                        <!--[if mso]>
+                        <table align=3D"left" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" width=3D"100%" style=3D"width:100%;">
+                        <tr>
+                        <td valign=3D"top" width=3D"600" style=3D"width:600=
+px;">
+                        <![endif]-->
+                        <table align=3D"left" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0"  width=3D"100%" class=3D"mcnTextContentContainer">
+                            <tbody>
+                                <tr>
+                                    <td valign=3D"top" class=3D"mcnTextCont=
+ent" style=3D"padding: 0px 18px 9px;text-align: center;word-break: break-wo=
+rd;color: #656565;font-family: Helvetica;font-size: 12px;line-height: 150%;=
+">
+                                        <a href=3D"https://cloudseclist.com=
+/issues/issue-33/" style=3D"color: #656565;font-weight: normal;text-decorat=
+ion: underline;">View this email in your browser</a>
+                                    </td>
+                                <td valign=3D"top" class=3D"mcnTextContent"=
+ style=3D"padding-top: 0;padding-right: 18px;padding-bottom: 9px;padding-le=
+ft: 18px;word-break: break-word;color: #656565;font-family: Helvetica;font-=
+size: 12px;line-height: 150%;text-align: center;">
+                                <em>
+                                    Copyright =C2=A9 2019-present <i>The Cl=
+oud Security Reading List</i>.
+                                </em>
+                                <br>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+<img alt=3D"" src=3D"http://engagement.cloudseclist.com/CI0/0102017192fcd3d=
+7-56472149-19ab-4713-a08c-4739f223074b-000000/FYXFgpx0bS6OkCcbmrkSpVq9zvZY3=
+WJ6rr9iOAGOn-M=3D137" style=3D"display: none; width: 1px; height: 1px;">
+</body>
+</html>
