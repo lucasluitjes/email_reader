@@ -12,6 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20_190_211_155_815) do
   create_table 'emails', force: :cascade do |t|
     t.string 'sender'
@@ -31,5 +32,9 @@ ActiveRecord::Schema.define(version: 20_190_211_155_815) do
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
     t.index ['email_id'], name: 'index_links_on_email_id'
+  end
+
+  create_table 'overviews', force: :cascade do |t|
+    t.datetime 'last_overview', default: '2019-12-11 15:30:20', null: false
   end
 end
