@@ -16,9 +16,11 @@
       <%= email.created_at %>:
       <%= Mail.new(email.body).subject %>
       <%= link_to 'Show', email , target: :_blank, class: 'show-email', id: email.id %>
+      <%= email.id %>
     </p>
     <ul>
       <% email.links.order('created_at ASC').each_with_index do |link, index| %>
+
         <% if index > 0 and index % 6 == 0 %>
           <li class="link" style="padding-bottom: 7px; padding-top: 25px">
         <% else %>
@@ -29,6 +31,7 @@
           <% else %>
             <%= check_box_tag 'read', link , false %>
           <% end %>
+          id:<%= index + 1 %> -
           <a href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %>
         </li>
       <% end %>
