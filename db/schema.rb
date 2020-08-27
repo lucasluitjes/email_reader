@@ -12,8 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
-ActiveRecord::Schema.define(version: 20_190_211_155_815) do
+ActiveRecord::Schema.define(version: 20_191_211_152_653) do
   create_table 'emails', force: :cascade do |t|
     t.string 'sender'
     t.boolean 'read'
@@ -35,6 +34,6 @@ ActiveRecord::Schema.define(version: 20_190_211_155_815) do
   end
 
   create_table 'overviews', force: :cascade do |t|
-    t.datetime 'last_overview', default: '2019-12-11 15:30:20', null: false
+    t.datetime 'last_overview', default: '2020-08-27 14:13:23', null: false
   end
 end
