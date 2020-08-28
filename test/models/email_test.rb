@@ -39,6 +39,13 @@ class EmailTest < ActiveSupport::TestCase
     assert_equal 20, urls.size
   end
 
+  test 'parse links correctly from cloudSecList' do
+    email = Email.new(body: File.read("test/fixtures/files/cloudseclistLinkParsingProblem.eml"))
+    urls = email.cloud_sec_links
+    assert_equal ["The undetectable way of exporting an AWS DynamoDB", "https://blog.3coresec.com/2020/04/the-undetectable-way-of-exporting-aws.html"], urls[0]
+    assert_equal 20, urls.size
+  end
+
   test 'grab text from db_weekly' do
     email = Email.new(body: File.read('test/fixtures/files/dbweekly.txt'))
     urls = email.db_weekly_links
@@ -82,6 +89,13 @@ class EmailTest < ActiveSupport::TestCase
                   'Ruby 2.6 Released — As is traditional, the latest major release of Ruby came out on Christmas Day. The much awaited 2.6 includes an initial implementation of a JIT compiler (which needs to be enabled manually), the then alias for yield_self, RubyVM::AbstractSyntaxTree, endless ranges, and a lot more (see next item).',
                   'https://rubyweekly.com/link/57534/d218cfa36e'], urls[0]
     assert_equal 29, urls.size
+  end
+
+  test 'ruby weekly parsing problem' do
+    email = Email.new(body: File.read('test/fixtures/files/RubyWeeklyParsingProblem.eml'))
+    urls = email.ruby_weekly_links
+    assert_equal ["The State of Ruby 3 Typing: Introducing RBS", "The State of Ruby 3 Typing: Introducing RBS — Back in May we mentioned RBS, a language being used for type signatures in Ruby programs, but this is a much more accessible introduction to the concepts around it. RBS and the tooling around it will ship with the eventual Ruby 3.", "https://rubyweekly.com/link/92700/8e2498409f"], urls[0]
+    assert_equal 37, urls.size
   end
 
   test 'grab text from sre weekly' do

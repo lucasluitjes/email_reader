@@ -37,13 +37,15 @@ class Email < ApplicationRecord
     url_elements = doc.search('a')
 
     links = url_elements.map do |n|
+
       [
         n.children.inner_text,
+        n.parent.parent.parent.text.gsub(/\s+/, " ").strip,
         n.attributes["href"].value
       ]
     end
 
-    links.reject do |link|
+    links.reject! do |link|
       link.first == 'Unsubscribe from CloudSecList' ||
       link.first == 'View this email in your browser' ||
       link.last == 'https://cloudseclist.com' ||
@@ -51,6 +53,8 @@ class Email < ApplicationRecord
       link.last == 'https://twitter.com/lancinimarco' ||
       link.last == 'https://www.marcolancini.it/'
     end
+    binding.pry
+    links
   end
 
 
@@ -153,7 +157,7 @@ class Email < ApplicationRecord
     doc = Nokogiri::HTML.parse(html_string)
     url_elements = doc.search('a')
     url_elements = url_elements.select do |n|
-      url = n.attributes['href'].value
+      url = n.attributes['href'].value unless n.attributes['href'].nil?
       url =~ %r{^https://rubyweekly.com/link/}
     end
     urls = url_elements.map do |n|
