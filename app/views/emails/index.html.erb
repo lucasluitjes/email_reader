@@ -13,6 +13,7 @@
       <% sender = Mail.new(email.body)[:from].display_names.first %>
       <b> <%= sender %>: </b>
       <a> - <%= email.read ? "Read" : "Unread" %> - </a>
+      <%= link_to 'download_eml', download_eml_email_path(email) %>
       <%= email.created_at %>:
       <%= Mail.new(email.body).subject %>
       <%= link_to 'Show', email , target: :_blank, class: 'show-email', id: email.id %>

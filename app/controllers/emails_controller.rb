@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class EmailsController < ApplicationController
-  before_action :set_email, only: %i[show edit update destroy]
+  before_action :set_email, only: %i[show edit update destroy download_eml]
 
   if Rails.env == 'production'
     username = ENV['BASIC_USERNAME']
@@ -73,6 +73,11 @@ class EmailsController < ApplicationController
       format.html { redirect_to emails_url, notice: 'Email was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  # GET /emails/1/download_eml
+  def download_eml
+    send_data(@email.body, filename: "#{@email.id}.eml", disposition: "attachment")
   end
 
   private
