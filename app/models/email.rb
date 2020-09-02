@@ -37,7 +37,6 @@ class Email < ApplicationRecord
     url_elements = doc.search('a')
 
     links = url_elements.map do |n|
-
       [
         n.children.inner_text,
         n.parent.parent.parent.text.gsub(/\s+/, " ").strip,
@@ -45,7 +44,7 @@ class Email < ApplicationRecord
       ]
     end
 
-    links.reject! do |link|
+    links.reject do |link|
       link.first == 'Unsubscribe from CloudSecList' ||
       link.first == 'View this email in your browser' ||
       link.last == 'https://cloudseclist.com' ||
@@ -53,8 +52,6 @@ class Email < ApplicationRecord
       link.last == 'https://twitter.com/lancinimarco' ||
       link.last == 'https://www.marcolancini.it/'
     end
-    binding.pry
-    links
   end
 
 
@@ -171,7 +168,7 @@ class Email < ApplicationRecord
       ]
     end
     urls = urls.reject { |link| link[0] == '' }
-    urls = urls.uniq { |link| [link[1], link[2]] }
+    urls = urls.uniq { |link| link[1] }
   end
 
   def sre_weekly_links

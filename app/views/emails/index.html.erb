@@ -21,11 +21,6 @@
     </p>
     <ul>
       <% email.links.order('created_at ASC').each_with_index do |link, index| %>
-        
-        <% if link.url.nil? %>
-          <%=  puts link.title; link.url = link.description %> 
-        <% end%>
-
         <% if index > 0 and index % 6 == 0 %>
           <li class="link" style="padding-bottom: 7px; padding-top: 25px">
         <% else %>
@@ -37,7 +32,7 @@
             <%= check_box_tag 'read', link , false %>
           <% end %>
           id:<%= index + 1 %> -
-          <a href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %> 
+          <a href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %>
         </li>
       <% end %>
      <%= link_to "Open selected links", "#", :class => "openSelectedLinks" %>

@@ -34,6 +34,6 @@ ActiveRecord::Schema.define(version: 20_191_211_152_653) do
   end
 
   create_table 'overviews', force: :cascade do |t|
-    t.datetime 'last_overview', default: '2020-08-27 14:13:23', null: false
+    t.datetime 'last_overview', default: '2020-09-02 15:44:01', null: false
   end
 end
