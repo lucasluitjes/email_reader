@@ -35,8 +35,15 @@ class EmailTest < ActiveSupport::TestCase
   test 'grab text from cloudSecList' do
     email = Email.new(body: File.read("test/fixtures/files/The\ CloudSecList.eml"))
     urls = email.cloud_sec_links
-    assert_equal ["The undetectable way of exporting an AWS DynamoDB", "https://blog.3coresec.com/2020/04/the-undetectable-way-of-exporting-aws.html"], urls[0]
+    assert_equal ["The undetectable way of exporting an AWS DynamoDB", "The undetectable way of exporting an AWS DynamoDB This post describes a limitation in the current AWS CloudTrail logging features that limit detection capabilities of possible abuse against AWS DynamoDB, in the event of the user's AWS IAM keys being compromised. In particular, CloudTrail doesn't currently record any scanning/reading of a DynamoDB table through awscli.", "https://blog.3coresec.com/2020/04/the-undetectable-way-of-exporting-aws.html"], urls[0]
     assert_equal 20, urls.size
+  end
+
+  test 'parse links correctly from cloudSecList' do
+    email = Email.new(body: File.read("test/fixtures/files/cloudseclistLinkParsingProblem.eml"))
+    urls = email.cloud_sec_links
+    assert_equal ["Introducing Policy As Code: The Open Policy Agent (OPA)", "Introducing Policy As Code: The Open Policy Agent (OPA) CNCF deep-dive series on how to use Open Policy Agent to unify security policy enforcement across your entire set of Kubernetes clusters.", "https://www.cncf.io/blog/2020/08/13/introducing-policy-as-code-the-open-policy-agent-opa/"], urls[0]
+    assert_equal 35, urls.size
   end
 
   test 'grab text from db_weekly' do
@@ -81,7 +88,14 @@ class EmailTest < ActiveSupport::TestCase
     assert_equal ['Ruby 2.6 Released',
                   'Ruby 2.6 Released — As is traditional, the latest major release of Ruby came out on Christmas Day. The much awaited 2.6 includes an initial implementation of a JIT compiler (which needs to be enabled manually), the then alias for yield_self, RubyVM::AbstractSyntaxTree, endless ranges, and a lot more (see next item).',
                   'https://rubyweekly.com/link/57534/d218cfa36e'], urls[0]
-    assert_equal 29, urls.size
+    assert_equal 27, urls.size
+  end
+
+  test 'ruby weekly parsing problem' do
+    email = Email.new(body: File.read('test/fixtures/files/RubyWeeklyParsingProblem.eml'))
+    urls = email.ruby_weekly_links
+    assert_equal ["The State of Ruby 3 Typing: Introducing RBS", "The State of Ruby 3 Typing: Introducing RBS — Back in May we mentioned RBS, a language being used for type signatures in Ruby programs, but this is a much more accessible introduction to the concepts around it. RBS and the tooling around it will ship with the eventual Ruby 3.", "https://rubyweekly.com/link/92700/8e2498409f"], urls[0]
+    assert_equal 24, urls.size
   end
 
   test 'grab text from sre weekly' do

@@ -39,6 +39,7 @@ class Email < ApplicationRecord
     links = url_elements.map do |n|
       [
         n.children.inner_text,
+        n.parent.parent.parent.text.gsub(/\s+/, " ").strip,
         n.attributes["href"].value
       ]
     end
@@ -153,7 +154,7 @@ class Email < ApplicationRecord
     doc = Nokogiri::HTML.parse(html_string)
     url_elements = doc.search('a')
     url_elements = url_elements.select do |n|
-      url = n.attributes['href'].value
+      url = n.attributes['href'].value unless n.attributes['href'].nil?
       url =~ %r{^https://rubyweekly.com/link/}
     end
     urls = url_elements.map do |n|
@@ -167,7 +168,7 @@ class Email < ApplicationRecord
       ]
     end
     urls = urls.reject { |link| link[0] == '' }
-    urls = urls.uniq { |link| [link[1], link[2]] }
+    urls = urls.uniq { |link| link[1] }
   end
 
   def sre_weekly_links
