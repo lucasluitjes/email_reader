@@ -35,15 +35,22 @@ class EmailTest < ActiveSupport::TestCase
   test 'grab text from cloudSecList' do
     email = Email.new(body: File.read("test/fixtures/files/The\ CloudSecList.eml"))
     urls = email.cloud_sec_links
-    assert_equal ["The undetectable way of exporting an AWS DynamoDB", "The undetectable way of exporting an AWS DynamoDB This post describes a limitation in the current AWS CloudTrail logging features that limit detection capabilities of possible abuse against AWS DynamoDB, in the event of the user's AWS IAM keys being compromised. In particular, CloudTrail doesn't currently record any scanning/reading of a DynamoDB table through awscli.", "https://blog.3coresec.com/2020/04/the-undetectable-way-of-exporting-aws.html"], urls[0]
-    assert_equal 20, urls.size
+    assert_equal ["The undetectable way of exporting an AWS DynamoDB", " This post describes a limitation in the current AWS CloudTrail logging features that limit detection capabilities of possible abuse against AWS DynamoDB, in the event of the user's AWS IAM keys being compromised. In particular, CloudTrail doesn't currently record any scanning/reading of a DynamoDB table through awscli.", "https://blog.3coresec.com/2020/04/the-undetectable-way-of-exporting-aws.html"], urls[0]
+    assert_equal 18, urls.size
   end
 
   test 'parse links correctly from cloudSecList' do
     email = Email.new(body: File.read("test/fixtures/files/cloudseclistLinkParsingProblem.eml"))
     urls = email.cloud_sec_links
-    assert_equal ["Introducing Policy As Code: The Open Policy Agent (OPA)", "Introducing Policy As Code: The Open Policy Agent (OPA) CNCF deep-dive series on how to use Open Policy Agent to unify security policy enforcement across your entire set of Kubernetes clusters.", "https://www.cncf.io/blog/2020/08/13/introducing-policy-as-code-the-open-policy-agent-opa/"], urls[0]
-    assert_equal 35, urls.size
+    assert_equal ["Introducing Policy As Code: The Open Policy Agent (OPA)", " CNCF deep-dive series on how to use Open Policy Agent to unify security policy enforcement across your entire set of Kubernetes clusters.", "https://www.cncf.io/blog/2020/08/13/introducing-policy-as-code-the-open-policy-agent-opa/"], urls[0]
+    assert_equal 27, urls.size
+  end
+
+  test 'parse descriptions correctly from cloudSecList' do
+    email = Email.new(body: File.read("test/fixtures/files/cloudseclist_parse_problem.eml"))
+    urls = email.cloud_sec_links
+    assert_equal ["Offensive Terraform Modules", " #aws, #attack Collection of (automated) offensive attack modules defined as Infrastructure as Code (IAC).", "https://offensive-terraform.github.io/"], urls[4]
+    assert_equal 36, urls.size
   end
 
   test 'grab text from db_weekly' do
