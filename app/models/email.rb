@@ -38,14 +38,23 @@ class Email < ApplicationRecord
     url_elements = doc.search('a')
 
     links = url_elements.map do |n|
-      [
-        n.children.inner_text,
-        n.parent.parent.parent.text.gsub(/\s+/, " ").strip,
-        n.attributes["href"].value
-      ]
+      if n.attributes["class"].nil? || n.attributes["class"].value != 'hyperlink'
+        link = [nil,nil,nil]
+      else
+        title = n.children.inner_text
+        description = n.parent.parent.parent.text.gsub(/\s+/, " ").strip
+        description.slice!(title)
+        link = [
+          title,
+          description,
+          n.attributes["href"].value
+        ]
+      end
+      link
     end
 
     links.reject do |link|
+      link[2].nil? ||
       link.first == 'Unsubscribe from CloudSecList' ||
       link.first == 'View this email in your browser' ||
       link.last == 'https://cloudseclist.com' ||
