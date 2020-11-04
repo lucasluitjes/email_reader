@@ -16,7 +16,8 @@ class Email < ApplicationRecord
       "nieuwsbrief@m.blendle.com" => :blendle,
       'lucas@luitjes.it' => :db_weekly,
       'dbweekly@cooperpress.com' => :db_weekly,
-      'info@cloudseclist.com' => :cloud_sec
+      'info@cloudseclist.com' => :cloud_sec,
+      'intheloop@lists.tacticaltech.org' => :tactical_tech
   }.freeze
 
   def create_links!
@@ -231,5 +232,10 @@ class Email < ApplicationRecord
     urls = urls.reject { |link| link[0].slice(0, 26) == 'Elke dag onbeperkt toegang' }
     urls = urls.reject { |link| link[0] == '  ' }
     urls = urls.uniq { |link| link[2] }
+  end
+
+  def tactical_tech_links
+    string = Mail.new(body).body.decoded.force_encoding("UTF-8")
+    string.sub(/^IN THE LOOP/, '').scan(/(^[A-Z]{2,}.*?$)(.*?)(https:\/\/[^\s]+)/m)
   end
 end

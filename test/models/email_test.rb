@@ -123,4 +123,10 @@ class EmailTest < ActiveSupport::TestCase
     urls = email.blendle_links
     assert_equal 14, urls.size
   end
+
+  test 'grab text from tactical tech' do
+    email = Email.new(body: File.read('test/fixtures/files/tactical_tech.eml'))
+    urls = email.tactical_tech_links
+    assert_equal 31, urls.size
+  end
 end
