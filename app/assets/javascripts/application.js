@@ -18,11 +18,11 @@ $(document).ready(() => {
   $(".openSelectedLinks").on("click", function(){
     var links = $( this ).siblings();
     var checked_links = links.children().filter(":checked").parent();
-    var addresses = checked_links.children("a");
+    var addresses = checked_links.children().children("a.description");
     addresses.each((i, el) => {
       window.open("/lazy_loading.html#" + el.href,'_blank');
     });
-    var email_id = $(this).parent().parent().children().children().eq(2).attr("href");
+    var email_id = $(this).parent().parent().children().children().filter(".show-email").attr("href");
     console.log(email_id);
     $.ajax({
       type: "PATCH",

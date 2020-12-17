@@ -34,11 +34,11 @@
         <% end %>
         <div>
           --id:<%= index + 1 %> -
-          <a href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %>
+          <a class="description" href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %>
         </div>
         </li>
       <% end %>
-     <%= link_to "Open selected links", "#", :class => "openSelectedLinks" , class: "description" %>
+     <%= link_to "Open selected links", "#", :class => "openSelectedLinks"%>
     </ul>
   </div>
 <% end %>
