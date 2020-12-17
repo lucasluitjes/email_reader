@@ -22,20 +22,23 @@
     <ul>
       <% email.links.order('created_at ASC').each_with_index do |link, index| %>
         <% if index > 0 and index % 6 == 0 %>
-          <li class="link" style="padding-bottom: 7px; padding-top: 25px">
+          <li class="padded-link">
         <% else %>
-          <li class="link" style="padding-bottom: 7px">
+          <li class="link">
         <% end %>
-          <% if sender == 'Hacker Newsletter' %>
-            <%= check_box_tag 'read', link , true %>
-          <% else %>
-            <%= check_box_tag 'read', link , false %>
-          <% end %>
-          id:<%= index + 1 %> -
+
+        <% if sender == 'Hacker Newsletter' %>
+          <%= check_box_tag 'read', link , true, class: "big_checkbox" %>
+        <% else %>
+          <%= check_box_tag 'read', link , false, class: "big_checkbox" %>
+        <% end %>
+        <div>
+          --id:<%= index + 1 %> -
           <a href="<%= link.url %>"> <%= link.title %> </a> - <%= link.description %>
+        </div>
         </li>
       <% end %>
-     <%= link_to "Open selected links", "#", :class => "openSelectedLinks" %>
+     <%= link_to "Open selected links", "#", :class => "openSelectedLinks" , class: "description" %>
     </ul>
   </div>
 <% end %>
